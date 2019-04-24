@@ -1,0 +1,618 @@
+
+{
+	"trainingCycle": {
+		"week_1": {
+			"sets": [
+				{ "tm": 0.65, "reps": 5 },
+				{ "tm": 0.75, "reps": 5 },
+				{ "tm": 0.85, "reps": 5 }
+			]
+		},
+		"week_2": {
+			"sets": [
+				{ "tm": 0.70, "reps": 3 },
+				{ "tm": 0.80, "reps": 3 },
+				{ "tm": 0.90, "reps": 3 }
+			]
+		},
+		"week_3": {
+			"sets": [
+				{ "tm": 0.75, "reps": 5 },
+				{ "tm": 0.85, "reps": 3 },
+				{ "tm": 0.95, "reps": 1 }
+			]
+		},
+		"deload": {
+			"sets": [
+				{ "tm": 0.40, "reps": 5 },
+				{ "tm": 0.50, "reps": 5 },
+				{ "tm": 0.60, "reps": 5 }
+			]
+		}
+	},
+	"variations": {
+		"bbb": {
+			"name": "Boring But Big",
+			"templates": {
+				"template_1": {
+					"name": "Template 1",
+					"description": "Description for template 1",
+					"weeks": {
+						"week_1": {
+							"name": "Week 1",
+							"day_1": [
+								{
+									"sets": [
+										{ "reps": 10 },
+										{ "reps": 10 },
+										{ "reps": 10 },
+										{ "reps": 10 },
+										{ "reps": 10 }
+									]
+								},
+								{
+									"sets": [
+										{ "reps": 15 },
+										{ "reps": 15 },
+										{ "reps": 15 },
+										{ "reps": 15 },
+										{ "reps": 15 }
+									]
+								}
+							],
+							"day_2": [
+								{
+									"sets": [
+										{ "reps": 10 },
+										{ "reps": 10 },
+										{ "reps": 10 },
+										{ "reps": 10 },
+										{ "reps": 10 }
+									]
+								},
+								{
+									"sets": [
+										{ "reps": 15 },
+										{ "reps": 15 },
+										{ "reps": 15 },
+										{ "reps": 15 },
+										{ "reps": 15 }
+									]
+								}
+							]
+						},
+						"week_2": {
+							"name": "Week 2",
+							"day_1": [
+								{
+									"sets": [
+										{ "reps": 10 },
+										{ "reps": 10 },
+										{ "reps": 10 },
+										{ "reps": 10 },
+										{ "reps": 10 }
+									]
+								},
+								{
+									"sets": [
+										{ "reps": 15 },
+										{ "reps": 15 },
+										{ "reps": 15 },
+										{ "reps": 15 },
+										{ "reps": 15 }
+									]
+								}
+							],
+							"day_2": [
+								{
+									"sets": [
+										{ "reps": 10 },
+										{ "reps": 10 },
+										{ "reps": 10 },
+										{ "reps": 10 },
+										{ "reps": 10 }
+									]
+								},
+								{
+									"sets": [
+										{ "reps": 15 },
+										{ "reps": 15 },
+										{ "reps": 15 },
+										{ "reps": 15 },
+										{ "reps": 15 }
+									]
+								}
+							]
+						},
+						"week_3": {
+							"name": "Week 3",
+							"day_1": [
+								{
+									"sets": [
+										{ "reps": 10 },
+										{ "reps": 10 },
+										{ "reps": 10 },
+										{ "reps": 10 },
+										{ "reps": 10 }
+									]
+								},
+								{
+									"sets": [
+										{ "reps": 15 },
+										{ "reps": 15 },
+										{ "reps": 15 },
+										{ "reps": 15 },
+										{ "reps": 15 }
+									]
+								}
+							],
+							"day_2": [
+								{
+									"sets": [
+										{ "reps": 10 },
+										{ "reps": 10 },
+										{ "reps": 10 },
+										{ "reps": 10 },
+										{ "reps": 10 }
+									]
+								},
+								{
+									"sets": [
+										{ "reps": 15 },
+										{ "reps": 15 },
+										{ "reps": 15 },
+										{ "reps": 15 },
+										{ "reps": 15 }
+									]
+								}
+							]
+						}
+					}
+				},
+				"template_2": {
+					"name": "Template 2",
+					"description": "Description for template 1",
+					"weeks": {
+						"week_1": {
+							"name": "Week 1",
+							"day_1": [
+								{
+									"sets": [
+										{ "reps": 10 },
+										{ "reps": 10 },
+										{ "reps": 10 },
+										{ "reps": 10 },
+										{ "reps": 10 }
+									]
+								},
+								{
+									"sets": [
+										{ "reps": 15 },
+										{ "reps": 15 },
+										{ "reps": 15 },
+										{ "reps": 15 },
+										{ "reps": 15 }
+									]
+								}
+							],
+							"day_2": [
+								{
+									"sets": [
+										{ "reps": 10 },
+										{ "reps": 10 },
+										{ "reps": 10 },
+										{ "reps": 10 },
+										{ "reps": 10 }
+									]
+								},
+								{
+									"sets": [
+										{ "reps": 15 },
+										{ "reps": 15 },
+										{ "reps": 15 },
+										{ "reps": 15 },
+										{ "reps": 15 }
+									]
+								}
+							]
+						},
+						"week_2": {
+							"name": "Week 2",
+							"day_1": [
+								{
+									"sets": [
+										{ "reps": 10 },
+										{ "reps": 10 },
+										{ "reps": 10 },
+										{ "reps": 10 },
+										{ "reps": 10 }
+									]
+								},
+								{
+									"sets": [
+										{ "reps": 15 },
+										{ "reps": 15 },
+										{ "reps": 15 },
+										{ "reps": 15 },
+										{ "reps": 15 }
+									]
+								}
+							],
+							"day_2": [
+								{
+									"sets": [
+										{ "reps": 10 },
+										{ "reps": 10 },
+										{ "reps": 10 },
+										{ "reps": 10 },
+										{ "reps": 10 }
+									]
+								},
+								{
+									"sets": [
+										{ "reps": 15 },
+										{ "reps": 15 },
+										{ "reps": 15 },
+										{ "reps": 15 },
+										{ "reps": 15 }
+									]
+								}
+							]
+						},
+						"week_3": {
+							"name": "Week 3",
+							"day_1": [
+								{
+									"sets": [
+										{ "reps": 10 },
+										{ "reps": 10 },
+										{ "reps": 10 },
+										{ "reps": 10 },
+										{ "reps": 10 }
+									]
+								},
+								{
+									"sets": [
+										{ "reps": 15 },
+										{ "reps": 15 },
+										{ "reps": 15 },
+										{ "reps": 15 },
+										{ "reps": 15 }
+									]
+								}
+							],
+							"day_2": [
+								{
+									"sets": [
+										{ "reps": 10 },
+										{ "reps": 10 },
+										{ "reps": 10 },
+										{ "reps": 10 },
+										{ "reps": 10 }
+									]
+								},
+								{
+									"sets": [
+										{ "reps": 15 },
+										{ "reps": 15 },
+										{ "reps": 15 },
+										{ "reps": 15 },
+										{ "reps": 15 }
+									]
+								}
+							]
+						}
+					}
+				},
+				"template_3": {
+					"name": "Template 3",
+					"description": "Description for template 1",
+					"weeks": {
+						"week_1": {
+							"name": "Week 1",
+							"day_1": [
+								{
+									"sets": [
+										{ "reps": 10 },
+										{ "reps": 10 },
+										{ "reps": 10 },
+										{ "reps": 10 },
+										{ "reps": 10 }
+									]
+								},
+								{
+									"sets": [
+										{ "reps": 15 },
+										{ "reps": 15 },
+										{ "reps": 15 },
+										{ "reps": 15 },
+										{ "reps": 15 }
+									]
+								}
+							],
+							"day_2": [
+								{
+									"sets": [
+										{ "reps": 10 },
+										{ "reps": 10 },
+										{ "reps": 10 },
+										{ "reps": 10 },
+										{ "reps": 10 }
+									]
+								},
+								{
+									"sets": [
+										{ "reps": 15 },
+										{ "reps": 15 },
+										{ "reps": 15 },
+										{ "reps": 15 },
+										{ "reps": 15 }
+									]
+								}
+							]
+						},
+						"week_2": {
+							"name": "Week 2",
+							"day_1": [
+								{
+									"sets": [
+										{ "reps": 10 },
+										{ "reps": 10 },
+										{ "reps": 10 },
+										{ "reps": 10 },
+										{ "reps": 10 }
+									]
+								},
+								{
+									"sets": [
+										{ "reps": 15 },
+										{ "reps": 15 },
+										{ "reps": 15 },
+										{ "reps": 15 },
+										{ "reps": 15 }
+									]
+								}
+							],
+							"day_2": [
+								{
+									"sets": [
+										{ "reps": 10 },
+										{ "reps": 10 },
+										{ "reps": 10 },
+										{ "reps": 10 },
+										{ "reps": 10 }
+									]
+								},
+								{
+									"sets": [
+										{ "reps": 15 },
+										{ "reps": 15 },
+										{ "reps": 15 },
+										{ "reps": 15 },
+										{ "reps": 15 }
+									]
+								}
+							]
+						},
+						"week_3": {
+							"name": "Week 3",
+							"day_1": [
+								{
+									"sets": [
+										{ "reps": 10 },
+										{ "reps": 10 },
+										{ "reps": 10 },
+										{ "reps": 10 },
+										{ "reps": 10 }
+									]
+								},
+								{
+									"sets": [
+										{ "reps": 15 },
+										{ "reps": 15 },
+										{ "reps": 15 },
+										{ "reps": 15 },
+										{ "reps": 15 }
+									]
+								}
+							],
+							"day_2": [
+								{
+									"sets": [
+										{ "reps": 10 },
+										{ "reps": 10 },
+										{ "reps": 10 },
+										{ "reps": 10 },
+										{ "reps": 10 }
+									]
+								},
+								{
+									"sets": [
+										{ "reps": 15 },
+										{ "reps": 15 },
+										{ "reps": 15 },
+										{ "reps": 15 },
+										{ "reps": 15 }
+									]
+								}
+							]
+						}
+					}
+				}
+			}
+		},
+		"triumvirate": {
+			"name": "Triumvirate",
+			"hasTrainingCycle": true,
+			"templates": {
+				"template_1": {
+					"name": "Trium Template 1",
+					"weeks": {
+						"week_1": {
+							"name": "Week 1",
+							"day_1": [
+								{
+									"sets": [
+										{ "reps": 20 },
+										{ "reps": 20 },
+										{ "reps": 20 },
+										{ "reps": 20 },
+										{ "reps": 20 }
+									]
+								},
+								{
+									"sets": [
+										{ "reps": 15 },
+										{ "reps": 15 },
+										{ "reps": 15 },
+										{ "reps": 15 },
+										{ "reps": 15 }
+									]
+								}
+							],
+							"day_2": {
+								"lift_1": {
+									"sets": [
+										{ "reps": 15 },
+										{ "reps": 15 },
+										{ "reps": 15 },
+										{ "reps": 15 },
+										{ "reps": 15 }
+									]
+								},
+								"lift_2": {
+									"sets": [
+										{ "reps": 10 },
+										{ "reps": 10 },
+										{ "reps": 10 },
+										{ "reps": 10 },
+										{ "reps": 10 }
+									]
+								}
+							}
+						},
+						"week_2": {
+							"name": "Week 2",
+							"day_1": {
+								"lift_1": {
+									"sets": [
+										{ "reps": 15 },
+										{ "reps": 15 },
+										{ "reps": 15 },
+										{ "reps": 15 },
+										{ "reps": 15 }
+									]
+								},
+								"lift_2": {
+									"sets": [
+										{ "reps": 10 },
+										{ "reps": 10 },
+										{ "reps": 10 },
+										{ "reps": 10 },
+										{ "reps": 10 }
+									]
+								}
+							},
+							"day_2": {
+								"lift_1": {
+									"sets": [
+										{ "reps": 15 },
+										{ "reps": 15 },
+										{ "reps": 15 },
+										{ "reps": 15 },
+										{ "reps": 15 }
+									]
+								},
+								"lift_2": {
+									"sets": [
+										{ "reps": 10 },
+										{ "reps": 10 },
+										{ "reps": 10 },
+										{ "reps": 10 },
+										{ "reps": 10 }
+									]
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"nsuns": {
+			"name": "Nsuns",
+			"hasTrainingCycle": false,
+			"templates": {
+				"template_1": {
+					"name": "Nsuns Template 1",
+					"weeks": {
+						"week_1": {
+							"name": "Week 1",
+							"day_1": {
+								"lift_1": {
+									"sets": [
+										{ "tm": 0.65, "reps": 8 },
+										{ "tm": 0.75, "reps": 6 }, 
+										{ "tm": 0.85, "reps": 4 }, 
+										{ "tm": 0.85, "reps": 4 },
+										{ "tm": 0.85, "reps": 4 },
+										{ "tm": 0.80, "reps": 5 },
+										{ "tm": 0.75, "reps": 6 },
+										{ "tm": 0.70, "reps": 7 },
+										{ "tm": 0.65, "reps": 8 }
+									]
+								},
+								"lift_2": {
+									"sets": [
+										{ "tm": 0.50, "reps": 6 },
+										{ "tm": 0.60, "reps": 5 }, 
+										{ "tm": 0.70, "reps": 3 }, 
+										{ "tm": 0.70, "reps": 5 },
+										{ "tm": 0.70, "reps": 7 },
+										{ "tm": 0.70, "reps": 4 },
+										{ "tm": 0.70, "reps": 6 },
+										{ "tm": 0.70, "reps": 8 }
+									]
+								}
+							}
+						}
+					}
+				},
+				"template_2": {
+					"name": "Nsuns Template 2",
+					"weeks": {
+						"week_1": {
+							"name": "Week 1",
+							"day_1": {
+								"lift_1": {
+									"sets": [
+										{ "tm": 0.65, "reps": 8 },
+										{ "tm": 0.75, "reps": 6 }, 
+										{ "tm": 0.85, "reps": 4 }, 
+										{ "tm": 0.85, "reps": 4 },
+										{ "tm": 0.85, "reps": 4 },
+										{ "tm": 0.80, "reps": 5 },
+										{ "tm": 0.75, "reps": 6 },
+										{ "tm": 0.70, "reps": 7 },
+										{ "tm": 0.65, "reps": 8 }
+									]
+								},
+								"lift_2": {
+									"sets": [
+										{ "tm": 0.50, "reps": 6 },
+										{ "tm": 0.60, "reps": 5 }, 
+										{ "tm": 0.70, "reps": 3 }, 
+										{ "tm": 0.70, "reps": 5 },
+										{ "tm": 0.70, "reps": 7 },
+										{ "tm": 0.70, "reps": 4 },
+										{ "tm": 0.70, "reps": 6 },
+										{ "tm": 0.70, "reps": 8 }
+									]
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,32 @@
+{
+	"primary": {
+		"bench": {
+			"name": "Bench",
+			"max": {
+				"rm": 0,
+				"tm": 0
+			}
+		},
+		"deadlift": {
+			"name": "Deadlift",
+			"max": {
+				"rm": 0,
+				"tm": 0
+			}
+		},
+		"squat": {
+			"name": "Squat",
+			"max": {
+				"rm": 0,
+				"tm": 0
+			}
+		},
+		"press": {
+			"name": "Press",
+			"max": {
+				"rm": 0,
+				"tm": 0
+			}
+		}
+	}
+}
