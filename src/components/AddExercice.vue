@@ -61,7 +61,6 @@ export default {
 	mounted() {
 		this.isExerciceValidated = this.getTrainings[this.trainingId][this.index] ? true : false;
 		this.chosenExercice.exercice = this.getTrainings[this.trainingId][this.index];
-		console.log(this.chosenExercice.exercice);
 		this.sets = this.getCurrentVariation.templates[this.getSelectedTemplate].weeks[this.getSelectedWeek][this.day][this.index].sets;
 	},
 	computed: {
