@@ -3,7 +3,7 @@
 		<span>1</span>
 		<span class="set__reps">{{reps}}</span>
 		<span class="set__at">@</span>
-		<span class="set__weight">20</span>
+		<span class="set__weight">{{weight}}</span>
 		<span class="set__unit">kg</span>
 	</li>
 </template>
@@ -13,7 +13,6 @@
 export default {
 	name: 'Set',
 	props: {
-		exo: Object,
 		reps: Number,
 		weight: Number
 	},

@@ -8,21 +8,28 @@
 			</div>
 		</div>
 		
-		<AddExercice :exercices="primaryExercices" :index="0" :day="'day_1'" :trainingId="pageId" />
+		<AddExercice 
+			:exercices="primaryExercices" 
+			:index="0" 
+			:day="day" 
+			:trainingId="pageId" 
+		/>
 
-		<AddExercice :exercices="primaryExercices" :index="1" :day="'day_1'" :trainingId="pageId" />
-		<!--<Set 
-			v-for="exercice in this.exercices"
-			:reps="1"
-			:key="exercice.id"
+		<!--<AddExercice 
+			v-for="(lift, index) in lifts"
+			:exercices="primaryExercices" 
+			:index="index" 
+			:day="day" 
+			:trainingId="pageId" 
 		/>-->
+
 	</div>
 </template>
 
 <script>
 
-import Set from '@/components/Set';
 import AddExercice from '@/components/AddExercice';
+import { mapGetters } from 'vuex';
 import { EventBus } from '@/event-bus';
 
 export default {
@@ -32,11 +39,14 @@ export default {
 		return {
 			pageId: 'training_1',
 			training: {},
+			day: 'day_1',
 			primaryExercices: this.$store.state.primaryExercices,
+			lifts: null,
 			secondaryExercices: {1: 'test'}
 		}
 	},
 	mounted() {
+		this.lifts = this.getCurrentVariation.templates[this.getSelectedTemplate].weeks[this.getSelectedWeek][this.day]
 		this.training = this.$store.state.trainings[this.pageId];
 		EventBus.$on('exercice-is-added', this.handlerAddEvent);
 		EventBus.$on('exercice-is-removed', this.handlerRemoveEvent);
@@ -57,15 +67,11 @@ export default {
 		},
 	},
 	computed: {
-		getCurrentVariation() {
-			return this.$store.state.currentVariation;
-		},
-		getSelectedTemplate() {
-			return this.$store.state.selectedTemplate;
-		},
-		getSelectedWeek() {
-			return this.$store.state.selectedWeek;
-		}
+		...mapGetters([
+			'getCurrentVariation',
+			'getSelectedTemplate',
+			'getSelectedWeek'
+		])
 	}
 }
 </script>

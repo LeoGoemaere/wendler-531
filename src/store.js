@@ -25,9 +25,6 @@ export default new Vuex.Store({
 			training_3: {},
 			training_4: {}
 		}
-		// currentTemplate: null,
-		// currentTemplate: null,
-		// currentWeek: null
 	},
 	getters: {
 		getCurrentVariation: (state) => {

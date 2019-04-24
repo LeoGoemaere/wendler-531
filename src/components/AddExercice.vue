@@ -26,8 +26,14 @@
 		</div>
 		<div v-else>
 			<button @click="removeExercice(index)">remove</button>
-				{{chosenExercice.exercice}}
-				{{sets}}
+			<ul>
+				<Set
+					v-for="set in sets"
+					:key="set.id"
+					:reps="set.reps"
+					:weight="set.tm * tmExercice"
+				/>
+			</ul>
 		</div>
 	</div>
 
@@ -37,8 +43,11 @@
 import { mapGetters } from 'vuex';
 import { EventBus } from '@/event-bus';
 
+import Set from '@/components/Set';
+
 export default {
 	name: 'AddExercice',
+	components: { Set },
 	props: {
 		exercices: Object,
 		index: Number,
@@ -62,6 +71,7 @@ export default {
 		this.isExerciceValidated = this.getTrainings[this.trainingId][this.index] ? true : false;
 		this.chosenExercice.exercice = this.getTrainings[this.trainingId][this.index];
 		this.sets = this.getCurrentVariation.templates[this.getSelectedTemplate].weeks[this.getSelectedWeek][this.day][this.index].sets;
+		this.tmExercice = typeof this.chosenExercice.exercice !== 'undefined' ? this.getPrimaryExercices[this.chosenExercice.exercice].max.tm : null;
 	},
 	computed: {
 		...mapGetters([
