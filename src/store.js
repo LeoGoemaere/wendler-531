@@ -9,7 +9,7 @@ import TrainingCycles from '@/datas/training-cycles.json';
 
 export default new Vuex.Store({
 	state: {
-		primaryExercices: Exercices.primary,
+		exercices: Exercices,
 		trainingCycle: TrainingCycles,
 		variations: Variations,
 		currentVariation: Variations.bbb,
@@ -24,8 +24,14 @@ export default new Vuex.Store({
 		}
 	},
 	getters: {
+		getVariations: (state) => {
+			return state.variations;
+		},
 		getCurrentVariation: (state) => {
 			return state.currentVariation;
+		},
+		getSelectedVariation: (state) => {
+			return state.selectedVariation;
 		},
 		getSelectedTemplate: (state) => {
 			return state.selectedTemplate;
@@ -33,17 +39,17 @@ export default new Vuex.Store({
 		getSelectedWeek: (state) => {
 			return state.selectedWeek;
 		},
-		getPrimaryExercices: (state) => {
-			return state.primaryExercices;
+		getExercices: (state) => {
+			return state.exercices;
 		},
 		getTrainings: (state) => {
 			return state.trainings;
 		}
 	},
 	mutations: {
-		updatePrimaryExercices(state, primaryExercices) {
-			for(let key in primaryExercices) {
-				state.primaryExercices[key] = primaryExercices[key];
+		updateExercices(state, exercices) {
+			for(let key in exercices) {
+				state.exercices[key] = exercices[key];
 			}
 		},
 		updateCurrentVariation(state, currentVariation) {

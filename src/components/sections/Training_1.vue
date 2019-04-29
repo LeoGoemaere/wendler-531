@@ -9,19 +9,20 @@
 		</div>
 		
 		<AddExercice 
-			:exercices="primaryExercices" 
+			:exercices="exercices.primary"
+			:type="'primary'"
 			:index="0" 
 			:day="day" 
 			:trainingId="pageId" 
 		/>
 
-		<!--<AddExercice 
-			v-for="(lift, index) in lifts"
-			:exercices="primaryExercices" 
-			:index="index" 
+		<AddExercice 
+			:exercices="exercices.primary"
+			:type="'primary'"
+			:index="1" 
 			:day="day" 
 			:trainingId="pageId" 
-		/>-->
+		/>
 
 	</div>
 </template>
@@ -40,7 +41,7 @@ export default {
 			pageId: 'training_1',
 			training: {},
 			day: 'day_1',
-			primaryExercices: this.$store.state.primaryExercices,
+			exercices: this.$store.state.exercices,
 			lifts: null,
 			secondaryExercices: {1: 'test'}
 		}

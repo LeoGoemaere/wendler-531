@@ -1,6 +1,5 @@
 {
 	"primary": {
-		"label": "Primary",
 		"0": {
 			"name": "Bench",
 			"max": {
@@ -31,6 +30,5 @@
 		}
 	},
 	"secondary": {
-		"label": "Assistance"
 	}
 }

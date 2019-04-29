@@ -1,15 +1,15 @@
 <template>
 	<div class="exercice">
-		<p class="exercice__label">{{ primaryExercices[this.index].name }}</p>
+		<p class="exercice__label">{{ this.exercice.name }}</p>
 		<div class="datas">
 			<div class="datas__item">
 				<label class="datas__label">rm</label>
-				<input class="datas__input" type="number" @change="calculPerf($event, { from: max.rm, to: max.tm })" :value="roundValue(primaryExercices[this.index].max.rm)">
+				<input class="datas__input" type="number" @change="calculPerf($event, { from: max.rm, to: max.tm })" :value="roundValue(this.exercice.max.rm)">
 				<label class="datas__label datas__label--unit">kg</label>
 			</div>
 			<div class="datas__item">
 				<label class="datas__label datas__label--tm">tm</label>
-				<input class="datas__input datas__input--tm" type="number" @change="calculPerf($event, { from: max.tm, to: max.rm })" :value="roundValue(primaryExercices[this.index].max.tm)">
+				<input class="datas__input datas__input--tm" type="number" @change="calculPerf($event, { from: max.tm, to: max.rm })" :value="roundValue(this.exercice.max.tm)">
 				<label class="datas__label datas__label--unit">kg</label>
 			</div>
 		</div>
@@ -21,7 +21,9 @@
 export default {
 	name: 'Exercice',
 	props: {
-		index: Number
+		exercice: Object,
+		index: Number,
+		type: String,
 	},
 	data () {
 		return {
@@ -29,14 +31,14 @@ export default {
 				rm: 'rm',
 				tm: 'tm'
 			},
-			primaryExercices: this.$store.state.primaryExercices
+			exercices: this.$store.state.exercices
 		}
 	},
 	methods: {
 		calculPerf: function(e, {from, to}) {
-			this.primaryExercices[this.index].max[from] = parseInt(e.target.value);
-			this.primaryExercices[this.index].max[to] = from === this.max.rm ? parseInt(e.target.value) * 0.9 : parseInt(e.target.value) / 0.9;
-			this.$store.commit('updatePrimaryExercices', this.primaryExercices);
+			this.exercices[this.type][this.index].max[from] = parseInt(e.target.value);
+			this.exercices[this.type][this.index].max[to] = from === this.max.rm ? parseInt(e.target.value) * 0.9 : parseInt(e.target.value) / 0.9;
+			this.$store.commit('updateExercices', this.exercices);
 		},
 		roundValue: function(value) {
 			return Math.ceil(value * 4) / 4;

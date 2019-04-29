@@ -50,6 +50,7 @@ export default {
 	components: { Set },
 	props: {
 		exercices: Object,
+		type: String,
 		index: Number,
 		day: String,
 		trainingId: String
@@ -71,14 +72,14 @@ export default {
 		this.isExerciceValidated = this.getTrainings[this.trainingId][this.index] ? true : false;
 		this.chosenExercice.exercice = this.getTrainings[this.trainingId][this.index];
 		this.sets = this.getCurrentVariation.templates[this.getSelectedTemplate].weeks[this.getSelectedWeek][this.day][this.index].sets;
-		this.tmExercice = typeof this.chosenExercice.exercice !== 'undefined' ? this.getPrimaryExercices[this.chosenExercice.exercice].max.tm : null;
+		this.tmExercice = typeof this.chosenExercice.exercice !== 'undefined' ? this.getExercices[this.type][this.chosenExercice.exercice].max.tm : null;
 	},
 	computed: {
 		...mapGetters([
 			'getCurrentVariation',
 			'getSelectedTemplate',
 			'getSelectedWeek',
-			'getPrimaryExercices',
+			'getExercices',
 			'getTrainings'
 		])
 	},
@@ -103,7 +104,7 @@ export default {
 		addExercice() {
 			if (!this.isExerciceSelectionned) return;
 			this.isExerciceValidated = true;
-			this.tmExercice = this.getPrimaryExercices[this.chosenExercice.exercice].max.tm
+			this.tmExercice = this.getExercices[this.type][this.chosenExercice.exercice].max.tm
 			EventBus.$emit('exercice-is-added', this.chosenExercice);
 			this.closePopin();
 		},

@@ -10,43 +10,35 @@
 		/>
 
 		<h2>Exercices</h2>
-		<ExerciceLineItem :index="0" />
-		<ExerciceLineItem :index="1" />
-		<ExerciceLineItem :index="2" />
-		<ExerciceLineItem :index="3" />
+		<ExercicesSetter :primaryExercices="getExercices.primary" :secondaryExercices="getExercices.secondary" />
+	
 	</div>
 </template>
 
 <script>
 import ExerciceLineItem from '@/components/ExerciceLineItem';
+import ExercicesSetter from '@/components/ExercicesSetter';
 import SelectContainer from '@/components/SelectContainer';
 
 import { mapGetters } from 'vuex'
 
 export default {
 	name: 'Home',
-	components: { ExerciceLineItem, SelectContainer },
+	components: { ExercicesSetter, ExerciceLineItem, SelectContainer },
 	data() {
 		return {
-			variations: this.$store.state.variations,
+			variations: this.$store.state.variations
 		}
 	},
 	computed: {
-		getVariations() {
-			return this.$store.state.variations;
-		},
-		getCurrentVariation() {
-			return this.$store.state.currentVariation;
-		},
-		getSelectedVariation() {
-			return this.$store.state.selectedVariation;
-		},
-		getSelectedTemplate() {
-			return this.$store.state.selectedTemplate;
-		},
-		getSelectedWeek() {
-			return this.$store.state.selectedWeek;
-		}
+		...mapGetters([
+			'getVariations',
+			'getCurrentVariation',
+			'getSelectedVariation',
+			'getSelectedTemplate',
+			'getSelectedWeek',
+			'getExercices'
+		])
 	}
 }
 </script>
