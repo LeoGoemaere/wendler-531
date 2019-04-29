@@ -1,32 +1,36 @@
 {
 	"primary": {
-		"bench": {
+		"label": "Primary",
+		"0": {
 			"name": "Bench",
 			"max": {
 				"rm": 0,
 				"tm": 0
 			}
 		},
-		"deadlift": {
+		"1": {
 			"name": "Deadlift",
 			"max": {
 				"rm": 0,
 				"tm": 0
 			}
 		},
-		"squat": {
+		"2": {
 			"name": "Squat",
 			"max": {
 				"rm": 0,
 				"tm": 0
 			}
 		},
-		"press": {
+		"3": {
 			"name": "Press",
 			"max": {
 				"rm": 0,
 				"tm": 0
 			}
 		}
+	},
+	"secondary": {
+		"label": "Assistance"
 	}
 }

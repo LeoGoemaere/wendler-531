@@ -10,10 +10,10 @@
 		/>
 
 		<h2>Exercices</h2>
-		<ExerciceLineItem :id="'bench'" />
-		<ExerciceLineItem :id="'deadlift'" />
-		<ExerciceLineItem :id="'squat'" />
-		<ExerciceLineItem :id="'press'" />
+		<ExerciceLineItem :index="0" />
+		<ExerciceLineItem :index="1" />
+		<ExerciceLineItem :index="2" />
+		<ExerciceLineItem :index="3" />
 	</div>
 </template>
 

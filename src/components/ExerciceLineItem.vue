@@ -1,15 +1,15 @@
 <template>
 	<div class="exercice">
-		<p class="exercice__label">{{ primaryExercices[this.id].name }}</p>
+		<p class="exercice__label">{{ primaryExercices[this.index].name }}</p>
 		<div class="datas">
 			<div class="datas__item">
 				<label class="datas__label">rm</label>
-				<input class="datas__input" type="number" @change="calculPerf($event, { from: max.rm, to: max.tm })" :value="roundValue(primaryExercices[this.id].max.rm)">
+				<input class="datas__input" type="number" @change="calculPerf($event, { from: max.rm, to: max.tm })" :value="roundValue(primaryExercices[this.index].max.rm)">
 				<label class="datas__label datas__label--unit">kg</label>
 			</div>
 			<div class="datas__item">
 				<label class="datas__label datas__label--tm">tm</label>
-				<input class="datas__input datas__input--tm" type="number" @change="calculPerf($event, { from: max.tm, to: max.rm })" :value="roundValue(primaryExercices[this.id].max.tm)">
+				<input class="datas__input datas__input--tm" type="number" @change="calculPerf($event, { from: max.tm, to: max.rm })" :value="roundValue(primaryExercices[this.index].max.tm)">
 				<label class="datas__label datas__label--unit">kg</label>
 			</div>
 		</div>
@@ -21,7 +21,7 @@
 export default {
 	name: 'Exercice',
 	props: {
-		id: String
+		index: Number
 	},
 	data () {
 		return {
@@ -34,8 +34,8 @@ export default {
 	},
 	methods: {
 		calculPerf: function(e, {from, to}) {
-			this.primaryExercices[this.id].max[from] = parseInt(e.target.value);
-			this.primaryExercices[this.id].max[to] = from === this.max.rm ? parseInt(e.target.value) * 0.9 : parseInt(e.target.value) / 0.9;
+			this.primaryExercices[this.index].max[from] = parseInt(e.target.value);
+			this.primaryExercices[this.index].max[to] = from === this.max.rm ? parseInt(e.target.value) * 0.9 : parseInt(e.target.value) / 0.9;
 			this.$store.commit('updatePrimaryExercices', this.primaryExercices);
 		},
 		roundValue: function(value) {
