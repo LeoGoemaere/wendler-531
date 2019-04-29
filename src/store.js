@@ -3,19 +3,16 @@ import Vuex from 'vuex';
 Vue.use(Vuex);
 
 import Exercices from '@/datas/exercices.json';
-import Programs from '@/datas/programs.json';
-
+import Variations from '@/datas/variations.json';
 // 531 training cycle program.
-const trainingCycle = Programs.trainingCycle;
-
-const variations = Programs.variations;
+import TrainingCycles from '@/datas/training-cycles.json';
 
 export default new Vuex.Store({
 	state: {
 		primaryExercices: Exercices.primary,
-		trainingCycle: trainingCycle,
-		variations: variations,
-		currentVariation: variations.bbb,
+		trainingCycle: TrainingCycles,
+		variations: Variations,
+		currentVariation: Variations.bbb,
 		selectedVariation: 'bbb',
 		selectedTemplate: 'template_1',
 		selectedWeek: 'week_1',
