@@ -10,7 +10,9 @@
 		/>
 
 		<h2>Exercices</h2>
-		<ExercicesSetter :primaryExercices="getExercices.primary" :secondaryExercices="getExercices.secondary" />
+		<ExercicesSetter
+			:exercices="getExercices"
+		/>
 	
 	</div>
 </template>
@@ -24,7 +26,7 @@ import { mapGetters } from 'vuex'
 
 export default {
 	name: 'Home',
-	components: { ExercicesSetter, ExerciceLineItem, SelectContainer },
+	components: { ExercicesSetter, SelectContainer },
 	data() {
 		return {
 			variations: this.$store.state.variations

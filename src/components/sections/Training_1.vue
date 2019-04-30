@@ -17,8 +17,8 @@
 		/>
 
 		<AddExercice 
-			:exercices="exercices.primary"
-			:type="'primary'"
+			:exercices="exercices.secondary"
+			:type="'secondary'"
 			:index="1" 
 			:day="day" 
 			:trainingId="pageId" 

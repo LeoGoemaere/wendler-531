@@ -10,8 +10,8 @@
 					<div 
 						v-for="(exercice, key) in exercices"
 						:key="exercice.id">				
-						<input type="radio" :id="key" :value="key" name="exercice" class="exercice__select" @change="exerciceSelection" />
-						<label :for="key">
+						<input type="radio" :id="`${type}_${key}`" :value="key" name="exercice" class="exercice__select" @change="exerciceSelection" />
+						<label :for="`${type}_${key}`">
 							{{exercice.name}}
 							<i class="fas fa-check"></i>
 						</label>
