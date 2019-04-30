@@ -49,7 +49,7 @@ export default {
 	name: 'AddExercice',
 	components: { Set },
 	props: {
-		exercices: Object,
+		exercices: Array,
 		type: String,
 		index: Number,
 		day: String,

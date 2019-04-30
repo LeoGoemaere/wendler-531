@@ -13,10 +13,15 @@
 				<label class="datas__label datas__label--unit">kg</label>
 			</div>
 		</div>
+		<div v-if="type === 'secondary'">
+			{{index}}
+			<button @click="this.deleteAssistance">Delete exercice</button>
+		</div>
 	</div>
 </template>
 
 <script>
+import { mapGetters } from 'vuex';
 
 export default {
 	name: 'Exercice',
@@ -42,8 +47,19 @@ export default {
 		},
 		roundValue: function(value) {
 			return Math.ceil(value * 4) / 4;
+		},
+		deleteAssistance: function() {
+			let exercices = JSON.parse(JSON.stringify(this.exercices));
+			exercices.secondary.splice(this.index, 1);
+			
+			this.$store.commit('updateExercices', exercices);
 		}
-	}
+	},
+	computed: {
+		...mapGetters([
+			'getExercices'
+		])
+	},
 }
 </script>
 
