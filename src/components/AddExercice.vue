@@ -25,7 +25,7 @@
 			<div :class="popinActiveClass" class="popin__overlay" @click="closePopin"></div>
 		</div>
 		<div v-else>
-			<button @click="removeExercice(index)">remove</button>
+			<button @click="removeExercice">remove</button>
 			<ul>
 				<Set
 					v-for="set in sets"
@@ -51,28 +51,26 @@ export default {
 	props: {
 		exercices: Array,
 		type: String,
-		index: Number,
+		setIndex: Number,
 		day: String,
-		trainingId: String
+		trainingIndex: Number
 	},
 	data() {
 		return {
 			popinActiveClass: null,
 			isExerciceSelectionned: false,
 			isExerciceValidated: false,
-			chosenExercice: {
-				index: this.index,
-				exercice: null
-			},
+			chosenExercice: null,
+			exerciceIndex: null,
 			sets: null,
 			tmExercice: null
 		}
 	},
 	mounted() {
-		this.isExerciceValidated = this.getTrainings[this.trainingId][this.index] ? true : false;
-		this.chosenExercice.exercice = this.getTrainings[this.trainingId][this.index];
-		this.sets = this.getCurrentVariation.templates[this.getSelectedTemplate].weeks[this.getSelectedWeek][this.day][this.index].sets;
-		this.tmExercice = typeof this.chosenExercice.exercice !== 'undefined' ? this.getExercices[this.type][this.chosenExercice.exercice].max.tm : null;
+	// 	this.isExerciceValidated = this.getTrainings[this.trainingId][this.index] ? true : false;
+	// 	this.chosenExercice.exercice = this.getTrainings[this.trainingId][this.index];
+		this.sets = this.getCurrentVariation.templates[this.getSelectedTemplate].weeks[this.getSelectedWeek][this.day][this.setIndex].sets;
+	// 	this.tmExercice = typeof this.chosenExercice.exercice !== 'undefined' ? this.getExercices[this.type][this.chosenExercice.exercice].max.tm : null;
 	},
 	computed: {
 		...mapGetters([
@@ -91,11 +89,11 @@ export default {
 			this.popinActiveClass = null;
 		},
 		exerciceSelection(e) {
-			this.chosenExercice.exercice = e.target.value;
+			this.chosenExercice = this.getExercices[this.type][e.target.value];
 			this.isExerciceSelectionned = true;
 		},
 		cancelAddExercice() {
-			this.chosenExercice.exercice = null;
+			this.chosenExercice = null;
 			this.isExerciceValidated = false;
 			this.isExerciceSelectionned = false;
 			this.popinActiveClass = null
@@ -103,15 +101,23 @@ export default {
 		},
 		addExercice() {
 			if (!this.isExerciceSelectionned) return;
+			this.getTrainings[this.trainingIndex].push(this.chosenExercice);
+			this.exerciceIndex = this.getTrainings[this.trainingIndex].indexOf(this.chosenExercice);
+			this.tmExercice = this.getTrainings[this.trainingIndex][this.exerciceIndex].max.tm;
 			this.isExerciceValidated = true;
-			this.tmExercice = this.getExercices[this.type][this.chosenExercice.exercice].max.tm
-			EventBus.$emit('exercice-is-added', this.chosenExercice);
+			// console.log(this.tmExercice);
+			// console.log(this.getTrainings[this.trainingIndex][this.setIndex].max.tm);
+			// EventBus.$emit('exercice-is-added', this.chosenExercice);
+			console.log(this.exerciceIndex);
+			console.log(this.getTrainings[this.trainingIndex]);
 			this.closePopin();
 		},
-		removeExercice(index) {
+		removeExercice() {
 			this.isExerciceValidated = false;
 			this.isExerciceSelectionned = false;
-			EventBus.$emit('exercice-is-removed', this.chosenExercice)
+			this.getTrainings[this.trainingIndex].splice(this.exerciceIndex, 1);
+			console.log(this.getTrainings[this.trainingIndex])
+			// EventBus.$emit('exercice-is-removed', this.chosenExercice)
 		}
 	}
 }

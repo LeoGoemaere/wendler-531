@@ -16,12 +16,12 @@ export default new Vuex.Store({
 		selectedVariation: 'bbb',
 		selectedTemplate: 'template_1',
 		selectedWeek: 'week_1',
-		trainings: {
-			training_1: {},
-			training_2: {},
-			training_3: {},
-			training_4: {}
-		}
+		trainings: [
+			[],
+			[],
+			[],
+			[]
+		]
 	},
 	getters: {
 		getVariations: (state) => {
@@ -49,8 +49,12 @@ export default new Vuex.Store({
 	mutations: {
 		updateExercices(state, exercices) {
 			for(let key in exercices) {
+				console.log(exercices);
 				state.exercices[key] = exercices[key];
 			}
+		},
+		updateTrainings(state, trainings) {
+			state.trainings = trainings;
 		},
 		updateCurrentVariation(state, currentVariation) {
 			state.currentVariation = currentVariation;

@@ -11,17 +11,17 @@
 		<AddExercice 
 			:exercices="exercices.primary"
 			:type="'primary'"
-			:index="0" 
+			:setIndex="0" 
 			:day="day" 
-			:trainingId="pageId" 
+			:trainingIndex="trainingIndex" 
 		/>
 
 		<AddExercice 
 			:exercices="exercices.secondary"
 			:type="'secondary'"
-			:index="1" 
+			:setIndex="1" 
 			:day="day" 
-			:trainingId="pageId" 
+			:trainingIndex="trainingIndex" 
 		/>
 
 	</div>
@@ -39,6 +39,7 @@ export default {
 	data () {
 		return {
 			pageId: 'training_1',
+			trainingIndex: 0,
 			training: {},
 			day: 'day_1',
 			exercices: this.$store.state.exercices,
@@ -48,9 +49,10 @@ export default {
 	},
 	mounted() {
 		this.lifts = this.getCurrentVariation.templates[this.getSelectedTemplate].weeks[this.getSelectedWeek][this.day]
-		this.training = this.$store.state.trainings[this.pageId];
-		EventBus.$on('exercice-is-added', this.handlerAddEvent);
-		EventBus.$on('exercice-is-removed', this.handlerRemoveEvent);
+		// this.training = typeof this.getTraining[this.trainingIndex] !== 'undefined' ? this.getTraining[this.trainingIndex] : null; 
+		// this.training = this.$store.state.trainings[this.trainingIndex];
+		// EventBus.$on('exercice-is-added', this.handlerAddEvent);
+		// EventBus.$on('exercice-is-removed', this.handlerRemoveEvent);
 	},
 	beforeDestroy() {
 		EventBus.$off('exercice-is-added', this.handlerAddEvent);
@@ -60,9 +62,9 @@ export default {
 		handlerAddEvent(exerciceToAdd) {
 			this.training[exerciceToAdd.index] = exerciceToAdd.exercice;
 			this.$store.state.trainings[this.pageId] = this.training;
+			console.log(this.training)
 		},
 		handlerRemoveEvent(exerciceToRemove) {
-			console.log('test')
 			delete this.training[exerciceToRemove.index];
 			this.$store.state.trainings[this.pageId] = this.training;
 		},
@@ -71,7 +73,8 @@ export default {
 		...mapGetters([
 			'getCurrentVariation',
 			'getSelectedTemplate',
-			'getSelectedWeek'
+			'getSelectedWeek',
+			'getTrainings'
 		])
 	}
 }

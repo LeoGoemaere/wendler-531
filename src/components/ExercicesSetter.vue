@@ -38,7 +38,7 @@
 
 <script>
 import { mapGetters } from 'vuex';
-
+import uuid from 'uuid/v4';
 import ExerciceLineItem from '@/components/ExerciceLineItem';
 export default {
 	name: 'ExercicesSetter',
@@ -75,6 +75,7 @@ export default {
 			exercices.secondary[assistancesLength] = JSON.parse(JSON.stringify(this.maxSetter));
 
 			exercices.secondary[assistancesLength].name = this.assistancEdited;
+			exercices.secondary[assistancesLength].id = uuid();
 			this.$store.commit('updateExercices', exercices);
 		}
 	},

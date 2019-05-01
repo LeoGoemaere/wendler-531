@@ -1,6 +1,7 @@
 {
 	"primary": [
 		{
+			"id": "d110bd0a-5239-461b-88d3-1ab7fcb08881",
 			"name": "Bench",
 			"max": {
 				"rm": 0,
@@ -8,6 +9,7 @@
 			}
 		},
 		{
+			"id": "6a6a2efa-e106-4aae-80bf-72581d522201",
 			"name": "Deadlift",
 			"max": {
 				"rm": 0,
@@ -15,6 +17,7 @@
 			}
 		},
 		{
+			"id": "86f1682b-27a6-4876-a580-fa1503414c77",
 			"name": "Squat",
 			"max": {
 				"rm": 0,
@@ -22,6 +25,7 @@
 			}
 		},
 		{
+			"id": "afd93bee-a40e-48cf-b4b5-16dc4ecc3610",
 			"name": "Press",
 			"max": {
 				"rm": 0,
