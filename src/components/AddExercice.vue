@@ -6,12 +6,12 @@
 			<button class="button" @click="showPopin">Add exercice</button>
 			<div :class="popinActiveClass" class="popin__element">
 				<div class="exercices__list">
-					<p class="popin__title">Primary Exercices</p>
+					<p class="popin__title">{{type}} Exercices</p>
 					<div 
 						v-for="(exercice, key) in exercices"
 						:key="exercice.id">				
-						<input type="radio" :id="`${type}_${key}`" :value="key" name="exercice" class="exercice__select" @change="exerciceSelection" />
-						<label :for="`${type}_${key}`">
+						<input type="radio" :id="`${type}_${setIndex}_${key}`" :value="key" name="exercice" class="exercice__select" @change="exerciceSelection" />
+						<label :for="`${type}_${setIndex}_${key}`">
 							{{exercice.name}}
 							<i class="fas fa-check"></i>
 						</label>
@@ -51,6 +51,7 @@ export default {
 	props: {
 		exercices: Array,
 		type: String,
+		lift: Object,
 		setIndex: Number,
 		day: String,
 		trainingIndex: Number
@@ -61,16 +62,39 @@ export default {
 			isExerciceSelectionned: false,
 			isExerciceValidated: false,
 			chosenExercice: null,
+			trainings: null,
+			training: [],
 			exerciceIndex: null,
 			sets: null,
 			tmExercice: null
 		}
 	},
 	mounted() {
-	// 	this.isExerciceValidated = this.getTrainings[this.trainingId][this.index] ? true : false;
-	// 	this.chosenExercice.exercice = this.getTrainings[this.trainingId][this.index];
-		this.sets = this.getCurrentVariation.templates[this.getSelectedTemplate].weeks[this.getSelectedWeek][this.day][this.setIndex].sets;
-	// 	this.tmExercice = typeof this.chosenExercice.exercice !== 'undefined' ? this.getExercices[this.type][this.chosenExercice.exercice].max.tm : null;
+	const exerciceAlreadyChosed = this.getTrainings[this.trainingIndex].filter(exercice => {
+		if (exercice.index === this.setIndex) {
+			return exercice;
+		}
+	})
+
+	this.trainings = JSON.parse(JSON.stringify(this.getTrainings));
+
+	if (typeof exerciceAlreadyChosed[0] !== 'undefined') {
+		this.chosenExercice = exerciceAlreadyChosed[0];
+	} else {
+		this.chosenExercice = null
+	}
+
+	if (this.chosenExercice) {
+		this.isExerciceValidated = true;
+		this.tmExercice = this.chosenExercice.max.tm;
+		this.exerciceIndex = this.getTrainings[this.trainingIndex].indexOf(this.chosenExercice);
+	} else {
+		this.isExerciceValidated = false;
+		this.tmExercice = null;
+		this.exerciceIndex = null;
+	}
+
+	this.sets = this.lift.sets;
 	},
 	computed: {
 		...mapGetters([
@@ -101,23 +125,20 @@ export default {
 		},
 		addExercice() {
 			if (!this.isExerciceSelectionned) return;
-			this.getTrainings[this.trainingIndex].push(this.chosenExercice);
-			this.exerciceIndex = this.getTrainings[this.trainingIndex].indexOf(this.chosenExercice);
-			this.tmExercice = this.getTrainings[this.trainingIndex][this.exerciceIndex].max.tm;
+			this.trainings = JSON.parse(JSON.stringify(this.getTrainings));
+			this.trainings[this.trainingIndex].push(this.chosenExercice);
+			this.exerciceIndex = this.trainings[this.trainingIndex].indexOf(this.chosenExercice);
+			this.tmExercice = this.trainings[this.trainingIndex][this.exerciceIndex].max.tm;
+			this.trainings[this.trainingIndex][this.exerciceIndex].index = this.setIndex;
 			this.isExerciceValidated = true;
-			// console.log(this.tmExercice);
-			// console.log(this.getTrainings[this.trainingIndex][this.setIndex].max.tm);
-			// EventBus.$emit('exercice-is-added', this.chosenExercice);
-			console.log(this.exerciceIndex);
-			console.log(this.getTrainings[this.trainingIndex]);
+			this.$store.commit('updateTrainings', this.trainings);
 			this.closePopin();
 		},
 		removeExercice() {
 			this.isExerciceValidated = false;
 			this.isExerciceSelectionned = false;
-			this.getTrainings[this.trainingIndex].splice(this.exerciceIndex, 1);
-			console.log(this.getTrainings[this.trainingIndex])
-			// EventBus.$emit('exercice-is-removed', this.chosenExercice)
+			this.trainings[this.trainingIndex].splice(this.exerciceIndex, 1);
+			this.$store.commit('updateTrainings', this.trainings);
 		}
 	}
 }

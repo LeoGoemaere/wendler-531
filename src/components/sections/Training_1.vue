@@ -9,19 +9,14 @@
 		</div>
 		
 		<AddExercice 
-			:exercices="exercices.primary"
-			:type="'primary'"
-			:setIndex="0" 
-			:day="day" 
-			:trainingIndex="trainingIndex" 
-		/>
-
-		<AddExercice 
-			:exercices="exercices.secondary"
-			:type="'secondary'"
-			:setIndex="1" 
-			:day="day" 
-			:trainingIndex="trainingIndex" 
+			v-for="(lift, index) in this.lifts"
+			:key="lift.id"
+			:exercices="exercices[lift.type]"
+			:type="lift.type"
+			:lift="lift"
+			:setIndex="index"
+			:day="day"
+			:trainingIndex="trainingIndex"
 		/>
 
 	</div>
@@ -38,43 +33,30 @@ export default {
 	components: { Set, AddExercice },
 	data () {
 		return {
-			pageId: 'training_1',
 			trainingIndex: 0,
-			training: {},
 			day: 'day_1',
 			exercices: this.$store.state.exercices,
-			lifts: null,
-			secondaryExercices: {1: 'test'}
+			lifts: []
 		}
 	},
 	mounted() {
-		this.lifts = this.getCurrentVariation.templates[this.getSelectedTemplate].weeks[this.getSelectedWeek][this.day]
-		// this.training = typeof this.getTraining[this.trainingIndex] !== 'undefined' ? this.getTraining[this.trainingIndex] : null; 
-		// this.training = this.$store.state.trainings[this.trainingIndex];
-		// EventBus.$on('exercice-is-added', this.handlerAddEvent);
-		// EventBus.$on('exercice-is-removed', this.handlerRemoveEvent);
-	},
-	beforeDestroy() {
-		EventBus.$off('exercice-is-added', this.handlerAddEvent);
-		EventBus.$off('exercice-is-removed', this.handlerRemoveEvent);
-	},
-	methods: {
-		handlerAddEvent(exerciceToAdd) {
-			this.training[exerciceToAdd.index] = exerciceToAdd.exercice;
-			this.$store.state.trainings[this.pageId] = this.training;
-			console.log(this.training)
-		},
-		handlerRemoveEvent(exerciceToRemove) {
-			delete this.training[exerciceToRemove.index];
-			this.$store.state.trainings[this.pageId] = this.training;
-		},
+		let trainingCycleLift = this.getTrainingCycles[this.getSelectedWeek];
+		trainingCycleLift.type = 'primary';
+		let variationLifts = this.getCurrentVariation.templates[this.getSelectedTemplate].weeks[this.getSelectedWeek][this.day];
+
+		this.lifts.push(trainingCycleLift);
+		variationLifts.forEach(lift => { 
+			lift.type = "secondary";
+			this.lifts.push(lift) 
+		});
 	},
 	computed: {
 		...mapGetters([
 			'getCurrentVariation',
 			'getSelectedTemplate',
 			'getSelectedWeek',
-			'getTrainings'
+			'getTrainings',
+			'getTrainingCycles'
 		])
 	}
 }

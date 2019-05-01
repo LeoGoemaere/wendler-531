@@ -10,7 +10,7 @@ import TrainingCycles from '@/datas/training-cycles.json';
 export default new Vuex.Store({
 	state: {
 		exercices: Exercices,
-		trainingCycle: TrainingCycles,
+		trainingCycles: TrainingCycles,
 		variations: Variations,
 		currentVariation: Variations.bbb,
 		selectedVariation: 'bbb',
@@ -26,6 +26,9 @@ export default new Vuex.Store({
 	getters: {
 		getVariations: (state) => {
 			return state.variations;
+		},
+		getTrainingCycles: (state) => {
+			return state.trainingCycles;
 		},
 		getCurrentVariation: (state) => {
 			return state.currentVariation;
