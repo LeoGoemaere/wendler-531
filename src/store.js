@@ -52,7 +52,6 @@ export default new Vuex.Store({
 	mutations: {
 		updateExercices(state, exercices) {
 			for(let key in exercices) {
-				console.log(exercices);
 				state.exercices[key] = exercices[key];
 			}
 		},

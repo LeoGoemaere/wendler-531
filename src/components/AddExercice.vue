@@ -87,8 +87,15 @@ export default {
 
 		if (this.chosenExercice) {
 			this.isExerciceValidated = true;
-			this.tmExercice = this.chosenExercice.max.tm;
 			this.exerciceIndex = this.getTrainings[this.trainingIndex].indexOf(this.chosenExercice);
+			this.getExercices[this.type].filter(exercice => {
+				if (exercice.id === this.chosenExercice.id) {
+					this.trainings[this.trainingIndex].splice(this.exerciceIndex, 1, exercice);
+					this.chosenExercice = exercice;
+					this.tmExercice = this.chosenExercice.max.tm;
+				}
+			})
+
 		} else {
 			this.isExerciceValidated = false;
 			this.tmExercice = null;
