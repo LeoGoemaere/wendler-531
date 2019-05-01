@@ -50,6 +50,17 @@ export default {
 			this.lifts.push(lift) 
 		});
 	},
+	methods: {
+		handlerAddEvent(exerciceToAdd) {
+			this.training[exerciceToAdd.index] = exerciceToAdd.exercice;
+			this.$store.state.trainings[this.pageId] = this.training;
+			console.log(this.training)
+		},
+		handlerRemoveEvent(exerciceToRemove) {
+			delete this.training[exerciceToRemove.index];
+			this.$store.state.trainings[this.pageId] = this.training;
+		},
+	},
 	computed: {
 		...mapGetters([
 			'getCurrentVariation',

@@ -1,7 +1,6 @@
 <template>
 
 	<div>
-	<!--{{getCurrentVariation.templates[getSelectedTemplate].weeks[getSelectedWeek].day_1.lift_1}}-->
 		<div v-if="!isExerciceValidated" >
 			<button class="button" @click="showPopin">Add exercice</button>
 			<div :class="popinActiveClass" class="popin__element">
@@ -63,38 +62,41 @@ export default {
 			isExerciceValidated: false,
 			chosenExercice: null,
 			trainings: null,
-			training: [],
 			exerciceIndex: null,
 			sets: null,
 			tmExercice: null
 		}
 	},
 	mounted() {
-	const exerciceAlreadyChosed = this.getTrainings[this.trainingIndex].filter(exercice => {
-		if (exercice.index === this.setIndex) {
-			return exercice;
+		// Filter in currentTraining and set the constant if the exercice is exist.
+		const exerciceAlreadyChosed = this.getTrainings[this.trainingIndex].filter(exercice => {
+			if (exercice.index === this.setIndex) {
+				return exercice;
+			}
+		})
+
+		// Set the trainings data with the trainings store value.
+		this.trainings = JSON.parse(JSON.stringify(this.getTrainings));
+
+		// Set the chosen exercice.
+		if (typeof exerciceAlreadyChosed[0] !== 'undefined') {
+			this.chosenExercice = exerciceAlreadyChosed[0];
+		} else {
+			this.chosenExercice = null
 		}
-	})
 
-	this.trainings = JSON.parse(JSON.stringify(this.getTrainings));
+		if (this.chosenExercice) {
+			this.isExerciceValidated = true;
+			this.tmExercice = this.chosenExercice.max.tm;
+			this.exerciceIndex = this.getTrainings[this.trainingIndex].indexOf(this.chosenExercice);
+		} else {
+			this.isExerciceValidated = false;
+			this.tmExercice = null;
+			this.exerciceIndex = null;
+		}
 
-	if (typeof exerciceAlreadyChosed[0] !== 'undefined') {
-		this.chosenExercice = exerciceAlreadyChosed[0];
-	} else {
-		this.chosenExercice = null
-	}
-
-	if (this.chosenExercice) {
-		this.isExerciceValidated = true;
-		this.tmExercice = this.chosenExercice.max.tm;
-		this.exerciceIndex = this.getTrainings[this.trainingIndex].indexOf(this.chosenExercice);
-	} else {
-		this.isExerciceValidated = false;
-		this.tmExercice = null;
-		this.exerciceIndex = null;
-	}
-
-	this.sets = this.lift.sets;
+		// Set the sets data.
+		this.sets = this.lift.sets;
 	},
 	computed: {
 		...mapGetters([
@@ -113,7 +115,7 @@ export default {
 			this.popinActiveClass = null;
 		},
 		exerciceSelection(e) {
-			this.chosenExercice = this.getExercices[this.type][e.target.value];
+			this.chosenExercice = this.exercices[e.target.value];
 			this.isExerciceSelectionned = true;
 		},
 		cancelAddExercice() {
