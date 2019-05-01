@@ -68,6 +68,8 @@ export default {
 		}
 	},
 	mounted() {
+		// TODO: Find other logic to handle the trainings datas.
+
 		// Filter in currentTraining and set the constant if the exercice is exist.
 		const exerciceAlreadyChosed = this.getTrainings[this.trainingIndex].filter(exercice => {
 			if (exercice.index === this.setIndex) {
