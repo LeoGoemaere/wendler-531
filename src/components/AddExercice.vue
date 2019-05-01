@@ -16,12 +16,12 @@
 						</label>
 					</div>
 				</div>
-				<div class="exercices__buttons">
+				<div class="exercices__buttons exercices__buttons--top-border">
 					<button :class="!isExerciceSelectionned ? 'button-action--disabled' : ''" class="button-action" @click="addExercice">Add Exercice</button>
 					<button class="button-action" @click="cancelAddExercice">Cancel</button>
 				</div>
 			</div>
-			<div :class="popinActiveClass" class="popin__overlay" @click="closePopin"></div>
+			<div :class="popinActiveClass" class="popin__overlay" @click="cancelAddExercice"></div>
 		</div>
 		<div v-else>
 			<button @click="removeExercice">remove</button>
@@ -156,48 +156,7 @@ export default {
 </script>
 
 <style scoped>
-	.popin__container {
-		padding: 10px;
-	}
-	.popin__title {
-		color: #000;
-		font-size: 17px;
-		font-weight: 600;
-		padding: 15px 10px;
-	}
-	.popin__element {
-		display: none;
-		position: fixed;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		z-index: 10;
-		background-color: #fff;
-		width: 80vw;
-		border-radius: 5px;
-		overflow: hidden;
-		opacity: 0;
-		transition: opacity .3s ease-out;
-	}
-	.popin__element.is-active {
-		display: block;
-		opacity: 1;
-		transition: opacity .3s ease-out;
-	}
-	.popin__overlay {
-		display: none;
-		position: fixed;
-		top: 0;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		background-color: rgba(0, 0, 0, .3);
-		z-index: 5;
-	}
-
-	.popin__overlay.is-active {
-		display: block;
-	}
+	
 
 	.exercice__select {
 		display: none;
@@ -208,7 +167,9 @@ export default {
 	}
 
 	.exercice__select + label {
-		padding: 10px 20px;
+		padding: 0 20px;
+		height: 44px;
+		line-height: 44px;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -227,9 +188,4 @@ export default {
 
 	.exercice__select:checked +label i { display: block; }
 
-	.exercices__buttons {
-		display: flex;
-		padding: 10px;
-		margin-top: 10px;
-	}
 </style>

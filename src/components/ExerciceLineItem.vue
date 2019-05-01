@@ -1,6 +1,9 @@
 <template>
-	<div class="exercice">
-		<p class="exercice__label">{{ this.exercice.name }}</p>
+	<div :class="exerciceOptionClass" class="exercice">
+		<p class="exercice__label">
+			{{ exercice.name }}
+			<i v-if="type === 'secondary'" @click="toggleExerciceOptions('exercice--options-enabled')" class="fas fa-ellipsis-h icon__ellipsis"></i>
+		</p>
 		<div class="datas">
 			<div class="datas__item">
 				<label class="datas__label">rm</label>
@@ -13,10 +16,9 @@
 				<label class="datas__label datas__label--unit">kg</label>
 			</div>
 		</div>
-		<div v-if="type === 'secondary'">
-			{{index}}
-			<button @click="this.deleteAssistance">Delete exercice</button>
-		</div>
+		<button v-if="type === 'secondary'" class="exercice__delete-button" @click="this.deleteAssistance">
+			<i class="fas fa-trash"></i>
+		</button>
 	</div>
 </template>
 
@@ -36,7 +38,8 @@ export default {
 				rm: 'rm',
 				tm: 'tm'
 			},
-			exercices: this.$store.state.exercices
+			exercices: this.$store.state.exercices,
+			exerciceOptionClass: null
 		}
 	},
 	methods: {
@@ -53,6 +56,9 @@ export default {
 			exercices.secondary.splice(this.index, 1);
 			
 			this.$store.commit('updateExercices', exercices);
+		},
+		toggleExerciceOptions(className) {
+			this.exerciceOptionClass = this.exerciceOptionClass ? null : className;
 		}
 	},
 	computed: {
@@ -61,16 +67,39 @@ export default {
 		])
 	},
 }
+
 </script>
 
 <style scoped>
-	.exercice + .exercice {
+	.exercice {
 		margin-top: 16px;
+		position: relative;
+		transition: transform ease-out .3s
+	}
+
+	.exercice--options-enabled {
+		transform: translateX(-80px);
+		transition: transform ease-out .3s
 	}
 
 	.exercice__label {
 		margin-bottom: 5px;
 		font-size: 17px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.exercice__delete-button {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		border: none;
+		background-color: #d81e1e;
+		color: #fff;
+		width: 80px;
+		right: 0;
+    	transform: translateX(100%);
 	}
 
 	.datas {
@@ -129,5 +158,8 @@ export default {
 	.datas__input--tm {
 		color: #34495e;
 		border-bottom: 2px solid #34495e;
+	}
+	.icon__ellipsis {
+		font-size: 18px;
 	}
 </style>

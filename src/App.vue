@@ -81,7 +81,6 @@ export default {
 	.button-action {
 		background: none;
 		border: none;
-		padding: 10px;
 		color: black;
 		width: 100%;
 		font-size: 17px;
@@ -168,5 +167,82 @@ export default {
 		top: 0;
 		left: 0;
 		right: 0;
+	}
+
+	.popin__container {
+		padding: 10px;
+	}
+	.popin__title {
+		color: #000;
+		font-size: 17px;
+		font-weight: 600;
+		padding: 15px 20px;
+	}
+	.popin__element {
+		display: none;
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 10;
+		background-color: #fff;
+		width: 80vw;
+		border-radius: 5px;
+		overflow: hidden;
+		opacity: 0;
+		transition: opacity .3s ease-out;
+	}
+	.popin__element.is-active {
+		display: block;
+		opacity: 1;
+		transition: opacity .3s ease-out;
+	}
+	.popin__overlay {
+		display: none;
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: rgba(0, 0, 0, .3);
+		z-index: 5;
+	}
+
+	.popin__overlay.is-active {
+		display: block;
+	}
+
+	.popin__input-row {
+	}
+
+	.popin__label {
+		padding: 0 20px;
+		font-size: 17px;
+		display: block;
+		margin-bottom: 5px;
+	}
+
+	.popin__input {
+		border: none;
+		border-top: 1px solid;
+		border-bottom: 1px solid;
+		border-color: #e0e0e0;
+		height: 44px;
+		font-size: 17px;
+		width: 100%;
+		padding: 0 20px;
+		color: #737373;
+		box-sizing: border-box;
+	}
+
+	.exercices__buttons {
+		display: flex;
+		padding: 15px 20px;
+		justify-content: space-between;
+		background-color: #f7f7f7;
+	}
+
+	.exercices__buttons--top-border {
+		border-top: 1px solid #e0e0e0;
 	}
 </style>

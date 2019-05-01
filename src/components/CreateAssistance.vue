@@ -1,18 +1,17 @@
 <template>
-	<div>
-		<button>Create new assistance</button>
-		<div>
+	<div class="assistance_container">
+		<button class="button" @click="showPopin">Create new assistance</button>
+		<div :class="popinActiveClass" class="popin__element">
 			<p class="popin__title">Add new assistance exercice</p>
-			<div>
-				<label>Name</label>
-				<input type="text" @change="this.editExercice" />
+			<div class="popin__input-row">
+				<label class="popin__label">Name</label>
+				<input type="text" class="popin__input" placeholder="Exercice name" @change="this.editExercice" />
 			</div>
 			<div class="exercices__buttons">
-				<button :class="" class="button-action" @click="this.createExercice">Create Exercice</button>
-				<button class="button-action" @click="">Cancel</button>
+				<button :class="" class="button-action" @click="createExercice">Create Exercice</button>
+				<button class="button-action" @click="cancelAddExercice">Cancel</button>
 			</div>
 		</div>
-		<span>{{getExercices.secondary}}</span>
 		<ExerciceLineItem 
 			v-for="(exercice, index) in this.exercices.secondary"
 			:key="exercice.id"
@@ -20,6 +19,7 @@
 			:index="parseInt(index)"
 			:type="'secondary'"
 		/>
+		<div :class="popinActiveClass" class="popin__overlay" @click="cancelAddExercice"></div>
 	</div>
 </template>
 
@@ -35,7 +35,8 @@ export default {
 	},
 	data () {
 		return {
-			assistanceCreated: null,
+			popinActiveClass: null,
+			assistancEdited: null,
 			maxSetter: {
 				max: {
 					rm: 0,
@@ -45,6 +46,12 @@ export default {
 		}
 	},
 	methods: {
+		showPopin() {
+			this.popinActiveClass = 'is-active'
+		},
+		closePopin() {
+			this.popinActiveClass = null;
+		},
 		isPrimaryExercices: function() {
 			this.isPrimarySelected = true
 		},
@@ -53,6 +60,11 @@ export default {
 		},
 		editExercice: function(e) {
 			this.assistancEdited = e.target.value;
+		},
+		cancelAddExercice: function() {
+			this.assistancEdited = null;
+			this.closePopin();
+			document.querySelector('.popin__input').value = "";
 		},
 		createExercice: function(e) {
 			const assistancesLength = Object.keys(this.getExercices.secondary).length;
@@ -63,6 +75,7 @@ export default {
 			exercices.secondary[assistancesLength].name = this.assistancEdited;
 			exercices.secondary[assistancesLength].id = uuid();
 			this.$store.commit('updateExercices', exercices);
+			this.cancelAddExercice();
 		}
 	},
 	computed: {
@@ -75,51 +88,7 @@ export default {
 
 <style scoped>
 	/* Create global styles instead */
-	.popin__container {
-		padding: 10px;
-	}
-	.popin__title {
-		color: #000;
-		font-size: 17px;
-		font-weight: 600;
-		padding: 15px 10px;
-	}
-	.popin__element {
-		display: none;
-		position: fixed;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		z-index: 10;
-		background-color: #fff;
-		width: 80vw;
-		border-radius: 5px;
+	.assistance_container {
 		overflow: hidden;
-		opacity: 0;
-		transition: opacity .3s ease-out;
-	}
-	.popin__element.is-active {
-		display: block;
-		opacity: 1;
-		transition: opacity .3s ease-out;
-	}
-	.popin__overlay {
-		display: none;
-		position: fixed;
-		top: 0;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		background-color: rgba(0, 0, 0, .3);
-		z-index: 5;
-	}
-
-	.popin__overlay.is-active {
-		display: block;
-	}
-	.exercices__buttons {
-		display: flex;
-		padding: 10px;
-		margin-top: 10px;
 	}
 </style>
