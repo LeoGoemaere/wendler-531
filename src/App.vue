@@ -42,12 +42,16 @@ export default {
 		font-family: 'Roboto', sans-serif;
 	}
 
-	/*#app {
-		padding: 25px 20px;
-	}*/
+	#app {
+		padding-bottom: 59px; /* Navigation bar height */
+	}
 
 	select {
 		width: 100%;
+	}
+
+	ul {
+		list-style-type: none;
 	}
 
 	h1 {
@@ -137,6 +141,7 @@ export default {
 		left: 0;
 		right: 0;
 		border-top: 1px solid #e4e4e4;
+		z-index: 10;
 	}
 
 	.navigation-bar__list {
@@ -257,5 +262,9 @@ export default {
 
 	.exercices__buttons--top-border {
 		border-top: 1px solid #e0e0e0;
+	}
+
+	.icon__ellipsis {
+		font-size: 18px;
 	}
 </style>

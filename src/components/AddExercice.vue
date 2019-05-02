@@ -1,41 +1,45 @@
 <template>
 
-	<div class="add-exercice space__x">
-		<div v-if="!isExerciceValidated">
-			<button class="button" @click="showPopin">
-				Add {{exerciceType}} exercice
-			</button>
-			<div :class="popinActiveClass" class="popin__element">
-				<div class="exercices__list">
-					<p class="popin__title">{{exerciceType}} Exercices</p>
-					<div 
-						v-for="(exercice, key) in exercices"
-						:key="exercice.id">				
-						<input type="radio" :id="`${type}_${setIndex}_${key}`" :value="key" name="exercice" class="exercice__select" @change="exerciceSelection" />
-						<label :for="`${type}_${setIndex}_${key}`">
-							{{exercice.name}}
-							<i class="fas fa-check"></i>
-						</label>
-					</div>
-				</div>
-				<div class="exercices__buttons exercices__buttons--top-border">
-					<button :class="!isExerciceSelectionned ? 'button-action--disabled' : ''" class="button-action" @click="addExercice">Add Exercice</button>
-					<button class="button-action" @click="cancelAddExercice">Cancel</button>
+	<div v-if="!isExerciceValidated" class="add-exercice space__x">
+		<button class="button" @click="showPopin">
+			Add {{exerciceType}} exercice
+		</button>
+		<div :class="popinActiveClass" class="popin__element">
+			<div class="exercices__list">
+				<p class="popin__title">{{exerciceType}} Exercices</p>
+				<div 
+					v-for="(exercice, key) in exercices"
+					:key="exercice.id">				
+					<input type="radio" :id="`${type}_${setIndex}_${key}`" :value="key" name="exercice" class="exercice__select" @change="exerciceSelection" />
+					<label :for="`${type}_${setIndex}_${key}`">
+						{{exercice.name}}
+						<i class="fas fa-check"></i>
+					</label>
 				</div>
 			</div>
-			<div :class="popinActiveClass" class="popin__overlay" @click="cancelAddExercice"></div>
+			<div class="exercices__buttons exercices__buttons--top-border">
+				<button :class="!isExerciceSelectionned ? 'button-action--disabled' : ''" class="button-action" @click="addExercice">Add Exercice</button>
+				<button class="button-action" @click="cancelAddExercice">Cancel</button>
+			</div>
 		</div>
-		<div v-else>
-			<button @click="removeExercice">remove</button>
-			<ul>
-				<Set
-					v-for="set in sets"
-					:key="set.id"
-					:reps="set.reps"
-					:weight="set.tm * tmExercice"
-				/>
-			</ul>
-		</div>
+		<div :class="popinActiveClass" class="popin__overlay" @click="cancelAddExercice"></div>
+	</div>
+	<div v-else class="set-container space__x">
+		<p class="set-container__exercice-name">
+			{{chosenExercice.name}}
+			<button @click="removeExercice" class="trash">
+				<i class="fas fa-trash icon__trash"></i>
+			</button>
+		</p>
+		<ul>
+			<Set
+				v-for="(set, index) in sets"
+				:key="set.id"
+				:index="index"
+				:reps="set.reps"
+				:weight="set.tm * tmExercice"
+			/>
+		</ul>
 	</div>
 
 </template>
@@ -176,7 +180,31 @@ export default {
 		right: 0;
 	}
 
-	.add-exercice + .add-exercice {
+	.set-container {
+		position: relative;
+	}
+
+	.set-container::before {
+		content: "";
+		height: 1px;
+		background-color: #dedede;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+	}
+
+	.add-exercice + .set-container,
+	.set-container + .set-container {
+		padding-top: 25px
+	}
+
+	.set-container__exercice-name {
+		display: flex;
+		color: #000;
+		font-size: 24px;
+		justify-content: space-between;
+		align-items: center;
 	}
 
 	.exercice__select {
@@ -208,5 +236,15 @@ export default {
 	.exercice__select + label i { display: none; }
 
 	.exercice__select:checked +label i { display: block; }
+
+	.trash {
+		background-color: transparent;
+		border: none;
+		color: #737373;
+	}
+
+	.icon__trash {
+		font-size: 13px;
+	}
 
 </style>

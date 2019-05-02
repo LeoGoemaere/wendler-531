@@ -170,7 +170,4 @@ export default {
 		color: #34495e;
 		border-bottom: 2px solid #34495e;
 	}
-	.icon__ellipsis {
-		font-size: 18px;
-	}
 </style>
