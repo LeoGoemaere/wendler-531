@@ -1,6 +1,7 @@
 <template>
 
 	<div v-if="!isExerciceValidated" class="add-exercice space__x">
+
 		<button class="button" @click="showPopin">
 			Add {{exerciceType}} exercice
 		</button>
@@ -10,8 +11,8 @@
 				<div 
 					v-for="(exercice, key) in exercices"
 					:key="exercice.id">				
-					<input type="radio" :id="`${type}_${setIndex}_${key}`" :value="key" name="exercice" class="exercice__select" @change="exerciceSelection" />
-					<label :for="`${type}_${setIndex}_${key}`">
+					<input type="radio" :id="`${type}_${setOrder}_${key}`" :value="key" name="exercice" class="exercice__select" @change="exerciceSelection" />
+					<label :for="`${type}_${setOrder}_${key}`">
 						{{exercice.name}}
 						<i class="fas fa-check"></i>
 					</label>
@@ -26,7 +27,6 @@
 	</div>
 	<div v-else class="set-container space__x">
 		<p class="set-container__exercice-name">
-			{{chosenExercice.name}}
 			<button @click="removeExercice" class="trash">
 				<i class="fas fa-trash icon__trash"></i>
 			</button>
@@ -57,7 +57,7 @@ export default {
 		exercices: Array,
 		type: String,
 		lift: Object,
-		setIndex: Number,
+		setOrder: Number,
 		day: String,
 		trainingIndex: Number
 	},
@@ -66,52 +66,18 @@ export default {
 			popinActiveClass: null,
 			isExerciceSelectionned: false,
 			isExerciceValidated: false,
-			chosenExercice: null,
+			chosenExerciceId: null,
+			// exerciceIndex: null,
 			trainings: null,
-			exerciceIndex: null,
 			sets: null,
 			tmExercice: null,
 			exerciceType: this.type === 'secondary' ? 'Assistance' : 'Primary'
 		}
 	},
 	mounted() {
-		// TODO: Find other logic to handle the trainings datas.
-
-		// Filter in currentTraining and set the constant if the exercice is exist.
-		const exerciceAlreadyChosed = this.getTrainings[this.trainingIndex].filter(exercice => {
-			if (exercice.index === this.setIndex) {
-				return exercice;
-			}
-		})
-
-		// Set the trainings data with the trainings store value.
 		this.trainings = JSON.parse(JSON.stringify(this.getTrainings));
-
-		// Set the chosen exercice.
-		if (typeof exerciceAlreadyChosed[0] !== 'undefined') {
-			this.chosenExercice = exerciceAlreadyChosed[0];
-		} else {
-			this.chosenExercice = null
-		}
-
-		if (this.chosenExercice) {
-			this.isExerciceValidated = true;
-			this.exerciceIndex = this.getTrainings[this.trainingIndex].indexOf(this.chosenExercice);
-			this.getExercices[this.type].filter(exercice => {
-				if (exercice.id === this.chosenExercice.id) {
-					this.trainings[this.trainingIndex].splice(this.exerciceIndex, 1, exercice);
-					this.chosenExercice = exercice;
-					this.tmExercice = this.chosenExercice.max.tm;
-				}
-			})
-
-		} else {
-			this.isExerciceValidated = false;
-			this.tmExercice = null;
-			this.exerciceIndex = null;
-		}
-
-		// Set the sets data.
+		console.log(this.setOrder);
+		console.log(this.trainings[this.trainingIndex]);
 		this.sets = this.lift.sets;
 	},
 	computed: {
@@ -131,11 +97,12 @@ export default {
 			this.popinActiveClass = null;
 		},
 		exerciceSelection(e) {
-			this.chosenExercice = this.exercices[e.target.value];
+			this.chosenExerciceId = this.exercices[e.target.value].id;
 			this.isExerciceSelectionned = true;
 		},
 		cancelAddExercice() {
-			this.chosenExercice = null;
+			this.chosenExerciceId = null;
+
 			this.isExerciceValidated = false;
 			this.isExerciceSelectionned = false;
 			this.popinActiveClass = null
@@ -143,11 +110,13 @@ export default {
 		},
 		addExercice() {
 			if (!this.isExerciceSelectionned) return;
-			this.trainings = JSON.parse(JSON.stringify(this.getTrainings));
-			this.trainings[this.trainingIndex].push(this.chosenExercice);
-			this.exerciceIndex = this.trainings[this.trainingIndex].indexOf(this.chosenExercice);
-			this.tmExercice = this.trainings[this.trainingIndex][this.exerciceIndex].max.tm;
-			this.trainings[this.trainingIndex][this.exerciceIndex].index = this.setIndex;
+
+			this.trainings[this.trainingIndex].push({
+				exerciceId: this.chosenExerciceId,
+				setOrder: this.setOrder
+			});
+			this.tmExercice = this.getExercice().max.tm;
+
 			this.isExerciceValidated = true;
 			this.$store.commit('updateTrainings', this.trainings);
 			this.closePopin();
@@ -155,8 +124,16 @@ export default {
 		removeExercice() {
 			this.isExerciceValidated = false;
 			this.isExerciceSelectionned = false;
-			this.trainings[this.trainingIndex].splice(this.exerciceIndex, 1);
-			this.$store.commit('updateTrainings', this.trainings);
+			// this.$store.commit('updateTrainings', this.trainings);
+		},
+		// Utilities methods
+		getExercice: function() {
+			const exercice = this.getExercices[this.type].filter(exercice => {
+				if (this.chosenExerciceId === exercice.id) {
+					return exercice;
+				}
+			})
+			return exercice[0];
 		}
 	}
 }

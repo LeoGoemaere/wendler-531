@@ -14,7 +14,7 @@
 			:exercices="exercices[lift.type]"
 			:type="lift.type"
 			:lift="lift"
-			:setIndex="index"
+			:setOrder="index"
 			:day="day"
 			:trainingIndex="trainingIndex"
 		/>
