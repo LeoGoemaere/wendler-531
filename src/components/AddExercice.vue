@@ -35,9 +35,9 @@
 			<Set
 				v-for="(set, index) in sets"
 				:key="set.id"
+				:set="set"
 				:index="index"
-				:reps="set.reps"
-				:weight="set.tm * tmExercice"
+				:tmExercice="tmExercice"
 			/>
 		</ul>
 	</div>

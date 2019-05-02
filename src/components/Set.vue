@@ -3,10 +3,11 @@
 		<div class="set__row">
 			<span class="set__number">{{index + 1}}</span>
 			<div class="set__reps-datas">
-				<span class="set__reps">{{reps}}</span>
-				<span class="set__at">@</span>
-				<span class="set__weight">{{weight}}</span>
-				<span class="set__unit">kg</span>
+				<span class="set__reps">{{set.reps}} {{prSet}}</span>
+				<span v-if="set.tm" class="set__at">@</span>
+				<span v-if="set.tm" class="set__weight">{{set.tm * tmExercice}}</span>
+				<span v-if="set.tm" class="set__unit">kg</span>
+				<span v-if="!set.tm">reps</span>
 			</div>
 		</div>
 	</li>
@@ -17,12 +18,13 @@
 export default {
 	name: 'Set',
 	props: {
-		reps: Number,
-		weight: Number,
+		set: Object,
+		tmExercice: Number,
 		index: Number
 	},
 	data () {
 		return {
+			prSet: this.set.pr ? "+" : null
 		}
 	},
 	methods: {
