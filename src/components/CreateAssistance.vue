@@ -1,10 +1,11 @@
 <template>
-	<div class="assistance_container">
-		<button class="button" @click="showPopin">Create new assistance</button>
+	<div class="assistance">
+		<div class="assistance__button-container space__x">
+			<button class="button" @click="showPopin">Create new assistance</button>
+		</div>
 		<div :class="popinActiveClass" class="popin__element">
 			<p class="popin__title">Add new assistance exercice</p>
 			<div class="popin__input-row">
-				<label class="popin__label">Name</label>
 				<input type="text" class="popin__input" placeholder="Exercice name" @change="this.editExercice" />
 			</div>
 			<div class="exercices__buttons">
@@ -88,7 +89,11 @@ export default {
 
 <style scoped>
 	/* Create global styles instead */
-	.assistance_container {
+	.assistance {
 		overflow: hidden;
+		margin-top: 10px;
+	}
+	.assistance__button-container {
+		margin-bottom: 10px;
 	}
 </style>

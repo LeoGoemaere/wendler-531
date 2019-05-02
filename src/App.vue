@@ -42,16 +42,16 @@ export default {
 		font-family: 'Roboto', sans-serif;
 	}
 
-	#app {
+	/*#app {
 		padding: 25px 20px;
-	}
+	}*/
 
 	select {
 		width: 100%;
 	}
 
 	h1 {
-		margin-bottom: 45px;
+		margin-bottom: 25px;
 	}
 
 	h2 {
@@ -60,6 +60,20 @@ export default {
 
 	p {
 		color: #737373;
+	}
+
+	.space__x {
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+
+	.space__y {
+		padding-top: 25px;
+		padding-bottom: 25px;
+	}
+
+	.space__top {
+		padding-top: 25px;
 	}
 
 	.button {
@@ -82,7 +96,6 @@ export default {
 		background: none;
 		border: none;
 		color: black;
-		width: 100%;
 		font-size: 17px;
 		color: #ea9852;
 	}

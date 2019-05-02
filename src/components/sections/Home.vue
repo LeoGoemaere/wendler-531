@@ -1,15 +1,17 @@
 <template>
 	<div class="home">
-		<h1>Settings</h1>
-		<SelectContainer
-			:variations="getVariations"
-			:currentVariation="getCurrentVariation"
-			:selectedVariation="getSelectedVariation"
-			:selectedTemplate="getSelectedTemplate"
-			:selectedWeek="getSelectedWeek"
-		/>
+		<div class="space__x space__top">
+			<h1>Settings</h1>
+			<SelectContainer
+				:variations="getVariations"
+				:currentVariation="getCurrentVariation"
+				:selectedVariation="getSelectedVariation"
+				:selectedTemplate="getSelectedTemplate"
+				:selectedWeek="getSelectedWeek"
+			/>
+		</div>
 
-		<h2>Exercices</h2>
+		<h2 class="space__x">Exercices</h2>
 		<ExercicesSetter
 			:exercices="getExercices"
 		/>

@@ -1,5 +1,5 @@
 <template>
-	<div :class="exerciceOptionClass" class="exercice">
+	<div :class="exerciceOptionClass" class="exercice space__x">
 		<p class="exercice__label">
 			{{ exercice.name }}
 			<i v-if="type === 'secondary'" @click="toggleExerciceOptions('exercice--options-enabled')" class="fas fa-ellipsis-h icon__ellipsis"></i>
@@ -72,9 +72,20 @@ export default {
 
 <style scoped>
 	.exercice {
-		margin-top: 16px;
+		padding-top: 8px;
+		padding-bottom: 8px;
 		position: relative;
-		transition: transform ease-out .3s
+		transition: transform ease-out .3s;
+	}
+
+	.exercice::after {
+		content: "";
+		height: 1px;
+		background-color: #dedede;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
 	}
 
 	.exercice--options-enabled {
