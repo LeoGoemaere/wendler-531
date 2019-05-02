@@ -1,11 +1,13 @@
 <template>
 
-	<div>
-		<div v-if="!isExerciceValidated" >
-			<button class="button" @click="showPopin">Add exercice</button>
+	<div class="add-exercice space__x">
+		<div v-if="!isExerciceValidated">
+			<button class="button" @click="showPopin">
+				Add {{exerciceType}} exercice
+			</button>
 			<div :class="popinActiveClass" class="popin__element">
 				<div class="exercices__list">
-					<p class="popin__title">{{type}} Exercices</p>
+					<p class="popin__title">{{exerciceType}} Exercices</p>
 					<div 
 						v-for="(exercice, key) in exercices"
 						:key="exercice.id">				
@@ -64,7 +66,8 @@ export default {
 			trainings: null,
 			exerciceIndex: null,
 			sets: null,
-			tmExercice: null
+			tmExercice: null,
+			exerciceType: this.type === 'secondary' ? 'Assistance' : 'Primary'
 		}
 	},
 	mounted() {
@@ -157,6 +160,24 @@ export default {
 
 <style scoped>
 	
+	.add-exercice {
+		padding-top: 10px;
+		padding-bottom: 10px; 
+		position: relative;
+	}
+
+	.add-exercice::after {
+		content: "";
+		height: 1px;
+		background-color: #dedede;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+	}
+
+	.add-exercice + .add-exercice {
+	}
 
 	.exercice__select {
 		display: none;

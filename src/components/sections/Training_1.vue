@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<div class="heading">
+		<div class="heading space__x space__top">
 			<h1>Training 1</h1>
 			<div class="heading__infos">
 				<p>{{getCurrentVariation.name}}</p>

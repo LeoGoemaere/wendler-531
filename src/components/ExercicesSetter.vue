@@ -2,7 +2,7 @@
 	<div>
 		<div class="segmented-controller">
 			<button @click="isPrimaryExercices" :class="{ 'segmented-controller__item--active': isPrimarySelected }" class="segmented-controller__item">Primary</button>
-			<button @click="isSecondaryExercices" :class="{ 'segmented-controller__item--active': !isPrimarySelected }"class="segmented-controller__item">Assistance</button>
+			<button @click="isSecondaryExercices" :class="{ 'segmented-controller__item--active': !isPrimarySelected }"class="segmented-controller__item">Assistances</button>
 		</div>
 		<div v-if="isPrimarySelected">
 			<ExerciceLineItem 
