@@ -78,12 +78,18 @@ export default {
 	mounted() {
 		this.trainings = JSON.parse(JSON.stringify(this.getTrainings));
 
-		this.chosenExerciceId = this.getExerciceId();
-		if (this.isExerciceExist()) {
-			this.exerciceData = this.getExercice();
+		const isExerciceExist = typeof this.getExercice(this.getExerciceId()) !== 'undefined' || this.getExercice(this.getExerciceId()) ? true : null;
+		if (!isExerciceExist && this.isExerciceExistInCurrentTraining()) {
+			this.removeExerciceFromTrainings(this.getExerciceIndex());
+		}
+
+		if (isExerciceExist && this.isExerciceExistInCurrentTraining()) {
+			this.chosenExerciceId = this.getExerciceId();
+			this.exerciceData = this.getExercice(this.chosenExerciceId);
 			this.isExerciceValidated = true;
 			this.isExerciceSelectionned = true;
 		}
+
 		this.sets = this.lift.sets;
 	},
 	computed: {
@@ -123,7 +129,7 @@ export default {
 				exerciceId: this.chosenExerciceId,
 				setOrder: this.setOrder
 			});
-			this.exerciceData = this.getExercice();
+			this.exerciceData = this.getExercice(this.chosenExerciceId);
 			this.$store.commit('updateTrainings', this.trainings);
 
 			this.isExerciceValidated = true;
@@ -132,27 +138,23 @@ export default {
 		removeExercice() {
 			// Get last version from trainings.
 			this.trainings = JSON.parse(JSON.stringify(this.getTrainings));
-			this.trainings[this.trainingIndex].forEach((exercice, index) => {
-				if (this.setOrder === exercice.setOrder) {
-					this.exerciceIndex = index;
-				}
-			});
-			this.trainings[this.trainingIndex].splice(this.exerciceIndex, 1);
-			this.$store.commit('updateTrainings', this.trainings);
+			this.exerciceIndex = this.getExerciceIndex();
+			this.removeExerciceFromTrainings(this.exerciceIndex);
 
 			this.isExerciceValidated = false;
 			this.isExerciceSelectionned = false;
 		},
 		// Utilities methods
-		getExercice: function() {
+		getExercice: function(exerciceId) {
+			if (!exerciceId) { return null; }
 			const exercice = this.getExercices[this.type].filter(exercice => {
-				if (this.chosenExerciceId === exercice.id) {
+				if (exerciceId === exercice.id) {
 					return exercice;
 				}
-			})
+			});
 			return exercice[0];
 		},
-		isExerciceExist: function() {
+		isExerciceExistInCurrentTraining: function() {
 			let exerciceExist;
 			this.trainings[this.trainingIndex].filter(exercice => {
 				if (this.setOrder === exercice.setOrder) {
@@ -169,6 +171,19 @@ export default {
 				}
 			});
 			return exerciceId ? exerciceId : null;
+		},
+		getExerciceIndex: function() {
+			let exerciceIndex;
+			this.trainings[this.trainingIndex].filter((exercice, index) => {
+				if (this.setOrder === exercice.setOrder) {
+					exerciceIndex = index;
+				}
+			});
+			return typeof exerciceIndex !== 'undefined' ? exerciceIndex : null;
+		},
+		removeExerciceFromTrainings: function(exerciceIndex) {
+			this.trainings[this.trainingIndex].splice(exerciceIndex, 1);
+			this.$store.commit('updateTrainings', this.trainings);
 		}
 	}
 }
