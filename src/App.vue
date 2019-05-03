@@ -230,9 +230,6 @@ export default {
 		display: block;
 	}
 
-	.popin__input-row {
-	}
-
 	.popin__label {
 		padding: 0 20px;
 		font-size: 17px;
@@ -240,12 +237,13 @@ export default {
 		margin-bottom: 5px;
 	}
 
-	.popin__input {
+	.popin__row {
 		border: none;
 		border-top: 1px solid;
 		border-bottom: 1px solid;
 		border-color: #e0e0e0;
 		height: 44px;
+		line-height: 44px;
 		font-size: 17px;
 		width: 100%;
 		padding: 0 20px;
@@ -253,18 +251,48 @@ export default {
 		box-sizing: border-box;
 	}
 
-	.exercices__buttons {
+	.popin__row + .popin__row {
+		border-top: none;
+	}
+
+	.buttons {
 		display: flex;
 		padding: 15px 20px;
 		justify-content: space-between;
 		background-color: #f7f7f7;
 	}
 
-	.exercices__buttons--top-border {
+	.buttons--top-border {
 		border-top: 1px solid #e0e0e0;
 	}
 
 	.icon__ellipsis {
 		font-size: 18px;
 	}
+
+	.row__select {
+		display: none;
+	}
+
+	.row__select + label {
+		padding: 0 20px;
+		height: 44px;
+		line-height: 44px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		color: #737373;
+	}
+
+	.row__select:active + label {
+		background: #e4e4e4;
+	}
+
+	.row__select:checked + label {
+		background: #e4e4e4;
+	}
+
+	.row__select + label i { display: none; }
+
+	.row__select:checked +label i { display: block; }
 </style>

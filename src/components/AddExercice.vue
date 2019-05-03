@@ -11,14 +11,14 @@
 				<div 
 					v-for="(exercice, key) in exercices"
 					:key="exercice.id">				
-					<input type="radio" :id="`${type}_${setOrder}_${key}`" :value="key" name="exercice" class="exercice__select" @change="exerciceSelection" />
+					<input type="radio" :id="`${type}_${setOrder}_${key}`" :value="key" name="exercice" class="js-exercice-select row__select" @change="exerciceSelection" />
 					<label :for="`${type}_${setOrder}_${key}`">
 						{{exercice.name}}
 						<i class="fas fa-check"></i>
 					</label>
 				</div>
 			</div>
-			<div class="exercices__buttons exercices__buttons--top-border">
+			<div class="buttons buttons--top-border">
 				<button :class="{ 'button-action--disabled': !isExerciceSelectionned }" class="button-action" @click="addExercice">Add Exercice</button>
 				<button class="button-action" @click="cancelAddExercice">Cancel</button>
 			</div>
@@ -120,7 +120,7 @@ export default {
 			this.isExerciceValidated = false;
 			this.isExerciceSelectionned = false;
 			this.popinActiveClass = null
-			document.querySelectorAll('.exercice__select').forEach(exercice => exercice.checked = false);
+			document.querySelectorAll('.js-exercice-select').forEach(exercice => exercice.checked = false);
 		},
 		addExercice() {
 			if (!this.isExerciceSelectionned) return;
@@ -236,35 +236,10 @@ export default {
 		align-items: center;
 	}
 
-	.exercice__select {
-		display: none;
-	}
 
 	.exercices__list + .exercices__list {
 		margin-top: 15px;
 	}
-
-	.exercice__select + label {
-		padding: 0 20px;
-		height: 44px;
-		line-height: 44px;
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		color: #737373;
-	}
-
-	.exercice__select:active + label {
-		background: #e4e4e4;
-	}
-
-	.exercice__select:checked + label {
-		background: #e4e4e4;
-	}
-
-	.exercice__select + label i { display: none; }
-
-	.exercice__select:checked +label i { display: block; }
 
 	.trash {
 		background-color: transparent;
