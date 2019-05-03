@@ -6,10 +6,10 @@
 		<div :class="popinActiveClass" class="popin__element">
 			<p class="popin__title">Add new assistance exercice</p>
 			<div class="popin__input-row">
-				<input type="text" class="popin__input" placeholder="Exercice name" @change="this.editExercice" />
+				<input type="text" v-model="assistanceEdited" class="popin__input" placeholder="Exercice name" />
 			</div>
 			<div class="exercices__buttons">
-				<button :class="" class="button-action" @click="createExercice">Create Exercice</button>
+				<button :class="{ 'button-action--disabled': !assistanceEdited }" class="button-action" @click="createExercice">Create Exercice</button>
 				<button class="button-action" @click="cancelAddExercice">Cancel</button>
 			</div>
 		</div>
@@ -37,7 +37,7 @@ export default {
 	data () {
 		return {
 			popinActiveClass: null,
-			assistancEdited: null,
+			assistanceEdited: null,
 			maxSetter: {
 				max: {
 					rm: 0,
@@ -59,21 +59,19 @@ export default {
 		isSecondaryExercices: function() {
 			this.isPrimarySelected = false
 		},
-		editExercice: function(e) {
-			this.assistancEdited = e.target.value;
-		},
 		cancelAddExercice: function() {
-			this.assistancEdited = null;
+			this.assistanceEdited = null;
 			this.closePopin();
 			document.querySelector('.popin__input').value = "";
 		},
 		createExercice: function(e) {
+			if (!this.assistanceEdited) return;
 			const assistancesLength = Object.keys(this.getExercices.secondary).length;
 			// Create deep copies.
 			let exercices = JSON.parse(JSON.stringify(this.exercices));
 			exercices.secondary[assistancesLength] = JSON.parse(JSON.stringify(this.maxSetter));
 
-			exercices.secondary[assistancesLength].name = this.assistancEdited;
+			exercices.secondary[assistancesLength].name = this.assistanceEdited;
 			exercices.secondary[assistancesLength].id = uuid();
 			this.$store.commit('updateExercices', exercices);
 			this.cancelAddExercice();

@@ -19,7 +19,7 @@
 				</div>
 			</div>
 			<div class="exercices__buttons exercices__buttons--top-border">
-				<button :class="!isExerciceSelectionned ? 'button-action--disabled' : ''" class="button-action" @click="addExercice">Add Exercice</button>
+				<button :class="{ 'button-action--disabled': !isExerciceSelectionned }" class="button-action" @click="addExercice">Add Exercice</button>
 				<button class="button-action" @click="cancelAddExercice">Cancel</button>
 			</div>
 		</div>
