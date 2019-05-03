@@ -27,6 +27,7 @@
 	</div>
 	<div v-else class="set-container space__x">
 		<p class="set-container__exercice-name">
+			{{exerciceData.name}}
 			<button @click="removeExercice" class="trash">
 				<i class="fas fa-trash icon__trash"></i>
 			</button>
@@ -37,7 +38,7 @@
 				:key="set.id"
 				:set="set"
 				:index="index"
-				:tmExercice="tmExercice"
+				:tmExercice="exerciceData.max.tm"
 			/>
 		</ul>
 	</div>
@@ -67,17 +68,22 @@ export default {
 			isExerciceSelectionned: false,
 			isExerciceValidated: false,
 			chosenExerciceId: null,
-			// exerciceIndex: null,
+			exerciceIndex: null,
 			trainings: null,
 			sets: null,
-			tmExercice: null,
-			exerciceType: this.type === 'secondary' ? 'Assistance' : 'Primary'
+			exerciceType: this.type === 'secondary' ? 'Assistance' : 'Primary',
+			exerciceData: null
 		}
 	},
 	mounted() {
 		this.trainings = JSON.parse(JSON.stringify(this.getTrainings));
-		console.log(this.setOrder);
-		console.log(this.trainings[this.trainingIndex]);
+
+		this.chosenExerciceId = this.getExerciceId();
+		if (this.isExerciceExist()) {
+			this.exerciceData = this.getExercice();
+			this.isExerciceValidated = true;
+			this.isExerciceSelectionned = true;
+		}
 		this.sets = this.lift.sets;
 	},
 	computed: {
@@ -91,7 +97,7 @@ export default {
 	},
 	methods: {
 		showPopin() {
-			this.popinActiveClass = 'is-active'
+			this.popinActiveClass = 'is-active';
 		},
 		closePopin() {
 			this.popinActiveClass = null;
@@ -111,20 +117,31 @@ export default {
 		addExercice() {
 			if (!this.isExerciceSelectionned) return;
 
+			// Get last version from trainings.
+			this.trainings = JSON.parse(JSON.stringify(this.getTrainings));
 			this.trainings[this.trainingIndex].push({
 				exerciceId: this.chosenExerciceId,
 				setOrder: this.setOrder
 			});
-			this.tmExercice = this.getExercice().max.tm;
+			this.exerciceData = this.getExercice();
+			this.$store.commit('updateTrainings', this.trainings);
 
 			this.isExerciceValidated = true;
-			this.$store.commit('updateTrainings', this.trainings);
 			this.closePopin();
 		},
 		removeExercice() {
+			// Get last version from trainings.
+			this.trainings = JSON.parse(JSON.stringify(this.getTrainings));
+			this.trainings[this.trainingIndex].forEach((exercice, index) => {
+				if (this.setOrder === exercice.setOrder) {
+					this.exerciceIndex = index;
+				}
+			});
+			this.trainings[this.trainingIndex].splice(this.exerciceIndex, 1);
+			this.$store.commit('updateTrainings', this.trainings);
+
 			this.isExerciceValidated = false;
 			this.isExerciceSelectionned = false;
-			// this.$store.commit('updateTrainings', this.trainings);
 		},
 		// Utilities methods
 		getExercice: function() {
@@ -134,6 +151,24 @@ export default {
 				}
 			})
 			return exercice[0];
+		},
+		isExerciceExist: function() {
+			let exerciceExist;
+			this.trainings[this.trainingIndex].filter(exercice => {
+				if (this.setOrder === exercice.setOrder) {
+					exerciceExist = true;
+				}
+			});
+			return exerciceExist ? true : false;
+		},
+		getExerciceId: function() {
+			let exerciceId;
+			this.trainings[this.trainingIndex].filter(exercice => {
+				if (this.setOrder === exercice.setOrder) {
+					exerciceId = exercice.exerciceId;
+				}
+			});
+			return exerciceId ? exerciceId : null;
 		}
 	}
 }
