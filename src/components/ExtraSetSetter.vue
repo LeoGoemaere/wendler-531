@@ -1,20 +1,33 @@
 <template>
 	<li class="set extraset">
-		{{extraSet}}
+		<Joker 
+			v-if="extraSet.type === 'joker'" 
+			:lift="lift"
+			:extraSet="extraSet"
+			:trainingIndex="trainingIndex"
+			:exerciceIndex="exerciceIndex"
+			:index="index"
+			:exerciceData="exerciceData"
+		/>
 		<button @click="removeExtraSet">Remove</button>	
 	</li>
 </template>
 
 <script>
 import { mapGetters } from 'vuex';
+
+import Joker from '@/components/Joker';
 export default {
 	name: 'ExtraSetSetter',
-	components: {  },
+	components: { Joker },
 	props: {
 		index: Number,
 		trainingIndex: Number,
 		exerciceIndex: Number,
-		extraSet: Object
+		extraSet: Object,
+		extraSets: Array,
+		lift: Object,
+		exerciceData: Object
 	},
 	data () {
 		return {

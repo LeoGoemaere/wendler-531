@@ -46,6 +46,7 @@
 			:exerciceIndex="exerciceIndex"
 			:setOrder="setOrder"
 			:lift="lift"
+			:exerciceData="exerciceData"
 		/>
 	</div>
 

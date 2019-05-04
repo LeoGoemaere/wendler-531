@@ -12,6 +12,8 @@
 			:trainingIndex="trainingIndex"
 			:exerciceIndex="exerciceIndex"
 			:extraSet="extraSet"
+			:lift="lift"
+			:exerciceData="exerciceData"
 		/>
 		<li class="set extraset extraset--add">
 			<button class="extraset__button" @click="showPopin">
@@ -50,7 +52,8 @@ export default {
 		trainingIndex: Number,
 		exerciceIndex: Number,
 		setOrder: Number,
-		lift: Object
+		lift: Object,
+		exerciceData: Object
 	},
 	data () {
 		return {
