@@ -1,13 +1,19 @@
 <template>
 	<ul>
-		<li v-if="isSetValidated" class="set extraset">
-			<ExtraSetSetter 
-				v-for="extraSet in extraSets"
-				:key="extraSet.id"
-			/>
-		</li>
+		<!-- 
+			Loop directly on the store extrasets, 
+			because the extra set can be updated inside ExtraSetSetter component
+		-->
+		<ExtraSetSetter 
+			v-if="isSetValidated"
+			v-for="(extraSet, index) in this.getTrainings[this.trainingIndex][this.exerciceIndex].extraSets"
+			:key="extraSet.id"
+			:index="index"
+			:trainingIndex="trainingIndex"
+			:exerciceIndex="exerciceIndex"
+			:extraSet="extraSet"
+		/>
 		<li class="set extraset extraset--add">
-		{{setOrder}}
 			<button class="extraset__button" @click="showPopin">
 				<i class="fas fa-plus-circle icon__plus"></i>
 				Add Extra Set
@@ -86,7 +92,6 @@ export default {
 		cancelAddSet() {
 			this.setIndex = null;
 			this.isSetSelectionned = false;
-			this.isSetValidated = false;
 			this.popinIsActive = false;
 			document.querySelectorAll('.js-extraset-select').forEach(set => set.checked = false);
 		},
@@ -96,7 +101,6 @@ export default {
 			// Get last version from trainings.
 			this.trainings = JSON.parse(JSON.stringify(this.getTrainings));
 			this.extraSets = this.trainings[this.trainingIndex][this.exerciceIndex].extraSets;
-			console.log(this.extraSets)
 
 			this.extraSets.push({
 				type: this.extraSetsModel[this.setIndex].type,

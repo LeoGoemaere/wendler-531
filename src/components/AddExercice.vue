@@ -83,9 +83,7 @@ export default {
 		}
 	},
 	mounted() {
-		this.trainings = JSON.parse(JSON.stringify(this.getTrainings));
-		// console.log(this.trainings[this.trainingIndex])
-		
+		this.trainings = JSON.parse(JSON.stringify(this.getTrainings));	
 
 		const isExerciceExist = typeof this.getExercice(this.getExerciceId()) !== 'undefined' || this.getExercice(this.getExerciceId()) ? true : null;
 		this.exerciceIndex = this.getExerciceIndex();
