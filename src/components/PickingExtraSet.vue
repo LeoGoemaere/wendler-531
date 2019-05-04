@@ -1,37 +1,39 @@
 <template>
-	<li v-if="!isSetValidated" class="set extraset extraset--add">
-		<button class="extraset__button" @click="showPopin">
-			<i class="fas fa-plus-circle icon__plus"></i>
-			Add Extra Set
-		</button>
-		<div :class="{ 'is-active': popinIsActive }" class="popin__element">
-			<p class="popin__title">Chose your Extra Set</p>
-			<ul>
-				<li v-for="(set, index) in extraSets">
-					<input type="radio" @change="setSelection(index)" :id="set.id" :value="set.id" name="extrasets" class="js-extraset-select row__select" />
-					<label :for="set.id">
-						{{set.name}}
-						<i class="fas fa-check"></i>
-					</label>
-				</li>
-			</ul>
-			<div class="buttons">
-				<button :class="{ 'button-action--disabled': !isSetSelectionned }" class="button-action" @click="addSet">Add Extra Set</button>
-				<button class="button-action" @click="cancelAddSet">Cancel</button>
+	<ul>
+		<li v-if="isSetValidated" class="set extraset">
+			<ExtraSetSetter />
+		</li>
+		<li class="set extraset extraset--add">
+			<button class="extraset__button" @click="showPopin">
+				<i class="fas fa-plus-circle icon__plus"></i>
+				Add Extra Set
+			</button>
+			<div :class="{ 'is-active': popinIsActive }" class="popin__element">
+				<p class="popin__title">Chose your Extra Set</p>
+				<ul>
+					<li v-for="(set, index) in extraSets">
+						<input type="radio" @change="setSelection(index)" :id="set.id" :value="set.id" name="extrasets" class="js-extraset-select row__select" />
+						<label :for="set.id">
+							{{set.name}}
+							<i class="fas fa-check"></i>
+						</label>
+					</li>
+				</ul>
+				<div class="buttons">
+					<button :class="{ 'button-action--disabled': !isSetSelectionned }" class="button-action" @click="addSet">Add Extra Set</button>
+					<button class="button-action" @click="cancelAddSet">Cancel</button>
+				</div>
 			</div>
-		</div>
-		<div :class="{ 'is-active': popinIsActive }" class="popin__overlay" @click="cancelAddSet"></div>
-	</li>
-	<li v-else class="set extraset">
-		<NewExtraSet />
-	</li>
+			<div :class="{ 'is-active': popinIsActive }" class="popin__overlay" @click="cancelAddSet"></div>
+		</li>
+	</ul>
 </template>
 
 <script>
-import NewExtraSet from '@/components/NewExtraSet';
+import ExtraSetSetter from '@/components/ExtraSetSetter';
 export default {
-	name: 'ExtraSet',
-	components: { NewExtraSet },
+	name: 'PickingExtraSet',
+	components: { ExtraSetSetter },
 	props: {
 	},
 	data () {
@@ -73,7 +75,7 @@ export default {
 		addSet() {
 			if (!this.isSetSelectionned) return;
 
-			this.set = this.extraSets[this.setIndex];
+			// this.set = this.extraSets[this.setIndex];
 
 			this.isSetValidated = true;
 			this.closePopin();

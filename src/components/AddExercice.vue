@@ -40,8 +40,8 @@
 				:index="index"
 				:tmExercice="exerciceData.max.tm"
 			/>
-			<ExtraSet />
 		</ul>
+		<PickingExtraSet />
 	</div>
 
 </template>
@@ -51,11 +51,11 @@ import { mapGetters } from 'vuex';
 import { EventBus } from '@/event-bus';
 
 import Set from '@/components/Set';
-import ExtraSet from '@/components/ExtraSet';
+import PickingExtraSet from '@/components/PickingExtraSet';
 
 export default {
 	name: 'AddExercice',
-	components: { Set, ExtraSet },
+	components: { Set, PickingExtraSet },
 	props: {
 		exercices: Array,
 		type: String,

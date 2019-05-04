@@ -4,11 +4,13 @@
 
 <script>
 export default {
-	name: 'NewExtraSet',
+	name: 'ExtraSetSetter',
+	components: {  },
 	props: {
 	},
 	data () {
 		return {
+			
 		}
 	},
 	methods: {
@@ -20,5 +22,4 @@ export default {
 
 <style scoped>
 	/* Create global styles instead */
-	
 </style>
