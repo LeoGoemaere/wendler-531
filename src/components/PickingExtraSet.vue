@@ -1,9 +1,13 @@
 <template>
 	<ul>
 		<li v-if="isSetValidated" class="set extraset">
-			<ExtraSetSetter />
+			<ExtraSetSetter 
+				v-for="extraSet in extraSets"
+				:key="extraSet.id"
+			/>
 		</li>
 		<li class="set extraset extraset--add">
+		{{setOrder}}
 			<button class="extraset__button" @click="showPopin">
 				<i class="fas fa-plus-circle icon__plus"></i>
 				Add Extra Set
@@ -11,9 +15,9 @@
 			<div :class="{ 'is-active': popinIsActive }" class="popin__element">
 				<p class="popin__title">Chose your Extra Set</p>
 				<ul>
-					<li v-for="(set, index) in extraSets">
-						<input type="radio" @change="setSelection(index)" :id="set.id" :value="set.id" name="extrasets" class="js-extraset-select row__select" />
-						<label :for="set.id">
+					<li v-for="(set, index) in extraSetsModel">
+						<input type="radio" @change="setSelection(index)" :id="`${set.type}_${setOrder}`" :value="set.type" name="extrasets" class="js-extraset-select row__select" />
+						<label :for="`${set.type}_${setOrder}`">
 							{{set.name}}
 							<i class="fas fa-check"></i>
 						</label>
@@ -30,11 +34,17 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex';
+
 import ExtraSetSetter from '@/components/ExtraSetSetter';
 export default {
 	name: 'PickingExtraSet',
 	components: { ExtraSetSetter },
 	props: {
+		trainingIndex: Number,
+		exerciceIndex: Number,
+		setOrder: Number,
+		lift: Object
 	},
 	data () {
 		return {
@@ -42,17 +52,25 @@ export default {
 			isSetSelectionned: false,
 			isSetValidated: false,
 			setIndex: null,
-			extraSets: [
+			trainings: null,
+			extraSetsModel: [
 				{
-					id: 'joker',
+					type: 'joker',
 					name: 'Joker',
 				},
 				{
-					id: 'fsl',
+					type: 'fsl',
 					name: 'First Set Last'
 				}
-			]
+			],
+			extraSets: null
 		}
+	},
+	mounted() {
+		// Get last version from trainings.
+		this.trainings = JSON.parse(JSON.stringify(this.getTrainings));
+		this.extraSets = this.trainings[this.trainingIndex][this.exerciceIndex].extraSets;
+		this.isSetValidated = this.extraSets.length ? true : false;
 	},
 	methods: {
 		showPopin() {
@@ -75,13 +93,35 @@ export default {
 		addSet() {
 			if (!this.isSetSelectionned) return;
 
-			// this.set = this.extraSets[this.setIndex];
+			// Get last version from trainings.
+			this.trainings = JSON.parse(JSON.stringify(this.getTrainings));
+			this.extraSets = this.trainings[this.trainingIndex][this.exerciceIndex].extraSets;
+			console.log(this.extraSets)
+
+			this.extraSets.push({
+				type: this.extraSetsModel[this.setIndex].type,
+				setData: {
+					weight: null,
+					reps: null
+				}
+			})
+
+			this.trainings[this.trainingIndex][this.exerciceIndex].extraSets = this.extraSets;
+			this.$store.commit('updateTrainings', this.trainings);
 
 			this.isSetValidated = true;
+
+			// Reset selection
+			this.isSetSelectionned = false;
+			document.querySelectorAll('.js-extraset-select').forEach(set => set.checked = false);
+
 			this.closePopin();
 		},
 	},
 	computed: {
+		...mapGetters([
+			'getTrainings'
+		])
 	},
 }
 </script>

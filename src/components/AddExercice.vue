@@ -41,7 +41,12 @@
 				:tmExercice="exerciceData.max.tm"
 			/>
 		</ul>
-		<PickingExtraSet />
+		<PickingExtraSet
+			:trainingIndex="trainingIndex"
+			:exerciceIndex="exerciceIndex"
+			:setOrder="setOrder"
+			:lift="lift"
+		/>
 	</div>
 
 </template>
@@ -79,10 +84,13 @@ export default {
 	},
 	mounted() {
 		this.trainings = JSON.parse(JSON.stringify(this.getTrainings));
+		// console.log(this.trainings[this.trainingIndex])
+		
 
 		const isExerciceExist = typeof this.getExercice(this.getExerciceId()) !== 'undefined' || this.getExercice(this.getExerciceId()) ? true : null;
+		this.exerciceIndex = this.getExerciceIndex();
 		if (!isExerciceExist && this.isExerciceExistInCurrentTraining()) {
-			this.removeExerciceFromTrainings(this.getExerciceIndex());
+			this.removeExerciceFromTrainings(this.exerciceIndex);
 		}
 
 		if (isExerciceExist && this.isExerciceExistInCurrentTraining()) {
@@ -129,10 +137,13 @@ export default {
 			this.trainings = JSON.parse(JSON.stringify(this.getTrainings));
 			this.trainings[this.trainingIndex].push({
 				exerciceId: this.chosenExerciceId,
-				setOrder: this.setOrder
+				setOrder: this.setOrder,
+				extraSets: []
 			});
 			this.exerciceData = this.getExercice(this.chosenExerciceId);
 			this.$store.commit('updateTrainings', this.trainings);
+
+			this.exerciceIndex = this.getExerciceIndex();
 
 			this.isExerciceValidated = true;
 			this.closePopin();
