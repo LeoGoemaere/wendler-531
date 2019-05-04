@@ -39,14 +39,17 @@ export default {
 	},
 	methods: {
 		calculSetIncrement() {
-			let lastSet;
+			let lastSet = this.getLastSetOf(this.lift.sets);
+			this.set.reps = lastSet.reps;
 			// Take the last set and increase it's tm by 5% to create joker set.
 			if (this.index === 0) {
-				lastSet = this.getLastSetOf(this.lift.sets);
-				this.set.tm = this.incrementor(lastSet.tm, this.increaseFactor);
-				this.set.reps = lastSet.reps;
+				this.set.tm = this.trainingMaxincrementor(lastSet.tm, this.increaseFactor);
 			} else {
-
+				let tm = lastSet.tm;
+				for (let i = 0; i <= this.index; i++) {
+					tm = this.trainingMaxincrementor(tm, this.increaseFactor);
+				}
+				this.set.tm = tm;
 			}
 		},
 		getLastSetOf(sets) {
@@ -56,7 +59,7 @@ export default {
 				}
 			}
 		},
-		incrementor(tm, increaseFactor) {
+		trainingMaxincrementor(tm, increaseFactor) {
 			return tm += (tm * increaseFactor) / 100;
 		}
 	},
