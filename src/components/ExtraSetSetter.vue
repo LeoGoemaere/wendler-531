@@ -9,6 +9,12 @@
 			:index="index"
 			:exerciceData="exerciceData"
 		/>
+		<Fsl 
+			v-if="extraSet.type === 'fsl'"
+			:lift="lift"
+			:index="index"
+			:exerciceData="exerciceData"
+		/>
 		<button @click="removeExtraSet">Remove</button>	
 	</li>
 </template>
@@ -17,9 +23,10 @@
 import { mapGetters } from 'vuex';
 
 import Joker from '@/components/Joker';
+import Fsl from '@/components/Fsl';
 export default {
 	name: 'ExtraSetSetter',
-	components: { Joker },
+	components: { Joker, Fsl },
 	props: {
 		index: Number,
 		trainingIndex: Number,
