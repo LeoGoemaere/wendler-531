@@ -1,11 +1,10 @@
 <template>
-	<div>
 		<Set
 			:set="set"
 			:index="index"
 			:tmExercice="exerciceData.max.tm"
+			:extraSet="extraSet"
 		/>
-	</div>
 </template>
 
 <script>
@@ -18,7 +17,8 @@ export default {
 	props: {
 		lift: Object,
 		index: Number,
-		exerciceData: Object
+		exerciceData: Object,
+		extraSet: Object
 	},
 	data () {
 		return {

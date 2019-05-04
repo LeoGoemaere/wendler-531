@@ -32,15 +32,18 @@
 				<i class="fas fa-trash icon__trash"></i>
 			</button>
 		</p>
-		<ul>
-			<Set
-				v-for="(set, index) in sets"
-				:key="set.id"
-				:set="set"
-				:index="index"
-				:tmExercice="exerciceData.max.tm"
-			/>
-		</ul>
+		<div class="sets">
+			<div 
+				v-for="(set, index) in sets" class="set"
+				:key="set.id">
+				<Set
+					:set="set"
+					:index="index"
+					:tmExercice="exerciceData.max.tm"
+				/>
+
+			</div>
+		</div>
 		<PickingExtraSet
 			:trainingIndex="trainingIndex"
 			:exerciceIndex="exerciceIndex"

@@ -1,16 +1,17 @@
 <template>
-	<li class="set">
-		<div class="set__row">
-			<span class="set__number">{{index + 1}}</span>
-			<div class="set__reps-datas">
-				<span class="set__reps">{{set.reps}} {{prSet}}</span>
-				<span v-if="set.tm" class="set__at">@</span>
-				<span v-if="set.tm" class="set__weight">{{set.tm * tmExercice}}</span>
-				<span v-if="set.tm" class="set__unit">kg</span>
-				<span v-if="!set.tm">reps</span>
-			</div>
+	<div class="set__content">
+		<span :class="{ 'set__number--extra': extraSet }" class="set__number">{{index + 1}}</span>
+		<div class="set__reps-datas">
+			<span class="set__reps">{{set.reps}} {{prSet}}</span>
+			<span v-if="set.tm" class="set__at">@</span>
+			<span v-if="set.tm" class="set__weight">{{set.tm * tmExercice}}</span>
+			<span v-if="set.tm" class="set__unit">kg</span>
+			<span v-if="!set.tm">reps</span>
 		</div>
-	</li>
+		<p v-if="extraSet" :class="`set__type--${extraSet.type}`" class="set__type">
+			{{extraSet.name}}
+		</p>
+	</div>
 </template>
 
 <script>
@@ -20,7 +21,8 @@ export default {
 	props: {
 		set: Object,
 		tmExercice: Number,
-		index: Number
+		index: Number,
+		extraSet: Object
 	},
 	data () {
 		return {
@@ -33,23 +35,22 @@ export default {
 </script>
 
 <style scoped>
-	.set {
-		padding: 15px 0;
-		position: relative;
-	}
-
-	.set__row {
+	.set__content {
 		display: flex;
+		flex: 1;
 	}
 
-	.set + .set::before {
-		content: "";
-		height: 1px;
-		background-color: #dedede;
-		position: absolute;
-		top: 0;
-		left: 0;
-		right: 0;
+	.set__type {
+		margin-left: auto;
+		margin-right: 20px;
+	}
+
+	.set__type--joker {
+		color: #16a085;
+	}
+
+	.set__type--fsl {
+		color: #2980b9;
 	}
 
 	.set__reps-datas {
@@ -67,6 +68,10 @@ export default {
 		color: white;
 		font-size: 12px;
 		color: #fff;
+	}
+
+	.set__number--extra {
+		background-color: #34495eb3;
 	}
 
 	.set__at,

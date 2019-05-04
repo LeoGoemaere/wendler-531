@@ -295,4 +295,29 @@ export default {
 	.row__select + label i { display: none; }
 
 	.row__select:checked +label i { display: block; }
+
+	.set {
+		display: flex;
+		padding: 15px 0;
+		position: relative;
+	}
+
+	.set + .set::before {
+		content: "";
+		height: 1px;
+		background-color: #dedede;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+	}
+	.extraset::before {
+		content: "";
+		height: 1px;
+		background-color: #dedede;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+	}
 </style>

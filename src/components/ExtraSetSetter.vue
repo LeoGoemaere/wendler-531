@@ -1,5 +1,5 @@
 <template>
-	<li class="set extraset">
+	<div class="set extraset">
 		<Joker 
 			v-if="extraSet.type === 'joker'" 
 			:lift="lift"
@@ -14,9 +14,12 @@
 			:lift="lift"
 			:index="index"
 			:exerciceData="exerciceData"
+			:extraSet="extraSet"
 		/>
-		<button @click="removeExtraSet">Remove</button>	
-	</li>
+		<button @click="removeExtraSet" class="extraset__remove-button">
+			<i class="fas fa-minus-circle icon__minus-circle"></i>
+		</button>	
+	</div>
 </template>
 
 <script>
@@ -58,4 +61,11 @@ export default {
 
 <style scoped>
 	/* Create global styles instead */
+	.extraset__remove-button {
+		background-color: transparent;
+		border: none;
+	}
+	.icon__minus-circle {
+		color: red;
+	}
 </style>
