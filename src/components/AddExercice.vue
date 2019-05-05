@@ -27,9 +27,16 @@
 	<div v-else class="set-container space__x">
 		<p class="set-container__exercice-name">
 			{{exerciceData.name}}
-			<button @click="removeExercice" class="trash">
-				<i class="fas fa-trash icon__trash"></i>
+			<button @click="showNotif" class="trash">
+				<i class="far fa-trash-alt icon__trash"></i>
 			</button>
+			<div :class="{ 'notif-popin--active': notifIsActive }" class="notif-popin">
+				<div class="notif-popin__delete-container">
+					<button @click="removeExercice" class="notif-popin__button notif-popin__button--delete">Delete the set</button>
+				</div>
+				<button @click="closeNotif" class="notif-popin__button notif-popin__button--cancel">Cancel</button>
+			</div>
+			<div :class="{ 'is-active': notifIsActive }" class="popin__overlay" @click="closeNotif"></div>
 		</p>
 		<div class="sets">
 			<div 
@@ -74,6 +81,7 @@ export default {
 	data() {
 		return {
 			popinActiveClass: null,
+			notifIsActive: false,
 			isExerciceSelectionned: false,
 			isExerciceValidated: false,
 			chosenExerciceId: null,
@@ -118,6 +126,12 @@ export default {
 		closePopin() {
 			this.popinActiveClass = null;
 		},
+		showNotif() {
+			this.notifIsActive = true;
+		},
+		closeNotif() {
+			this.notifIsActive = false;
+		},
 		exerciceSelection(e) {
 			this.chosenExerciceId = this.exercices[e.target.value].id;
 			this.isExerciceSelectionned = true;
@@ -157,6 +171,7 @@ export default {
 			this.isExerciceValidated = false;
 			this.isExerciceSelectionned = false;
 			EventBus.$emit('updateExerciceIndex');
+			this.closeNotif();
 		},
 		// Utilities methods
 		getExercice: function(exerciceId) {
@@ -256,11 +271,6 @@ export default {
 	.trash {
 		background-color: transparent;
 		border: none;
-		color: #737373;
-	}
-
-	.icon__trash {
-		font-size: 13px;
 	}
 
 </style>

@@ -66,6 +66,6 @@ export default {
 		border: none;
 	}
 	.icon__minus-circle {
-		color: red;
+		color: #a72e2e;
 	}
 </style>

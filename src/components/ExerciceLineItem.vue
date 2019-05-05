@@ -15,8 +15,8 @@
 
 				<div :class="{ 'notif-popin--active': notifIsActive }" class="notif-popin">
 					<div class="notif-popin__delete-container">
-						<p class="notif-popin__description">Delete this exercice and all his associated sets</p>
-						<button @click="this.deleteAssistance" class="notif-popin__button notif-popin__button--delete">Delete this exercice</button>
+						<p class="notif-popin__description">Delete the exercice and all his associated sets.</p>
+						<button @click="deleteAssistance" class="notif-popin__button notif-popin__button--delete">Delete the exercice</button>
 					</div>
 					<button @click="closeNotif" class="notif-popin__button notif-popin__button--cancel">Cancel</button>
 				</div>
