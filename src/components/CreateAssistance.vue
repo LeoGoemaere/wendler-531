@@ -73,6 +73,7 @@ export default {
 
 			exercices.secondary[assistancesLength].name = this.assistanceEdited;
 			exercices.secondary[assistancesLength].id = uuid();
+			exercices.secondary[assistancesLength].incrementFactor = 0;
 			this.$store.commit('updateExercices', exercices);
 			this.cancelAddExercice();
 		}
