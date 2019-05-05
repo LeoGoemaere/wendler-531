@@ -4,9 +4,8 @@
 			Loop directly on the store extrasets, 
 			because the extra set can be updated inside ExtraSetSetter component
 		-->
-		<div class="sets">
+		<div v-if="isSetValidated" class="sets">
 			<ExtraSetSetter 
-				v-if="isSetValidated"
 				v-for="(extraSet, index) in this.getTrainings[this.trainingIndex][this.exerciceIndex].extraSets"
 				:key="extraSet.id"
 				:index="index"
@@ -47,6 +46,7 @@
 
 <script>
 import { mapGetters } from 'vuex';
+import { EventBus } from '@/event-bus';
 
 import ExtraSetSetter from '@/components/ExtraSetSetter';
 export default {
@@ -54,7 +54,6 @@ export default {
 	components: { ExtraSetSetter },
 	props: {
 		trainingIndex: Number,
-		exerciceIndex: Number,
 		setOrder: Number,
 		lift: Object,
 		exerciceData: Object
@@ -66,6 +65,7 @@ export default {
 			isSetValidated: false,
 			setIndex: null,
 			trainings: null,
+			exerciceIndex: null,
 			extraSetsModel: [
 				{
 					type: 'joker',
@@ -80,10 +80,15 @@ export default {
 		}
 	},
 	mounted() {
+		this.exerciceIndex = this.getExerciceIndex();
+		EventBus.$on('updateExerciceIndex', this.updateExerciceIndexHandler);
 		// Get last version from trainings.
 		this.trainings = JSON.parse(JSON.stringify(this.getTrainings));
 		this.extraSets = this.trainings[this.trainingIndex][this.exerciceIndex].extraSets;
 		this.isSetValidated = this.extraSets.length ? true : false;
+	},
+	destroyed() {
+		EventBus.$off('updateExerciceIndex', this.updateExerciceIndexHandler);
 	},
 	methods: {
 		showPopin() {
@@ -129,6 +134,18 @@ export default {
 
 			this.closePopin();
 		},
+		getExerciceIndex: function() {
+			let exerciceIndex;
+			this.getTrainings[this.trainingIndex].filter((exercice, index) => {
+				if (this.setOrder === exercice.setOrder) {
+					exerciceIndex = index;
+				}
+			});
+			return typeof exerciceIndex !== 'undefined' ? exerciceIndex : null;
+		},
+		updateExerciceIndexHandler: function() {
+			this.exerciceIndex = this.getExerciceIndex();
+		}
 	},
 	computed: {
 		...mapGetters([

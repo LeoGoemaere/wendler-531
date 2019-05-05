@@ -1,7 +1,6 @@
 <template>
 
 	<div v-if="!isExerciceValidated" class="add-exercice space__x">
-
 		<button class="button" @click="showPopin">
 			Add {{exerciceType}} exercice
 		</button>
@@ -46,7 +45,6 @@
 		</div>
 		<PickingExtraSet
 			:trainingIndex="trainingIndex"
-			:exerciceIndex="exerciceIndex"
 			:setOrder="setOrder"
 			:lift="lift"
 			:exerciceData="exerciceData"
@@ -158,6 +156,7 @@ export default {
 
 			this.isExerciceValidated = false;
 			this.isExerciceSelectionned = false;
+			EventBus.$emit('updateExerciceIndex');
 		},
 		// Utilities methods
 		getExercice: function(exerciceId) {
