@@ -57,7 +57,7 @@ export default {
 			this.$store.commit('updateExercices', exercices);
 		},
 		roundValue: function(value) {
-			return Math.ceil(value * 4) / 4;
+			return isNaN(value) ? 0 : Math.ceil(value * 4) / 4;
 		},
 		deleteAssistance: function() {
 			let exercices = JSON.parse(JSON.stringify(this.getExercices));

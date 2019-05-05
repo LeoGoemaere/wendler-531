@@ -7,13 +7,6 @@ import { mapGetters } from 'vuex';
 
 export default {
 	name: 'ProgressionIncrementor',
-	components: {  },
-	props: {
-	},
-	data () {
-		return {
-		}
-	},
 	methods: {
 		incrementExercicesMax() {
 			let exercices = JSON.parse(JSON.stringify(this.getExercices));
