@@ -4,6 +4,7 @@
 			<button @click="isPrimaryExercices" :class="{ 'segmented-controller__item--active': isPrimarySelected }" class="segmented-controller__item">Primary</button>
 			<button @click="isSecondaryExercices" :class="{ 'segmented-controller__item--active': !isPrimarySelected }"class="segmented-controller__item">Assistances</button>
 		</div>
+		<ProgressionIncrementor />
 		<div v-if="isPrimarySelected">
 			<ExerciceLineItem 
 				v-for="(exercice, index) in this.exercices.primary"
@@ -24,9 +25,11 @@ import { mapGetters } from 'vuex';
 import uuid from 'uuid/v4';
 import ExerciceLineItem from '@/components/ExerciceLineItem';
 import CreateAssistance from '@/components/CreateAssistance';
+import ProgressionIncrementor from '@/components/ProgressionIncrementor';
+
 export default {
 	name: 'ExercicesSetter',
-	components: { ExerciceLineItem, CreateAssistance },
+	components: { ExerciceLineItem, CreateAssistance, ProgressionIncrementor },
 	props: {
 		exercices: Object
 	},

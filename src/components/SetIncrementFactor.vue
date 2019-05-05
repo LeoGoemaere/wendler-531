@@ -51,7 +51,7 @@ export default {
 			// Create deep copy.
 			let exercices = JSON.parse(JSON.stringify(this.getExercices));
 			let currentExercice = exercices[this.exerciceType][this.exerciceIndex];
-			currentExercice.incrementFactor = this.incrementEdited;
+			currentExercice.incrementFactor = parseInt(this.incrementEdited);
 
 			this.$store.commit('updateExercices', exercices);
 			this.cancelSetIncrement();
