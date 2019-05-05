@@ -1,9 +1,15 @@
 <template>
 	<div :class="exerciceOptionClass" class="exercice space__x">
-		<p class="exercice__label">
-			{{ exercice.name }}
-			<i v-if="type === 'secondary'" @click="toggleExerciceOptions('exercice--options-enabled')" class="fas fa-ellipsis-h icon__ellipsis"></i>
-		</p>
+		<div class="exercice__label-row">
+			<p class="exercice__label">{{ exercice.name }}</p>
+			<div class="exercice__options">
+				<SetIncrementFactor 
+					:exerciceType="type"
+					:exerciceIndex="index"
+				/>
+				<i v-if="type === 'secondary'" @click="toggleExerciceOptions('exercice--options-enabled')" class="fas fa-ellipsis-h icon__ellipsis"></i>
+			</div>
+		</div>
 		<div class="datas">
 			<div class="datas__item">
 				<label class="datas__label">rm</label>
@@ -19,10 +25,6 @@
 		<button v-if="type === 'secondary'" class="exercice__delete-button" @click="this.deleteAssistance">
 			<i class="fas fa-trash"></i>
 		</button>
-		<SetIncrementFactor 
-			:exerciceType="type"
-			:exerciceIndex="index"
-		/>
 	</div>
 </template>
 
@@ -80,8 +82,8 @@ export default {
 
 <style scoped>
 	.exercice {
-		padding-top: 8px;
-		padding-bottom: 8px;
+		padding-top: 6px;
+		padding-bottom: 6px;
 		position: relative;
 		transition: transform ease-out .3s;
 	}
@@ -102,11 +104,20 @@ export default {
 	}
 
 	.exercice__label {
-		margin-bottom: 5px;
 		font-size: 17px;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+	}
+
+	.exercice__label-row {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 5px;
+	}
+
+	.exercice__options {
+		display: flex;
 	}
 
 	.exercice__delete-button {

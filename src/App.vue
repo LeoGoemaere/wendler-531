@@ -55,11 +55,11 @@ export default {
 	}
 
 	h1 {
-		margin-bottom: 25px;
+		margin-bottom: 18px;
 	}
 
 	h2 {
-		margin-bottom: 25px;
+		margin-bottom: 15px;
 	}
 
 	p {
@@ -268,6 +268,10 @@ export default {
 
 	.icon__ellipsis {
 		font-size: 18px;
+	}
+
+	.set-increment + .icon__ellipsis {
+		margin-left: 10px;
 	}
 
 	.row__select {

@@ -1,5 +1,10 @@
 <template>
-		<button @click="incrementExercicesMax">Progression Incrementor</button>
+	<div class="progression-incrementor__container space__x">
+		<button @click="incrementExercicesMax" class="button progression-incrementor__button">
+			<i class="far fa-arrow-alt-circle-up icon__arrow-circle-up"></i>
+			Increment max
+		</button>
+	</div>
 </template>
 
 <script>
@@ -29,4 +34,16 @@ export default {
 
 <style scoped>
 	/* Create global styles instead */
+	.progression-incrementor__container {
+		margin-bottom: 10px;
+	}
+	.progression-incrementor__button {
+		display: flex;
+		justify-content: center;
+		background-color: #34495e;
+	}
+	.icon__arrow-circle-up {
+		font-size: 18px;
+		margin-right: 10px;
+	}
 </style>

@@ -1,6 +1,9 @@
 <template>
-		<div>
-			<button @click="showPopin">{{getExercices[this.exerciceType][this.exerciceIndex].incrementFactor}}</button>
+		<div class="set-increment">
+			<button @click="showPopin" class="set-increment-button">
+				<i class="far fa-arrow-alt-circle-up icon__arrow-circle-up"></i>
+				<span>{{getExercices[this.exerciceType][this.exerciceIndex].incrementFactor}}</span>
+			</button>
 			<div :class="{ 'is-active': popinIsActive }" class="popin__element">
 				<p class="popin__title">Set your increment factor</p>
 				<div class="popin__input-row">
@@ -67,4 +70,18 @@ export default {
 
 <style scoped>
 	/* Create global styles instead */
+	.set-increment-button {
+		border: none;
+		background-color: transparent;
+		color: #34495e;
+		border: 2px solid #34495e;
+		padding: 2px 5px;
+		border-radius: 5px;
+		display: flex;
+		align-items: center;
+	}
+	.icon__arrow-circle-up {
+		font-size: 15px;
+		margin-right: 5px;
+	}
 </style>

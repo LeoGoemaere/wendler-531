@@ -82,7 +82,7 @@ export default {
 
 <style scoped>
 	.select-container {
-		margin-bottom: 25px;
+		margin-bottom: 20px;
 		display: flex;
 	}
 	.select {
