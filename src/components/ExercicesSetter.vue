@@ -2,8 +2,8 @@
 	<div>
 		<ProgressionIncrementor />
 		<div class="segmented-controller">
-			<button @click="toggleExercicesView" :class="{ 'segmented-controller__item--active': isPrimarySelected }" class="segmented-controller__item">Primary</button>
-			<button @click="toggleExercicesView" :class="{ 'segmented-controller__item--active': !isPrimarySelected }"class="segmented-controller__item">Assistances</button>
+			<button @click="isPrimaryExercices" :class="{ 'segmented-controller__item--active': isPrimarySelected }" class="segmented-controller__item">Primary</button>
+			<button @click="isSecondaryExercices" :class="{ 'segmented-controller__item--active': !isPrimarySelected }"class="segmented-controller__item">Assistances</button>
 		</div>
 		<div v-if="isPrimarySelected">
 			<ExerciceLineItem 
@@ -39,8 +39,11 @@ export default {
 		}
 	},
 	methods: {
-		toggleExercicesView() {
-			this.isPrimarySelected = this.isPrimarySelected ? false : true;
+		isPrimaryExercices: function() {
+			this.isPrimarySelected = true
+		},
+		isSecondaryExercices: function() {
+			this.isPrimarySelected = false
 		}
 	}
 }
