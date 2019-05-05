@@ -19,14 +19,21 @@
 		<button v-if="type === 'secondary'" class="exercice__delete-button" @click="this.deleteAssistance">
 			<i class="fas fa-trash"></i>
 		</button>
+		<SetIncrementFactor 
+			:exerciceType="type"
+			:exerciceIndex="index"
+		/>
 	</div>
 </template>
 
 <script>
 import { mapGetters } from 'vuex';
 
+import SetIncrementFactor from '@/components/SetIncrementFactor';
+
 export default {
 	name: 'Exercice',
+	components: { SetIncrementFactor },
 	props: {
 		exercice: Object,
 		index: Number,

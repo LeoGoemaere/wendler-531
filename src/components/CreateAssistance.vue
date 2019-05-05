@@ -6,7 +6,7 @@
 		<div :class="popinActiveClass" class="popin__element">
 			<p class="popin__title">Add new assistance exercice</p>
 			<div class="popin__input-row">
-				<input type="text" v-model="assistanceEdited" class="popin__row" placeholder="Exercice name" />
+				<input type="text" v-model="assistanceEdited" class="popin__row js-input-create-assistance" placeholder="Exercice name" />
 			</div>
 			<div class="buttons">
 				<button :class="{ 'button-action--disabled': !assistanceEdited }" class="button-action" @click="createExercice">Create Exercice</button>
@@ -62,7 +62,7 @@ export default {
 		cancelAddExercice: function() {
 			this.assistanceEdited = null;
 			this.closePopin();
-			document.querySelector('.popin__row').value = "";
+			document.querySelector('.js-input-create-assistance').value = "";
 		},
 		createExercice: function(e) {
 			if (!this.assistanceEdited) return;
