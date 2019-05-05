@@ -266,12 +266,13 @@ export default {
 		border-top: 1px solid #e0e0e0;
 	}
 
-	.icon__ellipsis {
-		font-size: 18px;
+	.icon__trash {
+		font-size: 20px;
+		color: #a72e2e;
 	}
 
-	.set-increment + .icon__ellipsis {
-		margin-left: 10px;
+	.set-increment + .icon__trash {
+		margin-left: 20px;
 	}
 
 	.row__select {
@@ -323,5 +324,45 @@ export default {
 		top: 0;
 		left: 0;
 		right: 0;
+	}
+	.notif-popin {
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		padding: 0 10px 10px;
+		z-index: 20;
+		transform: translateY(100%);
+		transition: transform .2s ease-out;
+	}
+	.notif-popin--active {
+		transform: translateY(0);
+		transition: transform .2s ease-out;
+	}
+	.notif-popin__delete-container {
+		background-color: #fff;
+		border-radius: 15px;
+		text-align: center;
+		margin-bottom: 10px;
+	}
+	.notif-popin__description {
+		padding: 10px 15px;
+		border-bottom: 1px solid #dedede;
+	}
+	.notif-popin__button {
+		background-color: transparent;
+		border: none;
+		display: block;
+		width: 100%;
+		padding: 15px 15px;
+		font-size: 20px;
+	}
+	.notif-popin__button--delete {
+		color: red;
+	}
+	.notif-popin__button--cancel {
+		color: #34495e;
+		background-color: #fff;
+		border-radius: 15px;
 	}
 </style>

@@ -7,7 +7,20 @@
 					:exerciceType="type"
 					:exerciceIndex="index"
 				/>
-				<i v-if="type === 'secondary'" @click="toggleExerciceOptions('exercice--options-enabled')" class="fas fa-ellipsis-h icon__ellipsis"></i>
+				
+				<i 
+					v-if="type === 'secondary'" 
+					@click="showNotif" 
+					class="far fa-trash-alt icon__trash"></i>
+
+				<div :class="{ 'notif-popin--active': notifIsActive }" class="notif-popin">
+					<div class="notif-popin__delete-container">
+						<p class="notif-popin__description">Delete this exercice and all his associated sets</p>
+						<button @click="this.deleteAssistance" class="notif-popin__button notif-popin__button--delete">Delete this exercice</button>
+					</div>
+					<button @click="closeNotif" class="notif-popin__button notif-popin__button--cancel">Cancel</button>
+				</div>
+				<div :class="{ 'is-active': notifIsActive }" class="popin__overlay" @click="closeNotif"></div>
 			</div>
 		</div>
 		<div class="datas">
@@ -22,9 +35,6 @@
 				<label class="datas__label datas__label--unit">kg</label>
 			</div>
 		</div>
-		<button v-if="type === 'secondary'" class="exercice__delete-button" @click="this.deleteAssistance">
-			<i class="fas fa-trash"></i>
-		</button>
 	</div>
 </template>
 
@@ -47,7 +57,8 @@ export default {
 				rm: 'rm',
 				tm: 'tm'
 			},
-			exerciceOptionClass: null
+			exerciceOptionClass: null,
+			notifIsActive: false
 		}
 	},
 	methods: {
@@ -67,9 +78,12 @@ export default {
 			
 			this.$store.commit('updateExercices', exercices);
 		},
-		toggleExerciceOptions(className) {
-			this.exerciceOptionClass = this.exerciceOptionClass ? null : className;
-		}
+		showNotif() {
+			this.notifIsActive = true;
+		},
+		closeNotif() {
+			this.notifIsActive = false;
+		},
 	},
 	computed: {
 		...mapGetters([
@@ -98,11 +112,6 @@ export default {
 		right: 0;
 	}
 
-	.exercice--options-enabled {
-		transform: translateX(-80px);
-		transition: transform ease-out .3s
-	}
-
 	.exercice__label {
 		font-size: 17px;
 		display: flex;
@@ -118,18 +127,7 @@ export default {
 
 	.exercice__options {
 		display: flex;
-	}
-
-	.exercice__delete-button {
-		position: absolute;
-		top: 0;
-		bottom: 0;
-		border: none;
-		background-color: #d81e1e;
-		color: #fff;
-		width: 80px;
-		right: 0;
-    	transform: translateX(100%);
+		align-items: center;
 	}
 
 	.datas {
