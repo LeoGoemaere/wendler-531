@@ -4,7 +4,7 @@
 		<div class="set__reps-datas">
 			<span class="set__reps">{{set.reps}} {{prSet}}</span>
 			<span v-if="set.tm" class="set__at">@</span>
-			<span v-if="set.tm" class="set__weight">{{set.tm * tmExercice}}</span>
+			<span v-if="set.tm" class="set__weight">{{roundValue(set.tm * tmExercice)}}</span>
 			<span v-if="set.tm" class="set__unit">kg</span>
 			<span v-if="!set.tm">reps</span>
 		</div>
@@ -30,6 +30,9 @@ export default {
 		}
 	},
 	methods: {
+		roundValue: function(value) {
+			return isNaN(value) ? 0 : Math.ceil(value * 4) / 4;
+		}
 	}
 }
 </script>
