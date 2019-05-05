@@ -151,7 +151,7 @@ export default {
 		...mapGetters([
 			'getTrainings'
 		])
-	},
+	}
 }
 </script>
 

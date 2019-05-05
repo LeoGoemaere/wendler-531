@@ -2,10 +2,17 @@ import Vue from 'vue';
 import Vuex from 'vuex';
 Vue.use(Vuex);
 
+import VuexPersist from 'vuex-persist';
+
 import Exercices from '@/datas/exercices.json';
 import Variations from '@/datas/variations.json';
 // 531 training cycle program.
 import TrainingCycles from '@/datas/training-cycles.json';
+
+const vuexPersist = new VuexPersist({
+	key: 'Wendler-531',
+	storage: localStorage
+})
 
 export default new Vuex.Store({
 	state: {
@@ -23,6 +30,7 @@ export default new Vuex.Store({
 			[]
 		]
 	},
+	plugins: [vuexPersist.plugin],
 	getters: {
 		getVariations: (state) => {
 			return state.variations;
