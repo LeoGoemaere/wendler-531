@@ -25,11 +25,17 @@
 		<div :class="popinActiveClass" class="popin__overlay" @click="cancelAddExercice"></div>
 	</div>
 	<div v-else class="set-container space__x">
-		<p class="set-container__exercice-name">
-			{{exerciceData.name}}
-			<button @click="showNotif" class="trash">
-				<i class="far fa-trash-alt icon__trash"></i>
-			</button>
+		<div class="set-container__exercice-name">
+			<div class="set-container__name-container">
+				<span class="set-container__exercice-number">{{index + 1}}.</span>
+				<span>{{exerciceData.name}}</span>
+			</div>
+			<div class="set-container__exercice-labels-container">
+				<p class="exercice-label__type">{{exerciceType}}</p>
+				<button @click="showNotif" class="trash">
+					<i class="far fa-trash-alt icon__trash"></i>
+				</button>
+			</div>
 			<div :class="{ 'notif-popin--active': notifIsActive }" class="notif-popin">
 				<div class="notif-popin__delete-container">
 					<button @click="removeExercice" class="notif-popin__button notif-popin__button--delete">Delete the set</button>
@@ -37,7 +43,7 @@
 				<button @click="closeNotif" class="notif-popin__button notif-popin__button--cancel">Cancel</button>
 			</div>
 			<div :class="{ 'is-active': notifIsActive }" class="popin__overlay" @click="closeNotif"></div>
-		</p>
+		</div>
 		<div class="sets">
 			<div 
 				v-for="(set, index) in sets" class="set"
@@ -76,7 +82,8 @@ export default {
 		lift: Object,
 		setOrder: Number,
 		day: String,
-		trainingIndex: Number
+		trainingIndex: Number,
+		index: Number
 	},
 	data() {
 		return {
@@ -263,6 +270,29 @@ export default {
 		align-items: center;
 	}
 
+	.exercice-label__type {
+		font-size: 10px;
+		margin-right: 20px;
+		text-transform: uppercase;
+		border: 1px solid;
+		padding: 2px 10px;
+		border-radius: 12px;		 
+	}
+
+	.set-container__exercice-labels-container {
+		display: flex;
+		align-items: center;
+	}
+
+	.set-container__name-container {
+		display: flex;
+		align-items: center;
+	}
+
+	.set-container__exercice-number {
+		position: relative;
+		margin-right: 10px;
+	}
 
 	.exercices__list + .exercices__list {
 		margin-top: 15px;

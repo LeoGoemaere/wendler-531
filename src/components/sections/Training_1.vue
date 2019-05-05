@@ -17,6 +17,7 @@
 			:setOrder="index"
 			:day="day"
 			:trainingIndex="trainingIndex"
+			:index="index"
 		/>
 
 	</div>
