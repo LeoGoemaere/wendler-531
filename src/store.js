@@ -6,8 +6,6 @@ import VuexPersist from 'vuex-persist';
 
 import Exercices from '@/datas/exercices.json';
 import Variations from '@/datas/variations.json';
-// 531 training cycle program.
-import TrainingCycles from '@/datas/training-cycles.json';
 
 const vuexPersist = new VuexPersist({
 	key: 'Wendler-531',
@@ -17,7 +15,6 @@ const vuexPersist = new VuexPersist({
 export default new Vuex.Store({
 	state: {
 		exercices: Exercices,
-		trainingCycles: TrainingCycles,
 		variations: Variations,
 		currentVariation: Variations.bbb,
 		selectedVariation: 'bbb',
@@ -34,9 +31,6 @@ export default new Vuex.Store({
 	getters: {
 		getVariations: (state) => {
 			return state.variations;
-		},
-		getTrainingCycles: (state) => {
-			return state.trainingCycles;
 		},
 		getCurrentVariation: (state) => {
 			return state.currentVariation;

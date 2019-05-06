@@ -41,13 +41,14 @@ export default {
 		}
 	},
 	mounted() {
-		let trainingCycleLift = this.getTrainingCycles[this.getSelectedWeek];
-		trainingCycleLift.type = 'primary';
 		let variationLifts = this.getCurrentVariation.templates[this.getSelectedTemplate].weeks[this.getSelectedWeek][this.day];
 
-		this.lifts.push(trainingCycleLift);
-		variationLifts.forEach(lift => { 
-			lift.type = "secondary";
+		variationLifts.forEach((lift, index) => { 
+			if (index === 0) {
+				lift.type = 'primary';
+			} else {
+				lift.type = "secondary";
+			}
 			this.lifts.push(lift) 
 		});
 	},
@@ -56,8 +57,7 @@ export default {
 			'getCurrentVariation',
 			'getSelectedTemplate',
 			'getSelectedWeek',
-			'getTrainings',
-			'getTrainingCycles'
+			'getTrainings'
 		])
 	}
 }
