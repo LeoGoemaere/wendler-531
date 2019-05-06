@@ -10,7 +10,7 @@ import Training_4 from '@/components/sections/Training_4'
 Vue.use(Router)
 
 export default new Router({
-	mode: 'hash',
+	mode: 'history',
 	routes: [
 		{
 			path: '/',
