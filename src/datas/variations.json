@@ -39,9 +39,238 @@
 						"day_2": [
 							{
 								"sets": [
+									{ "tm": 0.65, "reps": 5 },
+									{ "tm": 0.75, "reps": 5 },
+									{ "tm": 0.85, "reps": 5, "pr": true }
+								]
+							},
+							{
+								"sets": [
+									{ "tm": 0.50, "reps": 10 },
+									{ "tm": 0.50, "reps": 10 },
+									{ "tm": 0.50, "reps": 10 },
+									{ "tm": 0.50, "reps": 10 },
+									{ "tm": 0.50, "reps": 10 }
+								]
+							},
+							{
+								"sets": [
+									{ "reps": 10 },
+									{ "reps": 10 },
+									{ "reps": 10 },
+									{ "reps": 10 },
+									{ "reps": 10 }
+								]
+							}
+						],
+						"day_3": [
+							{
+								"sets": [
+									{ "tm": 0.65, "reps": 5 },
+									{ "tm": 0.75, "reps": 5 },
+									{ "tm": 0.85, "reps": 5, "pr": true }
+								]
+							},
+							{
+								"sets": [
+									{ "tm": 0.50, "reps": 10 },
+									{ "tm": 0.50, "reps": 10 },
+									{ "tm": 0.50, "reps": 10 },
+									{ "tm": 0.50, "reps": 10 },
+									{ "tm": 0.50, "reps": 10 }
+								]
+							},
+							{
+								"sets": [
+									{ "reps": 10 },
+									{ "reps": 10 },
+									{ "reps": 10 },
+									{ "reps": 10 },
+									{ "reps": 10 }
+								]
+							}
+						],
+						"day_4": [
+							{
+								"sets": [
+									{ "tm": 0.65, "reps": 5 },
+									{ "tm": 0.75, "reps": 5 },
+									{ "tm": 0.85, "reps": 5, "pr": true }
+								]
+							},
+							{
+								"sets": [
+									{ "tm": 0.40, "reps": 5 },
+									{ "tm": 0.50, "reps": 5 },
+									{ "tm": 0.60, "reps": 5 }
+								]
+							},
+							{
+								"sets": [
+									{ "tm": 0.50, "reps": 10 },
+									{ "tm": 0.50, "reps": 10 },
+									{ "tm": 0.50, "reps": 10 },
+									{ "tm": 0.50, "reps": 10 },
+									{ "tm": 0.50, "reps": 10 }
+								]
+							},
+							{
+								"sets": [
+									{ "reps": 10 },
+									{ "reps": 10 },
+									{ "reps": 10 },
+									{ "reps": 10 },
+									{ "reps": 10 }
+								]
+							}
+						]
+					},
+					"week_2": {
+						"name": "Week 2",
+						"day_1": [
+							{
+								"sets": [
 									{ "tm": 0.70, "reps": 3 },
 									{ "tm": 0.80, "reps": 3 },
 									{ "tm": 0.90, "reps": 3, "pr": true }
+								]
+							},
+							{
+								"sets": [
+									{ "tm": 0.50, "reps": 10 },
+									{ "tm": 0.50, "reps": 10 },
+									{ "tm": 0.50, "reps": 10 },
+									{ "tm": 0.50, "reps": 10 },
+									{ "tm": 0.50, "reps": 10 }
+								]
+							},
+							{
+								"sets": [
+									{ "reps": 10 },
+									{ "reps": 10 },
+									{ "reps": 10 },
+									{ "reps": 10 },
+									{ "reps": 10 }
+								]
+							}
+						],
+						"day_2": [
+							{
+								"sets": [
+									{ "tm": 0.70, "reps": 3 },
+									{ "tm": 0.80, "reps": 3 },
+									{ "tm": 0.90, "reps": 3, "pr": true }
+								]
+							},
+							{
+								"sets": [
+									{ "tm": 0.50, "reps": 10 },
+									{ "tm": 0.50, "reps": 10 },
+									{ "tm": 0.50, "reps": 10 },
+									{ "tm": 0.50, "reps": 10 },
+									{ "tm": 0.50, "reps": 10 }
+								]
+							},
+							{
+								"sets": [
+									{ "reps": 10 },
+									{ "reps": 10 },
+									{ "reps": 10 },
+									{ "reps": 10 },
+									{ "reps": 10 }
+								]
+							}
+						],
+						"day_3": [
+							{
+								"sets": [
+									{ "tm": 0.70, "reps": 3 },
+									{ "tm": 0.80, "reps": 3 },
+									{ "tm": 0.90, "reps": 3, "pr": true }
+								]
+							},
+							{
+								"sets": [
+									{ "tm": 0.50, "reps": 10 },
+									{ "tm": 0.50, "reps": 10 },
+									{ "tm": 0.50, "reps": 10 },
+									{ "tm": 0.50, "reps": 10 },
+									{ "tm": 0.50, "reps": 10 }
+								]
+							},
+							{
+								"sets": [
+									{ "reps": 10 },
+									{ "reps": 10 },
+									{ "reps": 10 },
+									{ "reps": 10 },
+									{ "reps": 10 }
+								]
+							}
+						],
+						"day_4": [
+							{
+								"sets": [
+									{ "tm": 0.70, "reps": 3 },
+									{ "tm": 0.80, "reps": 3 },
+									{ "tm": 0.90, "reps": 3, "pr": true }
+								]
+							},
+							{
+								"sets": [
+									{ "tm": 0.50, "reps": 10 },
+									{ "tm": 0.50, "reps": 10 },
+									{ "tm": 0.50, "reps": 10 },
+									{ "tm": 0.50, "reps": 10 },
+									{ "tm": 0.50, "reps": 10 }
+								]
+							},
+							{
+								"sets": [
+									{ "reps": 10 },
+									{ "reps": 10 },
+									{ "reps": 10 },
+									{ "reps": 10 },
+									{ "reps": 10 }
+								]
+							}
+						]
+					},
+					"week_3": {
+						"name": "Week 3",
+						"day_1": [
+							{
+								"sets": [
+									{ "tm": 0.75, "reps": 5 },
+									{ "tm": 0.85, "reps": 3 },
+									{ "tm": 0.95, "reps": 1, "pr": true }
+								]
+							},
+							{
+								"sets": [
+									{ "tm": 0.50, "reps": 10 },
+									{ "tm": 0.50, "reps": 10 },
+									{ "tm": 0.50, "reps": 10 },
+									{ "tm": 0.50, "reps": 10 },
+									{ "tm": 0.50, "reps": 10 }
+								]
+							},
+							{
+								"sets": [
+									{ "reps": 10 },
+									{ "reps": 10 },
+									{ "reps": 10 },
+									{ "reps": 10 },
+									{ "reps": 10 }
+								]
+							}
+						],
+						"day_2": [
+							{
+								"sets": [
+									{ "tm": 0.75, "reps": 5 },
+									{ "tm": 0.85, "reps": 3 },
+									{ "tm": 0.95, "reps": 1, "pr": true }
 								]
 							},
 							{
@@ -93,6 +322,241 @@
 						"day_4": [
 							{
 								"sets": [
+									{ "tm": 0.75, "reps": 5 },
+									{ "tm": 0.85, "reps": 3 },
+									{ "tm": 0.95, "reps": 1, "pr": true }
+								]
+							},
+							{
+								"sets": [
+									{ "tm": 0.50, "reps": 10 },
+									{ "tm": 0.50, "reps": 10 },
+									{ "tm": 0.50, "reps": 10 },
+									{ "tm": 0.50, "reps": 10 },
+									{ "tm": 0.50, "reps": 10 }
+								]
+							},
+							{
+								"sets": [
+									{ "reps": 10 },
+									{ "reps": 10 },
+									{ "reps": 10 },
+									{ "reps": 10 },
+									{ "reps": 10 }
+								]
+							}
+						]
+					},
+					"week_4": {
+						"name": "Week 4",
+						"day_1": [
+							{
+								"sets": [
+									{ "tm": 0.40, "reps": 5 },
+									{ "tm": 0.50, "reps": 5 },
+									{ "tm": 0.60, "reps": 5 }
+								]
+							},
+							{
+								"sets": [
+									{ "tm": 0.50, "reps": 10 },
+									{ "tm": 0.50, "reps": 10 },
+									{ "tm": 0.50, "reps": 10 },
+									{ "tm": 0.50, "reps": 10 },
+									{ "tm": 0.50, "reps": 10 }
+								]
+							},
+							{
+								"sets": [
+									{ "reps": 10 },
+									{ "reps": 10 },
+									{ "reps": 10 },
+									{ "reps": 10 },
+									{ "reps": 10 }
+								]
+							}
+						],
+						"day_2": [
+							{
+								"sets": [
+									{ "tm": 0.40, "reps": 5 },
+									{ "tm": 0.50, "reps": 5 },
+									{ "tm": 0.60, "reps": 5 }
+								]
+							},
+							{
+								"sets": [
+									{ "tm": 0.50, "reps": 10 },
+									{ "tm": 0.50, "reps": 10 },
+									{ "tm": 0.50, "reps": 10 },
+									{ "tm": 0.50, "reps": 10 },
+									{ "tm": 0.50, "reps": 10 }
+								]
+							},
+							{
+								"sets": [
+									{ "reps": 10 },
+									{ "reps": 10 },
+									{ "reps": 10 },
+									{ "reps": 10 },
+									{ "reps": 10 }
+								]
+							}
+						],
+						"day_3": [
+							{
+								"sets": [
+									{ "tm": 0.40, "reps": 5 },
+									{ "tm": 0.50, "reps": 5 },
+									{ "tm": 0.60, "reps": 5 }
+								]
+							},
+							{
+								"sets": [
+									{ "tm": 0.50, "reps": 10 },
+									{ "tm": 0.50, "reps": 10 },
+									{ "tm": 0.50, "reps": 10 },
+									{ "tm": 0.50, "reps": 10 },
+									{ "tm": 0.50, "reps": 10 }
+								]
+							},
+							{
+								"sets": [
+									{ "reps": 10 },
+									{ "reps": 10 },
+									{ "reps": 10 },
+									{ "reps": 10 },
+									{ "reps": 10 }
+								]
+							}
+						],
+						"day_4": [
+							{
+								"sets": [
+									{ "tm": 0.40, "reps": 5 },
+									{ "tm": 0.50, "reps": 5 },
+									{ "tm": 0.60, "reps": 5 }
+								]
+							},
+							{
+								"sets": [
+									{ "tm": 0.50, "reps": 10 },
+									{ "tm": 0.50, "reps": 10 },
+									{ "tm": 0.50, "reps": 10 },
+									{ "tm": 0.50, "reps": 10 },
+									{ "tm": 0.50, "reps": 10 }
+								]
+							},
+							{
+								"sets": [
+									{ "reps": 10 },
+									{ "reps": 10 },
+									{ "reps": 10 },
+									{ "reps": 10 },
+									{ "reps": 10 }
+								]
+							}
+						]
+					}
+				}
+			},
+			"template_2": {
+				"name": "Template 2",
+				"description": "Description for template 2",
+				"weeks": {
+					"week_1": {
+						"name": "Week 1",
+						"day_1": [
+							{
+								"sets": [
+									{ "tm": 0.75, "reps": 5 },
+									{ "tm": 0.80, "reps": 5 },
+									{ "tm": 0.85, "reps": 5, "pr": true }
+								]
+							},
+							{
+								"sets": [
+									{ "tm": 0.50, "reps": 10 },
+									{ "tm": 0.50, "reps": 10 },
+									{ "tm": 0.50, "reps": 10 },
+									{ "tm": 0.50, "reps": 10 },
+									{ "tm": 0.50, "reps": 10 }
+								]
+							},
+							{
+								"sets": [
+									{ "reps": 10 },
+									{ "reps": 10 },
+									{ "reps": 10 },
+									{ "reps": 10 },
+									{ "reps": 10 }
+								]
+							}
+						],
+						"day_2": [
+							{
+								"sets": [
+									{ "tm": 0.75, "reps": 5 },
+									{ "tm": 0.80, "reps": 5 },
+									{ "tm": 0.85, "reps": 5, "pr": true }
+								]
+							},
+							{
+								"sets": [
+									{ "tm": 0.50, "reps": 10 },
+									{ "tm": 0.50, "reps": 10 },
+									{ "tm": 0.50, "reps": 10 },
+									{ "tm": 0.50, "reps": 10 },
+									{ "tm": 0.50, "reps": 10 }
+								]
+							},
+							{
+								"sets": [
+									{ "reps": 10 },
+									{ "reps": 10 },
+									{ "reps": 10 },
+									{ "reps": 10 },
+									{ "reps": 10 }
+								]
+							}
+						],
+						"day_3": [
+							{
+								"sets": [
+									{ "tm": 0.75, "reps": 5 },
+									{ "tm": 0.80, "reps": 5 },
+									{ "tm": 0.85, "reps": 5, "pr": true }
+								]
+							},
+							{
+								"sets": [
+									{ "tm": 0.50, "reps": 10 },
+									{ "tm": 0.50, "reps": 10 },
+									{ "tm": 0.50, "reps": 10 },
+									{ "tm": 0.50, "reps": 10 },
+									{ "tm": 0.50, "reps": 10 }
+								]
+							},
+							{
+								"sets": [
+									{ "reps": 10 },
+									{ "reps": 10 },
+									{ "reps": 10 },
+									{ "reps": 10 },
+									{ "reps": 10 }
+								]
+							}
+						],
+						"day_4": [
+							{
+								"sets": [
+									{ "tm": 0.75, "reps": 5 },
+									{ "tm": 0.80, "reps": 5 },
+									{ "tm": 0.85, "reps": 5, "pr": true }
+								]
+							},
+							{
+								"sets": [
 									{ "tm": 0.40, "reps": 5 },
 									{ "tm": 0.50, "reps": 5 },
 									{ "tm": 0.60, "reps": 5 }
@@ -123,6 +587,13 @@
 						"day_1": [
 							{
 								"sets": [
+									{ "tm": 0.80, "reps": 3 },
+									{ "tm": 0.85, "reps": 3 },
+									{ "tm": 0.90, "reps": 3, "pr": true }
+								]
+							},
+							{
+								"sets": [
 									{ "tm": 0.50, "reps": 10 },
 									{ "tm": 0.50, "reps": 10 },
 									{ "tm": 0.50, "reps": 10 },
@@ -141,6 +612,13 @@
 							}
 						],
 						"day_2": [
+							{
+								"sets": [
+									{ "tm": 0.80, "reps": 3 },
+									{ "tm": 0.85, "reps": 3 },
+									{ "tm": 0.90, "reps": 3, "pr": true }
+								]
+							},
 							{
 								"sets": [
 									{ "tm": 0.50, "reps": 10 },
@@ -163,6 +641,13 @@
 						"day_3": [
 							{
 								"sets": [
+									{ "tm": 0.80, "reps": 3 },
+									{ "tm": 0.85, "reps": 3 },
+									{ "tm": 0.90, "reps": 3, "pr": true }
+								]
+							},
+							{
+								"sets": [
 									{ "tm": 0.50, "reps": 10 },
 									{ "tm": 0.50, "reps": 10 },
 									{ "tm": 0.50, "reps": 10 },
@@ -181,6 +666,13 @@
 							}
 						],
 						"day_4": [
+							{
+								"sets": [
+									{ "tm": 0.80, "reps": 3 },
+									{ "tm": 0.85, "reps": 3 },
+									{ "tm": 0.90, "reps": 3, "pr": true }
+								]
+							},
 							{
 								"sets": [
 									{ "tm": 0.50, "reps": 10 },
@@ -202,8 +694,15 @@
 						]
 					},
 					"week_3": {
-						"name": "Week 1",
+						"name": "Week 3",
 						"day_1": [
+							{
+								"sets": [
+									{ "tm": 0.75, "reps": 5 },
+									{ "tm": 0.85, "reps": 3 },
+									{ "tm": 0.95, "reps": 1, "pr": true }
+								]
+							},
 							{
 								"sets": [
 									{ "tm": 0.50, "reps": 10 },
@@ -226,6 +725,13 @@
 						"day_2": [
 							{
 								"sets": [
+									{ "tm": 0.75, "reps": 5 },
+									{ "tm": 0.85, "reps": 3 },
+									{ "tm": 0.95, "reps": 1, "pr": true }
+								]
+							},
+							{
+								"sets": [
 									{ "tm": 0.50, "reps": 10 },
 									{ "tm": 0.50, "reps": 10 },
 									{ "tm": 0.50, "reps": 10 },
@@ -246,6 +752,13 @@
 						"day_3": [
 							{
 								"sets": [
+									{ "tm": 0.75, "reps": 5 },
+									{ "tm": 0.85, "reps": 3 },
+									{ "tm": 0.95, "reps": 1, "pr": true }
+								]
+							},
+							{
+								"sets": [
 									{ "tm": 0.50, "reps": 10 },
 									{ "tm": 0.50, "reps": 10 },
 									{ "tm": 0.50, "reps": 10 },
@@ -264,6 +777,13 @@
 							}
 						],
 						"day_4": [
+							{
+								"sets": [
+									{ "tm": 0.75, "reps": 5 },
+									{ "tm": 0.85, "reps": 3 },
+									{ "tm": 0.95, "reps": 1, "pr": true }
+								]
+							},
 							{
 								"sets": [
 									{ "tm": 0.50, "reps": 10 },
@@ -289,6 +809,13 @@
 						"day_1": [
 							{
 								"sets": [
+									{ "tm": 0.40, "reps": 5 },
+									{ "tm": 0.50, "reps": 5 },
+									{ "tm": 0.60, "reps": 5 }
+								]
+							},
+							{
+								"sets": [
 									{ "tm": 0.50, "reps": 10 },
 									{ "tm": 0.50, "reps": 10 },
 									{ "tm": 0.50, "reps": 10 },
@@ -307,6 +834,13 @@
 							}
 						],
 						"day_2": [
+							{
+								"sets": [
+									{ "tm": 0.40, "reps": 5 },
+									{ "tm": 0.50, "reps": 5 },
+									{ "tm": 0.60, "reps": 5 }
+								]
+							},
 							{
 								"sets": [
 									{ "tm": 0.50, "reps": 10 },
@@ -329,6 +863,13 @@
 						"day_3": [
 							{
 								"sets": [
+									{ "tm": 0.40, "reps": 5 },
+									{ "tm": 0.50, "reps": 5 },
+									{ "tm": 0.60, "reps": 5 }
+								]
+							},
+							{
+								"sets": [
 									{ "tm": 0.50, "reps": 10 },
 									{ "tm": 0.50, "reps": 10 },
 									{ "tm": 0.50, "reps": 10 },
@@ -349,6 +890,13 @@
 						"day_4": [
 							{
 								"sets": [
+									{ "tm": 0.40, "reps": 5 },
+									{ "tm": 0.50, "reps": 5 },
+									{ "tm": 0.60, "reps": 5 }
+								]
+							},
+							{
+								"sets": [
 									{ "tm": 0.50, "reps": 10 },
 									{ "tm": 0.50, "reps": 10 },
 									{ "tm": 0.50, "reps": 10 },
@@ -368,282 +916,11 @@
 						]
 					}
 				}
-			},
-			"template_2": {
-				"name": "Template 2",
-				"description": "Description for template 1",
-				"weeks": {
-					"week_1": {
-						"name": "Week 1",
-						"day_1": [
-							{
-								"sets": [
-									{ "reps": 10 },
-									{ "reps": 10 },
-									{ "reps": 10 },
-									{ "reps": 10 },
-									{ "reps": 10 }
-								]
-							},
-							{
-								"sets": [
-									{ "reps": 15 },
-									{ "reps": 15 },
-									{ "reps": 15 },
-									{ "reps": 15 },
-									{ "reps": 15 }
-								]
-							}
-						],
-						"day_2": [
-							{
-								"sets": [
-									{ "reps": 10 },
-									{ "reps": 10 },
-									{ "reps": 10 },
-									{ "reps": 10 },
-									{ "reps": 10 }
-								]
-							},
-							{
-								"sets": [
-									{ "reps": 15 },
-									{ "reps": 15 },
-									{ "reps": 15 },
-									{ "reps": 15 },
-									{ "reps": 15 }
-								]
-							}
-						]
-					},
-					"week_2": {
-						"name": "Week 2",
-						"day_1": [
-							{
-								"sets": [
-									{ "reps": 10 },
-									{ "reps": 10 },
-									{ "reps": 10 },
-									{ "reps": 10 },
-									{ "reps": 10 }
-								]
-							},
-							{
-								"sets": [
-									{ "reps": 15 },
-									{ "reps": 15 },
-									{ "reps": 15 },
-									{ "reps": 15 },
-									{ "reps": 15 }
-								]
-							}
-						],
-						"day_2": [
-							{
-								"sets": [
-									{ "reps": 10 },
-									{ "reps": 10 },
-									{ "reps": 10 },
-									{ "reps": 10 },
-									{ "reps": 10 }
-								]
-							},
-							{
-								"sets": [
-									{ "reps": 15 },
-									{ "reps": 15 },
-									{ "reps": 15 },
-									{ "reps": 15 },
-									{ "reps": 15 }
-								]
-							}
-						]
-					},
-					"week_3": {
-						"name": "Week 3",
-						"day_1": [
-							{
-								"sets": [
-									{ "reps": 10 },
-									{ "reps": 10 },
-									{ "reps": 10 },
-									{ "reps": 10 },
-									{ "reps": 10 }
-								]
-							},
-							{
-								"sets": [
-									{ "reps": 15 },
-									{ "reps": 15 },
-									{ "reps": 15 },
-									{ "reps": 15 },
-									{ "reps": 15 }
-								]
-							}
-						],
-						"day_2": [
-							{
-								"sets": [
-									{ "reps": 10 },
-									{ "reps": 10 },
-									{ "reps": 10 },
-									{ "reps": 10 },
-									{ "reps": 10 }
-								]
-							},
-							{
-								"sets": [
-									{ "reps": 15 },
-									{ "reps": 15 },
-									{ "reps": 15 },
-									{ "reps": 15 },
-									{ "reps": 15 }
-								]
-							}
-						]
-					}
-				}
-			},
-			"template_3": {
-				"name": "Template 3",
-				"description": "Description for template 1",
-				"weeks": {
-					"week_1": {
-						"name": "Week 1",
-						"day_1": [
-							{
-								"sets": [
-									{ "reps": 10 },
-									{ "reps": 10 },
-									{ "reps": 10 },
-									{ "reps": 10 },
-									{ "reps": 10 }
-								]
-							},
-							{
-								"sets": [
-									{ "reps": 15 },
-									{ "reps": 15 },
-									{ "reps": 15 },
-									{ "reps": 15 },
-									{ "reps": 15 }
-								]
-							}
-						],
-						"day_2": [
-							{
-								"sets": [
-									{ "reps": 10 },
-									{ "reps": 10 },
-									{ "reps": 10 },
-									{ "reps": 10 },
-									{ "reps": 10 }
-								]
-							},
-							{
-								"sets": [
-									{ "reps": 15 },
-									{ "reps": 15 },
-									{ "reps": 15 },
-									{ "reps": 15 },
-									{ "reps": 15 }
-								]
-							}
-						]
-					},
-					"week_2": {
-						"name": "Week 2",
-						"day_1": [
-							{
-								"sets": [
-									{ "reps": 10 },
-									{ "reps": 10 },
-									{ "reps": 10 },
-									{ "reps": 10 },
-									{ "reps": 10 }
-								]
-							},
-							{
-								"sets": [
-									{ "reps": 15 },
-									{ "reps": 15 },
-									{ "reps": 15 },
-									{ "reps": 15 },
-									{ "reps": 15 }
-								]
-							}
-						],
-						"day_2": [
-							{
-								"sets": [
-									{ "reps": 10 },
-									{ "reps": 10 },
-									{ "reps": 10 },
-									{ "reps": 10 },
-									{ "reps": 10 }
-								]
-							},
-							{
-								"sets": [
-									{ "reps": 15 },
-									{ "reps": 15 },
-									{ "reps": 15 },
-									{ "reps": 15 },
-									{ "reps": 15 }
-								]
-							}
-						]
-					},
-					"week_3": {
-						"name": "Week 3",
-						"day_1": [
-							{
-								"sets": [
-									{ "reps": 10 },
-									{ "reps": 10 },
-									{ "reps": 10 },
-									{ "reps": 10 },
-									{ "reps": 10 }
-								]
-							},
-							{
-								"sets": [
-									{ "reps": 15 },
-									{ "reps": 15 },
-									{ "reps": 15 },
-									{ "reps": 15 },
-									{ "reps": 15 }
-								]
-							}
-						],
-						"day_2": [
-							{
-								"sets": [
-									{ "reps": 10 },
-									{ "reps": 10 },
-									{ "reps": 10 },
-									{ "reps": 10 },
-									{ "reps": 10 }
-								]
-							},
-							{
-								"sets": [
-									{ "reps": 15 },
-									{ "reps": 15 },
-									{ "reps": 15 },
-									{ "reps": 15 },
-									{ "reps": 15 }
-								]
-							}
-						]
-					}
-				}
 			}
 		}
 	},
 	"triumvirate": {
 		"name": "Triumvirate",
-		"hasTrainingCycle": true,
 		"templates": {
 			"template_1": {
 				"name": "Trium Template 1",
@@ -740,7 +1017,6 @@
 	},
 	"nsuns": {
 		"name": "Nsuns",
-		"hasTrainingCycle": false,
 		"templates": {
 			"template_1": {
 				"name": "Nsuns Template 1",
