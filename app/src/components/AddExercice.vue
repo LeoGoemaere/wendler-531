@@ -80,7 +80,7 @@ export default {
 		type: String,
 		lift: Object,
 		setOrder: Number,
-		day: String,
+		day: Number,
 		trainingIndex: Number,
 		index: Number
 	},

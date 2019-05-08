@@ -34,13 +34,13 @@ export default {
 	data () {
 		return {
 			trainingIndex: 1,
-			day: 'day_2',
+			day: 1,
 			exercices: this.$store.state.exercices,
 			lifts: []
 		}
 	},
 	mounted() {
-		let variationLifts = this.getCurrentVariation.templates[this.getSelectedTemplate].weeks[this.getSelectedWeek][this.day];
+		let variationLifts = this.getCurrentVariation.templates[this.getSelectedTemplate].weeks[this.getSelectedWeek].days[this.day];
 
 		variationLifts.forEach((lift, index) => { 
 			if (index === 0) {

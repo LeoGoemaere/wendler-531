@@ -34,14 +34,13 @@ export default {
 	data () {
 		return {
 			trainingIndex: 0,
-			day: 'day_1',
+			day: 0,
 			exercices: this.$store.state.exercices,
 			lifts: []
 		}
 	},
 	mounted() {
-		let variationLifts = this.getCurrentVariation.templates[this.getSelectedTemplate].weeks[this.getSelectedWeek][this.day];
-
+		let variationLifts = this.getCurrentVariation.templates[this.getSelectedTemplate].weeks[this.getSelectedWeek].days[this.day];
 		variationLifts.forEach((lift, index) => { 
 			if (index === 0) {
 				lift.type = 'primary';

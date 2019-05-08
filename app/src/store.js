@@ -18,8 +18,8 @@ export default new Vuex.Store({
 		variations: Variations,
 		currentVariation: Variations.bbb,
 		selectedVariation: 'bbb',
-		selectedTemplate: 'template_1',
-		selectedWeek: 'week_1',
+		selectedTemplate: 0,
+		selectedWeek: 0,
 		trainings: [
 			[],
 			[],

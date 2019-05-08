@@ -27,9 +27,9 @@
 			<p class="select__label">Week</p>
 			<select class="select__item" id="selectWeek" @change="updateSelectedWeek">
 				<option 
-					v-for="(week, key) in currentVariation.templates[selectedTemplate].weeks"
+					v-for="(week, index) in currentVariation.templates[selectedTemplate].weeks"
 					:key="week.id"
-					:value="key"
+					:value="index"
 				>{{week.name}}</option>
 			</select>
 		</div>
@@ -45,8 +45,8 @@ export default {
 		variations: Object,
 		currentVariation: Object,
 		selectedVariation: String,
-		selectedTemplate: String,
-		selectedWeek: String
+		selectedTemplate: Number,
+		selectedWeek: Number
 	},
 	mounted() {
 		document.querySelector('#selectVariation').value = this.selectedVariation; // Todo: récuperer la valeur de la clé plutot que l'objet
@@ -61,20 +61,20 @@ export default {
 			this.$store.commit('updateSelectedVariation', e.target.value);
 		},
 		updateSelectedTemplate(e) {
-			this.$store.commit('updateSelectedTemplate', e.target.value);
+			this.$store.commit('updateSelectedTemplate', parseInt(e.target.value));
 		},
 		updateSelectedWeek(e) {
-			this.$store.commit('updateSelectedWeek', e.target.value);
+			this.$store.commit('updateSelectedWeek', parseInt(e.target.value));
 		},
 		resetSelectedTemplate(selectId) {
-			this.$store.commit('updateSelectedTemplate', 'template_1');
+			this.$store.commit('updateSelectedTemplate', 0);
 			// Update the select in DOM.
-			document.querySelector(`#${selectId}`).value = 'template_1';
+			document.querySelector(`#${selectId}`).value = 0;
 		},
 		resetSelectedWeek(selectId) {
-			this.$store.commit('updateSelectedWeek', 'week_1');
+			this.$store.commit('updateSelectedWeek', 0);
 			// Update the select in DOM.
-			document.querySelector(`#${selectId}`).value = 'week_1';
+			document.querySelector(`#${selectId}`).value = 0;
 		}
 	}
 }
