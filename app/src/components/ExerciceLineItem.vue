@@ -26,12 +26,16 @@
 		<div class="datas">
 			<div class="datas__item">
 				<label class="datas__label">rm</label>
-				<input class="datas__input" type="number" pattern="[0-9]*" @input="calculPerf($event, { from: max.rm, to: max.tm })" :value="roundValue(exercice.max.rm)">
+				<div class="datas__input-container">
+					<input class="datas__input" type="number" pattern="[0-9]*" @input="calculPerf($event, { from: max.rm, to: max.tm })" :value="roundValue(exercice.max.rm)">
+				</div>
 				<label class="datas__label datas__label--unit">kg</label>
 			</div>
 			<div class="datas__item">
 				<label class="datas__label datas__label--tm">tm</label>
-				<input class="datas__input datas__input--tm" type="number" pattern="[0-9]*" @input="calculPerf($event, { from: max.tm, to: max.rm })" :value="roundValue(exercice.max.tm)">
+				<div class="datas__input-container datas__input-container--tm">
+					<input class="datas__input datas__input--tm" type="number" pattern="[0-9]*" @input="calculPerf($event, { from: max.tm, to: max.rm })" :value="roundValue(exercice.max.tm)">
+				</div>
 				<label class="datas__label datas__label--unit">kg</label>
 			</div>
 		</div>
@@ -149,20 +153,38 @@ export default {
 	}
 
 	.datas__label {
-		width: 30px;
+		padding: 0 5px;
 		line-height: 35px;
 		font-size: 12px;
 		text-align: center;
 		text-transform: uppercase;
-		border: 2px solid #ea9852;
 		color: #ea9852;
 		border-radius: 4px;
    		border-bottom-right-radius: 0;
+		border-top-right-radius: 0;
+		border-right: 0;
+		position: relative;
+	}
+
+	.datas__label::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		border: 1px solid #ea9852;
+		border-top-left-radius: 3px;
+		border-bottom-left-radius: 3px;
 	}
 
 	.datas__label--tm {
-		border: 2px solid #34495e;
+		border-right: 0;
 		color: #34495e;
+	}
+
+	.datas__label--tm::before {
+		border: 1px solid #34495e;
 	}
 
 	.datas__label--unit {
@@ -175,17 +197,45 @@ export default {
 		align-self: flex-end;
 	}
 
+	.datas__label--unit::before {
+		content: none;
+	}
+
+	.datas__input-container {
+		position: relative;
+		display: flex;
+	}
+
+	.datas__input-container::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		border: 1px solid #ea9852;
+		border-left: none;
+		z-index: -1;
+		border-top-right-radius: 3px;
+		border-bottom-right-radius: 3px;
+	}
+
+	.datas__input-container--tm::before {
+		border: 1px solid #34495e;
+		border-left: none;
+	}
+
 	.datas__input {
-		width: calc(100% - 60px);
+		width: 100%;
 		border: none;
 		padding: 0 10px;
 		box-sizing: border-box;
-		border-bottom: 2px solid #ea9852;
 		color: #ea9852;
 		font-size: 16px;
+		background-color: transparent;
 	}
+
 	.datas__input--tm {
 		color: #34495e;
-		border-bottom: 2px solid #34495e;
 	}
 </style>

@@ -230,11 +230,14 @@
 		margin-bottom: 5px;
 	}
 
-	.popin__row {
-		border: none;
+	.popin__input-row {
 		border-top: 1px solid;
 		border-bottom: 1px solid;
 		border-color: #e0e0e0;
+	}
+
+	.popin__row {
+		border: none;
 		height: 44px;
 		line-height: 44px;
 		font-size: 17px;
@@ -260,12 +263,12 @@
 	}
 
 	.icon__trash {
-		font-size: 20px;
+		font-size: 18px;
 		color: #a72e2e;
 	}
 
 	.set-increment + .icon__trash {
-		margin-left: 20px;
+		margin-left: 15px;
 	}
 
 	.row__select {

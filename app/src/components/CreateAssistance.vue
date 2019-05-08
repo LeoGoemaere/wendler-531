@@ -1,7 +1,10 @@
 <template>
 	<div class="assistance">
 		<div class="assistance__button-container space__x">
-			<button class="button" @click="showPopin">Create new assistance</button>
+			<button class="assistance__button button" @click="showPopin">
+				<i class="fas fa-plus"></i>
+			</button>
+			<ProgressionIncrementor />
 		</div>
 		<div :class="popinActiveClass" class="popin__element">
 			<p class="popin__title">Add new assistance exercice</p>
@@ -28,9 +31,10 @@
 import { mapGetters } from 'vuex';
 import uuid from 'uuid/v4';
 import ExerciceLineItem from '@/components/ExerciceLineItem';
+import ProgressionIncrementor from '@/components/ProgressionIncrementor';
 export default {
 	name: 'ExercicesSetter',
-	components: { ExerciceLineItem },
+	components: { ExerciceLineItem, ProgressionIncrementor },
 	props: {
 		exercices: Object
 	},
@@ -90,9 +94,23 @@ export default {
 	/* Create global styles instead */
 	.assistance {
 		overflow: hidden;
-		margin-top: 10px;
 	}
 	.assistance__button-container {
 		margin-bottom: 10px;
+		display: flex;
+		justify-content: flex-end;
+	}
+	.assistance__button {
+		width: auto;
+		padding: 0;
+		font-size: 17px;
+		border-radius: 50%;
+		width: 30px;
+		height: 30px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.icon_fa-plus {
 	}
 </style>

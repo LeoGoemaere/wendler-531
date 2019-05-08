@@ -1,11 +1,13 @@
 <template>
 	<div>
-		<ProgressionIncrementor />
 		<div class="segmented-controller">
 			<button @click="isPrimaryExercices" :class="{ 'segmented-controller__item--active': isPrimarySelected }" class="segmented-controller__item">Primary</button>
 			<button @click="isSecondaryExercices" :class="{ 'segmented-controller__item--active': !isPrimarySelected }"class="segmented-controller__item">Assistances</button>
 		</div>
 		<div v-if="isPrimarySelected">
+			<div class="button-container space__x">
+				<ProgressionIncrementor />
+			</div>
 			<ExerciceLineItem 
 				v-for="(exercice, index) in this.exercices.primary"
 				:key="exercice.id"
@@ -14,7 +16,7 @@
 				:type="'primary'"
 			/>
 		</div>
-		<div v-else>
+		<div v-if="!isPrimarySelected">
 			<CreateAssistance :exercices="exercices" />
 		</div>
 	</div>
@@ -57,7 +59,7 @@ export default {
 		overflow: hidden;
 		margin: 0 20px;
 		border: 1px solid #ea9852;
-		margin-bottom: 5px;
+		margin-bottom: 10px;
 	}
 	.segmented-controller__item {
 		border: none;
@@ -72,5 +74,10 @@ export default {
 	.segmented-controller__item--active {
 		background-color: #ea9852;
 		color: #fff;
+	}
+	.button-container {
+		display: flex;
+		justify-content: flex-end;
+		margin-bottom: 10px;
 	}
 </style>
