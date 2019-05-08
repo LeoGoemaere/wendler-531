@@ -100,8 +100,8 @@ export default {
 
 <style scoped>
 	.exercice {
-		padding-top: 6px;
-		padding-bottom: 6px;
+		padding-top: 5px;
+		padding-bottom: 12px;
 		position: relative;
 		transition: transform ease-out .3s;
 	}
@@ -121,6 +121,7 @@ export default {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		color: #000;
 	}
 
 	.exercice__label-row {
@@ -158,7 +159,8 @@ export default {
 		font-size: 12px;
 		text-align: center;
 		text-transform: uppercase;
-		color: #ea9852;
+		color: #fff;
+		background-color: #b3b3b3;
 		border-radius: 4px;
    		border-bottom-right-radius: 0;
 		border-top-right-radius: 0;
@@ -173,23 +175,21 @@ export default {
 		right: 0;
 		bottom: 0;
 		left: 0;
-		border: 1px solid #ea9852;
+		border: 1px solid #b3b3b3;
 		border-top-left-radius: 3px;
 		border-bottom-left-radius: 3px;
 	}
 
 	.datas__label--tm {
 		border-right: 0;
-		color: #34495e;
 	}
 
 	.datas__label--tm::before {
-		border: 1px solid #34495e;
 	}
 
 	.datas__label--unit {
 		background-color: transparent;
-		color: #737373;
+		color: #000;
 		text-transform: none;
 		border: none;
 		line-height: normal;
@@ -213,7 +213,7 @@ export default {
 		right: 0;
 		bottom: 0;
 		left: 0;
-		border: 1px solid #ea9852;
+		border: 1px solid #b3b3b3;
 		border-left: none;
 		z-index: -1;
 		border-top-right-radius: 3px;
@@ -221,7 +221,6 @@ export default {
 	}
 
 	.datas__input-container--tm::before {
-		border: 1px solid #34495e;
 		border-left: none;
 	}
 
@@ -230,12 +229,10 @@ export default {
 		border: none;
 		padding: 0 10px;
 		box-sizing: border-box;
-		color: #ea9852;
 		font-size: 16px;
 		background-color: transparent;
 	}
 
 	.datas__input--tm {
-		color: #34495e;
 	}
 </style>

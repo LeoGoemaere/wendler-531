@@ -93,6 +93,6 @@ export default {
 		font-size: 17px;
 	}
 	.select__item {
-		height: 44px;
+		height: 30px;
 	}
 </style>

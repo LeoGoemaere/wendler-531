@@ -11,7 +11,6 @@
 			/>
 		</div>
 
-		<h2 class="space__x">Exercices</h2>
 		<ExercicesSetter
 			:exercices="getExercices"
 		/>

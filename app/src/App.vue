@@ -356,6 +356,9 @@
 	.notif-popin__button--delete {
 		color: red;
 	}
+	.notif-popin__button--validate {
+		color: #ea9852;
+	}
 	.notif-popin__button--cancel {
 		color: #34495e;
 		background-color: #fff;

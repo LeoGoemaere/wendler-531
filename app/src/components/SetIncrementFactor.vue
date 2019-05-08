@@ -73,7 +73,7 @@ export default {
 	.set-increment-button {
 		border: none;
 		background-color: transparent;
-		color: #34495e;
+		color: #737373;
 		border-radius: 5px;
 		display: flex;
 		align-items: center;

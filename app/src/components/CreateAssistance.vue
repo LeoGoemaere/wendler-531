@@ -12,8 +12,8 @@
 				<input type="text" v-model="assistanceEdited" class="popin__row js-input-create-assistance" placeholder="Exercice name" />
 			</div>
 			<div class="buttons">
-				<button :class="{ 'button-action--disabled': !assistanceEdited }" class="button-action" @click="createExercice">Create Exercice</button>
 				<button class="button-action" @click="cancelAddExercice">Cancel</button>
+				<button :class="{ 'button-action--disabled': !assistanceEdited }" class="button-action" @click="createExercice">Create Exercice</button>
 			</div>
 		</div>
 		<ExerciceLineItem 
@@ -110,6 +110,7 @@ export default {
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		background-color: #ea9852;
 	}
 	.icon_fa-plus {
 	}

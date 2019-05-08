@@ -34,8 +34,8 @@
 						</li>
 					</ul>
 					<div class="buttons">
-						<button :class="{ 'button-action--disabled': !isSetSelectionned }" class="button-action" @click="addSet">Add Extra Set</button>
 						<button class="button-action" @click="cancelAddSet">Cancel</button>
+						<button :class="{ 'button-action--disabled': !isSetSelectionned }" class="button-action" @click="addSet">Add Extra Set</button>
 					</div>
 				</div>
 				<div :class="{ 'is-active': popinIsActive }" class="popin__overlay" @click="cancelAddSet"></div>

@@ -18,8 +18,8 @@
 				</div>
 			</div>
 			<div class="buttons buttons--top-border">
-				<button :class="{ 'button-action--disabled': !isExerciceSelectionned }" class="button-action" @click="addExercice">Add Exercice</button>
 				<button class="button-action" @click="cancelAddExercice">Cancel</button>
+				<button :class="{ 'button-action--disabled': !isExerciceSelectionned }" class="button-action" @click="addExercice">Add Exercice</button>
 			</div>
 		</div>
 		<div :class="popinActiveClass" class="popin__overlay" @click="cancelAddExercice"></div>
