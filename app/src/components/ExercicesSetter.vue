@@ -67,6 +67,7 @@ export default {
 		flex: 1;
 		background-color: transparent;
 		color: #ea9852;
+		font-size: 16px;
 	}
 	.segmented-controller__item + .segmented-controller__item {
 		border-left: 1px solid #ea9852;

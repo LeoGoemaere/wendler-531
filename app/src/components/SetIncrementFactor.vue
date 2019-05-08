@@ -10,8 +10,8 @@
 					<input type="number" v-model="incrementEdited" :placeholder="getExercices[this.exerciceType][this.exerciceIndex].incrementFactor" class="popin__row js-input-set-increment" />
 				</div>
 				<div class="buttons">
-					<button :class="{ 'button-action--disabled': !incrementEdited }" class="button-action" @click="setIncrement">Set increment factor</button>
 					<button class="button-action" @click="cancelSetIncrement">Cancel</button>
+					<button :class="{ 'button-action--disabled': !incrementEdited }" class="button-action" @click="setIncrement">Set increment factor</button>
 				</div>
 			</div>
 			<div :class="{ 'is-active': popinIsActive }" class="popin__overlay" @click="closePopin"></div>

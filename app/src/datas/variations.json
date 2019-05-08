@@ -4,11 +4,11 @@
 		"name": "Boring But Big",
 		"templates": [
 			{
-				"name": "Light template BBB",
+				"name": "Light template",
 				"description": "Description for template 1 BBB",
 				"weeks": [
 					{
-						"name": "Week 1 BBB",
+						"name": "Week 1",
 						"days": [
 							[
 								{
@@ -121,7 +121,7 @@
 						]
 					},
 					{
-						"name": "Week 2 BBB",
+						"name": "Week 2",
 						"days": [
 							[
 								{
@@ -234,7 +234,7 @@
 						]
 					},
 					{
-						"name": "Week 3 BBB",
+						"name": "Week 3",
 						"days": [
 							[
 								{
@@ -347,7 +347,7 @@
 						]
 					},
 					{
-						"name": "Week 4 BBB",
+						"name": "Deload",
 						"days": [
 							[
 								{
@@ -462,11 +462,11 @@
 				]
 			},
 			{
-				"name": "Heavy template BBB",
+				"name": "Heavy template",
 				"description": "Description for template 2 BBB",
 				"weeks": [
 					{
-						"name": "Week 1 BBB",
+						"name": "Week 1",
 						"days": [
 							[
 								{
@@ -579,7 +579,7 @@
 						]
 					},
 					{
-						"name": "Week 2 BBB",
+						"name": "Week 2",
 						"days": [
 							[
 								{
@@ -692,7 +692,7 @@
 						]
 					},
 					{
-						"name": "Week 3 BBB",
+						"name": "Week 3",
 						"days": [
 							[
 								{
@@ -805,7 +805,7 @@
 						]
 					},
 					{
-						"name": "Week 4 BBB",
+						"name": "Deload",
 						"days": [
 							[
 								{
@@ -925,11 +925,11 @@
 		"name": "Triumvirate",
 		"templates": [
 			{
-				"name": "Light template Triumvirate",
+				"name": "Light template",
 				"description": "Description for template 1 Triumvirate",
 				"weeks": [
 					{
-						"name": "Week 1 Triumvirate",
+						"name": "Week 1",
 						"days": [
 							[
 								{
@@ -1042,7 +1042,7 @@
 						]
 					},
 					{
-						"name": "Week 2 Triumvirate",
+						"name": "Week 2",
 						"days": [
 							[
 								{
@@ -1155,7 +1155,7 @@
 						]
 					},
 					{
-						"name": "Week 3 Triumvirate",
+						"name": "Week 3",
 						"days": [
 							[
 								{
@@ -1268,7 +1268,7 @@
 						]
 					},
 					{
-						"name": "Week 4 Triumvirate",
+						"name": "Deload",
 						"days": [
 							[
 								{
@@ -1383,11 +1383,11 @@
 				]
 			},
 			{
-				"name": "Heavy template Triumvirate",
+				"name": "Heavy template",
 				"description": "Description for template 2 Triumvirate",
 				"weeks": [
 					{
-						"name": "Week 1 Triumvirate",
+						"name": "Week 1",
 						"days": [
 							[
 								{
@@ -1500,7 +1500,7 @@
 						]
 					},
 					{
-						"name": "Week 2 Triumvirate",
+						"name": "Week 2",
 						"days": [
 							[
 								{
@@ -1613,7 +1613,7 @@
 						]
 					},
 					{
-						"name": "Week 3 Triumvirate",
+						"name": "Week 3",
 						"days": [
 							[
 								{
@@ -1726,7 +1726,7 @@
 						]
 					},
 					{
-						"name": "Week 4 Triumvirate",
+						"name": "Deload",
 						"days": [
 							[
 								{
@@ -1846,11 +1846,11 @@
 		"name": "Nsuns",
 		"templates": [
 			{
-				"name": "Light template",
+				"name": "Template",
 				"description": "Description for template 1 NSUNS",
 				"weeks": [
 					{
-						"name": "Week 1 NSUNS",
+						"name": "Week 1",
 						"days": [
 							[
 								{

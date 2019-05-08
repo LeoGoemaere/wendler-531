@@ -32,11 +32,11 @@
 	}
 
 	body {
-		font-family: 'Roboto', sans-serif;
+		font-family: -apple-system, system-ui,BlinkMacSystemFont, "Segoe UI", Roboto
 	}
 
 	#app {
-		padding-bottom: 59px; /* Navigation bar height */
+		padding-bottom: 65px; /* Navigation bar height */
 	}
 
 	select {
@@ -149,28 +149,21 @@
 		position: relative;
 	}
 
-	.navigation-bar__item--primary {
-		align-self: center;
-	}
-
 	.navigation-bar__link {
 		display: block;
-		padding: 20px 0;
+		padding: 23px 0;
 		text-decoration: none;
 		color: #fff;
 	}
 	
 	.navigation-bar__link--primary {
-		border: 2px solid white;
-		border-radius: 55px;
-		width: 40px;
-		margin: auto;
-		line-height: 40px;
+		height: 65px;
+		line-height: 65px;
 		padding: 0;
-		background: #ea9852;
+		font-size: 20px;
 	}
 
-	.navigation-bar__link.router-link-exact-active:not(.navigation-bar__link--primary)::before {
+	.navigation-bar__link.router-link-exact-active::before {
 		content: "";
 		position: absolute;
 		height: 2px;
