@@ -182,6 +182,7 @@ export default {
 		box-sizing: border-box;
 		border-bottom: 2px solid #ea9852;
 		color: #ea9852;
+		font-size: 16px;
 	}
 	.datas__input--tm {
 		color: #34495e;

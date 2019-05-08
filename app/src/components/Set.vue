@@ -61,6 +61,7 @@ export default {
 
 	.set__reps-datas {
 		margin-left: 20px;
+		display: flex;
 	}
 
 	.set__number {
@@ -83,6 +84,10 @@ export default {
 	.set__at,
 	.set__unit {
 		color: #737373;
+	}
+
+	.set__at {
+		margin: 0 5px;
 	}
 
 	.set__reps {
