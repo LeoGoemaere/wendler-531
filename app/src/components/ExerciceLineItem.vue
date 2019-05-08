@@ -26,12 +26,12 @@
 		<div class="datas">
 			<div class="datas__item">
 				<label class="datas__label">rm</label>
-				<input class="datas__input" type="number" @input="calculPerf($event, { from: max.rm, to: max.tm })" :value="roundValue(exercice.max.rm)">
+				<input class="datas__input" type="number" pattern="[0-9]*" @input="calculPerf($event, { from: max.rm, to: max.tm })" :value="roundValue(exercice.max.rm)">
 				<label class="datas__label datas__label--unit">kg</label>
 			</div>
 			<div class="datas__item">
 				<label class="datas__label datas__label--tm">tm</label>
-				<input class="datas__input datas__input--tm" type="number" @input="calculPerf($event, { from: max.tm, to: max.rm })" :value="roundValue(exercice.max.tm)">
+				<input class="datas__input datas__input--tm" type="number" pattern="[0-9]*" @input="calculPerf($event, { from: max.tm, to: max.rm })" :value="roundValue(exercice.max.tm)">
 				<label class="datas__label datas__label--unit">kg</label>
 			</div>
 		</div>
