@@ -3,8 +3,8 @@
 		<div class="heading space__x space__top">
 			<h1>Training 1</h1>
 			<div class="heading__infos">
-				<p>{{getCurrentVariation.name}}</p>
-				<p class="heading__week">{{getCurrentVariation.templates[getSelectedTemplate].weeks[getSelectedWeek].name}}</p>
+				<p>{{currentVariation.name}}</p>
+				<p class="heading__week">{{currentVariation.templates[getSelectedTemplate].weeks[getSelectedWeek].name}}</p>
 			</div>
 		</div>
 		
@@ -35,12 +35,18 @@ export default {
 		return {
 			trainingIndex: 0,
 			day: 0,
-			exercices: this.$store.state.exercices,
+			currentVariation: null,
+			exercices: null,
 			lifts: []
 		}
 	},
+	created() {
+		const variations = JSON.parse(JSON.stringify(this.getVariations));
+		this.currentVariation = variations[this.getSelectedVariation];
+	},
 	mounted() {
-		let variationLifts = this.getCurrentVariation.templates[this.getSelectedTemplate].weeks[this.getSelectedWeek].days[this.day];
+		this.exercices = JSON.parse(JSON.stringify(this.$store.state.exercices));
+		let variationLifts = this.currentVariation.templates[this.getSelectedTemplate].weeks[this.getSelectedWeek].days[this.day];
 		variationLifts.forEach((lift, index) => { 
 			if (index === 0) {
 				lift.type = 'primary';
@@ -52,10 +58,10 @@ export default {
 	},
 	computed: {
 		...mapGetters([
-			'getCurrentVariation',
 			'getSelectedTemplate',
 			'getSelectedWeek',
-			'getTrainings'
+			'getVariations',
+			'getSelectedVariation'
 		])
 	}
 }

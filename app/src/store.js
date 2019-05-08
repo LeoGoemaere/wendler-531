@@ -16,7 +16,6 @@ export default new Vuex.Store({
   state: {
     exercices: Exercices,
 		variations: Variations,
-		currentVariation: Variations.bbb,
 		selectedVariation: 'bbb',
 		selectedTemplate: 0,
 		selectedWeek: 0,
@@ -37,9 +36,6 @@ export default new Vuex.Store({
 		updateTrainings(state, trainings) {
 			state.trainings = trainings;
 		},
-		updateCurrentVariation(state, currentVariation) {
-			state.currentVariation = currentVariation;
-		},
 		updateSelectedVariation(state, selectedVariation) {
 			state.selectedVariation = selectedVariation;
 		},
@@ -53,9 +49,6 @@ export default new Vuex.Store({
   getters: {
 		getVariations: (state) => {
 			return state.variations;
-		},
-		getCurrentVariation: (state) => {
-			return state.currentVariation;
 		},
 		getSelectedVariation: (state) => {
 			return state.selectedVariation;

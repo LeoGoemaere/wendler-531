@@ -4,7 +4,7 @@
 			<h1>Settings</h1>
 			<SelectContainer
 				:variations="getVariations"
-				:currentVariation="getCurrentVariation"
+				:currentVariation="getVariations[getSelectedVariation]"
 				:selectedVariation="getSelectedVariation"
 				:selectedTemplate="getSelectedTemplate"
 				:selectedWeek="getSelectedWeek"
@@ -37,7 +37,6 @@ export default {
 	computed: {
 		...mapGetters([
 			'getVariations',
-			'getCurrentVariation',
 			'getSelectedVariation',
 			'getSelectedTemplate',
 			'getSelectedWeek',
