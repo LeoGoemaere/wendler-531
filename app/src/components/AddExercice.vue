@@ -26,17 +26,19 @@
 						<i class="fas fa-chevron-down icon__chevron-down"></i>
 					</button>
 					<div class="accordion__content">
-						<p v-if="exercice.length === 0" class="accordion__info">
-							You don't have any assistances lift yet.
-						</p>
-						<div 
-							v-for="(exerciceItem, indexItem) in exercice"
-							:key="exerciceItem.id">		
-							<input type="radio" :id="`${type}_${setOrder}_${index}_${indexItem}`" :value="key" name="exercice" class="js-exercice-select row__select" @change="exerciceSelection($event, exerciceItem)" />
-							<label :for="`${type}_${setOrder}_${index}_${indexItem}`">
-								{{exerciceItem.name}}
-								<i class="fas fa-check"></i>
-							</label>
+						<div class="accordion__inner">
+							<p v-if="exercice.length === 0" class="accordion__info">
+								You don't have any assistances lift yet.
+							</p>
+							<div 
+								v-for="(exerciceItem, indexItem) in exercice"
+								:key="exerciceItem.id">		
+								<input type="radio" :id="`${type}_${setOrder}_${index}_${indexItem}`" :value="key" name="exercice" class="js-exercice-select row__select" @change="exerciceSelection($event, exerciceItem)" />
+								<label :for="`${type}_${setOrder}_${index}_${indexItem}`">
+									{{exerciceItem.name}}
+									<i class="fas fa-check"></i>
+								</label>
+							</div>
 						</div>
 					</div>
 				</div>

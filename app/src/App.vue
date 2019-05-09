@@ -377,6 +377,12 @@
 		display: none;
 		max-height: 220px;
     	overflow-y: auto;
+		background-image: linear-gradient(to bottom, #ffffff, rgba(255, 255, 255, 0)), linear-gradient(to top, #ffffff, rgba(255, 255, 255, 0)), linear-gradient(to bottom, #737373, rgba(255, 255, 255, 0)), linear-gradient(to top, #737373, rgba(255, 255, 255, 0));
+		background-position: 0 0, 0 100%, 0 0, 0 100%;
+		background-repeat: no-repeat;
+		background-color: #fff;
+		background-size: 100% 20em, 100% 20em, 100% 1em, 100% 1em;
+		background-attachment: local, local, scroll, scroll;
 	}
 	.accordion__info {
 		padding: 15px 20px;
