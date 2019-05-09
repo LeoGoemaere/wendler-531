@@ -11,7 +11,7 @@
 		<AddExercice 
 			v-for="(lift, index) in this.lifts"
 			:key="lift.id"
-			:exercices="exercices[lift.type]"
+			:exercices="exercices"
 			:type="lift.type"
 			:lift="lift"
 			:setOrder="index"

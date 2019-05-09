@@ -7,14 +7,35 @@
 		<div :class="popinActiveClass" class="popin__element">
 			<div class="exercices__list">
 				<p class="popin__title">{{exerciceType}} Exercices</p>
-				<div 
-					v-for="(exercice, key) in exercices"
+
+				<div
+					v-if="type === 'primary'" 
+					v-for="(exercice, key) in exercices[type]"
 					:key="exercice.id">				
-					<input type="radio" :id="`${type}_${setOrder}_${key}`" :value="key" name="exercice" class="js-exercice-select row__select" @change="exerciceSelection" />
+					<input type="radio" :id="`${type}_${setOrder}_${key}`" :value="key" name="exercice" class="js-exercice-select row__select" @change="exerciceSelection($event, exercice)" />
 					<label :for="`${type}_${setOrder}_${key}`">
 						{{exercice.name}}
 						<i class="fas fa-check"></i>
 					</label>
+				</div>
+				<div
+					v-if="type === 'secondary'" 
+					v-for="(exercice, key, index) in exercices" class="accordion">
+					<button @click="toggleAccordion" class="accordion__button">
+						{{key}}
+						<i class="fas fa-chevron-down icon__chevron-down"></i>
+					</button>
+					<div class="accordion__content">
+						<div 
+							v-for="(exerciceItem, indexItem) in exercice"
+							:key="exerciceItem.id">		
+							<input type="radio" :id="`${type}_${setOrder}_${index}_${indexItem}`" :value="key" name="exercice" class="js-exercice-select row__select" @change="exerciceSelection($event, exerciceItem)" />
+							<label :for="`${type}_${setOrder}_${index}_${indexItem}`">
+								{{exerciceItem.name}}
+								<i class="fas fa-check"></i>
+							</label>
+						</div>
+					</div>
 				</div>
 			</div>
 			<div class="buttons buttons--top-border">
@@ -76,7 +97,7 @@ export default {
 	name: 'AddExercice',
 	components: { Set, PickingExtraSet },
 	props: {
-		exercices: Array,
+		exercices: Object,
 		type: String,
 		lift: Object,
 		setOrder: Number,
@@ -138,8 +159,11 @@ export default {
 		closeNotif() {
 			this.notifIsActive = false;
 		},
-		exerciceSelection(e) {
-			this.chosenExerciceId = this.exercices[e.target.value].id;
+		toggleAccordion(e) {
+			e.target.classList.toggle('active');
+		},
+		exerciceSelection(e, exercice) {
+			this.chosenExerciceId = exercice.id;
 			this.isExerciceSelectionned = true;
 		},
 		cancelAddExercice() {
@@ -182,12 +206,24 @@ export default {
 		// Utilities methods
 		getExercice: function(exerciceId) {
 			if (!exerciceId) { return null; }
-			const exercice = this.getExercices[this.type].filter(exercice => {
-				if (exerciceId === exercice.id) {
-					return exercice;
+			if (this.type === 'primary') {
+				const exercice = this.getExercices[this.type].filter(exercice => {
+					if (exerciceId === exercice.id) {
+						return exercice;
+					}
+				});
+				return exercice[0];
+			} else {
+				let exercice;
+				for (let key in this.getExercices) {
+					for (let i = 0; i < this.getExercices[key].length; i++) {
+						if (exerciceId === this.getExercices[key][i].id) {
+							exercice = this.getExercices[key][i];
+						}
+					}
 				}
-			});
-			return exercice[0];
+				return exercice;
+			}
 		},
 		isExerciceExistInCurrentTraining: function() {
 			let exerciceExist;
