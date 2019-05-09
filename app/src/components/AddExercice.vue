@@ -21,7 +21,7 @@
 				<div
 					v-if="type === 'secondary'" 
 					v-for="(exercice, key, index) in exercices" class="accordion">
-					<button @click="toggleAccordion" class="accordion__button">
+					<button @click="toggleAccordion" class="js-accordion-button accordion__button">
 						{{key === 'secondary' ? 'Assistances' : key}}
 						<i class="fas fa-chevron-down icon__chevron-down"></i>
 					</button>
@@ -165,7 +165,12 @@ export default {
 			this.notifIsActive = false;
 		},
 		toggleAccordion(e) {
-			e.target.classList.toggle('active');
+			if (e.target.classList.contains('active')) {
+				e.target.classList.remove('active');
+			} else {
+				document.querySelectorAll('.js-accordion-button').forEach(button => button.classList.remove('active'));
+				e.target.classList.add('active');
+			}
 		},
 		exerciceSelection(e, exercice) {
 			this.chosenExerciceId = exercice.id;
