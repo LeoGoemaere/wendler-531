@@ -4,7 +4,9 @@
 		<div class="set__reps-datas">
 			<span class="set__reps">
 				<span v-if="extraSet">{{extraSet.type === 'fsl' ? 'AMRAP' : ''}}</span>
-				<span v-if="!extraSet || extraSet.type !== 'fsl'">{{set.reps}} {{prSet}}</span>
+				<span v-if="!extraSet || extraSet.type !== 'fsl'">
+					{{set.isAmrap ? 'AMRAP' : set.reps}} {{prSet}}
+				</span>
 			</span>
 			<span v-if="set.tm" class="set__at">@</span>
 			<span v-if="set.tm" class="set__weight">{{roundValue(set.tm * tmExercice)}}</span>
