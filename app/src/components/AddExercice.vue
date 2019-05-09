@@ -22,10 +22,13 @@
 					v-if="type === 'secondary'" 
 					v-for="(exercice, key, index) in exercices" class="accordion">
 					<button @click="toggleAccordion" class="accordion__button">
-						{{key}}
+						{{key === 'secondary' ? 'Assistances' : key}}
 						<i class="fas fa-chevron-down icon__chevron-down"></i>
 					</button>
 					<div class="accordion__content">
+						<p v-if="exercice.length === 0" class="accordion__info">
+							You don't have any assistances lift yet.
+						</p>
 						<div 
 							v-for="(exerciceItem, indexItem) in exercice"
 							:key="exerciceItem.id">		

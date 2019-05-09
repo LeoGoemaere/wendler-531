@@ -181,6 +181,7 @@
 		font-size: 17px;
 		font-weight: 600;
 		padding: 15px 20px;
+		border-bottom: 1px solid #e0e0e0;
 	}
 	.popin__element {
 		display: none;
@@ -224,7 +225,6 @@
 	}
 
 	.popin__input-row {
-		border-top: 1px solid;
 		border-bottom: 1px solid;
 		border-color: #e0e0e0;
 	}
@@ -357,4 +357,35 @@
 		background-color: #fff;
 		border-radius: 15px;
 	}
+	.accordion + .accordion {
+		border-top: 1px solid #e0e0e0;
+	}
+	.accordion__input {
+		display: none;
+	}
+	.accordion__button {
+		font-size: 14px;
+		display: flex;
+		justify-content: space-between;
+		padding: 20px;
+		border: none;
+		background-color: transparent;
+		width: 100%;
+		text-transform: uppercase;
+	}
+	.accordion__content {
+		display: none;
+		max-height: 220px;
+    	overflow-y: auto;
+	}
+	.accordion__info {
+		padding: 15px 20px;
+	}
+	.accordion__button.active .icon__chevron-down {
+		transform: rotate(180deg);
+	}
+	.accordion__button.active + .accordion__content {
+		display: block;
+	}
+
 </style>
