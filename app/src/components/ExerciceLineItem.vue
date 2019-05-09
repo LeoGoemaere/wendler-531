@@ -27,14 +27,14 @@
 			<div class="datas__item">
 				<label class="datas__label">rm</label>
 				<div class="datas__input-container">
-					<input class="datas__input" type="number" pattern="[0-9]*" @input="calculPerf($event, { from: max.rm, to: max.tm })" :value="roundValue(exercice.max.rm)">
+					<input class="datas__input" type="number" inputmode="numeric" @change="calculPerf($event, { from: max.rm, to: max.tm })" :value="roundValue(exercice.max.rm)">
 				</div>
 				<label class="datas__label datas__label--unit">kg</label>
 			</div>
 			<div class="datas__item">
 				<label class="datas__label datas__label--tm">tm</label>
 				<div class="datas__input-container datas__input-container--tm">
-					<input class="datas__input datas__input--tm" type="number" pattern="[0-9]*" @input="calculPerf($event, { from: max.tm, to: max.rm })" :value="roundValue(exercice.max.tm)">
+					<input class="datas__input datas__input--tm" type="number" inputmode="numeric" @change="calculPerf($event, { from: max.tm, to: max.rm })" :value="roundValue(exercice.max.tm)">
 				</div>
 				<label class="datas__label datas__label--unit">kg</label>
 			</div>
@@ -67,14 +67,16 @@ export default {
 	},
 	methods: {
 		calculPerf: function(e, {from, to}) {
+			let value = e.target.value;
+			if (isNaN(parseFloat(value))) {	value = 0; }
 			let exercices = JSON.parse(JSON.stringify(this.getExercices));
-
-			exercices[this.type][this.index].max[from] = parseInt(e.target.value);
-			exercices[this.type][this.index].max[to] = from === this.max.rm ? parseInt(e.target.value) * 0.9 : parseInt(e.target.value) / 0.9;
+			exercices[this.type][this.index].max[from] = parseFloat(value);
+			exercices[this.type][this.index].max[to] = from === this.max.rm ? parseFloat(value) * 0.9 : parseFloat(value) / 0.9;
 			this.$store.commit('updateExercices', exercices);
 		},
 		roundValue: function(value) {
-			return isNaN(value) ? 0 : Math.ceil(value * 4) / 4;
+			if (isNaN(value)) return 0;
+			return Math.ceil(value * 10) / 10;
 		},
 		deleteAssistance: function() {
 			let exercices = JSON.parse(JSON.stringify(this.getExercices));

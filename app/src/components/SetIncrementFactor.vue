@@ -7,7 +7,7 @@
 			<div :class="{ 'is-active': popinIsActive }" class="popin__element">
 				<p class="popin__title">Set your increment factor</p>
 				<div class="popin__input-row">
-					<input type="number" v-model="incrementEdited" :placeholder="getExercices[this.exerciceType][this.exerciceIndex].incrementFactor" class="popin__row js-input-set-increment" />
+					<input type="number" inputmode="numeric" v-model="incrementEdited" :placeholder="getExercices[this.exerciceType][this.exerciceIndex].incrementFactor" class="popin__row js-input-set-increment" />
 				</div>
 				<div class="buttons">
 					<button class="button-action" @click="cancelSetIncrement">Cancel</button>
@@ -54,7 +54,7 @@ export default {
 			// Create deep copy.
 			let exercices = JSON.parse(JSON.stringify(this.getExercices));
 			let currentExercice = exercices[this.exerciceType][this.exerciceIndex];
-			currentExercice.incrementFactor = parseInt(this.incrementEdited);
+			currentExercice.incrementFactor = parseFloat(this.incrementEdited);
 
 			this.$store.commit('updateExercices', exercices);
 			this.cancelSetIncrement();
