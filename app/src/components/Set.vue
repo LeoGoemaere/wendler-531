@@ -88,6 +88,10 @@ export default {
 		color: #737373;
 	}
 
+	.set__unit {
+		margin-left: 3px;
+	}
+
 	.set__at {
 		margin: 0 5px;
 	}
