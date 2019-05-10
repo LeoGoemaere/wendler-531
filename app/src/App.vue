@@ -377,7 +377,7 @@
 		display: none;
 		max-height: 220px;
     	overflow-y: auto;
-		background-image: linear-gradient(to bottom, #ffffff, rgba(255, 255, 255, 0)), linear-gradient(to top, #ffffff, rgba(255, 255, 255, 0)), linear-gradient(to bottom, #737373, rgba(255, 255, 255, 0)), linear-gradient(to top, #737373, rgba(255, 255, 255, 0));
+		background-image: linear-gradient(to bottom, #ffffff, rgba(255, 255, 255, 0)), linear-gradient(to top, #ffffff, rgba(255, 255, 255, 0)), linear-gradient(to bottom, #000, rgba(255, 255, 255, 0)), linear-gradient(to top, #000, rgba(255, 255, 255, 0));
 		background-position: 0 0, 0 100%, 0 0, 0 100%;
 		background-repeat: no-repeat;
 		background-color: #fff;
