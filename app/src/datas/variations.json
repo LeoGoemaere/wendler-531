@@ -2879,5 +2879,832 @@
 				]
 			}
 		]
+	},
+	"hypertrophy": {
+		"name": "Hypertrophy",
+		"templates": [
+			{
+				"name": "Low Intensity",
+				"description": "Based on 75% RM",
+				"weeks": [
+					{
+						"name": "Week 1",
+						"days": [
+							[
+								{
+									"sets": [
+										{ "tm": 0.83, "reps": 6 },
+										{ "tm": 0.83, "reps": 6 },
+										{ "tm": 0.83, "reps": 6 }, 
+										{ "tm": 0.83, "reps": 6, "pr": true }
+									]
+								}					
+							],
+							[
+								{
+									"sets": [
+										{ "tm": 0.83, "reps": 6 },
+										{ "tm": 0.83, "reps": 6 },
+										{ "tm": 0.83, "reps": 6 }, 
+										{ "tm": 0.83, "reps": 6, "pr": true }
+									]
+								}					
+							],
+							[
+								{
+									"sets": [
+										{ "tm": 0.83, "reps": 6 },
+										{ "tm": 0.83, "reps": 6 },
+										{ "tm": 0.83, "reps": 6 }, 
+										{ "tm": 0.83, "reps": 6, "pr": true }
+									]
+								}					
+							],
+							[
+								{
+									"sets": [
+										{ "tm": 0.83, "reps": 6 },
+										{ "tm": 0.83, "reps": 6 },
+										{ "tm": 0.83, "reps": 6 }, 
+										{ "tm": 0.83, "reps": 6, "pr": true }
+									]
+								}					
+							]
+						]
+					},
+					{
+						"name": "Week 2",
+						"days": [
+							[
+								{
+									"sets": [
+										{ "tm": 0.83, "reps": 7 },
+										{ "tm": 0.83, "reps": 6 },
+										{ "tm": 0.83, "reps": 6 }, 
+										{ "tm": 0.83, "reps": 6, "pr": true }
+									]
+								}					
+							],
+							[
+								{
+									"sets": [
+										{ "tm": 0.83, "reps": 7 },
+										{ "tm": 0.83, "reps": 6 },
+										{ "tm": 0.83, "reps": 6 }, 
+										{ "tm": 0.83, "reps": 6, "pr": true }
+									]
+								}					
+							],
+							[
+								{
+									"sets": [
+										{ "tm": 0.83, "reps": 7 },
+										{ "tm": 0.83, "reps": 6 },
+										{ "tm": 0.83, "reps": 6 }, 
+										{ "tm": 0.83, "reps": 6, "pr": true }
+									]
+								}					
+							],
+							[
+								{
+									"sets": [
+										{ "tm": 0.83, "reps": 7 },
+										{ "tm": 0.83, "reps": 6 },
+										{ "tm": 0.83, "reps": 6 }, 
+										{ "tm": 0.83, "reps": 6, "pr": true }
+									]
+								}					
+							]
+						]
+					},
+					{
+						"name": "Week 3",
+						"days": [
+							[
+								{
+									"sets": [
+										{ "tm": 0.83, "reps": 7 },
+										{ "tm": 0.83, "reps": 7 },
+										{ "tm": 0.83, "reps": 6 }, 
+										{ "tm": 0.83, "reps": 6, "pr": true }
+									]
+								}					
+							],
+							[
+								{
+									"sets": [
+										{ "tm": 0.83, "reps": 7 },
+										{ "tm": 0.83, "reps": 7 },
+										{ "tm": 0.83, "reps": 6 }, 
+										{ "tm": 0.83, "reps": 6, "pr": true }
+									]
+								}					
+							],
+							[
+								{
+									"sets": [
+										{ "tm": 0.83, "reps": 7 },
+										{ "tm": 0.83, "reps": 7 },
+										{ "tm": 0.83, "reps": 6 }, 
+										{ "tm": 0.83, "reps": 6, "pr": true }
+									]
+								}					
+							],
+							[
+								{
+									"sets": [
+										{ "tm": 0.83, "reps": 7 },
+										{ "tm": 0.83, "reps": 7 },
+										{ "tm": 0.83, "reps": 6 }, 
+										{ "tm": 0.83, "reps": 6, "pr": true }
+									]
+								}					
+							]
+						]
+					},
+					{
+						"name": "Week 4",
+						"days": [
+							[
+								{
+									"sets": [
+										{ "tm": 0.83, "reps": 7 },
+										{ "tm": 0.83, "reps": 7 },
+										{ "tm": 0.83, "reps": 7 }, 
+										{ "tm": 0.83, "reps": 6, "pr": true }
+									]
+								}					
+							],
+							[
+								{
+									"sets": [
+										{ "tm": 0.83, "reps": 7 },
+										{ "tm": 0.83, "reps": 7 },
+										{ "tm": 0.83, "reps": 7 }, 
+										{ "tm": 0.83, "reps": 6, "pr": true }
+									]
+								}					
+							],
+							[
+								{
+									"sets": [
+										{ "tm": 0.83, "reps": 7 },
+										{ "tm": 0.83, "reps": 7 },
+										{ "tm": 0.83, "reps": 7 }, 
+										{ "tm": 0.83, "reps": 6, "pr": true }
+									]
+								}					
+							],
+							[
+								{
+									"sets": [
+										{ "tm": 0.83, "reps": 7 },
+										{ "tm": 0.83, "reps": 7 },
+										{ "tm": 0.83, "reps": 7 }, 
+										{ "tm": 0.83, "reps": 6, "pr": true }
+									]
+								}					
+							]
+						]
+					},
+					{
+						"name": "Week 5",
+						"days": [
+							[
+								{
+									"sets": [
+										{ "tm": 0.83, "reps": 7 },
+										{ "tm": 0.83, "reps": 7 },
+										{ "tm": 0.83, "reps": 7 }, 
+										{ "tm": 0.83, "reps": 7, "pr": true }
+									]
+								}					
+							],
+							[
+								{
+									"sets": [
+										{ "tm": 0.83, "reps": 7 },
+										{ "tm": 0.83, "reps": 7 },
+										{ "tm": 0.83, "reps": 7 }, 
+										{ "tm": 0.83, "reps": 7, "pr": true }
+									]
+								}					
+							],
+							[
+								{
+									"sets": [
+										{ "tm": 0.83, "reps": 7 },
+										{ "tm": 0.83, "reps": 7 },
+										{ "tm": 0.83, "reps": 7 }, 
+										{ "tm": 0.83, "reps": 7, "pr": true }
+									]
+								}					
+							],
+							[
+								{
+									"sets": [
+										{ "tm": 0.83, "reps": 7 },
+										{ "tm": 0.83, "reps": 7 },
+										{ "tm": 0.83, "reps": 7 }, 
+										{ "tm": 0.83, "reps": 7, "pr": true }
+									]
+								}					
+							]
+						]
+					},
+					{
+						"name": "Week 6",
+						"days": [
+							[
+								{
+									"sets": [
+										{ "tm": 0.83, "reps": 8 },
+										{ "tm": 0.83, "reps": 7 },
+										{ "tm": 0.83, "reps": 7 }, 
+										{ "tm": 0.83, "reps": 7, "pr": true }
+									]
+								}					
+							],
+							[
+								{
+									"sets": [
+										{ "tm": 0.83, "reps": 8 },
+										{ "tm": 0.83, "reps": 7 },
+										{ "tm": 0.83, "reps": 7 }, 
+										{ "tm": 0.83, "reps": 7, "pr": true }
+									]
+								}					
+							],
+							[
+								{
+									"sets": [
+										{ "tm": 0.83, "reps": 8 },
+										{ "tm": 0.83, "reps": 7 },
+										{ "tm": 0.83, "reps": 7 }, 
+										{ "tm": 0.83, "reps": 7, "pr": true }
+									]
+								}					
+							],
+							[
+								{
+									"sets": [
+										{ "tm": 0.83, "reps": 8 },
+										{ "tm": 0.83, "reps": 7 },
+										{ "tm": 0.83, "reps": 7 }, 
+										{ "tm": 0.83, "reps": 7, "pr": true }
+									]
+								}					
+							]
+						]
+					},
+					{
+						"name": "Week 7",
+						"days": [
+							[
+								{
+									"sets": [
+										{ "tm": 0.83, "reps": 8 },
+										{ "tm": 0.83, "reps": 8 },
+										{ "tm": 0.83, "reps": 7 }, 
+										{ "tm": 0.83, "reps": 7, "pr": true }
+									]
+								}					
+							],
+							[
+								{
+									"sets": [
+										{ "tm": 0.83, "reps": 8 },
+										{ "tm": 0.83, "reps": 8 },
+										{ "tm": 0.83, "reps": 7 }, 
+										{ "tm": 0.83, "reps": 7, "pr": true }
+									]
+								}					
+							],
+							[
+								{
+									"sets": [
+										{ "tm": 0.83, "reps": 8 },
+										{ "tm": 0.83, "reps": 8 },
+										{ "tm": 0.83, "reps": 7 }, 
+										{ "tm": 0.83, "reps": 7, "pr": true }
+									]
+								}					
+							],
+							[
+								{
+									"sets": [
+										{ "tm": 0.83, "reps": 8 },
+										{ "tm": 0.83, "reps": 8 },
+										{ "tm": 0.83, "reps": 7 }, 
+										{ "tm": 0.83, "reps": 7, "pr": true }
+									]
+								}					
+							]
+						]
+					},
+					{
+						"name": "Week 8",
+						"days": [
+							[
+								{
+									"sets": [
+										{ "tm": 0.83, "reps": 8 },
+										{ "tm": 0.83, "reps": 8 },
+										{ "tm": 0.83, "reps": 8 }, 
+										{ "tm": 0.83, "reps": 7, "pr": true }
+									]
+								}					
+							],
+							[
+								{
+									"sets": [
+										{ "tm": 0.83, "reps": 8 },
+										{ "tm": 0.83, "reps": 8 },
+										{ "tm": 0.83, "reps": 8 }, 
+										{ "tm": 0.83, "reps": 7, "pr": true }
+									]
+								}					
+							],
+							[
+								{
+									"sets": [
+										{ "tm": 0.83, "reps": 8 },
+										{ "tm": 0.83, "reps": 8 },
+										{ "tm": 0.83, "reps": 8 }, 
+										{ "tm": 0.83, "reps": 7, "pr": true }
+									]
+								}					
+							],
+							[
+								{
+									"sets": [
+										{ "tm": 0.83, "reps": 8 },
+										{ "tm": 0.83, "reps": 8 },
+										{ "tm": 0.83, "reps": 8 }, 
+										{ "tm": 0.83, "reps": 7, "pr": true }
+									]
+								}					
+							]
+						]
+					},
+					{
+						"name": "Week 9",
+						"days": [
+							[
+								{
+									"sets": [
+										{ "tm": 0.83, "reps": 8 },
+										{ "tm": 0.83, "reps": 8 },
+										{ "tm": 0.83, "reps": 8 }, 
+										{ "tm": 0.83, "reps": 8, "pr": true }
+									]
+								}					
+							],
+							[
+								{
+									"sets": [
+										{ "tm": 0.83, "reps": 8 },
+										{ "tm": 0.83, "reps": 8 },
+										{ "tm": 0.83, "reps": 8 }, 
+										{ "tm": 0.83, "reps": 8, "pr": true }
+									]
+								}					
+							],
+							[
+								{
+									"sets": [
+										{ "tm": 0.83, "reps": 8 },
+										{ "tm": 0.83, "reps": 8 },
+										{ "tm": 0.83, "reps": 8 }, 
+										{ "tm": 0.83, "reps": 8, "pr": true }
+									]
+								}					
+							],
+							[
+								{
+									"sets": [
+										{ "tm": 0.83, "reps": 8 },
+										{ "tm": 0.83, "reps": 8 },
+										{ "tm": 0.83, "reps": 8 }, 
+										{ "tm": 0.83, "reps": 8, "pr": true }
+									]
+								}					
+							]
+						]
+					}
+				]
+			},
+			{
+				"name": "Hight Intensity",
+				"description": "Based on 75% RM",
+				"weeks": [
+					{
+						"name": "Week 1",
+						"days": [
+							[
+								{
+									"sets": [
+										{ "tm": 0.83, "reps": 7 },
+										{ "tm": 0.83, "reps": 7 },
+										{ "tm": 0.83, "reps": 7 }, 
+										{ "tm": 0.83, "reps": 7, "pr": true }
+									]
+								}					
+							],
+							[
+								{
+									"sets": [
+										{ "tm": 0.83, "reps": 7 },
+										{ "tm": 0.83, "reps": 7 },
+										{ "tm": 0.83, "reps": 7 }, 
+										{ "tm": 0.83, "reps": 7, "pr": true }
+									]
+								}					
+							],
+							[
+								{
+									"sets": [
+										{ "tm": 0.83, "reps": 7 },
+										{ "tm": 0.83, "reps": 7 },
+										{ "tm": 0.83, "reps": 7 }, 
+										{ "tm": 0.83, "reps": 7, "pr": true }
+									]
+								}					
+							],
+							[
+								{
+									"sets": [
+										{ "tm": 0.83, "reps": 7 },
+										{ "tm": 0.83, "reps": 7 },
+										{ "tm": 0.83, "reps": 7 }, 
+										{ "tm": 0.83, "reps": 7, "pr": true }
+									]
+								}					
+							]
+						]
+					},
+					{
+						"name": "Week 2",
+						"days": [
+							[
+								{
+									"sets": [
+										{ "tm": 0.83, "reps": 8 },
+										{ "tm": 0.83, "reps": 7 },
+										{ "tm": 0.83, "reps": 7 }, 
+										{ "tm": 0.83, "reps": 7, "pr": true }
+									]
+								}					
+							],
+							[
+								{
+									"sets": [
+										{ "tm": 0.83, "reps": 8 },
+										{ "tm": 0.83, "reps": 7 },
+										{ "tm": 0.83, "reps": 7 }, 
+										{ "tm": 0.83, "reps": 7, "pr": true }
+									]
+								}					
+							],
+							[
+								{
+									"sets": [
+										{ "tm": 0.83, "reps": 8 },
+										{ "tm": 0.83, "reps": 7 },
+										{ "tm": 0.83, "reps": 7 }, 
+										{ "tm": 0.83, "reps": 7, "pr": true }
+									]
+								}					
+							],
+							[
+								{
+									"sets": [
+										{ "tm": 0.83, "reps": 8 },
+										{ "tm": 0.83, "reps": 7 },
+										{ "tm": 0.83, "reps": 7 }, 
+										{ "tm": 0.83, "reps": 7, "pr": true }
+									]
+								}					
+							]
+						]
+					},
+					{
+						"name": "Week 3",
+						"days": [
+							[
+								{
+									"sets": [
+										{ "tm": 0.83, "reps": 8 },
+										{ "tm": 0.83, "reps": 8 },
+										{ "tm": 0.83, "reps": 7 }, 
+										{ "tm": 0.83, "reps": 7, "pr": true }
+									]
+								}					
+							],
+							[
+								{
+									"sets": [
+										{ "tm": 0.83, "reps": 8 },
+										{ "tm": 0.83, "reps": 8 },
+										{ "tm": 0.83, "reps": 7 }, 
+										{ "tm": 0.83, "reps": 7, "pr": true }
+									]
+								}					
+							],
+							[
+								{
+									"sets": [
+										{ "tm": 0.83, "reps": 8 },
+										{ "tm": 0.83, "reps": 8 },
+										{ "tm": 0.83, "reps": 7 }, 
+										{ "tm": 0.83, "reps": 7, "pr": true }
+									]
+								}					
+							],
+							[
+								{
+									"sets": [
+										{ "tm": 0.83, "reps": 8 },
+										{ "tm": 0.83, "reps": 8 },
+										{ "tm": 0.83, "reps": 7 }, 
+										{ "tm": 0.83, "reps": 7, "pr": true }
+									]
+								}					
+							]
+						]
+					},
+					{
+						"name": "Week 4",
+						"days": [
+							[
+								{
+									"sets": [
+										{ "tm": 0.83, "reps": 8 },
+										{ "tm": 0.83, "reps": 8 },
+										{ "tm": 0.83, "reps": 8 }, 
+										{ "tm": 0.83, "reps": 7, "pr": true }
+									]
+								}					
+							],
+							[
+								{
+									"sets": [
+										{ "tm": 0.83, "reps": 8 },
+										{ "tm": 0.83, "reps": 8 },
+										{ "tm": 0.83, "reps": 8 }, 
+										{ "tm": 0.83, "reps": 7, "pr": true }
+									]
+								}					
+							],
+							[
+								{
+									"sets": [
+										{ "tm": 0.83, "reps": 8 },
+										{ "tm": 0.83, "reps": 8 },
+										{ "tm": 0.83, "reps": 8 }, 
+										{ "tm": 0.83, "reps": 7, "pr": true }
+									]
+								}					
+							],
+							[
+								{
+									"sets": [
+										{ "tm": 0.83, "reps": 8 },
+										{ "tm": 0.83, "reps": 8 },
+										{ "tm": 0.83, "reps": 8 }, 
+										{ "tm": 0.83, "reps": 7, "pr": true }
+									]
+								}					
+							]
+						]
+					},
+					{
+						"name": "Week 5",
+						"days": [
+							[
+								{
+									"sets": [
+										{ "tm": 0.83, "reps": 8 },
+										{ "tm": 0.83, "reps": 8 },
+										{ "tm": 0.83, "reps": 8 }, 
+										{ "tm": 0.83, "reps": 8, "pr": true }
+									]
+								}					
+							],
+							[
+								{
+									"sets": [
+										{ "tm": 0.83, "reps": 8 },
+										{ "tm": 0.83, "reps": 8 },
+										{ "tm": 0.83, "reps": 8 }, 
+										{ "tm": 0.83, "reps": 8, "pr": true }
+									]
+								}					
+							],
+							[
+								{
+									"sets": [
+										{ "tm": 0.83, "reps": 8 },
+										{ "tm": 0.83, "reps": 8 },
+										{ "tm": 0.83, "reps": 8 }, 
+										{ "tm": 0.83, "reps": 8, "pr": true }
+									]
+								}					
+							],
+							[
+								{
+									"sets": [
+										{ "tm": 0.83, "reps": 8 },
+										{ "tm": 0.83, "reps": 8 },
+										{ "tm": 0.83, "reps": 8 }, 
+										{ "tm": 0.83, "reps": 8, "pr": true }
+									]
+								}					
+							]
+						]
+					},
+					{
+						"name": "Week 6",
+						"days": [
+							[
+								{
+									"sets": [
+										{ "tm": 0.83, "reps": 9 },
+										{ "tm": 0.83, "reps": 8 },
+										{ "tm": 0.83, "reps": 8 }, 
+										{ "tm": 0.83, "reps": 8, "pr": true }
+									]
+								}					
+							],
+							[
+								{
+									"sets": [
+										{ "tm": 0.83, "reps": 9 },
+										{ "tm": 0.83, "reps": 8 },
+										{ "tm": 0.83, "reps": 8 }, 
+										{ "tm": 0.83, "reps": 8, "pr": true }
+									]
+								}					
+							],
+							[
+								{
+									"sets": [
+										{ "tm": 0.83, "reps": 9 },
+										{ "tm": 0.83, "reps": 8 },
+										{ "tm": 0.83, "reps": 8 }, 
+										{ "tm": 0.83, "reps": 8, "pr": true }
+									]
+								}					
+							],
+							[
+								{
+									"sets": [
+										{ "tm": 0.83, "reps": 9 },
+										{ "tm": 0.83, "reps": 8 },
+										{ "tm": 0.83, "reps": 8 }, 
+										{ "tm": 0.83, "reps": 8, "pr": true }
+									]
+								}					
+							]
+						]
+					},
+					{
+						"name": "Week 7",
+						"days": [
+							[
+								{
+									"sets": [
+										{ "tm": 0.83, "reps": 9 },
+										{ "tm": 0.83, "reps": 9 },
+										{ "tm": 0.83, "reps": 8 }, 
+										{ "tm": 0.83, "reps": 8, "pr": true }
+									]
+								}					
+							],
+							[
+								{
+									"sets": [
+										{ "tm": 0.83, "reps": 9 },
+										{ "tm": 0.83, "reps": 9 },
+										{ "tm": 0.83, "reps": 8 }, 
+										{ "tm": 0.83, "reps": 8, "pr": true }
+									]
+								}					
+							],
+							[
+								{
+									"sets": [
+										{ "tm": 0.83, "reps": 9 },
+										{ "tm": 0.83, "reps": 9 },
+										{ "tm": 0.83, "reps": 8 }, 
+										{ "tm": 0.83, "reps": 8, "pr": true }
+									]
+								}					
+							],
+							[
+								{
+									"sets": [
+										{ "tm": 0.83, "reps": 9 },
+										{ "tm": 0.83, "reps": 9 },
+										{ "tm": 0.83, "reps": 8 }, 
+										{ "tm": 0.83, "reps": 8, "pr": true }
+									]
+								}					
+							]
+						]
+					},
+					{
+						"name": "Week 8",
+						"days": [
+							[
+								{
+									"sets": [
+										{ "tm": 0.83, "reps": 9 },
+										{ "tm": 0.83, "reps": 9 },
+										{ "tm": 0.83, "reps": 9 }, 
+										{ "tm": 0.83, "reps": 8, "pr": true }
+									]
+								}					
+							],
+							[
+								{
+									"sets": [
+										{ "tm": 0.83, "reps": 9 },
+										{ "tm": 0.83, "reps": 9 },
+										{ "tm": 0.83, "reps": 9 }, 
+										{ "tm": 0.83, "reps": 8, "pr": true }
+									]
+								}					
+							],
+							[
+								{
+									"sets": [
+										{ "tm": 0.83, "reps": 9 },
+										{ "tm": 0.83, "reps": 9 },
+										{ "tm": 0.83, "reps": 9 }, 
+										{ "tm": 0.83, "reps": 8, "pr": true }
+									]
+								}					
+							],
+							[
+								{
+									"sets": [
+										{ "tm": 0.83, "reps": 9 },
+										{ "tm": 0.83, "reps": 9 },
+										{ "tm": 0.83, "reps": 9 }, 
+										{ "tm": 0.83, "reps": 8, "pr": true }
+									]
+								}					
+							]
+						]
+					},
+					{
+						"name": "Week 9",
+						"days": [
+							[
+								{
+									"sets": [
+										{ "tm": 0.83, "reps": 9 },
+										{ "tm": 0.83, "reps": 9 },
+										{ "tm": 0.83, "reps": 9 }, 
+										{ "tm": 0.83, "reps": 9, "pr": true }
+									]
+								}					
+							],
+							[
+								{
+									"sets": [
+										{ "tm": 0.83, "reps": 9 },
+										{ "tm": 0.83, "reps": 9 },
+										{ "tm": 0.83, "reps": 9 }, 
+										{ "tm": 0.83, "reps": 9, "pr": true }
+									]
+								}					
+							],
+							[
+								{
+									"sets": [
+										{ "tm": 0.83, "reps": 9 },
+										{ "tm": 0.83, "reps": 9 },
+										{ "tm": 0.83, "reps": 9 }, 
+										{ "tm": 0.83, "reps": 9, "pr": true }
+									]
+								}					
+							],
+							[
+								{
+									"sets": [
+										{ "tm": 0.83, "reps": 9 },
+										{ "tm": 0.83, "reps": 9 },
+										{ "tm": 0.83, "reps": 9 }, 
+										{ "tm": 0.83, "reps": 9, "pr": true }
+									]
+								}					
+							]
+						]
+					}
+				]
+			}
+		]
 	}
 }

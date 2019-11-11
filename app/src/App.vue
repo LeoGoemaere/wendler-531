@@ -124,6 +124,12 @@
 		text-align: right;
 	}
 
+	.heading__name {
+		color: #ea9852;
+		font-size: 14px;
+		text-transform: uppercase;
+	}
+
 	.heading__week {
 		font-weight: 600;
 	}

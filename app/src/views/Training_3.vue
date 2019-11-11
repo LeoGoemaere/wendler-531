@@ -3,7 +3,8 @@
 		<div class="heading space__x space__top">
 			<h1>Training 3</h1>
 			<div class="heading__infos">
-				<p>{{currentVariation.name}}</p>
+				<p class="heading__name">{{currentVariation.name}}</p>
+				<p>{{currentVariation.templates[getSelectedTemplate].name}}</p>
 				<p class="heading__week">{{currentVariation.templates[getSelectedTemplate].weeks[getSelectedWeek].name}}</p>
 			</div>
 		</div>
