@@ -1,6 +1,6 @@
 <template>
-	<div>
-        <button class="button is-link is-fullwidth margin" :class="{ 'is-light': isLight }">{{ value }}</button>
+	<div :class="`has-text-${align}`">
+        <button class="button margin" :class="className">{{ value }}</button>
     </div>
 </template>
 
@@ -9,7 +9,8 @@
       name: 'Button',
       props: {
           value: String,
-          isLight: Boolean
+          align: String,
+          className: String
       }
     }
 </script>

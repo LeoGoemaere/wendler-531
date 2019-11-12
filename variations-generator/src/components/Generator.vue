@@ -1,19 +1,19 @@
 <template>
 	<div class="columns">
 		<div class="column is-half is-offset-one-quarter">
+			<Button value="+ Add variation" className="is-link is-fullwidth" />
 			<Input value="Program Name" :isCenter="true" />
-			<Button value="Add Template" />
 
 			<Input value="Template Name" />
 			<AreaText value="Description" />
 
-			<!-- <Button value="Add Week" :isLight="true" />
+			<Button value="+ Add Week" align="left" className="is-text" />
 			<Input value="Week Name" />
 
-			<Button value="Add Days" :isLight="true" />
-			<p>Day 1</p> -->
+			<Button value="+ Add Day" align="left" className="is-text" />
+			<p>Day 1</p>
 
-			<Button value="Add Exercice" :isLight="true" />
+			<Button value="+ Add Exercice" align="left" className="is-text" />
 			<p>Exercice 1</p>
 
 			<InputColumn />			

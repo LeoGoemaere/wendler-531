@@ -1,7 +1,7 @@
 <template>
-	<div class="field margin">
+	<div class="field margin has-text-left">
 
-        <label class="label">{{ value }}</label>
+        <label class="label has-text-weight-normal">{{ value }}</label>
         <div class="control">
             <textarea class="textarea" :placeholder="placeholder"></textarea>
         </div>

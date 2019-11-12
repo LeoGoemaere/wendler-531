@@ -31,6 +31,9 @@
                 </div>
             </div>
         </div>
+        <div class="has-text-left">
+            <button class="button is-text">+ Add Set</button>
+        </div>
     </div>
 </template>
 
