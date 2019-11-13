@@ -1,7 +1,7 @@
 <template>
     <div>
-        <input class="accordion__input" type="checkbox" id="week-1"/>
-        <label class="accordion__title" for="week-1">
+        <input class="accordion__input" type="checkbox" :id="`week-${variationName}-${templateIndex}-${index}`"/>
+        <label class="accordion__title" :for="`week-${variationName}-${templateIndex}-${index}`">
             <span>{{ weekName }}</span>
             <i class="fas fa-angle-down accordion__icon"></i>
         </label>
@@ -9,6 +9,8 @@
             <input v-model="value" class="input" type="text" placeholder="Name">
 
             <Day />
+
+           
 
         </div>
     </div>
@@ -20,7 +22,10 @@
     export default {
         name: 'Week',
         props: {
-            name: String
+            week: Object,
+            variationName: String,
+            templateIndex: Number,
+            index: Number
         },
         components: {
             Day
@@ -34,8 +39,8 @@
             weekName: function() {
                 if (this.value) {
                     return this.value;
-                } else if (this.name) {
-                    return this.name;
+                } else if (this.week.name) {
+                    return this.week.name;
                 } else {
                     return 'Week Name'
                 }

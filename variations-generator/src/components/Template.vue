@@ -1,7 +1,7 @@
 <template>
     <div>
-        <input class="accordion__input" type="checkbox" :id="`template-${name}-${index}`"/>
-        <label class="accordion__title" :for="`template-${name}-${index}`">
+        <input class="accordion__input" type="checkbox" :id="`template-${variationName}-${templateIndex}`"/>
+        <label class="accordion__title" :for="`template-${variationName}-${templateIndex}`">
             <span>{{ templateName }}</span>
             <i class="fas fa-angle-down accordion__icon"></i>
         </label>
@@ -10,8 +10,13 @@
 
             <AreaText value="Description" />
 
-            <Week />
-
+            <Week 
+                v-for="(week, index) in template.weeks"
+                :week="week"
+                :variationName="variationName"
+                :templateIndex="templateIndex"
+                :index="index"
+            />
 
         </div>
     </div>
@@ -25,8 +30,8 @@
         name: 'Template',
         props: {
             template: Object,
-            index: Number,
-            name: String
+            templateIndex: Number,
+            variationName: String
         },
         components: {
             AreaText,

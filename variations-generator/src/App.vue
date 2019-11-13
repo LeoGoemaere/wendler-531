@@ -58,9 +58,13 @@ export default {
     margin-left: auto;
     transform: rotate3d(0, 0, 0, 0);
     transition: transform ease-out .3s;
+    .accordion__content & {
+      color: #a7a7a7;
+    }
   }
   .accordion__content {
     display: none;
     overflow: hidden;
+    padding: 0 10px;
   }
 </style>

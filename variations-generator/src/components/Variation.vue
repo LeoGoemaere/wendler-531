@@ -11,8 +11,8 @@
             <Template 
                 v-for="(template, index) in variation.templates"
                 :template="template"
-                :index="index"
-                :name="name"
+                :templateIndex="index"
+                :variationName="name"
             />
         </div>
     </div>
