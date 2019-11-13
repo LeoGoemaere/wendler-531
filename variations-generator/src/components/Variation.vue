@@ -1,43 +1,50 @@
 <template>
 	<div class="accordion">
-        <Program />
+        <input class="accordion__input" type="checkbox" :id="`accordion-${index}`"/>
+        <label class="accordion__title has-text-weight-bold" :for="`accordion-${index}`">
+            <span>{{ variationName }}</span>
+            <i class="fas fa-angle-down accordion__icon"></i>
+        </label>
+        <div class="accordion__content">
+            <input v-model="variationNaming" class="input" type="text" placeholder="Name">
+
+            <Template 
+                v-for="(template, index) in variation.templates"
+                :template="template"
+                :index="index"
+                :name="name"
+            />
+        </div>
     </div>
 </template>
 
 <script>
 
-    import Program from '@/components/Program.vue';
+    import Template from '@/components/Template.vue'
 
     export default {
         name: 'Variation',
         props: {
-            program: String,
-            placeholder: String
+            variation: Object,
+            index: Number,
+            name: String
         },
         components: {
-            Program
+            Template
         },
         data: function() {
             return {
-                programNaming: null,
-                templateNaming: null
+                variationNaming: null
             }
         },
         computed: {
-            programName: function() {
-                if (this.programNaming) {
-                    return this.programNaming;
-                } else if (this.program) {
-                    return this.program;
+            variationName: function() {
+                if (this.variationNaming) {
+                    return this.variationNaming;
+                } else if (this.variation.name) {
+                    return this.variation.name;
                 } else {
                     return 'Program Name'
-                }
-            },
-            templateName: function() {
-                if (this.templateNaming) {
-                    return this.templateNaming;
-                } else {
-                    return 'Template Name'
                 }
             }
         }

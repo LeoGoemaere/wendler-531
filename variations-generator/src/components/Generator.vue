@@ -3,8 +3,12 @@
 		<div class="column is-half is-offset-one-quarter">
 			<Button value="+ Add variation" className="is-link is-fullwidth" />
 
-			<Variation program="" />
-			<Variation program="bbb"/>
+			<Variation 
+				v-for="(variation, name, index) in variations"
+				:variation="variation"
+				:index="index"
+				:name="name"
+			/>
 				
 		</div>
 	</div>
@@ -28,7 +32,7 @@ export default {
 		}
 	},
 	mounted: function() {
-		this.variations = JSON.stringify(CurrentVariations);
+		this.variations = CurrentVariations;
 	}
 }
 </script>

@@ -1,7 +1,7 @@
 <template>
     <div>
-        <input class="accordion__input" type="checkbox" id="template-1"/>
-        <label class="accordion__title" for="template-1">
+        <input class="accordion__input" type="checkbox" :id="`template-${name}-${index}`"/>
+        <label class="accordion__title" :for="`template-${name}-${index}`">
             <span>{{ templateName }}</span>
             <i class="fas fa-angle-down accordion__icon"></i>
         </label>
@@ -24,6 +24,8 @@
     export default {
         name: 'Template',
         props: {
+            template: Object,
+            index: Number,
             name: String
         },
         components: {
@@ -39,8 +41,8 @@
             templateName: function() {
                 if (this.value) {
                     return this.value;
-                } else if (this.name) {
-                    return this.name;
+                } else if (this.template.name) {
+                    return this.template.name;
                 } else {
                     return 'Template Name'
                 }
