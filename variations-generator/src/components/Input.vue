@@ -2,9 +2,7 @@
 	<div>
 		<div class="field margin">
 			<label class="label" :class="{'has-text-left has-text-weight-normal': !isCenter}">{{ value }}</label>
-			<div class="control">
-				<input class="input" type="text" :placeholder="placeholder">
-			</div>
+			<input class="input" type="text" :placeholder="placeholder">
 		</div>
 	</div>
 </template>

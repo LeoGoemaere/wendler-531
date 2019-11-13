@@ -29,4 +29,38 @@ export default {
   .margin {
       margin: 10px 0;
   }
+
+  // Accordion
+  .accordion {}
+  .accordion__input {
+    display: none;
+    &:checked {
+      + .accordion__title {
+        ~ .accordion__content {
+          display: block;
+        }
+        .accordion__icon {
+          transform: rotate3d(-1, 0, 0, 180deg);
+          transition: transform ease-out .3s;
+        }
+      }
+    }
+  }
+  .accordion__title {
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+  }
+  .accordion__title--child {
+    padding-left: 35px;
+  }
+  .accordion__icon {
+    margin-left: auto;
+    transform: rotate3d(0, 0, 0, 0);
+    transition: transform ease-out .3s;
+  }
+  .accordion__content {
+    display: none;
+    overflow: hidden;
+  }
 </style>

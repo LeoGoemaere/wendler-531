@@ -2,21 +2,10 @@
 	<div class="columns">
 		<div class="column is-half is-offset-one-quarter">
 			<Button value="+ Add variation" className="is-link is-fullwidth" />
-			<Input value="Program Name" :isCenter="true" />
 
-			<Input value="Template Name" />
-			<AreaText value="Description" />
-
-			<Button value="+ Add Week" align="left" className="is-text" />
-			<Input value="Week Name" />
-
-			<Button value="+ Add Day" align="left" className="is-text" />
-			<p>Day 1</p>
-
-			<Button value="+ Add Exercice" align="left" className="is-text" />
-			<p>Exercice 1</p>
-
-			<InputColumn />			
+			<Variation program="" />
+			<Variation program="bbb"/>
+				
 		</div>
 	</div>
 </template>
@@ -24,27 +13,23 @@
 <script>
 import CurrentVariations from '../../../app/src/datas/variations.json';
 
-import Input from '@/components/Input.vue';
 import Button from '@/components/Button.vue';
-import AreaText from '@/components/AreaText.vue';
-import InputColumn from '@/components/InputColumn.vue';
+import Variation from '@/components/Variation.vue'
 
 export default {
-  name: 'Generator',
-  components: {
-	  Input,
-	  Button,
-	  AreaText,
-	  InputColumn
-  },
-  data: function() {
+	name: 'Generator',
+	components: {
+		Button,
+		Variation
+	},
+	data: function() {
 		return {
 			variations: null
 		}
 	},
-  mounted: function() {
-	  this.variations = JSON.stringify(CurrentVariations);
-  }
+	mounted: function() {
+		this.variations = JSON.stringify(CurrentVariations);
+	}
 }
 </script>
 
