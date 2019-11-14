@@ -15,7 +15,7 @@
                 :week="week"
                 :variationName="variationName"
                 :templateIndex="templateIndex"
-                :index="index"
+                :weekIndex="index"
             />
 
         </div>
