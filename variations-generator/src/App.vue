@@ -39,7 +39,7 @@ export default {
         ~ .accordion__content {
           display: block;
         }
-        .accordion__icon {
+        .accordion__angle {
           transform: rotate3d(-1, 0, 0, 180deg);
           transition: transform ease-out .3s;
         }
@@ -54,13 +54,19 @@ export default {
   .accordion__title--child {
     padding-left: 35px;
   }
-  .accordion__icon {
+  .accordion__angle {
     margin-left: auto;
     transform: rotate3d(0, 0, 0, 0);
     transition: transform ease-out .3s;
+    margin-left: 25px;
     .accordion__content & {
       color: #a7a7a7;
     }
+  }
+  .accordion__icon-container {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
   }
   .accordion__content {
     display: none;

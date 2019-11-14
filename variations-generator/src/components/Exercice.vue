@@ -3,7 +3,7 @@
         <input class="accordion__input" type="checkbox" :id="`exercice-${variationName}-${templateIndex}-${weekIndex}-${dayIndex}-${exerciceIndex}`"/>
         <label class="accordion__title" :for="`exercice-${variationName}-${templateIndex}-${weekIndex}-${dayIndex}-${exerciceIndex}`">
             <span>Exercice {{ exerciceIndex + 1 }}</span>
-            <i class="fas fa-angle-down accordion__icon"></i>
+            <span class="accordion__icon-container"><i class="fas fa-angle-down accordion__angle"></i></span>
         </label>
         <div class="accordion__content">
             <Set

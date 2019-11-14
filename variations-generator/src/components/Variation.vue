@@ -3,7 +3,10 @@
         <input class="accordion__input" type="checkbox" :id="`accordion-${index}`"/>
         <label class="accordion__title has-text-weight-bold" :for="`accordion-${index}`">
             <span>{{ variationName }}</span>
-            <i class="fas fa-angle-down accordion__icon"></i>
+            <span class="accordion__icon-container">
+                <button @click="removeVariation" class="button is-small is-danger is-light"><i class="far fa-trash-alt"></i></button>
+                <i class="fas fa-angle-down accordion__angle"></i>
+            </span>
         </label>
         <div class="accordion__content">
             <input v-model="variation.name" class="input" type="text" placeholder="Name">
@@ -33,6 +36,11 @@
             Template
         },
         methods: {
+            removeVariation: function() {
+                const variations = JSON.parse(JSON.stringify(this.getVariations));
+                delete variations[this.name];
+                this.$store.commit('updateVariations', variations);
+            }
             // removeSpecialCharacters: function(string) {
             //     return string.replace(/[^\w\s]/gi, '');
             // },

@@ -3,7 +3,7 @@
         <input class="accordion__input" type="checkbox" :id="`day-${variationName}-${templateIndex}-${weekIndex}-${dayIndex}`"/>
         <label class="accordion__title" :for="`day-${variationName}-${templateIndex}-${weekIndex}-${dayIndex}`">
             <span>Day {{ dayIndex + 1 }}</span>
-            <i class="fas fa-angle-down accordion__icon"></i>
+            <span class="accordion__icon-container"><i class="fas fa-angle-down accordion__angle"></i></span>
         </label>
         <div class="accordion__content">
             <Exercice

@@ -3,7 +3,7 @@
         <input class="accordion__input" type="checkbox" :id="`week-${variationName}-${templateIndex}-${weekIndex}`"/>
         <label class="accordion__title" :for="`week-${variationName}-${templateIndex}-${weekIndex}`">
             <span>{{ weekName }}</span>
-            <i class="fas fa-angle-down accordion__icon"></i>
+            <span class="span accordion__icon-container"><i class="fas fa-angle-down accordion__angle"></i></span>
         </label>
         <div class="accordion__content">
             <input v-model="week.name" class="input" type="text" placeholder="Name">
