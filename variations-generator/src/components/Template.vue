@@ -6,9 +6,9 @@
             <i class="fas fa-angle-down accordion__icon"></i>
         </label>
         <div class="accordion__content">
-            <input v-model="value" class="input" type="text" placeholder="Name">
+            <input v-model="template.name" class="input" type="text" placeholder="Name">
 
-            <AreaText value="Description" />
+            <AreaText :template="template" title="Description" />
 
             <Week 
                 v-for="(week, index) in template.weeks"
@@ -37,16 +37,9 @@
             AreaText,
             Week
         },
-        data: function() {
-            return {
-                value: null
-            }
-        },
         computed: {
             templateName: function() {
-                if (this.value) {
-                    return this.value;
-                } else if (this.template.name) {
+                if (this.template.name) {
                     return this.template.name;
                 } else {
                     return 'Template Name'

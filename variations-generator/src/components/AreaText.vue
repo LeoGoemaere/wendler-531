@@ -1,9 +1,9 @@
 <template>
 	<div class="field margin has-text-left">
 
-        <label class="label has-text-weight-normal">{{ value }}</label>
+        <label class="label has-text-weight-normal">{{ title }}</label>
         <div class="control">
-            <textarea class="textarea" :placeholder="placeholder"></textarea>
+            <textarea class="textarea" v-model="template.description" placeholder="Enter a description for the template."></textarea>
         </div>
     </div>
 </template>
@@ -12,8 +12,8 @@
     export default {
       name: 'AreaText',
       props: {
-          value: String,
-          placeholder: String
+          template: Object,
+          title: String
       }
     }
 </script>

@@ -6,7 +6,7 @@
                     <a class="button is-light">TM</a>
                 </div>
                 <p class="control is-expanded">
-                    <input class="input" :value="set.tm" type="text">
+                    <input class="input" v-model.number="set.tm" type="number">
                 </p>
             </div>
             <div class="field has-addons">
@@ -14,7 +14,7 @@
                     <a class="button is-light">Reps</a>
                 </div>
                 <p class="control is-expanded">
-                    <input class="input" :value="set.reps" type="text">
+                    <input class="input" v-model.number="set.reps" type="text">
                 </p>
             </div>
             <div class="field has-addons">

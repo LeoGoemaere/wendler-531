@@ -4,7 +4,7 @@
 			<Button value="+ Add variation" className="is-link is-fullwidth" />
 
 			<Variation 
-				v-for="(variation, name, index) in variations"
+				v-for="(variation, name, index) in getVariations"
 				:variation="variation"
 				:index="index"
 				:name="name"
@@ -15,7 +15,7 @@
 </template>
 
 <script>
-import CurrentVariations from '../../../app/src/datas/variations.json';
+import { mapGetters } from 'vuex';
 
 import Button from '@/components/Button.vue';
 import Variation from '@/components/Variation.vue'
@@ -26,13 +26,10 @@ export default {
 		Button,
 		Variation
 	},
-	data: function() {
-		return {
-			variations: null
-		}
-	},
-	mounted: function() {
-		this.variations = CurrentVariations;
+	computed: {
+		...mapGetters([
+			'getVariations'
+		])
 	}
 }
 </script>

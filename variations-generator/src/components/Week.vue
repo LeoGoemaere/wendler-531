@@ -6,7 +6,7 @@
             <i class="fas fa-angle-down accordion__icon"></i>
         </label>
         <div class="accordion__content">
-            <input v-model="value" class="input" type="text" placeholder="Name">
+            <input v-model="week.name" class="input" type="text" placeholder="Name">
 
             <Day 
                 v-for="(day, index) in week.days"
@@ -37,16 +37,9 @@
         components: {
             Day
         },
-        data: function() {
-            return {
-                value: null
-            }
-        },
         computed: {
             weekName: function() {
-                if (this.value) {
-                    return this.value;
-                } else if (this.week.name) {
+                if (this.week.name) {
                     return this.week.name;
                 } else {
                     return 'Week Name'

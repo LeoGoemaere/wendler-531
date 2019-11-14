@@ -6,7 +6,7 @@
             <i class="fas fa-angle-down accordion__icon"></i>
         </label>
         <div class="accordion__content">
-            <input v-model="variationNaming" class="input" type="text" placeholder="Name">
+            <input v-model="variation.name" class="input" type="text" placeholder="Name">
 
             <Template 
                 v-for="(template, index) in variation.templates"
@@ -32,16 +32,9 @@
         components: {
             Template
         },
-        data: function() {
-            return {
-                variationNaming: null
-            }
-        },
         computed: {
             variationName: function() {
-                if (this.variationNaming) {
-                    return this.variationNaming;
-                } else if (this.variation.name) {
+                if (this.variation.name) {
                     return this.variation.name;
                 } else {
                     return 'Program Name'
