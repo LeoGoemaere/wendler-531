@@ -10,6 +10,9 @@ export default new Vuex.Store({
 		variations: CurrentVariations
 	},
 	mutations: {
+		updateVariations: (state, variations) => {
+			state.variations = variations;
+		}
 	},
 	getters: {
 		getVariations: (state) => {

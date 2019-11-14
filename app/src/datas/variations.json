@@ -1,6 +1,6 @@
 
 {
-	"bbb": {
+	"boringbutbig": {
 		"name": "Boring But Big",
 		"templates": [
 			{
@@ -1842,7 +1842,7 @@
 			}
 		]
 	},
-	"sst": {
+	"simpleststrength": {
 		"name": "Simplest Strength",
 		"templates": [
 			{
@@ -2411,7 +2411,7 @@
 			}
 		]
 	},
-	"ndjs": {
+	"notdoingjackshit": {
 		"name": "Not Doing Jack Shit",
 		"templates": [
 			{

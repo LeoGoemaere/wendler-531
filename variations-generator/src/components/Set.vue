@@ -19,7 +19,7 @@
             </div>
             <div class="field has-addons">
                 <div class="control">
-                    <button type="submit" class="button is-light">Personal Record</button>
+                    <button type="submit" class="button is-light">PR</button>
                 </div>
                 <div class="control is-expanded">
                     <div class="select" :class="{'is-success': pr}">

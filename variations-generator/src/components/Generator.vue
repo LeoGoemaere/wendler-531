@@ -1,8 +1,7 @@
 <template>
 	<div class="columns">
-		<div class="column is-half is-offset-one-quarter">
-			<Button value="+ Add variation" className="is-link is-fullwidth" />
-
+		<div class="column is-three-fifths is-offset-one-fifth">
+			<button @click="createNewVariation" class="button margin is-link is-fullwidth">+ Add variation</button>
 			<Variation 
 				v-for="(variation, name, index) in getVariations"
 				:variation="variation"
@@ -17,6 +16,8 @@
 <script>
 import { mapGetters } from 'vuex';
 
+import uuid from 'uuid/v4';
+
 import Button from '@/components/Button.vue';
 import Variation from '@/components/Variation.vue'
 
@@ -25,6 +26,40 @@ export default {
 	components: {
 		Button,
 		Variation
+	},
+	methods: {
+		createNewVariation: function() {
+			const variations = JSON.parse(JSON.stringify(this.getVariations));
+			const key = uuid();
+			const variationSqueleton = {
+				name: "Variation Name",
+				templates: [
+					{
+						name:  'Template Name',
+						description: 'Template Description',
+						weeks: [
+							{
+								name: 'Week Name',
+								days: [
+									[
+										{
+											sets: [
+												{
+													reps: 0,
+													tm: 0
+												}
+											]
+										}
+									]
+								]
+							}
+						]
+					}
+				]
+			};
+			variations[key] = variationSqueleton;
+			this.$store.commit('updateVariations', variations);
+		}
 	},
 	computed: {
 		...mapGetters([
