@@ -20,6 +20,10 @@
                 :templateIndex="templateIndex"
                 :weekIndex="index"
             />
+            <AddWeek 
+                :variationName="variationName"
+                :templateIndex="templateIndex"
+            />
 
         </div>
     </div>
@@ -30,6 +34,7 @@
 
     import AreaText from '@/components/AreaText.vue';
     import Week from '@/components/Week.vue';
+    import AddWeek from '@/components/AddWeek.vue';
 
     export default {
         name: 'Template',
@@ -40,7 +45,8 @@
         },
         components: {
             AreaText,
-            Week
+            Week,
+            AddWeek
         },
         methods: {
             removeTemplate: function() {
