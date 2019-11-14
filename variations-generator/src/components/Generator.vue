@@ -50,6 +50,36 @@ export default {
 												}
 											]
 										}
+									],
+									[
+										{
+											sets: [
+												{
+													reps: 0,
+													tm: 0
+												}
+											]
+										}
+									],
+									[
+										{
+											sets: [
+												{
+													reps: 0,
+													tm: 0
+												}
+											]
+										}
+									],
+									[
+										{
+											sets: [
+												{
+													reps: 0,
+													tm: 0
+												}
+											]
+										}
 									]
 								]
 							}

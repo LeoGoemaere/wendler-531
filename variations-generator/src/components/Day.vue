@@ -4,7 +4,6 @@
         <label class="accordion__title" :for="`day-${variationName}-${templateIndex}-${weekIndex}-${dayIndex}`">
             <span>Day {{ dayIndex + 1 }}</span>
             <span class="accordion__icon-container">
-                <button @click="removeDay" class="button is-small is-danger is-light"><i class="far fa-trash-alt"></i></button>
                 <i class="fas fa-angle-down accordion__angle"></i>
             </span>
         </label>
@@ -40,20 +39,6 @@
             Exercice
         },
         methods: {
-            removeDay: function() {
-                const variations = JSON.parse(JSON.stringify(this.getVariations));
-                const days = variations[this.variationName].templates[this.templateIndex].weeks[this.weekIndex].days;
-                // At least 1 day has to be exist.
-                if (days.length > 1) {
-                    days.splice(this.dayIndex, 1);
-                    this.$store.commit('updateVariations', variations);
-                }
-            }
-        },
-        computed: {
-            ...mapGetters([
-                'getVariations'
-            ])
         }
     }
 </script>
