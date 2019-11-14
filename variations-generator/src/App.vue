@@ -73,4 +73,7 @@ export default {
     overflow: hidden;
     padding: 0 10px;
   }
+  .set-row {
+    align-items: center;
+  }
 </style>

@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="field-body margin">
+        <div class="set-row field-body margin">
             <div class="field has-addons">
                 <div class="control">
                     <a class="button is-light">TM</a>
@@ -30,6 +30,7 @@
                     </div>
                 </div>
             </div>
+            <button @click="removeSet" class="button is-small is-danger is-light"><i class="far fa-trash-alt"></i></button>
         </div>
         <div class="has-text-left">
             <button class="button is-text">+ Add Set</button>
@@ -38,17 +39,36 @@
 </template>
 
 <script>
+    import { mapGetters } from 'vuex';
+
     export default {
       name: 'Set',
       props: {
-          set: Object,
-          value: String,
-          isLight: Boolean
+        set: Object,
+        variationName: String,
+        templateIndex: Number,
+        weekIndex: Number,
+        dayIndex: Number,
+        exerciceIndex: Number,
+        setIndex: Number,
+        value: String,
+        isLight: Boolean
       },
       data: function() {
           return {
               pr: null
           }
+      },
+      methods: {
+          removeSet: function() {
+                const variations = JSON.parse(JSON.stringify(this.getVariations));
+                const sets = variations[this.variationName].templates[this.templateIndex].weeks[this.weekIndex].days[this.dayIndex][this.exerciceIndex].sets;
+                // At least 1 set has to be exist.
+                if (sets.length > 1) {
+                    sets.splice(this.setIndex, 1);
+                    this.$store.commit('updateVariations', variations);
+                }
+            }
       },
       mounted: function() {
         if (this.set.pr) {
@@ -56,6 +76,11 @@
         } else {
             this.pr = false;
         }
-      }
+      },
+      computed: {
+            ...mapGetters([
+                'getVariations'
+            ])
+        }
     }
 </script>

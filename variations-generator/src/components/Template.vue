@@ -3,7 +3,10 @@
         <input class="accordion__input" type="checkbox" :id="`template-${variationName}-${templateIndex}`"/>
         <label class="accordion__title" :for="`template-${variationName}-${templateIndex}`">
             <span>{{ templateName }}</span>
-            <span class="accordion__icon-container"><i class="fas fa-angle-down accordion__angle"></i></span>
+            <span class="accordion__icon-container">
+            <button @click="removeTemplate" class="button is-small is-danger is-light"><i class="far fa-trash-alt"></i></button>
+                <i class="fas fa-angle-down accordion__angle"></i>
+            </span>
         </label>
         <div class="accordion__content">
             <input v-model="template.name" class="input" type="text" placeholder="Name">
@@ -23,6 +26,8 @@
 </template>
 
 <script>
+    import { mapGetters } from 'vuex';
+
     import AreaText from '@/components/AreaText.vue';
     import Week from '@/components/Week.vue';
 
@@ -37,6 +42,17 @@
             AreaText,
             Week
         },
+        methods: {
+            removeTemplate: function() {
+                const variations = JSON.parse(JSON.stringify(this.getVariations));
+                const templates = variations[this.variationName].templates;
+                // At least 1 template has to be exist.
+                if (templates.length > 1) {
+                    templates.splice(this.templateIndex, 1);
+                    this.$store.commit('updateVariations', variations);
+                }
+            }
+        },
         computed: {
             templateName: function() {
                 if (this.template.name) {
@@ -44,7 +60,10 @@
                 } else {
                     return 'Template Name'
                 }
-            }
+            },
+            ...mapGetters([
+                'getVariations'
+            ])
         }
     }
 </script>
