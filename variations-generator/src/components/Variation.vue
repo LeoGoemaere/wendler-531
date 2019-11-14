@@ -9,11 +9,14 @@
             </span>
         </label>
         <div class="accordion__content">
-            <input v-model="variation.name" class="input" type="text" placeholder="Name">
+            <input v-model="variation.name" class="input" type="text" :placeholder="variationName">
             <Template 
                 v-for="(template, index) in variation.templates"
                 :template="template"
                 :templateIndex="index"
+                :variationName="name"
+            />
+            <AddTemplate 
                 :variationName="name"
             />
         </div>
@@ -24,6 +27,7 @@
     import { mapGetters } from 'vuex';
 
     import Template from '@/components/Template.vue'
+    import AddTemplate from '@/components/AddTemplate.vue'
 
     export default {
         name: 'Variation',
@@ -33,7 +37,8 @@
             name: String
         },
         components: {
-            Template
+            Template,
+            AddTemplate
         },
         methods: {
             removeVariation: function() {

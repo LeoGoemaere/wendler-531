@@ -9,7 +9,7 @@
             </span>
         </label>
         <div class="accordion__content">
-            <input v-model="template.name" class="input" type="text" placeholder="Name">
+            <input v-model="template.name" class="input" type="text" :placeholder="templateName">
 
             <AreaText :template="template" title="Description" />
 

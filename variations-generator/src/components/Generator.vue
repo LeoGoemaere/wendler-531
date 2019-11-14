@@ -31,15 +31,15 @@ export default {
 		createNewVariation: function() {
 			const variations = JSON.parse(JSON.stringify(this.getVariations));
 			const key = uuid();
-			const variationSqueleton = {
-				name: "Variation Name",
+			const variationSkeleton = {
+				name: "",
 				templates: [
 					{
-						name:  'Template Name',
-						description: 'Template Description',
+						name:  '',
+						description: '',
 						weeks: [
 							{
-								name: 'Week Name',
+								name: '',
 								days: [
 									[
 										{
@@ -57,7 +57,7 @@ export default {
 					}
 				]
 			};
-			variations[key] = variationSqueleton;
+			variations[key] = variationSkeleton;
 			this.$store.commit('updateVariations', variations);
 		}
 	},

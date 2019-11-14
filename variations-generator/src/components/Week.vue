@@ -9,7 +9,7 @@
             </span>
         </label>
         <div class="accordion__content">
-            <input v-model="week.name" class="input" type="text" placeholder="Name">
+            <input v-model="week.name" class="input" type="text" :placeholder="weekName">
 
             <Day 
                 v-for="(day, index) in week.days"
