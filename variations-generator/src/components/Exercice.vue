@@ -19,6 +19,13 @@
                 :exerciceIndex="exerciceIndex"
                 :setIndex="index"
             />
+            <AddSet
+                :variationName="variationName"
+                :templateIndex="templateIndex"
+                :weekIndex="weekIndex"
+                :dayIndex="dayIndex"
+                :exerciceIndex="exerciceIndex"
+            />
         </div>
     </div>
 </template>
@@ -27,6 +34,7 @@
     import { mapGetters } from 'vuex';
 
     import Set from '@/components/Set.vue';
+    import AddSet from '@/components/AddSet.vue';
 
     export default {
         name: 'Exercice',
@@ -39,7 +47,8 @@
             exerciceIndex: Number
         },
         components: {
-            Set
+            Set,
+            AddSet
         },
         methods: {
             removeExercice: function() {

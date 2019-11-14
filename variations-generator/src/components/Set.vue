@@ -32,9 +32,6 @@
             </div>
             <button @click="removeSet" class="button is-small is-danger is-light"><i class="far fa-trash-alt"></i></button>
         </div>
-        <div class="has-text-left">
-            <button class="button is-text">+ Add Set</button>
-        </div>
     </div>
 </template>
 
