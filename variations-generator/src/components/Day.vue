@@ -17,6 +17,12 @@
                 :dayIndex="dayIndex"
                 :exerciceIndex="index"
             />
+            <AddExercice 
+                :variationName="variationName"
+                :templateIndex="templateIndex"
+                :weekIndex="weekIndex"
+                :dayIndex="dayIndex"
+            />
         </div>
     </div>
 </template>
@@ -25,6 +31,7 @@
     import { mapGetters } from 'vuex';
 
     import Exercice from '@/components/Exercice.vue';
+    import AddExercice from '@/components/AddExercice.vue';
 
     export default {
         name: 'Day',
@@ -36,7 +43,8 @@
             dayIndex: Number
         },
         components: {
-            Exercice
+            Exercice,
+            AddExercice
         },
         methods: {
         }

@@ -1,5 +1,5 @@
 <template>
-    <div class="has-text-left">
+    <div class="has-text-left margin">
         <button @click="addTemplate" class="button is-link is-outlined">+ New Template</button>
     </div>
 </template>
@@ -30,7 +30,8 @@
                                         sets: [
                                             {
                                                 reps: 0,
-                                                tm: 0
+                                                tm: 0,
+                                                pr: false
                                             }
                                         ]
                                     }

@@ -46,7 +46,8 @@ export default {
 											sets: [
 												{
 													reps: 0,
-													tm: 0
+													tm: 0,
+													pr: false
 												}
 											]
 										}
@@ -56,7 +57,8 @@ export default {
 											sets: [
 												{
 													reps: 0,
-													tm: 0
+													tm: 0,
+													pr: false
 												}
 											]
 										}
@@ -66,7 +68,8 @@ export default {
 											sets: [
 												{
 													reps: 0,
-													tm: 0
+													tm: 0,
+													pr: false
 												}
 											]
 										}
@@ -76,7 +79,8 @@ export default {
 											sets: [
 												{
 													reps: 0,
-													tm: 0
+													tm: 0,
+													pr: false
 												}
 											]
 										}

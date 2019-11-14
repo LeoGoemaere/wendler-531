@@ -1,5 +1,5 @@
 <template>
-    <div class="has-text-left">
+    <div class="has-text-left margin">
         <button @click="addWeek" class="button is-link is-outlined">+ New Week</button>
     </div>
 </template>
@@ -26,7 +26,8 @@
                                 sets: [
                                     {
                                         reps: 0,
-                                        tm: 0
+                                        tm: 0,
+                                        pr: false
                                     }
                                 ]
                             }
@@ -36,7 +37,8 @@
                                 sets: [
                                     {
                                         reps: 0,
-                                        tm: 0
+                                        tm: 0,
+                                        pr: false
                                     }
                                 ]
                             }
@@ -46,7 +48,8 @@
                                 sets: [
                                     {
                                         reps: 0,
-                                        tm: 0
+                                        tm: 0,
+                                        pr: false
                                     }
                                 ]
                             }
@@ -56,7 +59,8 @@
                                 sets: [
                                     {
                                         reps: 0,
-                                        tm: 0
+                                        tm: 0,
+                                        pr: false
                                     }
                                 ]
                             }
