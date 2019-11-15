@@ -1,6 +1,6 @@
 <template>
-    <div class="has-text-left margin">
-        <button @click="addSet" class="button is-link is-outlined">+ New Set</button>
+    <div class="has-text-left margin-top">
+        <button @click="addSet" class="button is-light is-info">+ New Set</button>
     </div>
 </template>
 

@@ -1,7 +1,7 @@
 <template>
     <div>
         <input class="accordion__input" type="checkbox" :id="`exercice-${variationName}-${templateIndex}-${weekIndex}-${dayIndex}-${exerciceIndex}`"/>
-        <label class="accordion__title" :for="`exercice-${variationName}-${templateIndex}-${weekIndex}-${dayIndex}-${exerciceIndex}`">
+        <label class="accordion__title accordion__title--quinary" :for="`exercice-${variationName}-${templateIndex}-${weekIndex}-${dayIndex}-${exerciceIndex}`">
             <span>Exercice {{ exerciceIndex + 1 }}</span>
             <span class="accordion__icon-container">
                 <button @click="removeExercice" class="button is-small is-danger is-light"><i class="far fa-trash-alt"></i></button>
@@ -9,6 +9,13 @@
             </span>
         </label>
         <div class="accordion__content">
+            <AddSet
+                :variationName="variationName"
+                :templateIndex="templateIndex"
+                :weekIndex="weekIndex"
+                :dayIndex="dayIndex"
+                :exerciceIndex="exerciceIndex"
+            />
             <Set
                 v-for="(set, index) in exercice.sets"
                 :set="set"
@@ -18,13 +25,6 @@
                 :dayIndex="dayIndex"
                 :exerciceIndex="exerciceIndex"
                 :setIndex="index"
-            />
-            <AddSet
-                :variationName="variationName"
-                :templateIndex="templateIndex"
-                :weekIndex="weekIndex"
-                :dayIndex="dayIndex"
-                :exerciceIndex="exerciceIndex"
             />
         </div>
     </div>

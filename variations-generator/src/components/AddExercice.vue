@@ -1,6 +1,6 @@
 <template>
-    <div class="has-text-left margin">
-        <button @click="addExercice" class="button is-link is-outlined">+ New Exercice</button>
+    <div class="has-text-left margin-top">
+        <button @click="addExercice" class="button is-light is-info">+ New Exercice</button>
     </div>
 </template>
 

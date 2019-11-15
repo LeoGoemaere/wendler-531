@@ -1,22 +1,23 @@
 <template>
 	<div class="accordion">
         <input class="accordion__input" type="checkbox" :id="`accordion-${index}`"/>
-        <label class="accordion__title has-text-weight-bold" :for="`accordion-${index}`">
+        <label class="accordion__title accordion__title--primary has-text-weight-bold" :for="`accordion-${index}`">
             <span>{{ variationName }}</span>
             <span class="accordion__icon-container">
+                <span class="accordion__type">Variation</span>
                 <button @click="removeVariation" class="button is-small is-danger is-light"><i class="far fa-trash-alt"></i></button>
                 <i class="fas fa-angle-down accordion__angle"></i>
             </span>
         </label>
-        <div class="accordion__content">
+        <div class="accordion__content accordion__content--primary">
             <input v-model="variation.name" class="input" type="text" :placeholder="variationName">
+            <AddTemplate 
+                :variationName="name"
+            />
             <Template 
                 v-for="(template, index) in variation.templates"
                 :template="template"
                 :templateIndex="index"
-                :variationName="name"
-            />
-            <AddTemplate 
                 :variationName="name"
             />
         </div>
@@ -46,24 +47,6 @@
                 delete variations[this.name];
                 this.$store.commit('updateVariations', variations);
             }
-            // removeSpecialCharacters: function(string) {
-            //     return string.replace(/[^\w\s]/gi, '');
-            // },
-            // convertToDiacriticInsensitive: function(string) {
-            //     // Remove accents.
-            //     return string.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-            // },
-            // removeSpaceFrom: function(string) {
-            //     return string.split(' ').join('');
-            // },
-            // generateVariationKeyName: function(string) {
-            //     const key = this.removeSpecialCharacters(
-            //         this.convertToDiacriticInsensitive(
-            //             this.removeSpaceFrom(string.toLowerCase())
-            //         )
-            //     );
-            //     return key;
-            // },
         },
         computed: {
             variationName: function() {

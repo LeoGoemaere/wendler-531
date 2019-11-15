@@ -1,7 +1,9 @@
 <template>
 	<div class="columns">
 		<div class="column is-three-fifths is-offset-one-fifth">
-			<button @click="createNewVariation" class="button margin is-link is-outlined is-fullwidth">+ Add variation</button>
+			<div class="has-text-left">
+				<button @click="createNewVariation" class="button margin-top is-light is-info">+ Add variation</button>
+			</div>
 			<Variation 
 				v-for="(variation, name, index) in getVariations"
 				:variation="variation"

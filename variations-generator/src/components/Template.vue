@@ -1,28 +1,30 @@
 <template>
     <div>
         <input class="accordion__input" type="checkbox" :id="`template-${variationName}-${templateIndex}`"/>
-        <label class="accordion__title" :for="`template-${variationName}-${templateIndex}`">
+        <label class="accordion__title accordion__title--secondary" :for="`template-${variationName}-${templateIndex}`">
             <span>{{ templateName }}</span>
             <span class="accordion__icon-container">
-            <button @click="removeTemplate" class="button is-small is-danger is-light"><i class="far fa-trash-alt"></i></button>
+                <span class="accordion__type">Template</span>
+                <button @click="removeTemplate" class="button is-small is-danger is-light"><i class="far fa-trash-alt"></i></button>
                 <i class="fas fa-angle-down accordion__angle"></i>
             </span>
         </label>
-        <div class="accordion__content">
+        <div class="accordion__content accordion__content--secondary">
             <input v-model="template.name" class="input" type="text" :placeholder="templateName">
 
-            <AreaText :template="template" title="Description" />
+            <!-- Disable description area until 531 app don't use this information.-->
+            <!-- <AreaText :template="template" title="Description" /> -->
 
+            <AddWeek 
+                :variationName="variationName"
+                :templateIndex="templateIndex"
+            />
             <Week 
                 v-for="(week, index) in template.weeks"
                 :week="week"
                 :variationName="variationName"
                 :templateIndex="templateIndex"
                 :weekIndex="index"
-            />
-            <AddWeek 
-                :variationName="variationName"
-                :templateIndex="templateIndex"
             />
 
         </div>

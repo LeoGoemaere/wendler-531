@@ -1,6 +1,6 @@
 <template>
-    <div class="has-text-left margin">
-        <button @click="addTemplate" class="button is-link is-outlined">+ New Template</button>
+    <div class="has-text-left margin-top">
+        <button @click="addTemplate" class="button is-light is-info">+ New Template</button>
     </div>
 </template>
 

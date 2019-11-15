@@ -1,6 +1,6 @@
 <template>
-    <div class="has-text-left margin">
-        <button @click="addWeek" class="button is-link is-outlined">+ New Week</button>
+    <div class="has-text-left margin-top">
+        <button @click="addWeek" class="button is-light is-info">+ New Week</button>
     </div>
 </template>
 

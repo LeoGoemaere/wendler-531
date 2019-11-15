@@ -1,15 +1,16 @@
 <template>
     <div>
         <input class="accordion__input" type="checkbox" :id="`week-${variationName}-${templateIndex}-${weekIndex}`"/>
-        <label class="accordion__title" :for="`week-${variationName}-${templateIndex}-${weekIndex}`">
+        <label class="accordion__title accordion__title--tertiary" :for="`week-${variationName}-${templateIndex}-${weekIndex}`">
             <span>{{ weekName }}</span>
             <span class="span accordion__icon-container">
+                <span class="accordion__type">Week</span>
                 <button @click="removeWeek" class="button is-small is-danger is-light"><i class="far fa-trash-alt"></i></button>
                 <i class="fas fa-angle-down accordion__angle"></i>
             </span>
         </label>
-        <div class="accordion__content">
-            <input v-model="week.name" class="input" type="text" :placeholder="weekName">
+        <div class="accordion__content accordion__content--tertiary">
+            <input v-model="week.name" class="input margin-bottom" type="text" :placeholder="weekName">
 
             <Day 
                 v-for="(day, index) in week.days"
