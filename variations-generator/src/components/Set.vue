@@ -14,7 +14,7 @@
                     <a class="button is-light">Reps</a>
                 </div>
                 <p class="control is-expanded">
-                    <input class="input" v-model.number="set.reps" type="text">
+                    <input class="input" v-model.number="set.reps" type="number">
                 </p>
             </div>
             <div class="field has-addons">
@@ -22,8 +22,8 @@
                     <button type="submit" class="button is-light">PR</button>
                 </div>
                 <div class="control is-expanded">
-                    <div class="select" :class="{'is-success': pr}">
-                        <select v-model="pr">
+                    <div class="select" :class="{'is-success': set.pr}">
+                        <select v-model="set.pr">
                             <option :value="false">false</option>
                             <option :value="true">true</option>
                         </select>
@@ -47,14 +47,7 @@
         weekIndex: Number,
         dayIndex: Number,
         exerciceIndex: Number,
-        setIndex: Number,
-        value: String,
-        isLight: Boolean
-      },
-      data: function() {
-          return {
-              pr: null
-          }
+        setIndex: Number
       },
       methods: {
           removeSet: function() {
@@ -66,13 +59,6 @@
                     this.$store.commit('updateVariations', variations);
                 }
             }
-      },
-      mounted: function() {
-        if (this.set.pr) {
-            this.pr = this.set.pr;
-        } else {
-            this.pr = false;
-        }
       },
       computed: {
             ...mapGetters([

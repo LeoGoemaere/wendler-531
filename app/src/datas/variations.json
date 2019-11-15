@@ -13,108 +13,108 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.65, "reps": 5 },
-										{ "tm": 0.75, "reps": 5 },
+										{ "tm": 0.65, "reps": 5, "pr": false },
+										{ "tm": 0.75, "reps": 5, "pr": false },
 										{ "tm": 0.85, "reps": 5, "pr": true }
 									]
 								},
 								{
 									"sets": [
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 }
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false }
 									]
 								},
 								{
 									"sets": [
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 }
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false }
 									]
 								}
 							],
 							[
 								{
 									"sets": [
-										{ "tm": 0.65, "reps": 5 },
-										{ "tm": 0.75, "reps": 5 },
+										{ "tm": 0.65, "reps": 5, "pr": false },
+										{ "tm": 0.75, "reps": 5, "pr": false },
 										{ "tm": 0.85, "reps": 5, "pr": true }
 									]
 								},
 								{
 									"sets": [
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 }
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false }
 									]
 								},
 								{
 									"sets": [
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 }
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false }
 									]
 								}
 							],
 							[
 								{
 									"sets": [
-										{ "tm": 0.65, "reps": 5 },
-										{ "tm": 0.75, "reps": 5 },
+										{ "tm": 0.65, "reps": 5, "pr": false },
+										{ "tm": 0.75, "reps": 5, "pr": false },
 										{ "tm": 0.85, "reps": 5, "pr": true }
 									]
 								},
 								{
 									"sets": [
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 }
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false }
 									]
 								},
 								{
 									"sets": [
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 }
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false }
 									]
 								}
 							],
 							[
 								{
 									"sets": [
-										{ "tm": 0.65, "reps": 5 },
-										{ "tm": 0.75, "reps": 5 },
+										{ "tm": 0.65, "reps": 5, "pr": false },
+										{ "tm": 0.75, "reps": 5, "pr": false },
 										{ "tm": 0.85, "reps": 5, "pr": true }
 									]
 								},
 								{
 									"sets": [
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 }
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false }
 									]
 								},
 								{
 									"sets": [
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 }
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false }
 									]
 								}
 							]
@@ -126,108 +126,108 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.70, "reps": 3 },
-										{ "tm": 0.80, "reps": 3 },
+										{ "tm": 0.70, "reps": 3, "pr": false },
+										{ "tm": 0.80, "reps": 3, "pr": false },
 										{ "tm": 0.90, "reps": 3, "pr": true }
 									]
 								},
 								{
 									"sets": [
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 }
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false }
 									]
 								},
 								{
 									"sets": [
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 }
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false }
 									]
 								}
 							],
 							[
 								{
 									"sets": [
-										{ "tm": 0.70, "reps": 3 },
-										{ "tm": 0.80, "reps": 3 },
+										{ "tm": 0.70, "reps": 3, "pr": false },
+										{ "tm": 0.80, "reps": 3, "pr": false },
 										{ "tm": 0.90, "reps": 3, "pr": true }
 									]
 								},
 								{
 									"sets": [
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 }
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false }
 									]
 								},
 								{
 									"sets": [
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 }
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false }
 									]
 								}
 							],
 							[
 								{
 									"sets": [
-										{ "tm": 0.70, "reps": 3 },
-										{ "tm": 0.80, "reps": 3 },
+										{ "tm": 0.70, "reps": 3, "pr": false },
+										{ "tm": 0.80, "reps": 3, "pr": false },
 										{ "tm": 0.90, "reps": 3, "pr": true }
 									]
 								},
 								{
 									"sets": [
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 }
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false }
 									]
 								},
 								{
 									"sets": [
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 }
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false }
 									]
 								}
 							],
 							[
 								{
 									"sets": [
-										{ "tm": 0.70, "reps": 3 },
-										{ "tm": 0.80, "reps": 3 },
+										{ "tm": 0.70, "reps": 3, "pr": false },
+										{ "tm": 0.80, "reps": 3, "pr": false },
 										{ "tm": 0.90, "reps": 3, "pr": true }
 									]
 								},
 								{
 									"sets": [
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 }
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false }
 									]
 								},
 								{
 									"sets": [
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 }
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false }
 									]
 								}
 							]
@@ -239,108 +239,108 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.75, "reps": 5 },
-										{ "tm": 0.85, "reps": 3 },
+										{ "tm": 0.75, "reps": 5, "pr": false },
+										{ "tm": 0.85, "reps": 3, "pr": false },
 										{ "tm": 0.95, "reps": 1, "pr": true }
 									]
 								},
 								{
 									"sets": [
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 }
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false }
 									]
 								},
 								{
 									"sets": [
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 }
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false }
 									]
 								}
 							],
 							[
 								{
 									"sets": [
-										{ "tm": 0.75, "reps": 5 },
-										{ "tm": 0.85, "reps": 3 },
+										{ "tm": 0.75, "reps": 5, "pr": false },
+										{ "tm": 0.85, "reps": 3, "pr": false },
 										{ "tm": 0.95, "reps": 1, "pr": true }
 									]
 								},
 								{
 									"sets": [
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 }
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false }
 									]
 								},
 								{
 									"sets": [
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 }
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false }
 									]
 								}
 							],
 							[
 								{
 									"sets": [
-										{ "tm": 0.75, "reps": 5 },
-										{ "tm": 0.85, "reps": 3 },
+										{ "tm": 0.75, "reps": 5, "pr": false },
+										{ "tm": 0.85, "reps": 3, "pr": false },
 										{ "tm": 0.95, "reps": 1, "pr": true }
 									]
 								},
 								{
 									"sets": [
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 }
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false }
 									]
 								},
 								{
 									"sets": [
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 }
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false }
 									]
 								}
 							],
 							[
 								{
 									"sets": [
-										{ "tm": 0.75, "reps": 5 },
-										{ "tm": 0.85, "reps": 3 },
+										{ "tm": 0.75, "reps": 5, "pr": false },
+										{ "tm": 0.85, "reps": 3, "pr": false },
 										{ "tm": 0.95, "reps": 1, "pr": true }
 									]
 								},
 								{
 									"sets": [
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 }
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false }
 									]
 								},
 								{
 									"sets": [
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 }
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false }
 									]
 								}
 							]
@@ -352,108 +352,108 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.40, "reps": 5 },
-										{ "tm": 0.50, "reps": 5 },
-										{ "tm": 0.60, "reps": 5 }
+										{ "tm": 0.40, "reps": 5, "pr": false },
+										{ "tm": 0.50, "reps": 5, "pr": false },
+										{ "tm": 0.60, "reps": 5, "pr": false }
 									]
 								},
 								{
 									"sets": [
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 }
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false }
 									]
 								},
 								{
 									"sets": [
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 }
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false }
 									]
 								}
 							],
 							[
 								{
 									"sets": [
-										{ "tm": 0.40, "reps": 5 },
-										{ "tm": 0.50, "reps": 5 },
-										{ "tm": 0.60, "reps": 5 }
+										{ "tm": 0.40, "reps": 5, "pr": false },
+										{ "tm": 0.50, "reps": 5, "pr": false },
+										{ "tm": 0.60, "reps": 5, "pr": false }
 									]
 								},
 								{
 									"sets": [
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 }
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false }
 									]
 								},
 								{
 									"sets": [
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 }
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false }
 									]
 								}
 							],
 							[
 								{
 									"sets": [
-										{ "tm": 0.40, "reps": 5 },
-										{ "tm": 0.50, "reps": 5 },
-										{ "tm": 0.60, "reps": 5 }
+										{ "tm": 0.40, "reps": 5, "pr": false },
+										{ "tm": 0.50, "reps": 5, "pr": false },
+										{ "tm": 0.60, "reps": 5, "pr": false }
 									]
 								},
 								{
 									"sets": [
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 }
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false }
 									]
 								},
 								{
 									"sets": [
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 }
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false }
 									]
 								}
 							],
 							[
 								{
 									"sets": [
-										{ "tm": 0.40, "reps": 5 },
-										{ "tm": 0.50, "reps": 5 },
-										{ "tm": 0.60, "reps": 5 }
+										{ "tm": 0.40, "reps": 5, "pr": false },
+										{ "tm": 0.50, "reps": 5, "pr": false },
+										{ "tm": 0.60, "reps": 5, "pr": false }
 									]
 								},
 								{
 									"sets": [
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 }
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false }
 									]
 								},
 								{
 									"sets": [
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 }
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false }
 									]
 								}
 							]
@@ -471,108 +471,108 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.75, "reps": 5 },
-										{ "tm": 0.80, "reps": 5 },
+										{ "tm": 0.75, "reps": 5, "pr": false },
+										{ "tm": 0.80, "reps": 5, "pr": false },
 										{ "tm": 0.85, "reps": 5, "pr": true }
 									]
 								},
 								{
 									"sets": [
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 }
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false }
 									]
 								},
 								{
 									"sets": [
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 }
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false }
 									]
 								}
 							],
 							[
 								{
 									"sets": [
-										{ "tm": 0.75, "reps": 5 },
-										{ "tm": 0.80, "reps": 5 },
+										{ "tm": 0.75, "reps": 5, "pr": false },
+										{ "tm": 0.80, "reps": 5, "pr": false },
 										{ "tm": 0.85, "reps": 5, "pr": true }
 									]
 								},
 								{
 									"sets": [
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 }
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false }
 									]
 								},
 								{
 									"sets": [
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 }
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false }
 									]
 								}
 							],
 							[
 								{
 									"sets": [
-										{ "tm": 0.75, "reps": 5 },
-										{ "tm": 0.80, "reps": 5 },
+										{ "tm": 0.75, "reps": 5, "pr": false },
+										{ "tm": 0.80, "reps": 5, "pr": false },
 										{ "tm": 0.85, "reps": 5, "pr": true }
 									]
 								},
 								{
 									"sets": [
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 }
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false }
 									]
 								},
 								{
 									"sets": [
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 }
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false }
 									]
 								}
 							],
 							[
 								{
 									"sets": [
-										{ "tm": 0.75, "reps": 5 },
-										{ "tm": 0.80, "reps": 5 },
+										{ "tm": 0.75, "reps": 5, "pr": false },
+										{ "tm": 0.80, "reps": 5, "pr": false },
 										{ "tm": 0.85, "reps": 5, "pr": true }
 									]
 								},
 								{
 									"sets": [
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 }
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false }
 									]
 								},
 								{
 									"sets": [
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 }
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false }
 									]
 								}
 							]
@@ -584,108 +584,108 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.80, "reps": 3 },
-										{ "tm": 0.85, "reps": 3 },
+										{ "tm": 0.80, "reps": 3, "pr": false },
+										{ "tm": 0.85, "reps": 3, "pr": false },
 										{ "tm": 0.90, "reps": 3, "pr": true }
 									]
 								},
 								{
 									"sets": [
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 }
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false }
 									]
 								},
 								{
 									"sets": [
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 }
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false }
 									]
 								}
 							],
 							[
 								{
 									"sets": [
-										{ "tm": 0.80, "reps": 3 },
-										{ "tm": 0.85, "reps": 3 },
+										{ "tm": 0.80, "reps": 3, "pr": false },
+										{ "tm": 0.85, "reps": 3, "pr": false },
 										{ "tm": 0.90, "reps": 3, "pr": true }
 									]
 								},
 								{
 									"sets": [
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 }
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false }
 									]
 								},
 								{
 									"sets": [
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 }
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false }
 									]
 								}
 							],
 							[
 								{
 									"sets": [
-										{ "tm": 0.80, "reps": 3 },
-										{ "tm": 0.85, "reps": 3 },
+										{ "tm": 0.80, "reps": 3, "pr": false },
+										{ "tm": 0.85, "reps": 3, "pr": false },
 										{ "tm": 0.90, "reps": 3, "pr": true }
 									]
 								},
 								{
 									"sets": [
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 }
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false }
 									]
 								},
 								{
 									"sets": [
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 }
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false }
 									]
 								}
 							],
 							[
 								{
 									"sets": [
-										{ "tm": 0.80, "reps": 3 },
-										{ "tm": 0.85, "reps": 3 },
+										{ "tm": 0.80, "reps": 3, "pr": false },
+										{ "tm": 0.85, "reps": 3, "pr": false },
 										{ "tm": 0.90, "reps": 3, "pr": true }
 									]
 								},
 								{
 									"sets": [
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 }
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false }
 									]
 								},
 								{
 									"sets": [
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 }
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false }
 									]
 								}
 							]
@@ -697,108 +697,108 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.75, "reps": 5 },
-										{ "tm": 0.85, "reps": 3 },
+										{ "tm": 0.75, "reps": 5, "pr": false },
+										{ "tm": 0.85, "reps": 3, "pr": false },
 										{ "tm": 0.95, "reps": 1, "pr": true }
 									]
 								},
 								{
 									"sets": [
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 }
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false }
 									]
 								},
 								{
 									"sets": [
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 }
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false }
 									]
 								}
 							],
 							[
 								{
 									"sets": [
-										{ "tm": 0.75, "reps": 5 },
-										{ "tm": 0.85, "reps": 3 },
+										{ "tm": 0.75, "reps": 5, "pr": false },
+										{ "tm": 0.85, "reps": 3, "pr": false },
 										{ "tm": 0.95, "reps": 1, "pr": true }
 									]
 								},
 								{
 									"sets": [
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 }
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false }
 									]
 								},
 								{
 									"sets": [
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 }
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false }
 									]
 								}
 							],
 							[
 								{
 									"sets": [
-										{ "tm": 0.75, "reps": 5 },
-										{ "tm": 0.85, "reps": 3 },
+										{ "tm": 0.75, "reps": 5, "pr": false },
+										{ "tm": 0.85, "reps": 3, "pr": false },
 										{ "tm": 0.95, "reps": 1, "pr": true }
 									]
 								},
 								{
 									"sets": [
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 }
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false }
 									]
 								},
 								{
 									"sets": [
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 }
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false }
 									]
 								}
 							],
 							[
 								{
 									"sets": [
-										{ "tm": 0.75, "reps": 5 },
-										{ "tm": 0.85, "reps": 3 },
+										{ "tm": 0.75, "reps": 5, "pr": false },
+										{ "tm": 0.85, "reps": 3, "pr": false },
 										{ "tm": 0.95, "reps": 1, "pr": true }
 									]
 								},
 								{
 									"sets": [
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 }
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false }
 									]
 								},
 								{
 									"sets": [
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 }
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false }
 									]
 								}
 							]
@@ -810,108 +810,108 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.40, "reps": 5 },
-										{ "tm": 0.50, "reps": 5 },
-										{ "tm": 0.60, "reps": 5 }
+										{ "tm": 0.40, "reps": 5, "pr": false },
+										{ "tm": 0.50, "reps": 5, "pr": false },
+										{ "tm": 0.60, "reps": 5, "pr": false }
 									]
 								},
 								{
 									"sets": [
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 }
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false }
 									]
 								},
 								{
 									"sets": [
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 }
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false }
 									]
 								}
 							],
 							[
 								{
 									"sets": [
-										{ "tm": 0.40, "reps": 5 },
-										{ "tm": 0.50, "reps": 5 },
-										{ "tm": 0.60, "reps": 5 }
+										{ "tm": 0.40, "reps": 5, "pr": false },
+										{ "tm": 0.50, "reps": 5, "pr": false },
+										{ "tm": 0.60, "reps": 5, "pr": false }
 									]
 								},
 								{
 									"sets": [
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 }
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false }
 									]
 								},
 								{
 									"sets": [
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 }
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false }
 									]
 								}
 							],
 							[
 								{
 									"sets": [
-										{ "tm": 0.40, "reps": 5 },
-										{ "tm": 0.50, "reps": 5 },
-										{ "tm": 0.60, "reps": 5 }
+										{ "tm": 0.40, "reps": 5, "pr": false },
+										{ "tm": 0.50, "reps": 5, "pr": false },
+										{ "tm": 0.60, "reps": 5, "pr": false }
 									]
 								},
 								{
 									"sets": [
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 }
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false }
 									]
 								},
 								{
 									"sets": [
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 }
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false }
 									]
 								}
 							],
 							[
 								{
 									"sets": [
-										{ "tm": 0.40, "reps": 5 },
-										{ "tm": 0.50, "reps": 5 },
-										{ "tm": 0.60, "reps": 5 }
+										{ "tm": 0.40, "reps": 5, "pr": false },
+										{ "tm": 0.50, "reps": 5, "pr": false },
+										{ "tm": 0.60, "reps": 5, "pr": false }
 									]
 								},
 								{
 									"sets": [
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.50, "reps": 10 }
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.50, "reps": 10, "pr": false }
 									]
 								},
 								{
 									"sets": [
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 }
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false }
 									]
 								}
 							]
@@ -934,108 +934,108 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.65, "reps": 5 },
-										{ "tm": 0.75, "reps": 5 },
+										{ "tm": 0.65, "reps": 5, "pr": false },
+										{ "tm": 0.75, "reps": 5, "pr": false },
 										{ "tm": 0.85, "reps": 5, "pr": true }
 									]
 								},
 								{
 									"sets": [
-										{ "reps": 15 },
-										{ "reps": 15 },
-										{ "reps": 15 },
-										{ "reps": 15 },
-										{ "reps": 15 }
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false }
 									]
 								},
 								{
 									"sets": [
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 }
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false }
 									]
 								}
 							],
 							[
 								{
 									"sets": [
-										{ "tm": 0.65, "reps": 5 },
-										{ "tm": 0.75, "reps": 5 },
+										{ "tm": 0.65, "reps": 5, "pr": false },
+										{ "tm": 0.75, "reps": 5, "pr": false },
 										{ "tm": 0.85, "reps": 5, "pr": true }
 									]
 								},
 								{
 									"sets": [
-										{ "reps": 15 },
-										{ "reps": 15 },
-										{ "reps": 15 },
-										{ "reps": 15 },
-										{ "reps": 15 }
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false }
 									]
 								},
 								{
 									"sets": [
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 }
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false }
 									]
 								}
 							],
 							[
 								{
 									"sets": [
-										{ "tm": 0.65, "reps": 5 },
-										{ "tm": 0.75, "reps": 5 },
+										{ "tm": 0.65, "reps": 5, "pr": false },
+										{ "tm": 0.75, "reps": 5, "pr": false },
 										{ "tm": 0.85, "reps": 5, "pr": true }
 									]
 								},
 								{
 									"sets": [
-										{ "reps": 15 },
-										{ "reps": 15 },
-										{ "reps": 15 },
-										{ "reps": 15 },
-										{ "reps": 15 }
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false }
 									]
 								},
 								{
 									"sets": [
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 }
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false }
 									]
 								}
 							],
 							[
 								{
 									"sets": [
-										{ "tm": 0.65, "reps": 5 },
-										{ "tm": 0.75, "reps": 5 },
+										{ "tm": 0.65, "reps": 5, "pr": false },
+										{ "tm": 0.75, "reps": 5, "pr": false },
 										{ "tm": 0.85, "reps": 5, "pr": true }
 									]
 								},
 								{
 									"sets": [
-										{ "reps": 15 },
-										{ "reps": 15 },
-										{ "reps": 15 },
-										{ "reps": 15 },
-										{ "reps": 15 }
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false }
 									]
 								},
 								{
 									"sets": [
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 }
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false }
 									]
 								}
 							]
@@ -1047,108 +1047,108 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.70, "reps": 3 },
-										{ "tm": 0.80, "reps": 3 },
+										{ "tm": 0.70, "reps": 3, "pr": false },
+										{ "tm": 0.80, "reps": 3, "pr": false },
 										{ "tm": 0.90, "reps": 3, "pr": true }
 									]
 								},
 								{
 									"sets": [
-										{ "reps": 15 },
-										{ "reps": 15 },
-										{ "reps": 15 },
-										{ "reps": 15 },
-										{ "reps": 15 }
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false }
 									]
 								},
 								{
 									"sets": [
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 }
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false }
 									]
 								}
 							],
 							[
 								{
 									"sets": [
-										{ "tm": 0.70, "reps": 3 },
-										{ "tm": 0.80, "reps": 3 },
+										{ "tm": 0.70, "reps": 3, "pr": false },
+										{ "tm": 0.80, "reps": 3, "pr": false },
 										{ "tm": 0.90, "reps": 3, "pr": true }
 									]
 								},
 								{
 									"sets": [
-										{ "reps": 15 },
-										{ "reps": 15 },
-										{ "reps": 15 },
-										{ "reps": 15 },
-										{ "reps": 15 }
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false }
 									]
 								},
 								{
 									"sets": [
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 }
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false }
 									]
 								}
 							],
 							[
 								{
 									"sets": [
-										{ "tm": 0.70, "reps": 3 },
-										{ "tm": 0.80, "reps": 3 },
+										{ "tm": 0.70, "reps": 3, "pr": false },
+										{ "tm": 0.80, "reps": 3, "pr": false },
 										{ "tm": 0.90, "reps": 3, "pr": true }
 									]
 								},
 								{
 									"sets": [
-										{ "reps": 15 },
-										{ "reps": 15 },
-										{ "reps": 15 },
-										{ "reps": 15 },
-										{ "reps": 15 }
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false }
 									]
 								},
 								{
 									"sets": [
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 }
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false }
 									]
 								}
 							],
 							[
 								{
 									"sets": [
-										{ "tm": 0.70, "reps": 3 },
-										{ "tm": 0.80, "reps": 3 },
+										{ "tm": 0.70, "reps": 3, "pr": false },
+										{ "tm": 0.80, "reps": 3, "pr": false },
 										{ "tm": 0.90, "reps": 3, "pr": true }
 									]
 								},
 								{
 									"sets": [
-										{ "reps": 15 },
-										{ "reps": 15 },
-										{ "reps": 15 },
-										{ "reps": 15 },
-										{ "reps": 15 }
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false }
 									]
 								},
 								{
 									"sets": [
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 }
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false }
 									]
 								}
 							]
@@ -1160,108 +1160,108 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.75, "reps": 5 },
-										{ "tm": 0.85, "reps": 3 },
+										{ "tm": 0.75, "reps": 5, "pr": false },
+										{ "tm": 0.85, "reps": 3, "pr": false },
 										{ "tm": 0.95, "reps": 1, "pr": true }
 									]
 								},
 								{
 									"sets": [
-										{ "reps": 15 },
-										{ "reps": 15 },
-										{ "reps": 15 },
-										{ "reps": 15 },
-										{ "reps": 15 }
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false }
 									]
 								},
 								{
 									"sets": [
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 }
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false }
 									]
 								}
 							],
 							[
 								{
 									"sets": [
-										{ "tm": 0.75, "reps": 5 },
-										{ "tm": 0.85, "reps": 3 },
+										{ "tm": 0.75, "reps": 5, "pr": false },
+										{ "tm": 0.85, "reps": 3, "pr": false },
 										{ "tm": 0.95, "reps": 1, "pr": true }
 									]
 								},
 								{
 									"sets": [
-										{ "reps": 15 },
-										{ "reps": 15 },
-										{ "reps": 15 },
-										{ "reps": 15 },
-										{ "reps": 15 }
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false }
 									]
 								},
 								{
 									"sets": [
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 }
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false }
 									]
 								}
 							],
 							[
 								{
 									"sets": [
-										{ "tm": 0.75, "reps": 5 },
-										{ "tm": 0.85, "reps": 3 },
+										{ "tm": 0.75, "reps": 5, "pr": false },
+										{ "tm": 0.85, "reps": 3, "pr": false },
 										{ "tm": 0.95, "reps": 1, "pr": true }
 									]
 								},
 								{
 									"sets": [
-										{ "reps": 15 },
-										{ "reps": 15 },
-										{ "reps": 15 },
-										{ "reps": 15 },
-										{ "reps": 15 }
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false }
 									]
 								},
 								{
 									"sets": [
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 }
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false }
 									]
 								}
 							],
 							[
 								{
 									"sets": [
-										{ "tm": 0.75, "reps": 5 },
-										{ "tm": 0.85, "reps": 3 },
+										{ "tm": 0.75, "reps": 5, "pr": false },
+										{ "tm": 0.85, "reps": 3, "pr": false },
 										{ "tm": 0.95, "reps": 1, "pr": true }
 									]
 								},
 								{
 									"sets": [
-										{ "reps": 15 },
-										{ "reps": 15 },
-										{ "reps": 15 },
-										{ "reps": 15 },
-										{ "reps": 15 }
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false }
 									]
 								},
 								{
 									"sets": [
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 }
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false }
 									]
 								}
 							]
@@ -1273,108 +1273,108 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.40, "reps": 5 },
-										{ "tm": 0.50, "reps": 5 },
-										{ "tm": 0.60, "reps": 5 }
+										{ "tm": 0.40, "reps": 5, "pr": false },
+										{ "tm": 0.50, "reps": 5, "pr": false },
+										{ "tm": 0.60, "reps": 5, "pr": false }
 									]
 								},
 								{
 									"sets": [
-										{ "reps": 15 },
-										{ "reps": 15 },
-										{ "reps": 15 },
-										{ "reps": 15 },
-										{ "reps": 15 }
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false }
 									]
 								},
 								{
 									"sets": [
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 }
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false }
 									]
 								}
 							],
 							[
 								{
 									"sets": [
-										{ "tm": 0.40, "reps": 5 },
-										{ "tm": 0.50, "reps": 5 },
-										{ "tm": 0.60, "reps": 5 }
+										{ "tm": 0.40, "reps": 5, "pr": false },
+										{ "tm": 0.50, "reps": 5, "pr": false },
+										{ "tm": 0.60, "reps": 5, "pr": false }
 									]
 								},
 								{
 									"sets": [
-										{ "reps": 15 },
-										{ "reps": 15 },
-										{ "reps": 15 },
-										{ "reps": 15 },
-										{ "reps": 15 }
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false }
 									]
 								},
 								{
 									"sets": [
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 }
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false }
 									]
 								}
 							],
 							[
 								{
 									"sets": [
-										{ "tm": 0.40, "reps": 5 },
-										{ "tm": 0.50, "reps": 5 },
-										{ "tm": 0.60, "reps": 5 }
+										{ "tm": 0.40, "reps": 5, "pr": false },
+										{ "tm": 0.50, "reps": 5, "pr": false },
+										{ "tm": 0.60, "reps": 5, "pr": false }
 									]
 								},
 								{
 									"sets": [
-										{ "reps": 15 },
-										{ "reps": 15 },
-										{ "reps": 15 },
-										{ "reps": 15 },
-										{ "reps": 15 }
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false }
 									]
 								},
 								{
 									"sets": [
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 }
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false }
 									]
 								}
 							],
 							[
 								{
 									"sets": [
-										{ "tm": 0.40, "reps": 5 },
-										{ "tm": 0.50, "reps": 5 },
-										{ "tm": 0.60, "reps": 5 }
+										{ "tm": 0.40, "reps": 5, "pr": false },
+										{ "tm": 0.50, "reps": 5, "pr": false },
+										{ "tm": 0.60, "reps": 5, "pr": false }
 									]
 								},
 								{
 									"sets": [
-										{ "reps": 15 },
-										{ "reps": 15 },
-										{ "reps": 15 },
-										{ "reps": 15 },
-										{ "reps": 15 }
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false }
 									]
 								},
 								{
 									"sets": [
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 }
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false }
 									]
 								}
 							]
@@ -1392,108 +1392,108 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.75, "reps": 5 },
-										{ "tm": 0.80, "reps": 5 },
+										{ "tm": 0.75, "reps": 5, "pr": false },
+										{ "tm": 0.80, "reps": 5, "pr": false },
 										{ "tm": 0.85, "reps": 5, "pr": true }
 									]
 								},
 								{
 									"sets": [
-										{ "reps": 15 },
-										{ "reps": 15 },
-										{ "reps": 15 },
-										{ "reps": 15 },
-										{ "reps": 15 }
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false }
 									]
 								},
 								{
 									"sets": [
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 }
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false }
 									]
 								}
 							],
 							[
 								{
 									"sets": [
-										{ "tm": 0.75, "reps": 5 },
-										{ "tm": 0.80, "reps": 5 },
+										{ "tm": 0.75, "reps": 5, "pr": false },
+										{ "tm": 0.80, "reps": 5, "pr": false },
 										{ "tm": 0.85, "reps": 5, "pr": true }
 									]
 								},
 								{
 									"sets": [
-										{ "reps": 15 },
-										{ "reps": 15 },
-										{ "reps": 15 },
-										{ "reps": 15 },
-										{ "reps": 15 }
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false }
 									]
 								},
 								{
 									"sets": [
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 }
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false }
 									]
 								}
 							],
 							[
 								{
 									"sets": [
-										{ "tm": 0.75, "reps": 5 },
-										{ "tm": 0.80, "reps": 5 },
+										{ "tm": 0.75, "reps": 5, "pr": false },
+										{ "tm": 0.80, "reps": 5, "pr": false },
 										{ "tm": 0.85, "reps": 5, "pr": true }
 									]
 								},
 								{
 									"sets": [
-										{ "reps": 15 },
-										{ "reps": 15 },
-										{ "reps": 15 },
-										{ "reps": 15 },
-										{ "reps": 15 }
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false }
 									]
 								},
 								{
 									"sets": [
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 }
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false }
 									]
 								}
 							],
 							[
 								{
 									"sets": [
-										{ "tm": 0.75, "reps": 5 },
-										{ "tm": 0.80, "reps": 5 },
+										{ "tm": 0.75, "reps": 5, "pr": false },
+										{ "tm": 0.80, "reps": 5, "pr": false },
 										{ "tm": 0.85, "reps": 5, "pr": true }
 									]
 								},
 								{
 									"sets": [
-										{ "reps": 15 },
-										{ "reps": 15 },
-										{ "reps": 15 },
-										{ "reps": 15 },
-										{ "reps": 15 }
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false }
 									]
 								},
 								{
 									"sets": [
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 }
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false }
 									]
 								}
 							]
@@ -1505,108 +1505,108 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.80, "reps": 3 },
-										{ "tm": 0.85, "reps": 3 },
+										{ "tm": 0.80, "reps": 3, "pr": false },
+										{ "tm": 0.85, "reps": 3, "pr": false },
 										{ "tm": 0.90, "reps": 3, "pr": true }
 									]
 								},
 								{
 									"sets": [
-										{ "reps": 15 },
-										{ "reps": 15 },
-										{ "reps": 15 },
-										{ "reps": 15 },
-										{ "reps": 15 }
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false }
 									]
 								},
 								{
 									"sets": [
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 }
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false }
 									]
 								}
 							],
 							[
 								{
 									"sets": [
-										{ "tm": 0.80, "reps": 3 },
-										{ "tm": 0.85, "reps": 3 },
+										{ "tm": 0.80, "reps": 3, "pr": false },
+										{ "tm": 0.85, "reps": 3, "pr": false },
 										{ "tm": 0.90, "reps": 3, "pr": true }
 									]
 								},
 								{
 									"sets": [
-										{ "reps": 15 },
-										{ "reps": 15 },
-										{ "reps": 15 },
-										{ "reps": 15 },
-										{ "reps": 15 }
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false }
 									]
 								},
 								{
 									"sets": [
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 }
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false }
 									]
 								}
 							],
 							[
 								{
 									"sets": [
-										{ "tm": 0.80, "reps": 3 },
-										{ "tm": 0.85, "reps": 3 },
+										{ "tm": 0.80, "reps": 3, "pr": false },
+										{ "tm": 0.85, "reps": 3, "pr": false },
 										{ "tm": 0.90, "reps": 3, "pr": true }
 									]
 								},
 								{
 									"sets": [
-										{ "reps": 15 },
-										{ "reps": 15 },
-										{ "reps": 15 },
-										{ "reps": 15 },
-										{ "reps": 15 }
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false }
 									]
 								},
 								{
 									"sets": [
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 }
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false }
 									]
 								}
 							],
 							[
 								{
 									"sets": [
-										{ "tm": 0.80, "reps": 3 },
-										{ "tm": 0.85, "reps": 3 },
+										{ "tm": 0.80, "reps": 3, "pr": false },
+										{ "tm": 0.85, "reps": 3, "pr": false },
 										{ "tm": 0.90, "reps": 3, "pr": true }
 									]
 								},
 								{
 									"sets": [
-										{ "reps": 15 },
-										{ "reps": 15 },
-										{ "reps": 15 },
-										{ "reps": 15 },
-										{ "reps": 15 }
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false }
 									]
 								},
 								{
 									"sets": [
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 }
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false }
 									]
 								}
 							]
@@ -1618,108 +1618,108 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.75, "reps": 5 },
-										{ "tm": 0.85, "reps": 3 },
+										{ "tm": 0.75, "reps": 5, "pr": false },
+										{ "tm": 0.85, "reps": 3, "pr": false },
 										{ "tm": 0.95, "reps": 1, "pr": true }
 									]
 								},
 								{
 									"sets": [
-										{ "reps": 15 },
-										{ "reps": 15 },
-										{ "reps": 15 },
-										{ "reps": 15 },
-										{ "reps": 15 }
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false }
 									]
 								},
 								{
 									"sets": [
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 }
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false }
 									]
 								}
 							],
 							[
 								{
 									"sets": [
-										{ "tm": 0.75, "reps": 5 },
-										{ "tm": 0.85, "reps": 3 },
+										{ "tm": 0.75, "reps": 5, "pr": false },
+										{ "tm": 0.85, "reps": 3, "pr": false },
 										{ "tm": 0.95, "reps": 1, "pr": true }
 									]
 								},
 								{
 									"sets": [
-										{ "reps": 15 },
-										{ "reps": 15 },
-										{ "reps": 15 },
-										{ "reps": 15 },
-										{ "reps": 15 }
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false }
 									]
 								},
 								{
 									"sets": [
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 }
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false }
 									]
 								}
 							],
 							[
 								{
 									"sets": [
-										{ "tm": 0.75, "reps": 5 },
-										{ "tm": 0.85, "reps": 3 },
+										{ "tm": 0.75, "reps": 5, "pr": false },
+										{ "tm": 0.85, "reps": 3, "pr": false },
 										{ "tm": 0.95, "reps": 1, "pr": true }
 									]
 								},
 								{
 									"sets": [
-										{ "reps": 15 },
-										{ "reps": 15 },
-										{ "reps": 15 },
-										{ "reps": 15 },
-										{ "reps": 15 }
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false }
 									]
 								},
 								{
 									"sets": [
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 }
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false }
 									]
 								}
 							],
 							[
 								{
 									"sets": [
-										{ "tm": 0.75, "reps": 5 },
-										{ "tm": 0.85, "reps": 3 },
+										{ "tm": 0.75, "reps": 5, "pr": false },
+										{ "tm": 0.85, "reps": 3, "pr": false },
 										{ "tm": 0.95, "reps": 1, "pr": true }
 									]
 								},
 								{
 									"sets": [
-										{ "reps": 15 },
-										{ "reps": 15 },
-										{ "reps": 15 },
-										{ "reps": 15 },
-										{ "reps": 15 }
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false }
 									]
 								},
 								{
 									"sets": [
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 }
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false }
 									]
 								}
 							]
@@ -1731,108 +1731,108 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.40, "reps": 5 },
-										{ "tm": 0.50, "reps": 5 },
-										{ "tm": 0.60, "reps": 5 }
+										{ "tm": 0.40, "reps": 5, "pr": false },
+										{ "tm": 0.50, "reps": 5, "pr": false },
+										{ "tm": 0.60, "reps": 5, "pr": false }
 									]
 								},
 								{
 									"sets": [
-										{ "reps": 15 },
-										{ "reps": 15 },
-										{ "reps": 15 },
-										{ "reps": 15 },
-										{ "reps": 15 }
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false }
 									]
 								},
 								{
 									"sets": [
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 }
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false }
 									]
 								}
 							],
 							[
 								{
 									"sets": [
-										{ "tm": 0.40, "reps": 5 },
-										{ "tm": 0.50, "reps": 5 },
-										{ "tm": 0.60, "reps": 5 }
+										{ "tm": 0.40, "reps": 5, "pr": false },
+										{ "tm": 0.50, "reps": 5, "pr": false },
+										{ "tm": 0.60, "reps": 5, "pr": false }
 									]
 								},
 								{
 									"sets": [
-										{ "reps": 15 },
-										{ "reps": 15 },
-										{ "reps": 15 },
-										{ "reps": 15 },
-										{ "reps": 15 }
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false }
 									]
 								},
 								{
 									"sets": [
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 }
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false }
 									]
 								}
 							],
 							[
 								{
 									"sets": [
-										{ "tm": 0.40, "reps": 5 },
-										{ "tm": 0.50, "reps": 5 },
-										{ "tm": 0.60, "reps": 5 }
+										{ "tm": 0.40, "reps": 5, "pr": false },
+										{ "tm": 0.50, "reps": 5, "pr": false },
+										{ "tm": 0.60, "reps": 5, "pr": false }
 									]
 								},
 								{
 									"sets": [
-										{ "reps": 15 },
-										{ "reps": 15 },
-										{ "reps": 15 },
-										{ "reps": 15 },
-										{ "reps": 15 }
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false }
 									]
 								},
 								{
 									"sets": [
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 }
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false }
 									]
 								}
 							],
 							[
 								{
 									"sets": [
-										{ "tm": 0.40, "reps": 5 },
-										{ "tm": 0.50, "reps": 5 },
-										{ "tm": 0.60, "reps": 5 }
+										{ "tm": 0.40, "reps": 5, "pr": false },
+										{ "tm": 0.50, "reps": 5, "pr": false },
+										{ "tm": 0.60, "reps": 5, "pr": false }
 									]
 								},
 								{
 									"sets": [
-										{ "reps": 15 },
-										{ "reps": 15 },
-										{ "reps": 15 },
-										{ "reps": 15 },
-										{ "reps": 15 }
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false },
+										{ "reps": 15, "pr": false }
 									]
 								},
 								{
 									"sets": [
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 },
-										{ "reps": 10 }
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false },
+										{ "reps": 10, "pr": false }
 									]
 								}
 							]
@@ -1855,64 +1855,64 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.65, "reps": 5 },
-										{ "tm": 0.75, "reps": 5 },
+										{ "tm": 0.65, "reps": 5, "pr": false },
+										{ "tm": 0.75, "reps": 5, "pr": false },
 										{ "tm": 0.85, "reps": 5, "pr": true }
 									]
 								},
 								{
 									"sets": [
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.60, "reps": 10 }, 
-										{ "tm": 0.70, "reps": 10 }
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.60, "reps": 10, "pr": false }, 
+										{ "tm": 0.70, "reps": 10, "pr": false }
 									]
 								}							
 							],
 							[
 								{
 									"sets": [
-										{ "tm": 0.65, "reps": 5 },
-										{ "tm": 0.75, "reps": 5 },
+										{ "tm": 0.65, "reps": 5, "pr": false },
+										{ "tm": 0.75, "reps": 5, "pr": false },
 										{ "tm": 0.85, "reps": 5, "pr": true }
 									]
 								},
 								{
 									"sets": [
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.60, "reps": 10 }, 
-										{ "tm": 0.70, "reps": 10 }
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.60, "reps": 10, "pr": false }, 
+										{ "tm": 0.70, "reps": 10, "pr": false }
 									]
 								}
 							],
 							[
 								{
 									"sets": [
-										{ "tm": 0.65, "reps": 5 },
-										{ "tm": 0.75, "reps": 5 },
+										{ "tm": 0.65, "reps": 5, "pr": false },
+										{ "tm": 0.75, "reps": 5, "pr": false },
 										{ "tm": 0.85, "reps": 5, "pr": true }
 									]
 								},
 								{
 									"sets": [
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.60, "reps": 10 }, 
-										{ "tm": 0.70, "reps": 10 }
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.60, "reps": 10, "pr": false }, 
+										{ "tm": 0.70, "reps": 10, "pr": false }
 									]
 								}
 							],
 							[
 								{
 									"sets": [
-										{ "tm": 0.65, "reps": 5 },
-										{ "tm": 0.75, "reps": 5 },
+										{ "tm": 0.65, "reps": 5, "pr": false },
+										{ "tm": 0.75, "reps": 5, "pr": false },
 										{ "tm": 0.85, "reps": 5, "pr": true }
 									]
 								},
 								{
 									"sets": [
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.60, "reps": 10 }, 
-										{ "tm": 0.70, "reps": 10 }
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.60, "reps": 10, "pr": false }, 
+										{ "tm": 0.70, "reps": 10, "pr": false }
 									]
 								}
 							]
@@ -1924,64 +1924,64 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.70, "reps": 3 },
-										{ "tm": 0.80, "reps": 3 },
+										{ "tm": 0.70, "reps": 3, "pr": false },
+										{ "tm": 0.80, "reps": 3, "pr": false },
 										{ "tm": 0.90, "reps": 3, "pr": true }
 									]
 								},
 								{
 									"sets": [
-										{ "tm": 0.60, "reps": 8 },
-										{ "tm": 0.70, "reps": 8 }, 
-										{ "tm": 0.80, "reps": 6 }
+										{ "tm": 0.60, "reps": 8, "pr": false },
+										{ "tm": 0.70, "reps": 8, "pr": false }, 
+										{ "tm": 0.80, "reps": 6, "pr": false }
 									]
 								}							
 							],
 							[
 								{
 									"sets": [
-										{ "tm": 0.70, "reps": 3 },
-										{ "tm": 0.80, "reps": 3 },
+										{ "tm": 0.70, "reps": 3, "pr": false },
+										{ "tm": 0.80, "reps": 3, "pr": false },
 										{ "tm": 0.90, "reps": 3, "pr": true }
 									]
 								},
 								{
 									"sets": [
-										{ "tm": 0.60, "reps": 8 },
-										{ "tm": 0.70, "reps": 8 }, 
-										{ "tm": 0.80, "reps": 6 }
+										{ "tm": 0.60, "reps": 8, "pr": false },
+										{ "tm": 0.70, "reps": 8, "pr": false }, 
+										{ "tm": 0.80, "reps": 6, "pr": false }
 									]
 								}
 							],
 							[
 								{
 									"sets": [
-										{ "tm": 0.70, "reps": 3 },
-										{ "tm": 0.80, "reps": 3 },
+										{ "tm": 0.70, "reps": 3, "pr": false },
+										{ "tm": 0.80, "reps": 3, "pr": false },
 										{ "tm": 0.90, "reps": 3, "pr": true }
 									]
 								},
 								{
 									"sets": [
-										{ "tm": 0.60, "reps": 8 },
-										{ "tm": 0.70, "reps": 8 }, 
-										{ "tm": 0.80, "reps": 6 }
+										{ "tm": 0.60, "reps": 8, "pr": false },
+										{ "tm": 0.70, "reps": 8, "pr": false }, 
+										{ "tm": 0.80, "reps": 6, "pr": false }
 									]
 								}
 							],
 							[
 								{
 									"sets": [
-										{ "tm": 0.70, "reps": 3 },
-										{ "tm": 0.80, "reps": 3 },
+										{ "tm": 0.70, "reps": 3, "pr": false },
+										{ "tm": 0.80, "reps": 3, "pr": false },
 										{ "tm": 0.90, "reps": 3, "pr": true }
 									]
 								},
 								{
 									"sets": [
-										{ "tm": 0.60, "reps": 8 },
-										{ "tm": 0.70, "reps": 8 }, 
-										{ "tm": 0.80, "reps": 6 }
+										{ "tm": 0.60, "reps": 8, "pr": false },
+										{ "tm": 0.70, "reps": 8, "pr": false }, 
+										{ "tm": 0.80, "reps": 6, "pr": false }
 									]
 								}
 							]
@@ -1993,64 +1993,64 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.75, "reps": 5 },
-										{ "tm": 0.85, "reps": 3 },
+										{ "tm": 0.75, "reps": 5, "pr": false },
+										{ "tm": 0.85, "reps": 3, "pr": false },
 										{ "tm": 0.95, "reps": 1, "pr": true }
 									]
 								},
 								{
 									"sets": [
-										{ "tm": 0.65, "reps": 5 },
-										{ "tm": 0.75, "reps": 5 }, 
-										{ "tm": 0.85, "reps": 5 }
+										{ "tm": 0.65, "reps": 5, "pr": false },
+										{ "tm": 0.75, "reps": 5, "pr": false }, 
+										{ "tm": 0.85, "reps": 5, "pr": false }
 									]
 								}							
 							],
 							[
 								{
 									"sets": [
-										{ "tm": 0.75, "reps": 5 },
-										{ "tm": 0.85, "reps": 3 },
+										{ "tm": 0.75, "reps": 5, "pr": false },
+										{ "tm": 0.85, "reps": 3, "pr": false },
 										{ "tm": 0.95, "reps": 1, "pr": true }
 									]
 								},
 								{
 									"sets": [
-										{ "tm": 0.65, "reps": 5 },
-										{ "tm": 0.75, "reps": 5 }, 
-										{ "tm": 0.85, "reps": 5 }
+										{ "tm": 0.65, "reps": 5, "pr": false },
+										{ "tm": 0.75, "reps": 5, "pr": false }, 
+										{ "tm": 0.85, "reps": 5, "pr": false }
 									]
 								}
 							],
 							[
 								{
 									"sets": [
-										{ "tm": 0.75, "reps": 5 },
-										{ "tm": 0.85, "reps": 3 },
+										{ "tm": 0.75, "reps": 5, "pr": false },
+										{ "tm": 0.85, "reps": 3, "pr": false },
 										{ "tm": 0.95, "reps": 1, "pr": true }
 									]
 								},
 								{
 									"sets": [
-										{ "tm": 0.65, "reps": 5 },
-										{ "tm": 0.75, "reps": 5 }, 
-										{ "tm": 0.85, "reps": 5 }
+										{ "tm": 0.65, "reps": 5, "pr": false },
+										{ "tm": 0.75, "reps": 5, "pr": false }, 
+										{ "tm": 0.85, "reps": 5, "pr": false }
 									]
 								}
 							],
 							[
 								{
 									"sets": [
-										{ "tm": 0.75, "reps": 5 },
-										{ "tm": 0.85, "reps": 3 },
+										{ "tm": 0.75, "reps": 5, "pr": false },
+										{ "tm": 0.85, "reps": 3, "pr": false },
 										{ "tm": 0.95, "reps": 1, "pr": true }
 									]
 								},
 								{
 									"sets": [
-										{ "tm": 0.65, "reps": 5 },
-										{ "tm": 0.75, "reps": 5 }, 
-										{ "tm": 0.85, "reps": 5 }
+										{ "tm": 0.65, "reps": 5, "pr": false },
+										{ "tm": 0.75, "reps": 5, "pr": false }, 
+										{ "tm": 0.85, "reps": 5, "pr": false }
 									]
 								}
 							]
@@ -2062,64 +2062,64 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.40, "reps": 5 },
-										{ "tm": 0.50, "reps": 5 },
-										{ "tm": 0.60, "reps": 5 }
+										{ "tm": 0.40, "reps": 5, "pr": false },
+										{ "tm": 0.50, "reps": 5, "pr": false },
+										{ "tm": 0.60, "reps": 5, "pr": false }
 									]
 								},
 								{
 									"sets": [
-										{ "tm": 0.40, "reps": 5 },
-										{ "tm": 0.50, "reps": 5 }, 
-										{ "tm": 0.60, "reps": 5 }
+										{ "tm": 0.40, "reps": 5, "pr": false },
+										{ "tm": 0.50, "reps": 5, "pr": false }, 
+										{ "tm": 0.60, "reps": 5, "pr": false }
 									]
 								}							
 							],
 							[
 								{
 									"sets": [
-										{ "tm": 0.40, "reps": 5 },
-										{ "tm": 0.50, "reps": 5 },
-										{ "tm": 0.60, "reps": 5 }
+										{ "tm": 0.40, "reps": 5, "pr": false },
+										{ "tm": 0.50, "reps": 5, "pr": false },
+										{ "tm": 0.60, "reps": 5, "pr": false }
 									]
 								},
 								{
 									"sets": [
-										{ "tm": 0.40, "reps": 5 },
-										{ "tm": 0.50, "reps": 5 }, 
-										{ "tm": 0.60, "reps": 5 }
+										{ "tm": 0.40, "reps": 5, "pr": false },
+										{ "tm": 0.50, "reps": 5, "pr": false }, 
+										{ "tm": 0.60, "reps": 5, "pr": false }
 									]
 								}
 							],
 							[
 								{
 									"sets": [
-										{ "tm": 0.40, "reps": 5 },
-										{ "tm": 0.50, "reps": 5 },
-										{ "tm": 0.60, "reps": 5 }
+										{ "tm": 0.40, "reps": 5, "pr": false },
+										{ "tm": 0.50, "reps": 5, "pr": false },
+										{ "tm": 0.60, "reps": 5, "pr": false }
 									]
 								},
 								{
 									"sets": [
-										{ "tm": 0.40, "reps": 5 },
-										{ "tm": 0.50, "reps": 5 }, 
-										{ "tm": 0.60, "reps": 5 }
+										{ "tm": 0.40, "reps": 5, "pr": false },
+										{ "tm": 0.50, "reps": 5, "pr": false }, 
+										{ "tm": 0.60, "reps": 5, "pr": false }
 									]
 								}
 							],
 							[
 								{
 									"sets": [
-										{ "tm": 0.40, "reps": 5 },
-										{ "tm": 0.50, "reps": 5 },
-										{ "tm": 0.60, "reps": 5 }
+										{ "tm": 0.40, "reps": 5, "pr": false },
+										{ "tm": 0.50, "reps": 5, "pr": false },
+										{ "tm": 0.60, "reps": 5, "pr": false }
 									]
 								},
 								{
 									"sets": [
-										{ "tm": 0.40, "reps": 5 },
-										{ "tm": 0.50, "reps": 5 }, 
-										{ "tm": 0.60, "reps": 5 }
+										{ "tm": 0.40, "reps": 5, "pr": false },
+										{ "tm": 0.50, "reps": 5, "pr": false }, 
+										{ "tm": 0.60, "reps": 5, "pr": false }
 									]
 								}
 							]
@@ -2137,64 +2137,64 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.75, "reps": 5 },
-										{ "tm": 0.80, "reps": 5 },
+										{ "tm": 0.75, "reps": 5, "pr": false },
+										{ "tm": 0.80, "reps": 5, "pr": false },
 										{ "tm": 0.85, "reps": 5, "pr": true }
 									]
 								},
 								{
 									"sets": [
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.60, "reps": 10 }, 
-										{ "tm": 0.70, "reps": 10 }
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.60, "reps": 10, "pr": false }, 
+										{ "tm": 0.70, "reps": 10, "pr": false }
 									]
 								}							
 							],
 							[
 								{
 									"sets": [
-										{ "tm": 0.75, "reps": 5 },
-										{ "tm": 0.80, "reps": 5 },
+										{ "tm": 0.75, "reps": 5, "pr": false },
+										{ "tm": 0.80, "reps": 5, "pr": false },
 										{ "tm": 0.85, "reps": 5, "pr": true }
 									]
 								},
 								{
 									"sets": [
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.60, "reps": 10 }, 
-										{ "tm": 0.70, "reps": 10 }
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.60, "reps": 10, "pr": false }, 
+										{ "tm": 0.70, "reps": 10, "pr": false }
 									]
 								}
 							],
 							[
 								{
 									"sets": [
-										{ "tm": 0.75, "reps": 5 },
-										{ "tm": 0.80, "reps": 5 },
+										{ "tm": 0.75, "reps": 5, "pr": false },
+										{ "tm": 0.80, "reps": 5, "pr": false },
 										{ "tm": 0.85, "reps": 5, "pr": true }
 									]
 								},
 								{
 									"sets": [
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.60, "reps": 10 }, 
-										{ "tm": 0.70, "reps": 10 }
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.60, "reps": 10, "pr": false }, 
+										{ "tm": 0.70, "reps": 10, "pr": false }
 									]
 								}
 							],
 							[
 								{
 									"sets": [
-										{ "tm": 0.75, "reps": 5 },
-										{ "tm": 0.80, "reps": 5 },
+										{ "tm": 0.75, "reps": 5, "pr": false },
+										{ "tm": 0.80, "reps": 5, "pr": false },
 										{ "tm": 0.85, "reps": 5, "pr": true }
 									]
 								},
 								{
 									"sets": [
-										{ "tm": 0.50, "reps": 10 },
-										{ "tm": 0.60, "reps": 10 }, 
-										{ "tm": 0.70, "reps": 10 }
+										{ "tm": 0.50, "reps": 10, "pr": false },
+										{ "tm": 0.60, "reps": 10, "pr": false }, 
+										{ "tm": 0.70, "reps": 10, "pr": false }
 									]
 								}
 							]
@@ -2206,64 +2206,64 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.80, "reps": 3 },
-										{ "tm": 0.85, "reps": 3 },
+										{ "tm": 0.80, "reps": 3, "pr": false },
+										{ "tm": 0.85, "reps": 3, "pr": false },
 										{ "tm": 0.90, "reps": 3, "pr": true }
 									]
 								},
 								{
 									"sets": [
-										{ "tm": 0.60, "reps": 8 },
-										{ "tm": 0.70, "reps": 8 }, 
-										{ "tm": 0.80, "reps": 6 }
+										{ "tm": 0.60, "reps": 8, "pr": false },
+										{ "tm": 0.70, "reps": 8, "pr": false }, 
+										{ "tm": 0.80, "reps": 6, "pr": false }
 									]
 								}							
 							],
 							[
 								{
 									"sets": [
-										{ "tm": 0.80, "reps": 3 },
-										{ "tm": 0.85, "reps": 3 },
+										{ "tm": 0.80, "reps": 3, "pr": false },
+										{ "tm": 0.85, "reps": 3, "pr": false },
 										{ "tm": 0.90, "reps": 3, "pr": true }
 									]
 								},
 								{
 									"sets": [
-										{ "tm": 0.60, "reps": 8 },
-										{ "tm": 0.70, "reps": 8 }, 
-										{ "tm": 0.80, "reps": 6 }
+										{ "tm": 0.60, "reps": 8, "pr": false },
+										{ "tm": 0.70, "reps": 8, "pr": false }, 
+										{ "tm": 0.80, "reps": 6, "pr": false }
 									]
 								}
 							],
 							[
 								{
 									"sets": [
-										{ "tm": 0.80, "reps": 3 },
-										{ "tm": 0.85, "reps": 3 },
+										{ "tm": 0.80, "reps": 3, "pr": false },
+										{ "tm": 0.85, "reps": 3, "pr": false },
 										{ "tm": 0.90, "reps": 3, "pr": true }
 									]
 								},
 								{
 									"sets": [
-										{ "tm": 0.60, "reps": 8 },
-										{ "tm": 0.70, "reps": 8 }, 
-										{ "tm": 0.80, "reps": 6 }
+										{ "tm": 0.60, "reps": 8, "pr": false },
+										{ "tm": 0.70, "reps": 8, "pr": false }, 
+										{ "tm": 0.80, "reps": 6, "pr": false }
 									]
 								}
 							],
 							[
 								{
 									"sets": [
-										{ "tm": 0.80, "reps": 3 },
-										{ "tm": 0.85, "reps": 3 },
+										{ "tm": 0.80, "reps": 3, "pr": false },
+										{ "tm": 0.85, "reps": 3, "pr": false },
 										{ "tm": 0.90, "reps": 3, "pr": true }
 									]
 								},
 								{
 									"sets": [
-										{ "tm": 0.60, "reps": 8 },
-										{ "tm": 0.70, "reps": 8 }, 
-										{ "tm": 0.80, "reps": 6 }
+										{ "tm": 0.60, "reps": 8, "pr": false },
+										{ "tm": 0.70, "reps": 8, "pr": false }, 
+										{ "tm": 0.80, "reps": 6, "pr": false }
 									]
 								}
 							]
@@ -2275,64 +2275,64 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.75, "reps": 5 },
-										{ "tm": 0.85, "reps": 3 },
+										{ "tm": 0.75, "reps": 5, "pr": false },
+										{ "tm": 0.85, "reps": 3, "pr": false },
 										{ "tm": 0.95, "reps": 1, "pr": true }
 									]
 								},
 								{
 									"sets": [
-										{ "tm": 0.65, "reps": 5 },
-										{ "tm": 0.75, "reps": 5 }, 
-										{ "tm": 0.85, "reps": 5 }
+										{ "tm": 0.65, "reps": 5, "pr": false },
+										{ "tm": 0.75, "reps": 5, "pr": false }, 
+										{ "tm": 0.85, "reps": 5, "pr": false }
 									]
 								}							
 							],
 							[
 								{
 									"sets": [
-										{ "tm": 0.75, "reps": 5 },
-										{ "tm": 0.85, "reps": 3 },
+										{ "tm": 0.75, "reps": 5, "pr": false },
+										{ "tm": 0.85, "reps": 3, "pr": false },
 										{ "tm": 0.95, "reps": 1, "pr": true }
 									]
 								},
 								{
 									"sets": [
-										{ "tm": 0.65, "reps": 5 },
-										{ "tm": 0.75, "reps": 5 }, 
-										{ "tm": 0.85, "reps": 5 }
+										{ "tm": 0.65, "reps": 5, "pr": false },
+										{ "tm": 0.75, "reps": 5, "pr": false }, 
+										{ "tm": 0.85, "reps": 5, "pr": false }
 									]
 								}
 							],
 							[
 								{
 									"sets": [
-										{ "tm": 0.75, "reps": 5 },
-										{ "tm": 0.85, "reps": 3 },
+										{ "tm": 0.75, "reps": 5, "pr": false },
+										{ "tm": 0.85, "reps": 3, "pr": false },
 										{ "tm": 0.95, "reps": 1, "pr": true }
 									]
 								},
 								{
 									"sets": [
-										{ "tm": 0.65, "reps": 5 },
-										{ "tm": 0.75, "reps": 5 }, 
-										{ "tm": 0.85, "reps": 5 }
+										{ "tm": 0.65, "reps": 5, "pr": false },
+										{ "tm": 0.75, "reps": 5, "pr": false }, 
+										{ "tm": 0.85, "reps": 5, "pr": false }
 									]
 								}
 							],
 							[
 								{
 									"sets": [
-										{ "tm": 0.75, "reps": 5 },
-										{ "tm": 0.85, "reps": 3 },
+										{ "tm": 0.75, "reps": 5, "pr": false },
+										{ "tm": 0.85, "reps": 3, "pr": false },
 										{ "tm": 0.95, "reps": 1, "pr": true }
 									]
 								},
 								{
 									"sets": [
-										{ "tm": 0.65, "reps": 5 },
-										{ "tm": 0.75, "reps": 5 }, 
-										{ "tm": 0.85, "reps": 5 }
+										{ "tm": 0.65, "reps": 5, "pr": false },
+										{ "tm": 0.75, "reps": 5, "pr": false }, 
+										{ "tm": 0.85, "reps": 5, "pr": false }
 									]
 								}
 							]
@@ -2344,64 +2344,64 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.40, "reps": 5 },
-										{ "tm": 0.50, "reps": 5 },
-										{ "tm": 0.60, "reps": 5 }
+										{ "tm": 0.40, "reps": 5, "pr": false },
+										{ "tm": 0.50, "reps": 5, "pr": false },
+										{ "tm": 0.60, "reps": 5, "pr": false }
 									]
 								},
 								{
 									"sets": [
-										{ "tm": 0.40, "reps": 5 },
-										{ "tm": 0.50, "reps": 5 }, 
-										{ "tm": 0.60, "reps": 5 }
+										{ "tm": 0.40, "reps": 5, "pr": false },
+										{ "tm": 0.50, "reps": 5, "pr": false }, 
+										{ "tm": 0.60, "reps": 5, "pr": false }
 									]
 								}							
 							],
 							[
 								{
 									"sets": [
-										{ "tm": 0.40, "reps": 5 },
-										{ "tm": 0.50, "reps": 5 },
-										{ "tm": 0.60, "reps": 5 }
+										{ "tm": 0.40, "reps": 5, "pr": false },
+										{ "tm": 0.50, "reps": 5, "pr": false },
+										{ "tm": 0.60, "reps": 5, "pr": false }
 									]
 								},
 								{
 									"sets": [
-										{ "tm": 0.40, "reps": 5 },
-										{ "tm": 0.50, "reps": 5 }, 
-										{ "tm": 0.60, "reps": 5 }
+										{ "tm": 0.40, "reps": 5, "pr": false },
+										{ "tm": 0.50, "reps": 5, "pr": false }, 
+										{ "tm": 0.60, "reps": 5, "pr": false }
 									]
 								}
 							],
 							[
 								{
 									"sets": [
-										{ "tm": 0.40, "reps": 5 },
-										{ "tm": 0.50, "reps": 5 },
-										{ "tm": 0.60, "reps": 5 }
+										{ "tm": 0.40, "reps": 5, "pr": false },
+										{ "tm": 0.50, "reps": 5, "pr": false },
+										{ "tm": 0.60, "reps": 5, "pr": false }
 									]
 								},
 								{
 									"sets": [
-										{ "tm": 0.40, "reps": 5 },
-										{ "tm": 0.50, "reps": 5 }, 
-										{ "tm": 0.60, "reps": 5 }
+										{ "tm": 0.40, "reps": 5, "pr": false },
+										{ "tm": 0.50, "reps": 5, "pr": false }, 
+										{ "tm": 0.60, "reps": 5, "pr": false }
 									]
 								}
 							],
 							[
 								{
 									"sets": [
-										{ "tm": 0.40, "reps": 5 },
-										{ "tm": 0.50, "reps": 5 },
-										{ "tm": 0.60, "reps": 5 }
+										{ "tm": 0.40, "reps": 5, "pr": false },
+										{ "tm": 0.50, "reps": 5, "pr": false },
+										{ "tm": 0.60, "reps": 5, "pr": false }
 									]
 								},
 								{
 									"sets": [
-										{ "tm": 0.40, "reps": 5 },
-										{ "tm": 0.50, "reps": 5 }, 
-										{ "tm": 0.60, "reps": 5 }
+										{ "tm": 0.40, "reps": 5, "pr": false },
+										{ "tm": 0.50, "reps": 5, "pr": false }, 
+										{ "tm": 0.60, "reps": 5, "pr": false }
 									]
 								}
 							]
@@ -2424,8 +2424,8 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.65, "reps": 5 },
-										{ "tm": 0.75, "reps": 5 },
+										{ "tm": 0.65, "reps": 5, "pr": false },
+										{ "tm": 0.75, "reps": 5, "pr": false },
 										{ "tm": 0.85, "reps": 5, "pr": true }
 									]
 								}
@@ -2433,8 +2433,8 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.65, "reps": 5 },
-										{ "tm": 0.75, "reps": 5 },
+										{ "tm": 0.65, "reps": 5, "pr": false },
+										{ "tm": 0.75, "reps": 5, "pr": false },
 										{ "tm": 0.85, "reps": 5, "pr": true }
 									]
 								}
@@ -2442,8 +2442,8 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.65, "reps": 5 },
-										{ "tm": 0.75, "reps": 5 },
+										{ "tm": 0.65, "reps": 5, "pr": false },
+										{ "tm": 0.75, "reps": 5, "pr": false },
 										{ "tm": 0.85, "reps": 5, "pr": true }
 									]
 								}
@@ -2451,8 +2451,8 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.65, "reps": 5 },
-										{ "tm": 0.75, "reps": 5 },
+										{ "tm": 0.65, "reps": 5, "pr": false },
+										{ "tm": 0.75, "reps": 5, "pr": false },
 										{ "tm": 0.85, "reps": 5, "pr": true }
 									]
 								}
@@ -2465,8 +2465,8 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.70, "reps": 3 },
-										{ "tm": 0.80, "reps": 3 },
+										{ "tm": 0.70, "reps": 3, "pr": false },
+										{ "tm": 0.80, "reps": 3, "pr": false },
 										{ "tm": 0.90, "reps": 3, "pr": true }
 									]
 								}
@@ -2474,8 +2474,8 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.70, "reps": 3 },
-										{ "tm": 0.80, "reps": 3 },
+										{ "tm": 0.70, "reps": 3, "pr": false },
+										{ "tm": 0.80, "reps": 3, "pr": false },
 										{ "tm": 0.90, "reps": 3, "pr": true }
 									]
 								}
@@ -2483,8 +2483,8 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.70, "reps": 3 },
-										{ "tm": 0.80, "reps": 3 },
+										{ "tm": 0.70, "reps": 3, "pr": false },
+										{ "tm": 0.80, "reps": 3, "pr": false },
 										{ "tm": 0.90, "reps": 3, "pr": true }
 									]
 								}
@@ -2492,8 +2492,8 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.70, "reps": 3 },
-										{ "tm": 0.80, "reps": 3 },
+										{ "tm": 0.70, "reps": 3, "pr": false },
+										{ "tm": 0.80, "reps": 3, "pr": false },
 										{ "tm": 0.90, "reps": 3, "pr": true }
 									]
 								}
@@ -2506,8 +2506,8 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.75, "reps": 5 },
-										{ "tm": 0.85, "reps": 3 },
+										{ "tm": 0.75, "reps": 5, "pr": false },
+										{ "tm": 0.85, "reps": 3, "pr": false },
 										{ "tm": 0.95, "reps": 1, "pr": true }
 									]
 								}							
@@ -2515,8 +2515,8 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.75, "reps": 5 },
-										{ "tm": 0.85, "reps": 3 },
+										{ "tm": 0.75, "reps": 5, "pr": false },
+										{ "tm": 0.85, "reps": 3, "pr": false },
 										{ "tm": 0.95, "reps": 1, "pr": true }
 									]
 								}
@@ -2524,8 +2524,8 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.75, "reps": 5 },
-										{ "tm": 0.85, "reps": 3 },
+										{ "tm": 0.75, "reps": 5, "pr": false },
+										{ "tm": 0.85, "reps": 3, "pr": false },
 										{ "tm": 0.95, "reps": 1, "pr": true }
 									]
 								}
@@ -2533,8 +2533,8 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.75, "reps": 5 },
-										{ "tm": 0.85, "reps": 3 },
+										{ "tm": 0.75, "reps": 5, "pr": false },
+										{ "tm": 0.85, "reps": 3, "pr": false },
 										{ "tm": 0.95, "reps": 1, "pr": true }
 									]
 								}
@@ -2547,36 +2547,36 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.40, "reps": 5 },
-										{ "tm": 0.50, "reps": 5 },
-										{ "tm": 0.60, "reps": 5 }
+										{ "tm": 0.40, "reps": 5, "pr": false },
+										{ "tm": 0.50, "reps": 5, "pr": false },
+										{ "tm": 0.60, "reps": 5, "pr": false }
 									]
 								}						
 							],
 							[
 								{
 									"sets": [
-										{ "tm": 0.40, "reps": 5 },
-										{ "tm": 0.50, "reps": 5 },
-										{ "tm": 0.60, "reps": 5 }
+										{ "tm": 0.40, "reps": 5, "pr": false },
+										{ "tm": 0.50, "reps": 5, "pr": false },
+										{ "tm": 0.60, "reps": 5, "pr": false }
 									]
 								}
 							],
 							[
 								{
 									"sets": [
-										{ "tm": 0.40, "reps": 5 },
-										{ "tm": 0.50, "reps": 5 },
-										{ "tm": 0.60, "reps": 5 }
+										{ "tm": 0.40, "reps": 5, "pr": false },
+										{ "tm": 0.50, "reps": 5, "pr": false },
+										{ "tm": 0.60, "reps": 5, "pr": false }
 									]
 								}
 							],
 							[
 								{
 									"sets": [
-										{ "tm": 0.40, "reps": 5 },
-										{ "tm": 0.50, "reps": 5 },
-										{ "tm": 0.60, "reps": 5 }
+										{ "tm": 0.40, "reps": 5, "pr": false },
+										{ "tm": 0.50, "reps": 5, "pr": false },
+										{ "tm": 0.60, "reps": 5, "pr": false }
 									]
 								}
 							]
@@ -2594,8 +2594,8 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.75, "reps": 5 },
-										{ "tm": 0.80, "reps": 5 },
+										{ "tm": 0.75, "reps": 5, "pr": false },
+										{ "tm": 0.80, "reps": 5, "pr": false },
 										{ "tm": 0.85, "reps": 5, "pr": true }
 									]
 								}						
@@ -2603,8 +2603,8 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.75, "reps": 5 },
-										{ "tm": 0.80, "reps": 5 },
+										{ "tm": 0.75, "reps": 5, "pr": false },
+										{ "tm": 0.80, "reps": 5, "pr": false },
 										{ "tm": 0.85, "reps": 5, "pr": true }
 									]
 								}
@@ -2612,8 +2612,8 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.75, "reps": 5 },
-										{ "tm": 0.80, "reps": 5 },
+										{ "tm": 0.75, "reps": 5, "pr": false },
+										{ "tm": 0.80, "reps": 5, "pr": false },
 										{ "tm": 0.85, "reps": 5, "pr": true }
 									]
 								}
@@ -2621,8 +2621,8 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.75, "reps": 5 },
-										{ "tm": 0.80, "reps": 5 },
+										{ "tm": 0.75, "reps": 5, "pr": false },
+										{ "tm": 0.80, "reps": 5, "pr": false },
 										{ "tm": 0.85, "reps": 5, "pr": true }
 									]
 								}
@@ -2635,8 +2635,8 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.80, "reps": 3 },
-										{ "tm": 0.85, "reps": 3 },
+										{ "tm": 0.80, "reps": 3, "pr": false },
+										{ "tm": 0.85, "reps": 3, "pr": false },
 										{ "tm": 0.90, "reps": 3, "pr": true }
 									]
 								}						
@@ -2644,8 +2644,8 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.80, "reps": 3 },
-										{ "tm": 0.85, "reps": 3 },
+										{ "tm": 0.80, "reps": 3, "pr": false },
+										{ "tm": 0.85, "reps": 3, "pr": false },
 										{ "tm": 0.90, "reps": 3, "pr": true }
 									]
 								}
@@ -2653,8 +2653,8 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.80, "reps": 3 },
-										{ "tm": 0.85, "reps": 3 },
+										{ "tm": 0.80, "reps": 3, "pr": false },
+										{ "tm": 0.85, "reps": 3, "pr": false },
 										{ "tm": 0.90, "reps": 3, "pr": true }
 									]
 								}
@@ -2662,8 +2662,8 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.80, "reps": 3 },
-										{ "tm": 0.85, "reps": 3 },
+										{ "tm": 0.80, "reps": 3, "pr": false },
+										{ "tm": 0.85, "reps": 3, "pr": false },
 										{ "tm": 0.90, "reps": 3, "pr": true }
 									]
 								}
@@ -2676,8 +2676,8 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.75, "reps": 5 },
-										{ "tm": 0.85, "reps": 3 },
+										{ "tm": 0.75, "reps": 5, "pr": false },
+										{ "tm": 0.85, "reps": 3, "pr": false },
 										{ "tm": 0.95, "reps": 1, "pr": true }
 									]
 								}						
@@ -2685,8 +2685,8 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.75, "reps": 5 },
-										{ "tm": 0.85, "reps": 3 },
+										{ "tm": 0.75, "reps": 5, "pr": false },
+										{ "tm": 0.85, "reps": 3, "pr": false },
 										{ "tm": 0.95, "reps": 1, "pr": true }
 									]
 								}
@@ -2694,8 +2694,8 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.75, "reps": 5 },
-										{ "tm": 0.85, "reps": 3 },
+										{ "tm": 0.75, "reps": 5, "pr": false },
+										{ "tm": 0.85, "reps": 3, "pr": false },
 										{ "tm": 0.95, "reps": 1, "pr": true }
 									]
 								}
@@ -2703,8 +2703,8 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.75, "reps": 5 },
-										{ "tm": 0.85, "reps": 3 },
+										{ "tm": 0.75, "reps": 5, "pr": false },
+										{ "tm": 0.85, "reps": 3, "pr": false },
 										{ "tm": 0.95, "reps": 1, "pr": true }
 									]
 								}
@@ -2717,36 +2717,36 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.40, "reps": 5 },
-										{ "tm": 0.50, "reps": 5 },
-										{ "tm": 0.60, "reps": 5 }
+										{ "tm": 0.40, "reps": 5, "pr": false },
+										{ "tm": 0.50, "reps": 5, "pr": false },
+										{ "tm": 0.60, "reps": 5, "pr": false }
 									]
 								}					
 							],
 							[
 								{
 									"sets": [
-										{ "tm": 0.40, "reps": 5 },
-										{ "tm": 0.50, "reps": 5 },
-										{ "tm": 0.60, "reps": 5 }
+										{ "tm": 0.40, "reps": 5, "pr": false },
+										{ "tm": 0.50, "reps": 5, "pr": false },
+										{ "tm": 0.60, "reps": 5, "pr": false }
 									]
 								}
 							],
 							[
 								{
 									"sets": [
-										{ "tm": 0.40, "reps": 5 },
-										{ "tm": 0.50, "reps": 5 },
-										{ "tm": 0.60, "reps": 5 }
+										{ "tm": 0.40, "reps": 5, "pr": false },
+										{ "tm": 0.50, "reps": 5, "pr": false },
+										{ "tm": 0.60, "reps": 5, "pr": false }
 									]
 								}
 							],
 							[
 								{
 									"sets": [
-										{ "tm": 0.40, "reps": 5 },
-										{ "tm": 0.50, "reps": 5 },
-										{ "tm": 0.60, "reps": 5 }
+										{ "tm": 0.40, "reps": 5, "pr": false },
+										{ "tm": 0.50, "reps": 5, "pr": false },
+										{ "tm": 0.60, "reps": 5, "pr": false }
 									]
 								}
 							]
@@ -2769,108 +2769,108 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.65, "reps": 8 },
-										{ "tm": 0.75, "reps": 6 }, 
-										{ "tm": 0.85, "reps": 4 }, 
-										{ "tm": 0.85, "reps": 4 },
-										{ "tm": 0.85, "reps": 4 },
-										{ "tm": 0.80, "reps": 5 },
-										{ "tm": 0.75, "reps": 6 },
-										{ "tm": 0.70, "reps": 7 },
+										{ "tm": 0.65, "reps": 8, "pr": false },
+										{ "tm": 0.75, "reps": 6, "pr": false }, 
+										{ "tm": 0.85, "reps": 4, "pr": false }, 
+										{ "tm": 0.85, "reps": 4, "pr": false },
+										{ "tm": 0.85, "reps": 4, "pr": false },
+										{ "tm": 0.80, "reps": 5, "pr": false },
+										{ "tm": 0.75, "reps": 6, "pr": false },
+										{ "tm": 0.70, "reps": 7, "pr": false },
 										{ "tm": 0.65, "reps": 8, "pr": true }
 									]
 								},
 								{
 									"sets": [
-										{ "tm": 0.50, "reps": 6 },
-										{ "tm": 0.60, "reps": 5 }, 
-										{ "tm": 0.70, "reps": 3 }, 
-										{ "tm": 0.70, "reps": 5 },
-										{ "tm": 0.70, "reps": 7 },
-										{ "tm": 0.70, "reps": 4 },
-										{ "tm": 0.70, "reps": 6 },
-										{ "tm": 0.70, "reps": 8 }
+										{ "tm": 0.50, "reps": 6, "pr": false },
+										{ "tm": 0.60, "reps": 5, "pr": false }, 
+										{ "tm": 0.70, "reps": 3, "pr": false }, 
+										{ "tm": 0.70, "reps": 5, "pr": false },
+										{ "tm": 0.70, "reps": 7, "pr": false },
+										{ "tm": 0.70, "reps": 4, "pr": false },
+										{ "tm": 0.70, "reps": 6, "pr": false },
+										{ "tm": 0.70, "reps": 8, "pr": false }
 									]
 								}							
 							],
 							[
 								{
 									"sets": [
-										{ "tm": 0.75, "reps": 5 },
-										{ "tm": 0.85, "reps": 3 }, 
+										{ "tm": 0.75, "reps": 5, "pr": false },
+										{ "tm": 0.85, "reps": 3, "pr": false }, 
 										{ "tm": 0.95, "reps": 1, "pr": true }, 
-										{ "tm": 0.90, "reps": 3 },
-										{ "tm": 0.85, "reps": 3 },
-										{ "tm": 0.80, "reps": 2 },
-										{ "tm": 0.75, "reps": 5 },
-										{ "tm": 0.70, "reps": 5 },
+										{ "tm": 0.90, "reps": 3, "pr": false },
+										{ "tm": 0.85, "reps": 3, "pr": false },
+										{ "tm": 0.80, "reps": 2, "pr": false },
+										{ "tm": 0.75, "reps": 5, "pr": false },
+										{ "tm": 0.70, "reps": 5, "pr": false },
 										{ "tm": 0.65, "reps": 5, "pr": true }
 									]
 								},
 								{
 									"sets": [
-										{ "tm": 0.50, "reps": 5 },
-										{ "tm": 0.60, "reps": 5 }, 
-										{ "tm": 0.70, "reps": 3 }, 
-										{ "tm": 0.70, "reps": 5 },
-										{ "tm": 0.70, "reps": 7 },
-										{ "tm": 0.70, "reps": 4 },
-										{ "tm": 0.70, "reps": 6 },
-										{ "tm": 0.70, "reps": 8 }
+										{ "tm": 0.50, "reps": 5, "pr": false },
+										{ "tm": 0.60, "reps": 5, "pr": false }, 
+										{ "tm": 0.70, "reps": 3, "pr": false }, 
+										{ "tm": 0.70, "reps": 5, "pr": false },
+										{ "tm": 0.70, "reps": 7, "pr": false },
+										{ "tm": 0.70, "reps": 4, "pr": false },
+										{ "tm": 0.70, "reps": 6, "pr": false },
+										{ "tm": 0.70, "reps": 8, "pr": false }
 									]
 								}
 							],
 							[
 								{
 									"sets": [
-										{ "tm": 0.75, "reps": 5 },
-										{ "tm": 0.85, "reps": 3 }, 
+										{ "tm": 0.75, "reps": 5, "pr": false },
+										{ "tm": 0.85, "reps": 3, "pr": false }, 
 										{ "tm": 0.95, "reps": 1, "pr": true }, 
-										{ "tm": 0.90, "reps": 3 },
-										{ "tm": 0.85, "reps": 5 },
-										{ "tm": 0.80, "reps": 3 },
-										{ "tm": 0.75, "reps": 5 },
-										{ "tm": 0.70, "reps": 3 },
+										{ "tm": 0.90, "reps": 3, "pr": false },
+										{ "tm": 0.85, "reps": 5, "pr": false },
+										{ "tm": 0.80, "reps": 3, "pr": false },
+										{ "tm": 0.75, "reps": 5, "pr": false },
+										{ "tm": 0.70, "reps": 3, "pr": false },
 										{ "tm": 0.65, "reps": 5, "pr": true }
 									]
 								},
 								{
 									"sets": [
-										{ "tm": 0.40, "reps": 6 },
-										{ "tm": 0.50, "reps": 5 }, 
-										{ "tm": 0.60, "reps": 3 }, 
-										{ "tm": 0.60, "reps": 5 },
-										{ "tm": 0.60, "reps": 7 },
-										{ "tm": 0.60, "reps": 4 },
-										{ "tm": 0.60, "reps": 6 },
-										{ "tm": 0.60, "reps": 8 }
+										{ "tm": 0.40, "reps": 6, "pr": false },
+										{ "tm": 0.50, "reps": 5, "pr": false }, 
+										{ "tm": 0.60, "reps": 3, "pr": false }, 
+										{ "tm": 0.60, "reps": 5, "pr": false },
+										{ "tm": 0.60, "reps": 7, "pr": false },
+										{ "tm": 0.60, "reps": 4, "pr": false },
+										{ "tm": 0.60, "reps": 6, "pr": false },
+										{ "tm": 0.60, "reps": 8, "pr": false }
 									]
 								}
 							],
 							[
 								{
 									"sets": [
-										{ "tm": 0.75, "reps": 5 },
-										{ "tm": 0.85, "reps": 3 }, 
+										{ "tm": 0.75, "reps": 5, "pr": false },
+										{ "tm": 0.85, "reps": 3, "pr": false }, 
 										{ "tm": 0.95, "reps": 1, "pr": true }, 
-										{ "tm": 0.90, "reps": 3 },
-										{ "tm": 0.85, "reps": 3 },
-										{ "tm": 0.80, "reps": 3 },
-										{ "tm": 0.75, "reps": 3 },
-										{ "tm": 0.70, "reps": 3 },
+										{ "tm": 0.90, "reps": 3, "pr": false },
+										{ "tm": 0.85, "reps": 3, "pr": false },
+										{ "tm": 0.80, "reps": 3, "pr": false },
+										{ "tm": 0.75, "reps": 3, "pr": false },
+										{ "tm": 0.70, "reps": 3, "pr": false },
 										{ "tm": 0.65, "reps": 3, "pr": true }
 									]
 								},
 								{
 									"sets": [
-										{ "tm": 0.35, "reps": 5 },
-										{ "tm": 0.45, "reps": 5 }, 
-										{ "tm": 0.55, "reps": 3 }, 
-										{ "tm": 0.55, "reps": 5 },
-										{ "tm": 0.55, "reps": 7 },
-										{ "tm": 0.55, "reps": 4 },
-										{ "tm": 0.55, "reps": 6 },
-										{ "tm": 0.55, "reps": 8 }
+										{ "tm": 0.35, "reps": 5, "pr": false },
+										{ "tm": 0.45, "reps": 5, "pr": false }, 
+										{ "tm": 0.55, "reps": 3, "pr": false }, 
+										{ "tm": 0.55, "reps": 5, "pr": false },
+										{ "tm": 0.55, "reps": 7, "pr": false },
+										{ "tm": 0.55, "reps": 4, "pr": false },
+										{ "tm": 0.55, "reps": 6, "pr": false },
+										{ "tm": 0.55, "reps": 8, "pr": false }
 									]
 								}
 							]
@@ -2893,9 +2893,9 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.83, "reps": 6 },
-										{ "tm": 0.83, "reps": 6 },
-										{ "tm": 0.83, "reps": 6 }, 
+										{ "tm": 0.83, "reps": 6, "pr": false },
+										{ "tm": 0.83, "reps": 6, "pr": false },
+										{ "tm": 0.83, "reps": 6, "pr": false }, 
 										{ "tm": 0.83, "reps": 6, "pr": true }
 									]
 								}					
@@ -2903,9 +2903,9 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.83, "reps": 6 },
-										{ "tm": 0.83, "reps": 6 },
-										{ "tm": 0.83, "reps": 6 }, 
+										{ "tm": 0.83, "reps": 6, "pr": false },
+										{ "tm": 0.83, "reps": 6, "pr": false },
+										{ "tm": 0.83, "reps": 6, "pr": false }, 
 										{ "tm": 0.83, "reps": 6, "pr": true }
 									]
 								}					
@@ -2913,9 +2913,9 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.83, "reps": 6 },
-										{ "tm": 0.83, "reps": 6 },
-										{ "tm": 0.83, "reps": 6 }, 
+										{ "tm": 0.83, "reps": 6, "pr": false },
+										{ "tm": 0.83, "reps": 6, "pr": false },
+										{ "tm": 0.83, "reps": 6, "pr": false }, 
 										{ "tm": 0.83, "reps": 6, "pr": true }
 									]
 								}					
@@ -2923,9 +2923,9 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.83, "reps": 6 },
-										{ "tm": 0.83, "reps": 6 },
-										{ "tm": 0.83, "reps": 6 }, 
+										{ "tm": 0.83, "reps": 6, "pr": false },
+										{ "tm": 0.83, "reps": 6, "pr": false },
+										{ "tm": 0.83, "reps": 6, "pr": false }, 
 										{ "tm": 0.83, "reps": 6, "pr": true }
 									]
 								}					
@@ -2938,9 +2938,9 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.83, "reps": 7 },
-										{ "tm": 0.83, "reps": 6 },
-										{ "tm": 0.83, "reps": 6 }, 
+										{ "tm": 0.83, "reps": 7, "pr": false },
+										{ "tm": 0.83, "reps": 6, "pr": false },
+										{ "tm": 0.83, "reps": 6, "pr": false }, 
 										{ "tm": 0.83, "reps": 6, "pr": true }
 									]
 								}					
@@ -2948,9 +2948,9 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.83, "reps": 7 },
-										{ "tm": 0.83, "reps": 6 },
-										{ "tm": 0.83, "reps": 6 }, 
+										{ "tm": 0.83, "reps": 7, "pr": false },
+										{ "tm": 0.83, "reps": 6, "pr": false },
+										{ "tm": 0.83, "reps": 6, "pr": false }, 
 										{ "tm": 0.83, "reps": 6, "pr": true }
 									]
 								}					
@@ -2958,9 +2958,9 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.83, "reps": 7 },
-										{ "tm": 0.83, "reps": 6 },
-										{ "tm": 0.83, "reps": 6 }, 
+										{ "tm": 0.83, "reps": 7, "pr": false },
+										{ "tm": 0.83, "reps": 6, "pr": false },
+										{ "tm": 0.83, "reps": 6, "pr": false }, 
 										{ "tm": 0.83, "reps": 6, "pr": true }
 									]
 								}					
@@ -2968,9 +2968,9 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.83, "reps": 7 },
-										{ "tm": 0.83, "reps": 6 },
-										{ "tm": 0.83, "reps": 6 }, 
+										{ "tm": 0.83, "reps": 7, "pr": false },
+										{ "tm": 0.83, "reps": 6, "pr": false },
+										{ "tm": 0.83, "reps": 6, "pr": false }, 
 										{ "tm": 0.83, "reps": 6, "pr": true }
 									]
 								}					
@@ -2983,9 +2983,9 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.83, "reps": 7 },
-										{ "tm": 0.83, "reps": 7 },
-										{ "tm": 0.83, "reps": 6 }, 
+										{ "tm": 0.83, "reps": 7, "pr": false },
+										{ "tm": 0.83, "reps": 7, "pr": false },
+										{ "tm": 0.83, "reps": 6, "pr": false }, 
 										{ "tm": 0.83, "reps": 6, "pr": true }
 									]
 								}					
@@ -2993,9 +2993,9 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.83, "reps": 7 },
-										{ "tm": 0.83, "reps": 7 },
-										{ "tm": 0.83, "reps": 6 }, 
+										{ "tm": 0.83, "reps": 7, "pr": false },
+										{ "tm": 0.83, "reps": 7, "pr": false },
+										{ "tm": 0.83, "reps": 6, "pr": false }, 
 										{ "tm": 0.83, "reps": 6, "pr": true }
 									]
 								}					
@@ -3003,9 +3003,9 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.83, "reps": 7 },
-										{ "tm": 0.83, "reps": 7 },
-										{ "tm": 0.83, "reps": 6 }, 
+										{ "tm": 0.83, "reps": 7, "pr": false },
+										{ "tm": 0.83, "reps": 7, "pr": false },
+										{ "tm": 0.83, "reps": 6, "pr": false }, 
 										{ "tm": 0.83, "reps": 6, "pr": true }
 									]
 								}					
@@ -3013,9 +3013,9 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.83, "reps": 7 },
-										{ "tm": 0.83, "reps": 7 },
-										{ "tm": 0.83, "reps": 6 }, 
+										{ "tm": 0.83, "reps": 7, "pr": false },
+										{ "tm": 0.83, "reps": 7, "pr": false },
+										{ "tm": 0.83, "reps": 6, "pr": false }, 
 										{ "tm": 0.83, "reps": 6, "pr": true }
 									]
 								}					
@@ -3028,9 +3028,9 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.83, "reps": 7 },
-										{ "tm": 0.83, "reps": 7 },
-										{ "tm": 0.83, "reps": 7 }, 
+										{ "tm": 0.83, "reps": 7, "pr": false },
+										{ "tm": 0.83, "reps": 7, "pr": false },
+										{ "tm": 0.83, "reps": 7, "pr": false }, 
 										{ "tm": 0.83, "reps": 6, "pr": true }
 									]
 								}					
@@ -3038,9 +3038,9 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.83, "reps": 7 },
-										{ "tm": 0.83, "reps": 7 },
-										{ "tm": 0.83, "reps": 7 }, 
+										{ "tm": 0.83, "reps": 7, "pr": false },
+										{ "tm": 0.83, "reps": 7, "pr": false },
+										{ "tm": 0.83, "reps": 7, "pr": false }, 
 										{ "tm": 0.83, "reps": 6, "pr": true }
 									]
 								}					
@@ -3048,9 +3048,9 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.83, "reps": 7 },
-										{ "tm": 0.83, "reps": 7 },
-										{ "tm": 0.83, "reps": 7 }, 
+										{ "tm": 0.83, "reps": 7, "pr": false },
+										{ "tm": 0.83, "reps": 7, "pr": false },
+										{ "tm": 0.83, "reps": 7, "pr": false }, 
 										{ "tm": 0.83, "reps": 6, "pr": true }
 									]
 								}					
@@ -3058,9 +3058,9 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.83, "reps": 7 },
-										{ "tm": 0.83, "reps": 7 },
-										{ "tm": 0.83, "reps": 7 }, 
+										{ "tm": 0.83, "reps": 7, "pr": false },
+										{ "tm": 0.83, "reps": 7, "pr": false },
+										{ "tm": 0.83, "reps": 7, "pr": false }, 
 										{ "tm": 0.83, "reps": 6, "pr": true }
 									]
 								}					
@@ -3073,9 +3073,9 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.83, "reps": 7 },
-										{ "tm": 0.83, "reps": 7 },
-										{ "tm": 0.83, "reps": 7 }, 
+										{ "tm": 0.83, "reps": 7, "pr": false },
+										{ "tm": 0.83, "reps": 7, "pr": false },
+										{ "tm": 0.83, "reps": 7, "pr": false }, 
 										{ "tm": 0.83, "reps": 7, "pr": true }
 									]
 								}					
@@ -3083,9 +3083,9 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.83, "reps": 7 },
-										{ "tm": 0.83, "reps": 7 },
-										{ "tm": 0.83, "reps": 7 }, 
+										{ "tm": 0.83, "reps": 7, "pr": false },
+										{ "tm": 0.83, "reps": 7, "pr": false },
+										{ "tm": 0.83, "reps": 7, "pr": false }, 
 										{ "tm": 0.83, "reps": 7, "pr": true }
 									]
 								}					
@@ -3093,9 +3093,9 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.83, "reps": 7 },
-										{ "tm": 0.83, "reps": 7 },
-										{ "tm": 0.83, "reps": 7 }, 
+										{ "tm": 0.83, "reps": 7, "pr": false },
+										{ "tm": 0.83, "reps": 7, "pr": false },
+										{ "tm": 0.83, "reps": 7, "pr": false }, 
 										{ "tm": 0.83, "reps": 7, "pr": true }
 									]
 								}					
@@ -3103,9 +3103,9 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.83, "reps": 7 },
-										{ "tm": 0.83, "reps": 7 },
-										{ "tm": 0.83, "reps": 7 }, 
+										{ "tm": 0.83, "reps": 7, "pr": false },
+										{ "tm": 0.83, "reps": 7, "pr": false },
+										{ "tm": 0.83, "reps": 7, "pr": false }, 
 										{ "tm": 0.83, "reps": 7, "pr": true }
 									]
 								}					
@@ -3118,9 +3118,9 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.83, "reps": 8 },
-										{ "tm": 0.83, "reps": 7 },
-										{ "tm": 0.83, "reps": 7 }, 
+										{ "tm": 0.83, "reps": 8, "pr": false },
+										{ "tm": 0.83, "reps": 7, "pr": false },
+										{ "tm": 0.83, "reps": 7, "pr": false }, 
 										{ "tm": 0.83, "reps": 7, "pr": true }
 									]
 								}					
@@ -3128,9 +3128,9 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.83, "reps": 8 },
-										{ "tm": 0.83, "reps": 7 },
-										{ "tm": 0.83, "reps": 7 }, 
+										{ "tm": 0.83, "reps": 8, "pr": false },
+										{ "tm": 0.83, "reps": 7, "pr": false },
+										{ "tm": 0.83, "reps": 7, "pr": false }, 
 										{ "tm": 0.83, "reps": 7, "pr": true }
 									]
 								}					
@@ -3138,9 +3138,9 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.83, "reps": 8 },
-										{ "tm": 0.83, "reps": 7 },
-										{ "tm": 0.83, "reps": 7 }, 
+										{ "tm": 0.83, "reps": 8, "pr": false },
+										{ "tm": 0.83, "reps": 7, "pr": false },
+										{ "tm": 0.83, "reps": 7, "pr": false }, 
 										{ "tm": 0.83, "reps": 7, "pr": true }
 									]
 								}					
@@ -3148,9 +3148,9 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.83, "reps": 8 },
-										{ "tm": 0.83, "reps": 7 },
-										{ "tm": 0.83, "reps": 7 }, 
+										{ "tm": 0.83, "reps": 8, "pr": false },
+										{ "tm": 0.83, "reps": 7, "pr": false },
+										{ "tm": 0.83, "reps": 7, "pr": false }, 
 										{ "tm": 0.83, "reps": 7, "pr": true }
 									]
 								}					
@@ -3163,9 +3163,9 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.83, "reps": 8 },
-										{ "tm": 0.83, "reps": 8 },
-										{ "tm": 0.83, "reps": 7 }, 
+										{ "tm": 0.83, "reps": 8, "pr": false },
+										{ "tm": 0.83, "reps": 8, "pr": false },
+										{ "tm": 0.83, "reps": 7, "pr": false }, 
 										{ "tm": 0.83, "reps": 7, "pr": true }
 									]
 								}					
@@ -3173,9 +3173,9 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.83, "reps": 8 },
-										{ "tm": 0.83, "reps": 8 },
-										{ "tm": 0.83, "reps": 7 }, 
+										{ "tm": 0.83, "reps": 8, "pr": false },
+										{ "tm": 0.83, "reps": 8, "pr": false },
+										{ "tm": 0.83, "reps": 7, "pr": false }, 
 										{ "tm": 0.83, "reps": 7, "pr": true }
 									]
 								}					
@@ -3183,9 +3183,9 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.83, "reps": 8 },
-										{ "tm": 0.83, "reps": 8 },
-										{ "tm": 0.83, "reps": 7 }, 
+										{ "tm": 0.83, "reps": 8, "pr": false },
+										{ "tm": 0.83, "reps": 8, "pr": false },
+										{ "tm": 0.83, "reps": 7, "pr": false }, 
 										{ "tm": 0.83, "reps": 7, "pr": true }
 									]
 								}					
@@ -3193,9 +3193,9 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.83, "reps": 8 },
-										{ "tm": 0.83, "reps": 8 },
-										{ "tm": 0.83, "reps": 7 }, 
+										{ "tm": 0.83, "reps": 8, "pr": false },
+										{ "tm": 0.83, "reps": 8, "pr": false },
+										{ "tm": 0.83, "reps": 7, "pr": false }, 
 										{ "tm": 0.83, "reps": 7, "pr": true }
 									]
 								}					
@@ -3208,9 +3208,9 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.83, "reps": 8 },
-										{ "tm": 0.83, "reps": 8 },
-										{ "tm": 0.83, "reps": 8 }, 
+										{ "tm": 0.83, "reps": 8, "pr": false },
+										{ "tm": 0.83, "reps": 8, "pr": false },
+										{ "tm": 0.83, "reps": 8, "pr": false }, 
 										{ "tm": 0.83, "reps": 7, "pr": true }
 									]
 								}					
@@ -3218,9 +3218,9 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.83, "reps": 8 },
-										{ "tm": 0.83, "reps": 8 },
-										{ "tm": 0.83, "reps": 8 }, 
+										{ "tm": 0.83, "reps": 8, "pr": false },
+										{ "tm": 0.83, "reps": 8, "pr": false },
+										{ "tm": 0.83, "reps": 8, "pr": false }, 
 										{ "tm": 0.83, "reps": 7, "pr": true }
 									]
 								}					
@@ -3228,9 +3228,9 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.83, "reps": 8 },
-										{ "tm": 0.83, "reps": 8 },
-										{ "tm": 0.83, "reps": 8 }, 
+										{ "tm": 0.83, "reps": 8, "pr": false },
+										{ "tm": 0.83, "reps": 8, "pr": false },
+										{ "tm": 0.83, "reps": 8, "pr": false }, 
 										{ "tm": 0.83, "reps": 7, "pr": true }
 									]
 								}					
@@ -3238,9 +3238,9 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.83, "reps": 8 },
-										{ "tm": 0.83, "reps": 8 },
-										{ "tm": 0.83, "reps": 8 }, 
+										{ "tm": 0.83, "reps": 8, "pr": false },
+										{ "tm": 0.83, "reps": 8, "pr": false },
+										{ "tm": 0.83, "reps": 8, "pr": false }, 
 										{ "tm": 0.83, "reps": 7, "pr": true }
 									]
 								}					
@@ -3253,9 +3253,9 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.83, "reps": 8 },
-										{ "tm": 0.83, "reps": 8 },
-										{ "tm": 0.83, "reps": 8 }, 
+										{ "tm": 0.83, "reps": 8, "pr": false },
+										{ "tm": 0.83, "reps": 8, "pr": false },
+										{ "tm": 0.83, "reps": 8, "pr": false }, 
 										{ "tm": 0.83, "reps": 8, "pr": true }
 									]
 								}					
@@ -3263,9 +3263,9 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.83, "reps": 8 },
-										{ "tm": 0.83, "reps": 8 },
-										{ "tm": 0.83, "reps": 8 }, 
+										{ "tm": 0.83, "reps": 8, "pr": false },
+										{ "tm": 0.83, "reps": 8, "pr": false },
+										{ "tm": 0.83, "reps": 8, "pr": false }, 
 										{ "tm": 0.83, "reps": 8, "pr": true }
 									]
 								}					
@@ -3273,9 +3273,9 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.83, "reps": 8 },
-										{ "tm": 0.83, "reps": 8 },
-										{ "tm": 0.83, "reps": 8 }, 
+										{ "tm": 0.83, "reps": 8, "pr": false },
+										{ "tm": 0.83, "reps": 8, "pr": false },
+										{ "tm": 0.83, "reps": 8, "pr": false }, 
 										{ "tm": 0.83, "reps": 8, "pr": true }
 									]
 								}					
@@ -3283,9 +3283,9 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.83, "reps": 8 },
-										{ "tm": 0.83, "reps": 8 },
-										{ "tm": 0.83, "reps": 8 }, 
+										{ "tm": 0.83, "reps": 8, "pr": false },
+										{ "tm": 0.83, "reps": 8, "pr": false },
+										{ "tm": 0.83, "reps": 8, "pr": false }, 
 										{ "tm": 0.83, "reps": 8, "pr": true }
 									]
 								}					
@@ -3304,9 +3304,9 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.83, "reps": 7 },
-										{ "tm": 0.83, "reps": 7 },
-										{ "tm": 0.83, "reps": 7 }, 
+										{ "tm": 0.83, "reps": 7, "pr": false },
+										{ "tm": 0.83, "reps": 7, "pr": false },
+										{ "tm": 0.83, "reps": 7, "pr": false }, 
 										{ "tm": 0.83, "reps": 7, "pr": true }
 									]
 								}					
@@ -3314,9 +3314,9 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.83, "reps": 7 },
-										{ "tm": 0.83, "reps": 7 },
-										{ "tm": 0.83, "reps": 7 }, 
+										{ "tm": 0.83, "reps": 7, "pr": false },
+										{ "tm": 0.83, "reps": 7, "pr": false },
+										{ "tm": 0.83, "reps": 7, "pr": false }, 
 										{ "tm": 0.83, "reps": 7, "pr": true }
 									]
 								}					
@@ -3324,9 +3324,9 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.83, "reps": 7 },
-										{ "tm": 0.83, "reps": 7 },
-										{ "tm": 0.83, "reps": 7 }, 
+										{ "tm": 0.83, "reps": 7, "pr": false },
+										{ "tm": 0.83, "reps": 7, "pr": false },
+										{ "tm": 0.83, "reps": 7, "pr": false }, 
 										{ "tm": 0.83, "reps": 7, "pr": true }
 									]
 								}					
@@ -3334,9 +3334,9 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.83, "reps": 7 },
-										{ "tm": 0.83, "reps": 7 },
-										{ "tm": 0.83, "reps": 7 }, 
+										{ "tm": 0.83, "reps": 7, "pr": false },
+										{ "tm": 0.83, "reps": 7, "pr": false },
+										{ "tm": 0.83, "reps": 7, "pr": false }, 
 										{ "tm": 0.83, "reps": 7, "pr": true }
 									]
 								}					
@@ -3349,9 +3349,9 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.83, "reps": 8 },
-										{ "tm": 0.83, "reps": 7 },
-										{ "tm": 0.83, "reps": 7 }, 
+										{ "tm": 0.83, "reps": 8, "pr": false },
+										{ "tm": 0.83, "reps": 7, "pr": false },
+										{ "tm": 0.83, "reps": 7, "pr": false }, 
 										{ "tm": 0.83, "reps": 7, "pr": true }
 									]
 								}					
@@ -3359,9 +3359,9 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.83, "reps": 8 },
-										{ "tm": 0.83, "reps": 7 },
-										{ "tm": 0.83, "reps": 7 }, 
+										{ "tm": 0.83, "reps": 8, "pr": false },
+										{ "tm": 0.83, "reps": 7, "pr": false },
+										{ "tm": 0.83, "reps": 7, "pr": false }, 
 										{ "tm": 0.83, "reps": 7, "pr": true }
 									]
 								}					
@@ -3369,9 +3369,9 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.83, "reps": 8 },
-										{ "tm": 0.83, "reps": 7 },
-										{ "tm": 0.83, "reps": 7 }, 
+										{ "tm": 0.83, "reps": 8, "pr": false },
+										{ "tm": 0.83, "reps": 7, "pr": false },
+										{ "tm": 0.83, "reps": 7, "pr": false }, 
 										{ "tm": 0.83, "reps": 7, "pr": true }
 									]
 								}					
@@ -3379,9 +3379,9 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.83, "reps": 8 },
-										{ "tm": 0.83, "reps": 7 },
-										{ "tm": 0.83, "reps": 7 }, 
+										{ "tm": 0.83, "reps": 8, "pr": false },
+										{ "tm": 0.83, "reps": 7, "pr": false },
+										{ "tm": 0.83, "reps": 7, "pr": false }, 
 										{ "tm": 0.83, "reps": 7, "pr": true }
 									]
 								}					
@@ -3394,9 +3394,9 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.83, "reps": 8 },
-										{ "tm": 0.83, "reps": 8 },
-										{ "tm": 0.83, "reps": 7 }, 
+										{ "tm": 0.83, "reps": 8, "pr": false },
+										{ "tm": 0.83, "reps": 8, "pr": false },
+										{ "tm": 0.83, "reps": 7, "pr": false }, 
 										{ "tm": 0.83, "reps": 7, "pr": true }
 									]
 								}					
@@ -3404,9 +3404,9 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.83, "reps": 8 },
-										{ "tm": 0.83, "reps": 8 },
-										{ "tm": 0.83, "reps": 7 }, 
+										{ "tm": 0.83, "reps": 8, "pr": false },
+										{ "tm": 0.83, "reps": 8, "pr": false },
+										{ "tm": 0.83, "reps": 7, "pr": false }, 
 										{ "tm": 0.83, "reps": 7, "pr": true }
 									]
 								}					
@@ -3414,9 +3414,9 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.83, "reps": 8 },
-										{ "tm": 0.83, "reps": 8 },
-										{ "tm": 0.83, "reps": 7 }, 
+										{ "tm": 0.83, "reps": 8, "pr": false },
+										{ "tm": 0.83, "reps": 8, "pr": false },
+										{ "tm": 0.83, "reps": 7, "pr": false }, 
 										{ "tm": 0.83, "reps": 7, "pr": true }
 									]
 								}					
@@ -3424,9 +3424,9 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.83, "reps": 8 },
-										{ "tm": 0.83, "reps": 8 },
-										{ "tm": 0.83, "reps": 7 }, 
+										{ "tm": 0.83, "reps": 8, "pr": false },
+										{ "tm": 0.83, "reps": 8, "pr": false },
+										{ "tm": 0.83, "reps": 7, "pr": false }, 
 										{ "tm": 0.83, "reps": 7, "pr": true }
 									]
 								}					
@@ -3439,9 +3439,9 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.83, "reps": 8 },
-										{ "tm": 0.83, "reps": 8 },
-										{ "tm": 0.83, "reps": 8 }, 
+										{ "tm": 0.83, "reps": 8, "pr": false },
+										{ "tm": 0.83, "reps": 8, "pr": false },
+										{ "tm": 0.83, "reps": 8, "pr": false }, 
 										{ "tm": 0.83, "reps": 7, "pr": true }
 									]
 								}					
@@ -3449,9 +3449,9 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.83, "reps": 8 },
-										{ "tm": 0.83, "reps": 8 },
-										{ "tm": 0.83, "reps": 8 }, 
+										{ "tm": 0.83, "reps": 8, "pr": false },
+										{ "tm": 0.83, "reps": 8, "pr": false },
+										{ "tm": 0.83, "reps": 8, "pr": false }, 
 										{ "tm": 0.83, "reps": 7, "pr": true }
 									]
 								}					
@@ -3459,9 +3459,9 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.83, "reps": 8 },
-										{ "tm": 0.83, "reps": 8 },
-										{ "tm": 0.83, "reps": 8 }, 
+										{ "tm": 0.83, "reps": 8, "pr": false },
+										{ "tm": 0.83, "reps": 8, "pr": false },
+										{ "tm": 0.83, "reps": 8, "pr": false }, 
 										{ "tm": 0.83, "reps": 7, "pr": true }
 									]
 								}					
@@ -3469,9 +3469,9 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.83, "reps": 8 },
-										{ "tm": 0.83, "reps": 8 },
-										{ "tm": 0.83, "reps": 8 }, 
+										{ "tm": 0.83, "reps": 8, "pr": false },
+										{ "tm": 0.83, "reps": 8, "pr": false },
+										{ "tm": 0.83, "reps": 8, "pr": false }, 
 										{ "tm": 0.83, "reps": 7, "pr": true }
 									]
 								}					
@@ -3484,9 +3484,9 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.83, "reps": 8 },
-										{ "tm": 0.83, "reps": 8 },
-										{ "tm": 0.83, "reps": 8 }, 
+										{ "tm": 0.83, "reps": 8, "pr": false },
+										{ "tm": 0.83, "reps": 8, "pr": false },
+										{ "tm": 0.83, "reps": 8, "pr": false }, 
 										{ "tm": 0.83, "reps": 8, "pr": true }
 									]
 								}					
@@ -3494,9 +3494,9 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.83, "reps": 8 },
-										{ "tm": 0.83, "reps": 8 },
-										{ "tm": 0.83, "reps": 8 }, 
+										{ "tm": 0.83, "reps": 8, "pr": false },
+										{ "tm": 0.83, "reps": 8, "pr": false },
+										{ "tm": 0.83, "reps": 8, "pr": false }, 
 										{ "tm": 0.83, "reps": 8, "pr": true }
 									]
 								}					
@@ -3504,9 +3504,9 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.83, "reps": 8 },
-										{ "tm": 0.83, "reps": 8 },
-										{ "tm": 0.83, "reps": 8 }, 
+										{ "tm": 0.83, "reps": 8, "pr": false },
+										{ "tm": 0.83, "reps": 8, "pr": false },
+										{ "tm": 0.83, "reps": 8, "pr": false }, 
 										{ "tm": 0.83, "reps": 8, "pr": true }
 									]
 								}					
@@ -3514,9 +3514,9 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.83, "reps": 8 },
-										{ "tm": 0.83, "reps": 8 },
-										{ "tm": 0.83, "reps": 8 }, 
+										{ "tm": 0.83, "reps": 8, "pr": false },
+										{ "tm": 0.83, "reps": 8, "pr": false },
+										{ "tm": 0.83, "reps": 8, "pr": false }, 
 										{ "tm": 0.83, "reps": 8, "pr": true }
 									]
 								}					
@@ -3529,9 +3529,9 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.83, "reps": 9 },
-										{ "tm": 0.83, "reps": 8 },
-										{ "tm": 0.83, "reps": 8 }, 
+										{ "tm": 0.83, "reps": 9, "pr": false },
+										{ "tm": 0.83, "reps": 8, "pr": false },
+										{ "tm": 0.83, "reps": 8, "pr": false }, 
 										{ "tm": 0.83, "reps": 8, "pr": true }
 									]
 								}					
@@ -3539,9 +3539,9 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.83, "reps": 9 },
-										{ "tm": 0.83, "reps": 8 },
-										{ "tm": 0.83, "reps": 8 }, 
+										{ "tm": 0.83, "reps": 9, "pr": false },
+										{ "tm": 0.83, "reps": 8, "pr": false },
+										{ "tm": 0.83, "reps": 8, "pr": false }, 
 										{ "tm": 0.83, "reps": 8, "pr": true }
 									]
 								}					
@@ -3549,9 +3549,9 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.83, "reps": 9 },
-										{ "tm": 0.83, "reps": 8 },
-										{ "tm": 0.83, "reps": 8 }, 
+										{ "tm": 0.83, "reps": 9, "pr": false },
+										{ "tm": 0.83, "reps": 8, "pr": false },
+										{ "tm": 0.83, "reps": 8, "pr": false }, 
 										{ "tm": 0.83, "reps": 8, "pr": true }
 									]
 								}					
@@ -3559,9 +3559,9 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.83, "reps": 9 },
-										{ "tm": 0.83, "reps": 8 },
-										{ "tm": 0.83, "reps": 8 }, 
+										{ "tm": 0.83, "reps": 9, "pr": false },
+										{ "tm": 0.83, "reps": 8, "pr": false },
+										{ "tm": 0.83, "reps": 8, "pr": false }, 
 										{ "tm": 0.83, "reps": 8, "pr": true }
 									]
 								}					
@@ -3574,9 +3574,9 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.83, "reps": 9 },
-										{ "tm": 0.83, "reps": 9 },
-										{ "tm": 0.83, "reps": 8 }, 
+										{ "tm": 0.83, "reps": 9, "pr": false },
+										{ "tm": 0.83, "reps": 9, "pr": false },
+										{ "tm": 0.83, "reps": 8, "pr": false }, 
 										{ "tm": 0.83, "reps": 8, "pr": true }
 									]
 								}					
@@ -3584,9 +3584,9 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.83, "reps": 9 },
-										{ "tm": 0.83, "reps": 9 },
-										{ "tm": 0.83, "reps": 8 }, 
+										{ "tm": 0.83, "reps": 9, "pr": false },
+										{ "tm": 0.83, "reps": 9, "pr": false },
+										{ "tm": 0.83, "reps": 8, "pr": false }, 
 										{ "tm": 0.83, "reps": 8, "pr": true }
 									]
 								}					
@@ -3594,9 +3594,9 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.83, "reps": 9 },
-										{ "tm": 0.83, "reps": 9 },
-										{ "tm": 0.83, "reps": 8 }, 
+										{ "tm": 0.83, "reps": 9, "pr": false },
+										{ "tm": 0.83, "reps": 9, "pr": false },
+										{ "tm": 0.83, "reps": 8, "pr": false }, 
 										{ "tm": 0.83, "reps": 8, "pr": true }
 									]
 								}					
@@ -3604,9 +3604,9 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.83, "reps": 9 },
-										{ "tm": 0.83, "reps": 9 },
-										{ "tm": 0.83, "reps": 8 }, 
+										{ "tm": 0.83, "reps": 9, "pr": false },
+										{ "tm": 0.83, "reps": 9, "pr": false },
+										{ "tm": 0.83, "reps": 8, "pr": false }, 
 										{ "tm": 0.83, "reps": 8, "pr": true }
 									]
 								}					
@@ -3619,9 +3619,9 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.83, "reps": 9 },
-										{ "tm": 0.83, "reps": 9 },
-										{ "tm": 0.83, "reps": 9 }, 
+										{ "tm": 0.83, "reps": 9, "pr": false },
+										{ "tm": 0.83, "reps": 9, "pr": false },
+										{ "tm": 0.83, "reps": 9, "pr": false }, 
 										{ "tm": 0.83, "reps": 8, "pr": true }
 									]
 								}					
@@ -3629,9 +3629,9 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.83, "reps": 9 },
-										{ "tm": 0.83, "reps": 9 },
-										{ "tm": 0.83, "reps": 9 }, 
+										{ "tm": 0.83, "reps": 9, "pr": false },
+										{ "tm": 0.83, "reps": 9, "pr": false },
+										{ "tm": 0.83, "reps": 9, "pr": false }, 
 										{ "tm": 0.83, "reps": 8, "pr": true }
 									]
 								}					
@@ -3639,9 +3639,9 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.83, "reps": 9 },
-										{ "tm": 0.83, "reps": 9 },
-										{ "tm": 0.83, "reps": 9 }, 
+										{ "tm": 0.83, "reps": 9, "pr": false },
+										{ "tm": 0.83, "reps": 9, "pr": false },
+										{ "tm": 0.83, "reps": 9, "pr": false }, 
 										{ "tm": 0.83, "reps": 8, "pr": true }
 									]
 								}					
@@ -3649,9 +3649,9 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.83, "reps": 9 },
-										{ "tm": 0.83, "reps": 9 },
-										{ "tm": 0.83, "reps": 9 }, 
+										{ "tm": 0.83, "reps": 9, "pr": false },
+										{ "tm": 0.83, "reps": 9, "pr": false },
+										{ "tm": 0.83, "reps": 9, "pr": false }, 
 										{ "tm": 0.83, "reps": 8, "pr": true }
 									]
 								}					
@@ -3664,9 +3664,9 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.83, "reps": 9 },
-										{ "tm": 0.83, "reps": 9 },
-										{ "tm": 0.83, "reps": 9 }, 
+										{ "tm": 0.83, "reps": 9, "pr": false },
+										{ "tm": 0.83, "reps": 9, "pr": false },
+										{ "tm": 0.83, "reps": 9, "pr": false }, 
 										{ "tm": 0.83, "reps": 9, "pr": true }
 									]
 								}					
@@ -3674,9 +3674,9 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.83, "reps": 9 },
-										{ "tm": 0.83, "reps": 9 },
-										{ "tm": 0.83, "reps": 9 }, 
+										{ "tm": 0.83, "reps": 9, "pr": false },
+										{ "tm": 0.83, "reps": 9, "pr": false },
+										{ "tm": 0.83, "reps": 9, "pr": false }, 
 										{ "tm": 0.83, "reps": 9, "pr": true }
 									]
 								}					
@@ -3684,9 +3684,9 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.83, "reps": 9 },
-										{ "tm": 0.83, "reps": 9 },
-										{ "tm": 0.83, "reps": 9 }, 
+										{ "tm": 0.83, "reps": 9, "pr": false },
+										{ "tm": 0.83, "reps": 9, "pr": false },
+										{ "tm": 0.83, "reps": 9, "pr": false }, 
 										{ "tm": 0.83, "reps": 9, "pr": true }
 									]
 								}					
@@ -3694,9 +3694,9 @@
 							[
 								{
 									"sets": [
-										{ "tm": 0.83, "reps": 9 },
-										{ "tm": 0.83, "reps": 9 },
-										{ "tm": 0.83, "reps": 9 }, 
+										{ "tm": 0.83, "reps": 9, "pr": false },
+										{ "tm": 0.83, "reps": 9, "pr": false },
+										{ "tm": 0.83, "reps": 9, "pr": false }, 
 										{ "tm": 0.83, "reps": 9, "pr": true }
 									]
 								}					
