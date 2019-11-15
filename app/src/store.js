@@ -16,7 +16,7 @@ export default new Vuex.Store({
   state: {
     exercices: Exercices,
 		variations: Variations,
-		selectedVariation: 'boringbutbig',
+		selectedVariation: Object.keys(Variations)[0],
 		selectedTemplate: 0,
 		selectedWeek: 0,
 		trainings: [
