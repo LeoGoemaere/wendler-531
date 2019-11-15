@@ -1,13 +1,14 @@
 <template>
 	<div class="columns">
 		<div class="column is-three-fifths is-offset-one-fifth">
-			<button @click="createNewVariation" class="button margin is-link is-fullwidth">+ Add variation</button>
+			<button @click="createNewVariation" class="button margin is-link is-outlined is-fullwidth">+ Add variation</button>
 			<Variation 
 				v-for="(variation, name, index) in getVariations"
 				:variation="variation"
 				:index="index"
 				:name="name"
 			/>
+			<ExportToJson />
 				
 		</div>
 	</div>
@@ -19,13 +20,15 @@ import { mapGetters } from 'vuex';
 import uuid from 'uuid/v4';
 
 import Button from '@/components/Button.vue';
-import Variation from '@/components/Variation.vue'
+import Variation from '@/components/Variation.vue';
+import ExportToJson from '@/components/ExportToJson.vue'
 
 export default {
 	name: 'Generator',
 	components: {
 		Button,
-		Variation
+		Variation,
+		ExportToJson
 	},
 	methods: {
 		createNewVariation: function() {

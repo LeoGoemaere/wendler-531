@@ -76,4 +76,9 @@ export default {
   .set-row {
     align-items: center;
   }
+  .export-button {
+    position: fixed;
+    top: 40px;
+    right: 40px;
+  }
 </style>
