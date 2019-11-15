@@ -15,6 +15,7 @@
                 aTag.download = 'variations.json';
                 aTag.href = url;
                 aTag.click();
+                URL.revokeObjectURL(url);
             }
         },
         computed: {
