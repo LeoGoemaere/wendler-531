@@ -21,14 +21,12 @@ import { mapGetters } from 'vuex';
 
 import uuid from 'uuid/v4';
 
-import Button from '@/components/Button.vue';
 import Variation from '@/components/Variation.vue';
 import ExportToJson from '@/components/ExportToJson.vue'
 
 export default {
 	name: 'Generator',
 	components: {
-		Button,
 		Variation,
 		ExportToJson
 	},
