@@ -14,6 +14,7 @@
 
             <Day 
                 v-for="(day, index) in week.days"
+                :key="day.id"
                 :day="day"
                 :variationName="variationName"
                 :templateIndex="templateIndex"

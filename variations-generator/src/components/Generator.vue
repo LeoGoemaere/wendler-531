@@ -6,6 +6,7 @@
 			</div>
 			<Variation 
 				v-for="(variation, name, index) in getVariations"
+				:key="variation.id"
 				:variation="variation"
 				:index="index"
 				:name="name"

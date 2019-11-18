@@ -16,6 +16,7 @@
             />
             <Template 
                 v-for="(template, index) in variation.templates"
+                :key="template.id"
                 :template="template"
                 :templateIndex="index"
                 :variationName="name"

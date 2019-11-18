@@ -18,6 +18,7 @@
             />
             <Set
                 v-for="(set, index) in exercice.sets"
+                :key="set.id"
                 :set="set"
                 :variationName="variationName"
                 :templateIndex="templateIndex"

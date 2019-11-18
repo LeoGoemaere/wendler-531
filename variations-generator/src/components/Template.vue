@@ -21,6 +21,7 @@
             />
             <Week 
                 v-for="(week, index) in template.weeks"
+                :key="week.id"
                 :week="week"
                 :variationName="variationName"
                 :templateIndex="templateIndex"

@@ -16,6 +16,7 @@
             />
             <Exercice
                 v-for="(exercice, index) in day"
+                :key="exercice.id"
                 :exercice="exercice"
                 :variationName="variationName"
                 :templateIndex="templateIndex"
