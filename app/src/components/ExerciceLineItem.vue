@@ -48,12 +48,13 @@ import { mapGetters } from 'vuex';
 import SetIncrementFactor from '@/components/SetIncrementFactor';
 
 export default {
-	name: 'Exercice',
+	name: 'ExerciceLineItem',
 	components: { SetIncrementFactor },
 	props: {
 		exercice: Object,
 		index: Number,
 		type: String,
+		baseTm: Number
 	},
 	data () {
 		return {
@@ -65,13 +66,18 @@ export default {
 			notifIsActive: false
 		}
 	},
+	watch: {
+		baseTm() {
+			this.calculPerf(this.exercice.max.rm, { from: this.max.rm, to: this.max.tm })
+		}
+	},
 	methods: {
-		calculPerf: function(e, {from, to}) {
-			let value = e.target.value;
+		calculPerf: function(val, {from, to}) {
+			let value = typeof val === 'number' ? val : val.target.value;
 			if (isNaN(parseFloat(value))) {	value = 0; }
 			let exercices = JSON.parse(JSON.stringify(this.getExercices));
 			exercices[this.type][this.index].max[from] = parseFloat(value);
-			exercices[this.type][this.index].max[to] = from === this.max.rm ? parseFloat(value) * 0.9 : parseFloat(value) / 0.9;
+			exercices[this.type][this.index].max[to] = from === this.max.rm ? parseFloat(value) * this.baseTm : parseFloat(value) / this.baseTm;
 			this.$store.commit('updateExercices', exercices);
 		},
 		roundValue: function(value) {

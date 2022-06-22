@@ -6,7 +6,7 @@
 		</div>
 		<div v-if="isPrimarySelected">
 			<div class="button-container space__x">
-				<ProgressionIncrementor />
+				<ProgressionIncrementor :baseTm="currentVariation.baseTm" />
 			</div>
 			<ExerciceLineItem 
 				v-for="(exercice, index) in this.exercices.primary"
@@ -14,10 +14,11 @@
 				:exercice="exercice"
 				:index="parseInt(index)"
 				:type="'primary'"
+				:baseTm="currentVariation.baseTm"
 			/>
 		</div>
 		<div v-if="!isPrimarySelected">
-			<CreateAssistance :exercices="exercices" />
+			<CreateAssistance :exercices="exercices" :baseTm="currentVariation.baseTm" />
 		</div>
 	</div>
 </template>
@@ -33,7 +34,8 @@ export default {
 	name: 'ExercicesSetter',
 	components: { ExerciceLineItem, CreateAssistance, ProgressionIncrementor },
 	props: {
-		exercices: Object
+		exercices: Object,
+		currentVariation: Object
 	},
 	data () {
 		return {

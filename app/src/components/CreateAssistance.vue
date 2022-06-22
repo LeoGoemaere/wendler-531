@@ -4,7 +4,7 @@
 			<button class="assistance__button button" @click="showPopin">
 				<i class="fas fa-plus"></i>
 			</button>
-			<ProgressionIncrementor />
+			<ProgressionIncrementor :baseTm="baseTm"/>
 		</div>
 		<div :class="popinActiveClass" class="popin__element">
 			<p class="popin__title">Add new assistance exercice</p>
@@ -22,6 +22,7 @@
 			:exercice="exercice"
 			:index="parseInt(index)"
 			:type="'secondary'"
+			:baseTm="baseTm"
 		/>
 		<div :class="popinActiveClass" class="popin__overlay" @click="cancelAddExercice"></div>
 	</div>
@@ -36,7 +37,8 @@ export default {
 	name: 'ExercicesSetter',
 	components: { ExerciceLineItem, ProgressionIncrementor },
 	props: {
-		exercices: Object
+		exercices: Object,
+		baseTm: Number
 	},
 	data () {
 		return {

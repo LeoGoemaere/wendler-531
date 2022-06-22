@@ -12,6 +12,7 @@
 			<span v-if="set.tm" class="set__weight">{{roundValue(set.tm * tmExercice)}}</span>
 			<span v-if="set.tm" class="set__unit">kg</span>
 			<span v-if="!set.tm" class="set__reps-label">reps</span>
+			<p v-if="!extraSet" class="set__info">{{roundValue(set.tm * 100)}}% TM</p>
 		</div>
 		<p v-if="extraSet" :class="`set__type--${extraSet.type}`" class="set__type">
 			{{extraSet.name}}
@@ -61,9 +62,15 @@ export default {
 		color: #2980b9;
 	}
 
+	.set__info {
+		margin-left: auto;
+		opacity: .5;
+	}
+
 	.set__reps-datas {
 		margin-left: 20px;
 		display: flex;
+		flex: 1;
 	}
 
 	.set__number {

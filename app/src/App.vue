@@ -73,6 +73,10 @@
 		padding-top: 25px;
 	}
 
+	.flex {
+		display: flex;
+	}
+
 	.button {
 		border: none;
 		width: 100%;

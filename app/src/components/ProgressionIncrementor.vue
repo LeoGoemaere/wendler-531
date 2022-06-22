@@ -19,6 +19,9 @@ import { mapGetters } from 'vuex';
 
 export default {
 	name: 'ProgressionIncrementor',
+	props: {
+		baseTm: { type: Number }
+	},
 	data() {
 		return {
 			notifIsActive: false
@@ -36,7 +39,7 @@ export default {
 			for (let key in exercices) {
 				exercices[key].forEach(exercice => {
 					exercice.max.tm += exercice.incrementFactor;
-					exercice.max.rm = parseFloat(exercice.max.tm) / 0.9;
+					exercice.max.rm = parseFloat(exercice.max.tm) / this.baseTm;
 				})
 			}
 			this.$store.commit('updateExercices', exercices);
